@@ -6,6 +6,10 @@ L'obiettivo è aggiungere nuove scelte strategiche senza sostituire i sistemi va
 Molti contenuti sono pensati soprattutto per il giocatore e sfruttano equipaggiamenti, designer e meccaniche già presenti in HOI4.  
 La mod è sviluppata e testata principalmente su **Hearts of Iron IV 1.19.x**.
 
+Link Steam Workshop
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=3801242021
+
 ---
 
 # Contenuti della mod
