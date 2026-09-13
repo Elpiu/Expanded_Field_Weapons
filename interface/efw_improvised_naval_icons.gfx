@@ -1,0 +1,22 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_efw_motorboat"
+        texturefile = "gfx/interface/equipment/efw_naval/efw_motorboat.dds"
+    }
+
+    spriteType = {
+        name = "GFX_efw_motorboat_medium"
+        texturefile = "gfx/interface/equipment/efw_naval/efw_motorboat.dds"
+    }
+
+    spriteType = {
+        name = "GFX_efw_midget_sub"
+        texturefile = "gfx/interface/equipment/efw_naval/efw_midget_sub.dds"
+    }
+
+    spriteType = {
+        name = "GFX_efw_midget_sub_medium"
+        texturefile = "gfx/interface/equipment/efw_naval/efw_midget_sub.dds"
+    }
+}

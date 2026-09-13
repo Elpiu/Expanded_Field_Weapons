@@ -35,3 +35,15 @@
  efw_test.1.t:0 "EXPANDED FIELD WEAPONS v1.2 ACTIVE!"
  efw_test.1.d:0 "Support Weapons I unlocks three permanent production lines: Machine Guns, Mortars and Anti-Tank Weapons. Later Support Weapons research directly improves the statistics of the new formations."
  efw_test.1.a:0 "Perfect."
+
+ efw_improvised_naval_modules_unlock:0 "Improvised Naval Programme"
+
+ efw_motorboat_engine:0 "Improvised Motorboat Engine"
+ efw_motorboat_engine_desc:0 "A simple engine for tiny coastal craft. It drastically reduces the ship's cost, range and durability."
+ efw_motorboat_machinegun:0 "Naval Machine-Gun Mount"
+ efw_motorboat_machinegun_desc:0 "A heavy machine gun adapted for naval use."
+
+ efw_midget_sub_engine:0 "Midget Submarine Engine"
+ efw_midget_sub_engine_desc:0 "A tiny propulsion system for extremely small submarines."
+ efw_midget_sub_torpedo:0 "Midget Submarine Light Torpedo"
+ efw_midget_sub_torpedo_desc:0 "A compact torpedo installation intended for midget submarines."

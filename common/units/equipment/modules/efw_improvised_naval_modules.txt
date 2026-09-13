@@ -1,0 +1,122 @@
+# EFW Naval Improvised v0.4 EASY
+#
+# No custom hulls.
+# These modules are mounted on vanilla ship_hull_light_1 / ship_hull_submarine_1.
+# The engine modules deliberately shrink cost, range and durability to simulate
+# tiny improvised craft built on top of a vanilla-recognised naval hull.
+
+equipment_modules = {
+
+    # =========================================================
+    # IMPROVISED MOTORBOAT
+    # =========================================================
+
+    efw_motorboat_engine = {
+        category = light_ship_engine
+        gfx = light_ship_engine_1
+        sfx = sfx_ui_sd_module_engine
+
+        add_stats = {
+            naval_speed = 4        # Raddoppiato (era 2)
+            fuel_consumption = 1
+            build_cost_ic = 5
+            manpower = -490        # Riduce l'equipaggio totale a 10
+        }
+
+        multiply_stats = {
+            build_cost_ic = -0.70    # Modificato da -0.55 per un ulteriore -30% sui costi
+            max_strength = -0.70
+            naval_range = -0.20      # Riduzione portata attenuata per estendere l'autonomia
+            reliability = -0.20
+            surface_visibility = -0.30
+        }
+
+        can_convert_from = {
+            module_category = light_ship_engine
+            convert_cost_ic = 25
+        }
+    }
+
+
+    efw_motorboat_machinegun = {
+        category = ship_light_battery
+        gfx = ship_light_battery_1
+        sfx = sfx_ui_sd_module_turret
+
+        add_stats = {
+            lg_attack = 0.70
+            anti_air_attack = 0.50
+            build_cost_ic = 5
+        }
+
+        add_average_stats = {
+            lg_armor_piercing = 1
+        }
+
+        multiply_stats = {
+            reliability = -0.05
+        }
+
+        can_convert_from = {
+            module_category = ship_light_battery
+            convert_cost_ic = 10
+        }
+
+        critical_parts = { damaged_light_guns }
+    }
+
+
+    # =========================================================
+    # ONE-MAN MIDGET SUBMARINE
+    # =========================================================
+
+    efw_midget_sub_engine = {
+        category = sub_ship_engine
+        gfx = sub_ship_engine_1
+        sfx = sfx_ui_sd_module_engine
+
+        add_stats = {
+            naval_speed = 2        # Raddoppiato (era 1)
+            fuel_consumption = 0.25
+            build_cost_ic = 5
+            manpower = -98         # Riduce l'equipaggio totale a 2
+        }
+
+        multiply_stats = {
+            build_cost_ic = -0.755   # Modificato da -0.65 per renderlo il 30% più economico
+            max_strength = -0.80
+            naval_range = -0.30      # Portata aumentata (taglio ridotto rispetto a -0.75)
+            reliability = -0.30
+            surface_visibility = -0.55
+            sub_visibility = -0.35
+        }
+
+        can_convert_from = {
+            module_category = sub_ship_engine
+            convert_cost_ic = 20
+        }
+    }
+
+
+    efw_midget_sub_torpedo = {
+        category = ship_torpedo_sub
+        gfx = ship_torpedo_sub_1
+        sfx = sfx_ui_sd_module_turret
+
+        add_stats = {
+            torpedo_attack = 4.5
+            build_cost_ic = 10
+        }
+
+        multiply_stats = {
+            reliability = -0.10
+        }
+
+        can_convert_from = {
+            module_category = ship_torpedo_sub
+            convert_cost_ic = 10
+        }
+
+        critical_parts = { damaged_torpedoes }
+    }
+}

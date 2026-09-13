@@ -1,0 +1,25 @@
+# EFW Naval Improvised v0.4 EASY
+# Only unlocks the custom modules. No custom equipment/hulls.
+
+technologies = {
+
+    efw_improvised_naval_modules_unlock = {
+        research_cost = 1
+        start_year = 1918
+
+        allow = {
+            always = no
+        }
+
+        enable_equipment_modules = {
+            efw_motorboat_engine
+            efw_motorboat_machinegun
+            efw_midget_sub_engine
+            efw_midget_sub_torpedo
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}
