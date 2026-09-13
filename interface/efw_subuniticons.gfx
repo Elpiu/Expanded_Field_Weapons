@@ -1,0 +1,27 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_unit_efw_machinegun_company_icon_medium"
+        textureFile = "gfx/interface/counters/divisions_large/efw_machinegun_company.dds"
+        noOfFrames = 2
+    }
+
+    spriteType = {
+        name = "GFX_unit_efw_mortar_company_icon_medium"
+        textureFile = "gfx/interface/counters/divisions_large/efw_mortar_company.dds"
+        noOfFrames = 2
+    }
+
+    spriteType = {
+        name = "GFX_unit_efw_hmg_company_icon_medium"
+        textureFile = "gfx/interface/counters/divisions_large/efw_hmg_company.dds"
+        noOfFrames = 2
+    }
+
+    spriteType = {
+        name = "GFX_unit_efw_elite_company_icon_medium"
+        textureFile = "gfx/interface/counters/divisions_large/efw_elite_company.dds"
+        noOfFrames = 2
+    }
+
+}

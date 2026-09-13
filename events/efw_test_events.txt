@@ -1,0 +1,10 @@
+add_namespace = efw_test
+
+country_event = {
+    id = efw_test.1
+    title = efw_test.1.t
+    desc = efw_test.1.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    option = { name = efw_test.1.a }
+}

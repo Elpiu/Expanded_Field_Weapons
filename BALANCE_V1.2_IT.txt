@@ -1,0 +1,43 @@
+BILANCIAMENTO V1.2 - BASE
+========================
+
+EQUIPAGGIAMENTI FISSI
+--------------------
+Mitragliatrici:
+  IC 1.00 | Steel 1 | Soft 9 | Hard 1 | Defense 5 | Breakthrough 2 | Piercing 4
+
+Mortai:
+  IC 1.20 | Steel 1 | Soft 12 | Hard 2 | Defense 2 | Breakthrough 4 | Piercing 6
+
+Armi anticarro:
+  IC 1.40 | Steel 1 + Tungsten 1 | Soft 2 | Hard 11 | Defense 2 | Breakthrough 1 | Piercing 50
+
+QUANTITA PER UNITA
+------------------
+Compagnia MG: 30 Mitragliatrici, 220 uomini
+Compagnia Mortai: 18 Mortai, 190 uomini
+Compagnia AT: 20 Armi AT, 180 uomini
+Battaglione Elite: 60 Fucili + 45 MG + 20 Mortai + 16 AT, 900 uomini, width 2
+
+PROGRESSIONE
+------------
+Support Weapons II:
+  MG +10% soft/+10% defense/+5% breakthrough
+  Mortai +10% soft/+10% breakthrough/+5% defense
+  AT +10% hard/+10% piercing/+5% defense
+  Elite +5% soft/hard/piercing/defense/breakthrough, +1 org
+
+Support Weapons III:
+  bonus analoghi; Elite +7% soft/hard, +5% altre statistiche, +1 org
+
+Support Weapons IV:
+  MG +12% soft/+10% defense/+8% breakthrough
+  Mortai +12% soft/+12% breakthrough/+6% defense
+  AT +12% hard/+12% piercing/+6% defense
+  Elite +8% soft/hard/piercing, +6% defense/breakthrough, +1 org
+
+Infantry AT I e II aggiungono ciascuno:
+  Compagnia AT: +10% hard attack, +15% piercing
+  Elite: +4% hard attack, +8% piercing
+
+I valori sono intenzionalmente una V1 di bilanciamento: vanno testati contro divisioni vanilla reali.

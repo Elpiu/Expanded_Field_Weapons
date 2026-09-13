@@ -1,0 +1,35 @@
+spriteTypes = {
+
+    # Machine Guns
+    spriteType = {
+        name = "GFX_efw_machinegun_equipment_standard"
+        texturefile = "gfx/interface/equipment/efw/efw_machinegun.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_machinegun_equipment_standard_medium"
+        texturefile = "gfx/interface/equipment/efw/efw_machinegun.dds"
+    }
+
+    # Mortars
+    spriteType = {
+        name = "GFX_efw_mortar_equipment_standard"
+        texturefile = "gfx/interface/equipment/efw/efw_mortar.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_mortar_equipment_standard_medium"
+        texturefile = "gfx/interface/equipment/efw/efw_mortar.dds"
+    }
+
+    # Portable Anti-Tank Weapons
+    # Temporary artwork mapping: efw_hmg.dds is used because it is the
+    # third DDS filename supplied for this build. Replace the texturefile
+    # with efw_antitank.dds later if you create a dedicated AT icon.
+    spriteType = {
+        name = "GFX_efw_antitank_equipment_standard"
+        texturefile = "gfx/interface/equipment/efw/efw_hmg.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_antitank_equipment_standard_medium"
+        texturefile = "gfx/interface/equipment/efw/efw_hmg.dds"
+    }
+}

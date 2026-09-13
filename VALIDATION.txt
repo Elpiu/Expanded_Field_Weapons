@@ -1,0 +1,9 @@
+VALIDATION v1.2.0
+=================
+OK - braces bilanciate.
+OK - nessun override di common/technologies/infantry.txt.
+OK - nessun countrytechtreeview.gui.
+OK - solo 3 modelli produttivi EFW.
+OK - 4 subunit sbloccate da Support Weapons I.
+OK - upgrade II/III/IV applicati direttamente alle subunit.
+NOTA - i DDS non sono inclusi: devono essere copiati dall utente nella cartella gfx predisposta.

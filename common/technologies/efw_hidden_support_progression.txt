@@ -1,0 +1,205 @@
+# Expanded Field Weapons v1.2.0
+# These technologies are hidden and assigned by efw_on_actions.txt.
+# They do NOT appear in the research tree.
+#
+# Design:
+# Support Weapons I  -> unlock equipment + all 4 unit types
+# Support Weapons II -> first combat-stat improvement
+# Support Weapons III -> second combat-stat improvement
+# Support Weapons IV -> final combat-stat improvement
+# Infantry AT I/II   -> additional focused AT improvements
+
+technologies = {
+
+    # =========================================================
+    # SUPPORT WEAPONS I: unlock the permanent production models
+    # and all EFW formations.
+    # =========================================================
+    efw_unlock_core_weapons = {
+        research_cost = 1
+        start_year = 1918
+        allow = { always = no }
+        categories = { infantry_weapons }
+
+        enable_equipments = {
+            efw_machinegun_equipment_standard
+            efw_mortar_equipment_standard
+            efw_antitank_equipment_standard
+        }
+
+        enable_subunits = {
+            efw_machinegun_company
+            efw_mortar_company
+            efw_antitank_company
+            efw_elite_heavy_weapons_battalion
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+
+    # =========================================================
+    # SUPPORT WEAPONS II
+    # =========================================================
+    efw_support_upgrade_2 = {
+        research_cost = 1
+        start_year = 1938
+        allow = { always = no }
+        categories = { infantry_weapons }
+
+        efw_machinegun_company = {
+            soft_attack = 0.10
+            defense = 0.10
+            breakthrough = 0.05
+        }
+
+        efw_mortar_company = {
+            soft_attack = 0.10
+            breakthrough = 0.10
+            defense = 0.05
+        }
+
+        efw_antitank_company = {
+            hard_attack = 0.10
+            ap_attack = 0.10
+            defense = 0.05
+        }
+
+        efw_elite_heavy_weapons_battalion = {
+            soft_attack = 0.05
+            hard_attack = 0.05
+            ap_attack = 0.05
+            defense = 0.05
+            breakthrough = 0.05
+            max_organisation = 1
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+
+    # =========================================================
+    # SUPPORT WEAPONS III
+    # =========================================================
+    efw_support_upgrade_3 = {
+        research_cost = 1
+        start_year = 1940
+        allow = { always = no }
+        categories = { infantry_weapons }
+
+        efw_machinegun_company = {
+            soft_attack = 0.10
+            defense = 0.10
+            breakthrough = 0.05
+        }
+
+        efw_mortar_company = {
+            soft_attack = 0.10
+            breakthrough = 0.10
+            defense = 0.05
+        }
+
+        efw_antitank_company = {
+            hard_attack = 0.10
+            ap_attack = 0.10
+            defense = 0.05
+        }
+
+        efw_elite_heavy_weapons_battalion = {
+            soft_attack = 0.07
+            hard_attack = 0.07
+            ap_attack = 0.05
+            defense = 0.05
+            breakthrough = 0.05
+            max_organisation = 1
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+
+    # =========================================================
+    # SUPPORT WEAPONS IV
+    # =========================================================
+    efw_support_upgrade_4 = {
+        research_cost = 1
+        start_year = 1942
+        allow = { always = no }
+        categories = { infantry_weapons }
+
+        efw_machinegun_company = {
+            soft_attack = 0.12
+            defense = 0.10
+            breakthrough = 0.08
+        }
+
+        efw_mortar_company = {
+            soft_attack = 0.12
+            breakthrough = 0.12
+            defense = 0.06
+        }
+
+        efw_antitank_company = {
+            hard_attack = 0.12
+            ap_attack = 0.12
+            defense = 0.06
+        }
+
+        efw_elite_heavy_weapons_battalion = {
+            soft_attack = 0.08
+            hard_attack = 0.08
+            ap_attack = 0.08
+            defense = 0.06
+            breakthrough = 0.06
+            max_organisation = 1
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+
+    # =========================================================
+    # INFANTRY AT I - extra focused bonus, no new equipment model
+    # =========================================================
+    efw_at_upgrade_1 = {
+        research_cost = 1
+        start_year = 1942
+        allow = { always = no }
+        categories = { infantry_weapons }
+
+        efw_antitank_company = {
+            hard_attack = 0.10
+            ap_attack = 0.15
+        }
+
+        efw_elite_heavy_weapons_battalion = {
+            hard_attack = 0.04
+            ap_attack = 0.08
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+
+    # =========================================================
+    # INFANTRY AT II - extra focused bonus, no new equipment model
+    # =========================================================
+    efw_at_upgrade_2 = {
+        research_cost = 1
+        start_year = 1943
+        allow = { always = no }
+        categories = { infantry_weapons }
+
+        efw_antitank_company = {
+            hard_attack = 0.10
+            ap_attack = 0.15
+        }
+
+        efw_elite_heavy_weapons_battalion = {
+            hard_attack = 0.04
+            ap_attack = 0.08
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+}

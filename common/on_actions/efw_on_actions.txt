@@ -1,0 +1,88 @@
+# Expanded Field Weapons v1.2.0
+# Uses the same daily synchronization approach confirmed working in v1.1.1.
+
+on_actions = {
+
+    on_startup = {
+        effect = {
+            every_country = {
+                limit = { is_ai = no }
+                country_event = { id = efw_test.1 days = 1 }
+            }
+        }
+    }
+
+    on_daily = {
+        effect = {
+
+            # Support Weapons I: unlock everything once.
+            if = {
+                limit = {
+                    has_tech = support_weapons
+                    NOT = { has_tech = efw_unlock_core_weapons }
+                }
+                set_technology = {
+                    efw_unlock_core_weapons = 1
+                    popup = no
+                }
+            }
+
+            # Later Support Weapons research improves the units, not the equipment.
+            if = {
+                limit = {
+                    has_tech = support_weapons2
+                    NOT = { has_tech = efw_support_upgrade_2 }
+                }
+                set_technology = {
+                    efw_support_upgrade_2 = 1
+                    popup = no
+                }
+            }
+
+            if = {
+                limit = {
+                    has_tech = support_weapons3
+                    NOT = { has_tech = efw_support_upgrade_3 }
+                }
+                set_technology = {
+                    efw_support_upgrade_3 = 1
+                    popup = no
+                }
+            }
+
+            if = {
+                limit = {
+                    has_tech = support_weapons4
+                    NOT = { has_tech = efw_support_upgrade_4 }
+                }
+                set_technology = {
+                    efw_support_upgrade_4 = 1
+                    popup = no
+                }
+            }
+
+            # Vanilla infantry AT research gives focused bonuses to AT formations.
+            if = {
+                limit = {
+                    has_tech = infantry_at
+                    NOT = { has_tech = efw_at_upgrade_1 }
+                }
+                set_technology = {
+                    efw_at_upgrade_1 = 1
+                    popup = no
+                }
+            }
+
+            if = {
+                limit = {
+                    has_tech = infantry_at2
+                    NOT = { has_tech = efw_at_upgrade_2 }
+                }
+                set_technology = {
+                    efw_at_upgrade_2 = 1
+                    popup = no
+                }
+            }
+        }
+    }
+}

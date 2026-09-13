@@ -1,0 +1,10 @@
+CHANGELOG v1.2.0
+================
+- Rimossi LMG/MMG/HMG I-II-III, Mortar I-II-III e AT I-II-III.
+- Ridotto tutto a 3 equipaggiamenti produttivi permanenti: Machine Guns, Mortars, Anti-Tank Weapons.
+- Support Weapons I sblocca contemporaneamente i 3 equipaggiamenti.
+- Support Weapons I sblocca 3 compagnie supporto + 1 battaglione di linea elite.
+- Support Weapons II/III/IV ora migliorano le statistiche delle unita, senza nuovi modelli produttivi.
+- Infantry AT I/II danno bonus aggiuntivi a AT Company e battaglione elite.
+- Aggiunto sprite GFX per i nuovi ID equipment.
+- Nessuna modifica a infantry.txt vanilla o countrytechtreeview.gui.

@@ -1,0 +1,37 @@
+﻿l_italian:
+ EFW_MOD_NAME:0 "Expanded Field Weapons"
+
+ efw_machinegun_equipment:0 "Mitragliatrici di supporto"
+ efw_machinegun_equipment_desc:0 "Mitragliatrici leggere, medie e pesanti astratte in una singola categoria produttiva. Il materiale rimane lo stesso: l'efficacia delle unita aumenta con la ricerca Support Weapons."
+ efw_machinegun_equipment_standard:0 "Mitragliatrici"
+ efw_machinegun_equipment_standard_short:0 "Mitragliatrici"
+
+ efw_mortar_equipment:0 "Mortai da fanteria"
+ efw_mortar_equipment_desc:0 "Mortai leggeri e medi per il fuoco indiretto organico della fanteria."
+ efw_mortar_equipment_standard:0 "Mortai"
+ efw_mortar_equipment_standard_short:0 "Mortai"
+
+ efw_antitank_equipment:0 "Armi anticarro portatili"
+ efw_antitank_equipment_desc:0 "Armi anticarro organiche della fanteria, dai primi sistemi portatili alle tattiche e munizioni migliorate rappresentate dai bonus tecnologici."
+ efw_antitank_equipment_standard:0 "Armi anticarro"
+ efw_antitank_equipment_standard_short:0 "Armi AT"
+
+ efw_machinegun_company:0 "Compagnia mitragliatrici"
+ efw_machinegun_company_desc:0 "Compagnia di supporto dedicata al fuoco automatico sostenuto. Consuma Mitragliatrici EFW."
+ efw_mortar_company:0 "Compagnia mortai"
+ efw_mortar_company_desc:0 "Compagnia di supporto per il fuoco indiretto a corto raggio. Consuma Mortai EFW."
+ efw_antitank_company:0 "Compagnia anticarro"
+ efw_antitank_company_desc:0 "Squadre anticarro portatili integrate nella formazione. Consuma Armi anticarro EFW."
+ efw_elite_heavy_weapons_battalion:0 "Battaglione d'elite armi pesanti"
+ efw_elite_heavy_weapons_battalion_desc:0 "Battaglione di linea costoso e logisticamente pesante che combina mitragliatrici, mortai e armi anticarro con fanteria scelta."
+
+ efw_unlock_core_weapons:0 "EFW: Armi di supporto integrate"
+ efw_support_upgrade_2:0 "EFW: Support Weapons II"
+ efw_support_upgrade_3:0 "EFW: Support Weapons III"
+ efw_support_upgrade_4:0 "EFW: Support Weapons IV"
+ efw_at_upgrade_1:0 "EFW: Miglioramenti anticarro I"
+ efw_at_upgrade_2:0 "EFW: Miglioramenti anticarro II"
+
+ efw_test.1.t:0 "EXPANDED FIELD WEAPONS v1.2 ATTIVA!"
+ efw_test.1.d:0 "Support Weapons I sblocca tre linee produttive permanenti: Mitragliatrici, Mortai e Armi anticarro. Le ricerche Support Weapons successive migliorano direttamente le statistiche delle nuove unita."
+ efw_test.1.a:0 "Perfetto."

@@ -1,0 +1,97 @@
+equipments = {
+
+    # =========================================================
+    # MACHINE GUNS - one permanent production model
+    # =========================================================
+    efw_machinegun_equipment = {
+        year = 1918
+        is_archetype = yes
+        is_buildable = no
+        active = no
+        type = { infantry }
+        group_by = archetype
+        interface_category = interface_category_land
+
+        reliability = 0.90
+        defense = 5
+        breakthrough = 2
+        soft_attack = 9
+        hard_attack = 1
+        ap_attack = 4
+        lend_lease_cost = 0.20
+        build_cost_ic = 1.00
+        resources = { steel = 1 }
+    }
+
+    efw_machinegun_equipment_standard = {
+        year = 1918
+        archetype = efw_machinegun_equipment
+        priority = 55
+        visual_level = 0
+    }
+
+
+    # =========================================================
+    # INFANTRY MORTARS - one permanent production model
+    # =========================================================
+    efw_mortar_equipment = {
+        year = 1918
+        is_archetype = yes
+        is_buildable = no
+        active = no
+        type = { infantry artillery }
+        group_by = archetype
+        interface_category = interface_category_land
+
+        reliability = 0.89
+        defense = 2
+        breakthrough = 4
+        soft_attack = 12
+        hard_attack = 2
+        ap_attack = 6
+        lend_lease_cost = 0.28
+        build_cost_ic = 1.20
+        resources = { steel = 1 }
+    }
+
+    efw_mortar_equipment_standard = {
+        year = 1918
+        archetype = efw_mortar_equipment
+        priority = 56
+        visual_level = 0
+    }
+
+
+    # =========================================================
+    # PORTABLE ANTI-TANK WEAPONS - one permanent production model
+    # =========================================================
+    efw_antitank_equipment = {
+        year = 1918
+        is_archetype = yes
+        is_buildable = no
+        active = no
+        type = { infantry anti_tank }
+        group_by = archetype
+        interface_category = interface_category_land
+
+        reliability = 0.87
+        defense = 2
+        breakthrough = 1
+        soft_attack = 2
+        hard_attack = 11
+        ap_attack = 50
+        lend_lease_cost = 0.30
+        build_cost_ic = 1.40
+        resources = {
+            steel = 1
+            tungsten = 1
+        }
+    }
+
+    efw_antitank_equipment_standard = {
+        year = 1918
+        archetype = efw_antitank_equipment
+        priority = 57
+        visual_level = 0
+    }
+}

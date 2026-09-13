@@ -1,0 +1,7 @@
+Copia qui:
+- efw_machinegun.dds
+- efw_mortar.dds
+- efw_hmg.dds   (temporaneamente usato come icona AT)
+
+Se in futuro crei efw_antitank.dds, cambia il percorso nel file:
+interface/efw_equipment_icons.gfx

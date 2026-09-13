@@ -1,0 +1,37 @@
+﻿l_english:
+ EFW_MOD_NAME:0 "Expanded Field Weapons"
+
+ efw_machinegun_equipment:0 "Support Machine Guns"
+ efw_machinegun_equipment_desc:0 "Light, medium and heavy machine guns abstracted into one production category. The equipment remains stable while Support Weapons research improves the formations using it."
+ efw_machinegun_equipment_standard:0 "Machine Guns"
+ efw_machinegun_equipment_standard_short:0 "Machine Guns"
+
+ efw_mortar_equipment:0 "Infantry Mortars"
+ efw_mortar_equipment_desc:0 "Light and medium mortars for organic short-range indirect fire support."
+ efw_mortar_equipment_standard:0 "Mortars"
+ efw_mortar_equipment_standard_short:0 "Mortars"
+
+ efw_antitank_equipment:0 "Portable Anti-Tank Weapons"
+ efw_antitank_equipment_desc:0 "Organic infantry anti-tank weapons. Improved doctrine, ammunition and employment are represented through technology bonuses rather than new production models."
+ efw_antitank_equipment_standard:0 "Anti-Tank Weapons"
+ efw_antitank_equipment_standard_short:0 "AT Weapons"
+
+ efw_machinegun_company:0 "Machine Gun Company"
+ efw_machinegun_company_desc:0 "A support company dedicated to sustained automatic fire. Uses EFW Machine Guns."
+ efw_mortar_company:0 "Mortar Company"
+ efw_mortar_company_desc:0 "A support company providing short-range indirect fire. Uses EFW Mortars."
+ efw_antitank_company:0 "Anti-Tank Company"
+ efw_antitank_company_desc:0 "Portable anti-tank teams integrated into the formation. Uses EFW Anti-Tank Weapons."
+ efw_elite_heavy_weapons_battalion:0 "Elite Heavy Weapons Battalion"
+ efw_elite_heavy_weapons_battalion_desc:0 "An expensive and supply-hungry frontline battalion combining machine guns, mortars and anti-tank weapons with selected infantry."
+
+ efw_unlock_core_weapons:0 "EFW: Integrated Support Weapons"
+ efw_support_upgrade_2:0 "EFW: Support Weapons II"
+ efw_support_upgrade_3:0 "EFW: Support Weapons III"
+ efw_support_upgrade_4:0 "EFW: Support Weapons IV"
+ efw_at_upgrade_1:0 "EFW: Anti-Tank Improvements I"
+ efw_at_upgrade_2:0 "EFW: Anti-Tank Improvements II"
+
+ efw_test.1.t:0 "EXPANDED FIELD WEAPONS v1.2 ACTIVE!"
+ efw_test.1.d:0 "Support Weapons I unlocks three permanent production lines: Machine Guns, Mortars and Anti-Tank Weapons. Later Support Weapons research directly improves the statistics of the new formations."
+ efw_test.1.a:0 "Perfect."
