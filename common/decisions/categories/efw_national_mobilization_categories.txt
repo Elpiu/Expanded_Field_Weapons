@@ -1,0 +1,7 @@
+efw_national_mobilization_category = {
+    visible = {
+        is_ai = no
+    }
+    visible_when_empty = yes
+    priority = 20
+}

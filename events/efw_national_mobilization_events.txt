@@ -1,0 +1,37 @@
+add_namespace = efw_national_mobilization
+
+country_event = {
+    id = efw_national_mobilization.1
+    title = efw_national_mobilization.1.t
+    desc = efw_national_mobilization.1.d
+    is_triggered_only = yes
+
+    option = {
+        name = efw_national_mobilization.1.a
+        add_political_power = -150
+        clr_country_flag = efw_national_bond_active
+
+        set_country_flag = {
+            flag = efw_national_bond_cooldown
+            days = 90
+        }
+    }
+}
+
+country_event = {
+    id = efw_national_mobilization.2
+    title = efw_national_mobilization.2.t
+    desc = efw_national_mobilization.2.d
+    is_triggered_only = yes
+
+    option = {
+        name = efw_national_mobilization.2.a
+        add_political_power = -200
+        clr_country_flag = efw_national_bond_active
+
+        set_country_flag = {
+            flag = efw_national_bond_cooldown
+            days = 90
+        }
+    }
+}

@@ -1,0 +1,41 @@
+ideas = {
+    country = {
+
+        efw_national_investments_idea = {
+            picture = generic_industry
+            modifier = {
+                production_speed_efw_propaganda_center_factor = 0.25
+                production_speed_efw_labor_directorate_factor = 0.25
+                production_speed_buildings_factor = 0.05
+            }
+        }
+
+        efw_coordinated_economy_idea = {
+            picture = generic_industry
+            modifier = {
+                industrial_capacity_factory = 0.10
+                industrial_capacity_dockyard = 0.10
+                production_speed_buildings_factor = 0.10
+                production_speed_efw_research_center_factor = 0.25
+                production_speed_efw_logistics_center_factor = 0.25
+                war_support_factor = 0.05
+                stability_factor = -0.03
+            }
+        }
+
+        efw_national_mobilization_idea = {
+            picture = generic_industry
+            modifier = {
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.12
+                production_speed_buildings_factor = 0.15
+                production_factory_efficiency_gain_factor = 0.10
+                conscription_factor = 0.05
+                production_speed_efw_research_center_factor = 0.25
+                production_speed_efw_logistics_center_factor = 0.25
+                war_support_factor = 0.05
+                stability_factor = -0.05
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+# EFW STRATEGIC MOBILIZATION v0.4 ULTRA SIMPLE
+# All buildings are available from day 1.
+
+buildings = {
+
+    efw_propaganda_center = {
+        base_cost = 1800
+        infrastructure_construction_effect = yes
+        value = 3
+        icon_frame = 16
+        damage_factor = 0.25
+        show_modifier = yes
+
+        country_modifiers = {
+            modifiers = {
+                political_power_factor = 0.02
+                stability_factor = 0.005
+                war_support_factor = 0.005
+            }
+        }
+
+        state_modifiers = {
+            resistance_target = -0.02
+        }
+
+        level_cap = {
+            state_max = 1
+        }
+    }
+
+    efw_labor_directorate = {
+        base_cost = 2400
+        infrastructure_construction_effect = yes
+        value = 4
+        icon_frame = 13
+        damage_factor = 0.35
+        show_modifier = yes
+
+        country_modifiers = {
+            modifiers = {
+                industrial_capacity_factory = 0.02
+                production_speed_buildings_factor = 0.02
+            }
+        }
+
+        state_modifiers = {
+            local_resources_factor = 0.05
+        }
+
+        level_cap = {
+            shares_slots = yes
+            state_max = 1
+        }
+    }
+
+    efw_research_center = {
+        base_cost = 4500
+        per_controlled_building_extra_cost = 1200
+        infrastructure_construction_effect = yes
+        value = 6
+        icon_frame = 15
+        damage_factor = 0.50
+        show_modifier = yes
+
+        country_modifiers = {
+            modifiers = {
+                research_speed_factor = 0.02
+            }
+        }
+
+        level_cap = {
+            shares_slots = yes
+            state_max = 1
+        }
+    }
+
+    efw_logistics_center = {
+        base_cost = 3200
+        infrastructure_construction_effect = yes
+        value = 5
+        icon_frame = 14
+        damage_factor = 0.35
+        show_modifier = yes
+
+        state_modifiers = {
+            local_supplies = 0.25
+            state_production_speed_infrastructure_factor = 0.10
+            state_production_speed_buildings_factor = 0.05
+        }
+
+        level_cap = {
+            state_max = 1
+        }
+    }
+}

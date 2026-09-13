@@ -1,0 +1,151 @@
+# EFW v0.4 ULTRA SIMPLE
+# All decisions visible from day 1.
+# Requirements use direct custom-building count triggers.
+
+efw_national_mobilization_category = {
+
+    efw_launch_national_investments = {
+        visible = {
+            is_ai = no
+        }
+
+        available = {
+            efw_propaganda_center > 1
+
+            NOT = {
+                has_country_flag = efw_national_investments_started
+            }
+        }
+
+        cost = 75
+        fire_only_once = yes
+
+        complete_effect = {
+            add_ideas = efw_national_investments_idea
+            set_country_flag = efw_national_investments_started
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_issue_national_bonds = {
+        visible = {
+            is_ai = no
+        }
+
+        available = {
+            has_country_flag = efw_national_investments_started
+
+            NOT = {
+                has_country_flag = efw_national_bond_active
+            }
+
+            NOT = {
+                has_country_flag = efw_national_bond_cooldown
+            }
+        }
+
+        cost = 0
+        fire_only_once = no
+
+        complete_effect = {
+            add_political_power = 100
+            set_country_flag = efw_national_bond_active
+
+            country_event = {
+                id = efw_national_mobilization.1
+                days = 365
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_issue_long_term_national_loan = {
+        visible = {
+            is_ai = no
+        }
+
+        available = {
+            has_country_flag = efw_national_investments_started
+
+            NOT = {
+                has_country_flag = efw_national_bond_active
+            }
+
+            NOT = {
+                has_country_flag = efw_national_bond_cooldown
+            }
+        }
+
+        cost = 0
+        fire_only_once = no
+
+        complete_effect = {
+            add_political_power = 120
+            set_country_flag = efw_national_bond_active
+
+            country_event = {
+                id = efw_national_mobilization.2
+                days = 730
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_coordinate_national_economy = {
+        visible = {
+            is_ai = no
+        }
+
+        available = {
+            has_country_flag = efw_national_investments_started
+            efw_propaganda_center > 4
+            efw_labor_directorate > 1
+
+            NOT = {
+                has_country_flag = efw_coordinated_economy_started
+            }
+        }
+
+        cost = 100
+        fire_only_once = yes
+
+        complete_effect = {
+            add_ideas = efw_coordinated_economy_idea
+            set_country_flag = efw_coordinated_economy_started
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_mobilize_the_nation = {
+        visible = {
+            is_ai = no
+        }
+
+        available = {
+            has_country_flag = efw_coordinated_economy_started
+            efw_propaganda_center > 4
+            efw_labor_directorate > 2
+            efw_research_center > 1
+            efw_logistics_center > 1
+
+            NOT = {
+                has_country_flag = efw_full_national_mobilization
+            }
+        }
+
+        cost = 150
+        fire_only_once = yes
+
+        complete_effect = {
+            remove_ideas = efw_coordinated_economy_idea
+            add_ideas = efw_national_mobilization_idea
+            set_country_flag = efw_full_national_mobilization
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+}

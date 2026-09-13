@@ -58,3 +58,197 @@
  efw_wooden_air_legacy_unlock:0 "Programma Aereo Improvvisato"
  efw_tin_tank_nsb_unlock:0 "Programma Corazzato Improvvisato"
  efw_tin_tank_legacy_unlock:0 "Programma Corazzato Improvvisato"
+
+ efw_national_mobilization_category:0 "Mobilitazione e Investimenti Nazionali"
+ efw_national_mobilization_category_desc:0 "Una rete di propaganda, organizzazione del lavoro, ricerca e logistica può trasformare gradualmente il paese in una macchina economica e militare pienamente mobilitata."
+
+ efw_propaganda_center:0 "Centro di Propaganda e Mobilitazione"
+ efw_propaganda_center_desc:0 "Un centro amministrativo e propagandistico che coordina campagne politiche, reclutamento civile e mobilitazione dell'opinione pubblica."
+ efw_labor_directorate:0 "Direzione del Lavoro Nazionale"
+ efw_labor_directorate_desc:0 "Un organismo incaricato di coordinare manodopera, cantieri, produzione e sfruttamento delle risorse locali."
+ efw_research_center:0 "Centro Nazionale di Ricerca"
+ efw_research_center_desc:0 "Un complesso dedicato alla ricerca applicata e al coordinamento di istituti, università e laboratori nazionali."
+ efw_logistics_center:0 "Centro Logistico e Difesa Civile"
+ efw_logistics_center_desc:0 "Un centro regionale per scorte, trasporti, manutenzione, infrastrutture e organizzazione della difesa civile."
+
+ modifier_production_speed_efw_propaganda_center_factor:0 "Velocità costruzione Centro di Propaganda"
+ modifier_production_speed_efw_propaganda_center_factor_desc:0 "Modifica la velocità di costruzione dei Centri di Propaganda e Mobilitazione."
+ modifier_state_production_efw_propaganda_center_factor:0 "Velocità locale costruzione Centro di Propaganda"
+ modifier_state_production_efw_propaganda_center_factor_desc:0 "Modifica la velocità locale di costruzione dei Centri di Propaganda."
+ modifier_production_speed_efw_labor_directorate_factor:0 "Velocità costruzione Direzione del Lavoro"
+ modifier_production_speed_efw_labor_directorate_factor_desc:0 "Modifica la velocità di costruzione delle Direzioni del Lavoro Nazionale."
+ modifier_state_production_efw_labor_directorate_factor:0 "Velocità locale costruzione Direzione del Lavoro"
+ modifier_state_production_efw_labor_directorate_factor_desc:0 "Modifica la velocità locale di costruzione delle Direzioni del Lavoro."
+ modifier_production_speed_efw_research_center_factor:0 "Velocità costruzione Centro di Ricerca"
+ modifier_production_speed_efw_research_center_factor_desc:0 "Modifica la velocità di costruzione dei Centri Nazionali di Ricerca."
+ modifier_state_production_efw_research_center_factor:0 "Velocità locale costruzione Centro di Ricerca"
+ modifier_state_production_efw_research_center_factor_desc:0 "Modifica la velocità locale di costruzione dei Centri di Ricerca."
+ modifier_production_speed_efw_logistics_center_factor:0 "Velocità costruzione Centro Logistico"
+ modifier_production_speed_efw_logistics_center_factor_desc:0 "Modifica la velocità di costruzione dei Centri Logistici e di Difesa Civile."
+ modifier_state_production_efw_logistics_center_factor:0 "Velocità locale costruzione Centro Logistico"
+ modifier_state_production_efw_logistics_center_factor_desc:0 "Modifica la velocità locale di costruzione dei Centri Logistici."
+
+ efw_national_investments_idea:0 "Programma di Investimenti Nazionali"
+ efw_national_investments_idea_desc:0 "Lo Stato concentra risorse politiche e amministrative sull'espansione della rete di propaganda e sull'organizzazione nazionale del lavoro."
+ efw_coordinated_economy_idea:0 "Economia Nazionale Coordinata"
+ efw_coordinated_economy_idea_desc:0 "Industria, cantieri e amministrazione vengono coordinati da un piano economico centrale. La maggiore pressione sulla società comporta però un costo in stabilità."
+ efw_research_funding_idea:0 "Finanziamenti alla Ricerca Nazionale"
+ efw_research_funding_idea_desc:0 "Finanziamenti e procedure accelerate permettono di sviluppare più rapidamente una rete nazionale di centri di ricerca."
+ efw_logistics_plan_idea:0 "Piano Nazionale delle Infrastrutture"
+ efw_logistics_plan_idea_desc:0 "Il governo favorisce la creazione di centri logistici regionali e infrastrutture di supporto."
+ efw_national_mobilization_idea:0 "Mobilitazione Nazionale"
+ efw_national_mobilization_idea_desc:0 "L'intero apparato economico e amministrativo della nazione è orientato allo sforzo nazionale. La produzione aumenta sensibilmente, ma la pressione sulla società è considerevole."
+
+ efw_commission_propaganda_center:0 "Costruire un Centro di Propaganda"
+ efw_commission_propaganda_center_desc:0 "Impegnare §Y10.000 lavoratori pubblici§! per avviare la costruzione di un Centro di Propaganda e Mobilitazione nello stato selezionato."
+ efw_commission_labor_directorate:0 "Istituire una Direzione del Lavoro"
+ efw_commission_labor_directorate_desc:0 "Impegnare §Y20.000 lavoratori§! per costruire una Direzione del Lavoro Nazionale nello stato selezionato."
+ efw_commission_research_center:0 "Costruire un Centro Nazionale di Ricerca"
+ efw_commission_research_center_desc:0 "Impegnare §Y15.000 tecnici, ricercatori e personale§! per avviare un nuovo Centro Nazionale di Ricerca."
+ efw_commission_logistics_center:0 "Costruire un Centro Logistico"
+ efw_commission_logistics_center_desc:0 "Impegnare §Y12.000 lavoratori e personale logistico§! per creare un Centro Logistico e di Difesa Civile."
+
+ efw_launch_national_investments:0 "Avviare gli Investimenti Nazionali"
+ efw_launch_national_investments_desc:0 "Con una prima rete di propaganda già operativa, possiamo centralizzare gli investimenti pubblici e accelerare l'espansione del programma nazionale."
+ efw_coordinate_national_economy:0 "Coordinare l'Economia Nazionale"
+ efw_coordinate_national_economy_desc:0 "La rete amministrativa e del lavoro è sufficientemente estesa per coordinare industria, cantieri e mobilitazione economica su scala nazionale."
+ efw_fund_national_research:0 "Finanziare la Ricerca Nazionale"
+ efw_fund_national_research_desc:0 "Stanziare risorse politiche e amministrative per una rete di istituti di ricerca coordinati dallo Stato."
+ efw_launch_national_infrastructure_plan:0 "Piano Nazionale delle Infrastrutture"
+ efw_launch_national_infrastructure_plan_desc:0 "Creare un programma nazionale per scorte, logistica, trasporti e difesa civile."
+ efw_mobilize_the_nation:0 "Mobilitare la Nazione"
+ efw_mobilize_the_nation_desc:0 "Propaganda, lavoro, ricerca e logistica sono ormai sufficientemente sviluppati da consentire una mobilitazione economica nazionale completa."
+
+ efw_issue_national_bonds:0 "Emettere Obbligazioni Nazionali"
+ efw_issue_national_bonds_desc:0 "Otteniamo §G+100 Potere Politico§! immediatamente, ma tra §Y365 giorni§! dovremo ripagare §R150 Potere Politico§!."
+ efw_issue_long_term_national_loan:0 "Grande Prestito Nazionale"
+ efw_issue_long_term_national_loan_desc:0 "Otteniamo §G+120 Potere Politico§! immediatamente. Dopo §Y730 giorni§! dovremo ripagare §R200 Potere Politico§!."
+
+ efw_national_mobilization.1.t:0 "Scadenza delle Obbligazioni Nazionali"
+ efw_national_mobilization.1.d:0 "Le obbligazioni emesse un anno fa sono giunte a scadenza. Il governo deve ora onorare capitale e interessi, riducendo la propria capacità politica."
+ efw_national_mobilization.1.a:0 "Onoreremo i nostri impegni."
+ efw_national_mobilization.2.t:0 "Scadenza del Grande Prestito Nazionale"
+ efw_national_mobilization.2.d:0 "Il prestito nazionale contratto due anni fa è giunto a scadenza. Capitale e interessi devono essere ripagati."
+ efw_national_mobilization.2.a:0 "Il debito sarà ripagato."
+ 
+ efw_national_mobilization_category:0 "Mobilitazione e Investimenti Nazionali"
+ efw_national_mobilization_category_desc:0 "Sviluppare gradualmente una rete nazionale di propaganda, lavoro, ricerca e logistica per mobilitare l'economia del paese."
+
+ # BUILDINGS
+ efw_propaganda_center:0 "Centro di Propaganda e Mobilitazione"
+ efw_propaganda_center_desc:0 "Un centro amministrativo e propagandistico che coordina campagne politiche e mobilitazione dell'opinione pubblica. Ogni centro aumenta il Potere Politico nazionale."
+
+ efw_labor_directorate:0 "Direzione del Lavoro Nazionale"
+ efw_labor_directorate_desc:0 "Un organismo per coordinare manodopera, cantieri, produzione industriale e sfruttamento delle risorse locali."
+
+ efw_research_center:0 "Centro Nazionale di Ricerca"
+ efw_research_center_desc:0 "Un complesso che coordina università, laboratori e istituti di ricerca applicata."
+
+ efw_logistics_center:0 "Centro Logistico e Difesa Civile"
+ efw_logistics_center_desc:0 "Un centro regionale per scorte, trasporti, manutenzione, infrastrutture e difesa civile."
+
+ # BUILDING-SPECIFIC CONSTRUCTION SPEED MODIFIERS
+ modifier_production_speed_efw_propaganda_center_factor:0 "Velocità costruzione Centri di Propaganda"
+ modifier_production_speed_efw_propaganda_center_factor_desc:0 "Modifica la velocità di costruzione dei Centri di Propaganda e Mobilitazione."
+
+ modifier_production_speed_efw_labor_directorate_factor:0 "Velocità costruzione Direzioni del Lavoro"
+ modifier_production_speed_efw_labor_directorate_factor_desc:0 "Modifica la velocità di costruzione delle Direzioni del Lavoro Nazionale."
+
+ modifier_production_speed_efw_research_center_factor:0 "Velocità costruzione Centri di Ricerca"
+ modifier_production_speed_efw_research_center_factor_desc:0 "Modifica la velocità di costruzione dei Centri Nazionali di Ricerca."
+
+ modifier_production_speed_efw_logistics_center_factor:0 "Velocità costruzione Centri Logistici"
+ modifier_production_speed_efw_logistics_center_factor_desc:0 "Modifica la velocità di costruzione dei Centri Logistici e di Difesa Civile."
+
+ # IDEAS
+ efw_national_investments_idea:0 "Programma di Investimenti Nazionali"
+ efw_national_investments_idea_desc:0 "Gli investimenti pubblici vengono concentrati sulla propaganda, sull'organizzazione del lavoro e sull'espansione delle infrastrutture nazionali."
+
+ efw_coordinated_economy_idea:0 "Economia Nazionale Coordinata"
+ efw_coordinated_economy_idea_desc:0 "Industria, cantieri e amministrazione sono coordinati da un programma economico nazionale. La pressione sulla società comporta però un costo in stabilità."
+
+ efw_national_mobilization_idea:0 "Mobilitazione Nazionale"
+ efw_national_mobilization_idea_desc:0 "L'intero apparato economico e amministrativo della nazione è orientato allo sforzo nazionale."
+
+ # DECISIONS
+ efw_launch_national_investments:0 "Avviare gli Investimenti Nazionali"
+ efw_launch_national_investments_desc:0 "Dopo aver costruito almeno §Y2 Centri di Propaganda§!, possiamo spendere §Y75 Potere Politico§! per avviare un programma nazionale di investimenti. Sblocca le §YDirezioni del Lavoro Nazionale§! e accelera la costruzione di entrambi gli edifici."
+
+ efw_coordinate_national_economy:0 "Coordinare l'Economia Nazionale"
+ efw_coordinate_national_economy_desc:0 "Con §Y5 Centri di Propaganda§! e §Y2 Direzioni del Lavoro§!, possiamo coordinare l'economia nazionale. Sblocca §YCentri di Ricerca§! e §YCentri Logistici§! e ne accelera la costruzione."
+
+ efw_mobilize_the_nation:0 "Mobilitare la Nazione"
+ efw_mobilize_the_nation_desc:0 "Con una rete completa di propaganda, lavoro, ricerca e logistica possiamo mobilitare pienamente l'economia nazionale."
+
+ # BONDS
+ efw_issue_national_bonds:0 "Emettere Obbligazioni Nazionali"
+ efw_issue_national_bonds_desc:0 "Otteniamo §G+100 Potere Politico§! immediatamente. Dopo §Y365 giorni§! dovremo ripagare §R150 Potere Politico§!."
+
+ efw_issue_long_term_national_loan:0 "Grande Prestito Nazionale"
+ efw_issue_long_term_national_loan_desc:0 "Otteniamo §G+120 Potere Politico§! immediatamente. Dopo §Y730 giorni§! dovremo ripagare §R200 Potere Politico§!."
+
+ # EVENTS
+ efw_national_mobilization.1.t:0 "Scadenza delle Obbligazioni Nazionali"
+ efw_national_mobilization.1.d:0 "Le obbligazioni emesse un anno fa sono giunte a scadenza. Capitale e interessi devono ora essere ripagati."
+ efw_national_mobilization.1.a:0 "Onoreremo i nostri impegni."
+
+ efw_national_mobilization.2.t:0 "Scadenza del Grande Prestito Nazionale"
+ efw_national_mobilization.2.d:0 "Il grande prestito nazionale contratto due anni fa è giunto a scadenza."
+ efw_national_mobilization.2.a:0 "Il debito sarà ripagato."
+
+ # HIDDEN TECHS (only useful if shown by debug)
+ efw_propaganda_center_unlock:0 "Rete di Propaganda EFW"
+ efw_labor_directorate_unlock:0 "Organizzazione del Lavoro EFW"
+ efw_research_center_unlock:0 "Rete di Ricerca EFW"
+ efw_logistics_center_unlock:0 "Rete Logistica EFW"
+ efw_national_mobilization_category:0 "Mobilitazione e Investimenti Nazionali"
+ efw_national_mobilization_category_desc:0 "Costruire una rete nazionale di propaganda, lavoro, ricerca e logistica per preparare la mobilitazione economica del paese."
+
+ efw_propaganda_center:0 "Centro di Propaganda e Mobilitazione"
+ efw_propaganda_center_desc:0 "Centro amministrativo e propagandistico. Ogni centro fornisce un piccolo aumento al Potere Politico, alla stabilità e al sostegno alla guerra."
+
+ efw_labor_directorate:0 "Direzione del Lavoro Nazionale"
+ efw_labor_directorate_desc:0 "Coordina manodopera, cantieri, produzione industriale e sfruttamento delle risorse locali."
+
+ efw_research_center:0 "Centro Nazionale di Ricerca"
+ efw_research_center_desc:0 "Coordina università, laboratori e istituti di ricerca applicata."
+
+ efw_logistics_center:0 "Centro Logistico e Difesa Civile"
+ efw_logistics_center_desc:0 "Centro regionale per scorte, trasporti, infrastrutture, manutenzione e difesa civile."
+
+ modifier_production_speed_efw_propaganda_center_factor:0 "Velocità costruzione Centri di Propaganda"
+ modifier_production_speed_efw_labor_directorate_factor:0 "Velocità costruzione Direzioni del Lavoro"
+ modifier_production_speed_efw_research_center_factor:0 "Velocità costruzione Centri di Ricerca"
+ modifier_production_speed_efw_logistics_center_factor:0 "Velocità costruzione Centri Logistici"
+
+ efw_national_investments_idea:0 "Programma di Investimenti Nazionali"
+ efw_national_investments_idea_desc:0 "Lo Stato accelera propaganda, organizzazione del lavoro e cantieri nazionali."
+
+ efw_coordinated_economy_idea:0 "Economia Nazionale Coordinata"
+ efw_coordinated_economy_idea_desc:0 "Industria, cantieri e amministrazione vengono coordinati in un unico programma economico nazionale."
+
+ efw_national_mobilization_idea:0 "Mobilitazione Nazionale"
+ efw_national_mobilization_idea_desc:0 "L'intero apparato economico e amministrativo della nazione è orientato allo sforzo nazionale."
+
+ efw_launch_national_investments:0 "Avviare gli Investimenti Nazionali"
+ efw_launch_national_investments_desc:0 "Richiede §Y2 Centri di Propaganda§! e costa §Y75 PP§!.\n\nEffetti: §G+25%§! costruzione Propaganda, §G+25%§! Direzioni del Lavoro e §G+5%§! costruzione generale."
+
+ efw_coordinate_national_economy:0 "Coordinare l'Economia Nazionale"
+ efw_coordinate_national_economy_desc:0 "Richiede Investimenti Nazionali, §Y5 Propaganda§!, §Y2 Direzioni del Lavoro§! e costa §Y100 PP§!."
+
+ efw_mobilize_the_nation:0 "Mobilitare la Nazione"
+ efw_mobilize_the_nation_desc:0 "Richiede Economia Coordinata, §Y5 Propaganda§!, §Y3 Direzioni del Lavoro§!, §Y2 Ricerca§!, §Y2 Logistica§! e costa §Y150 PP§!."
+
+ efw_issue_national_bonds:0 "Emettere Obbligazioni Nazionali"
+ efw_issue_national_bonds_desc:0 "Visibile dall'inizio. Richiede Investimenti Nazionali. §G+100 PP§! subito, §R-150 PP§! dopo §Y365 giorni§!."
+
+ efw_issue_long_term_national_loan:0 "Grande Prestito Nazionale"
+ efw_issue_long_term_national_loan_desc:0 "Visibile dall'inizio. Richiede Investimenti Nazionali. §G+120 PP§! subito, §R-200 PP§! dopo §Y730 giorni§!."
+
+ efw_national_mobilization.1.t:0 "Scadenza delle Obbligazioni Nazionali"
+ efw_national_mobilization.1.d:0 "Le obbligazioni sono giunte a scadenza. Capitale e interessi devono ora essere ripagati."
+ efw_national_mobilization.1.a:0 "Onoreremo i nostri impegni."
+
+ efw_national_mobilization.2.t:0 "Scadenza del Grande Prestito Nazionale"
+ efw_national_mobilization.2.d:0 "Il grande prestito nazionale è giunto a scadenza."
+ efw_national_mobilization.2.a:0 "Il debito sarà ripagato."
