@@ -1,23 +1,155 @@
-# EFW v0.4 ULTRA SIMPLE
-# All decisions visible from day 1.
-# Requirements use direct custom-building count triggers.
+# ============================================================================
+# EFW NATIONAL MOBILIZATION v0.5 FAST START
+# All decisions visible from day 1 to the human player.
+# ============================================================================
 
 efw_national_mobilization_category = {
 
-    efw_launch_national_investments = {
-        visible = {
-            is_ai = no
-        }
+    # ------------------------------------------------------------------------
+    # 25 PP / 200k manpower / 10 trains
+    # +20% construction for 180 days
+    # ------------------------------------------------------------------------
+    efw_early_industrialization_campaign = {
+        visible = { is_ai = no }
 
         available = {
-            efw_propaganda_center > 1
+            has_manpower > 199999
+            num_equipment@train_equipment > 9
+        }
 
-            NOT = {
-                has_country_flag = efw_national_investments_started
+        cost = 25
+        fire_only_once = yes
+
+        complete_effect = {
+            add_manpower = -200000
+
+            add_equipment_to_stockpile = {
+                type = train_equipment
+                amount = -10
+            }
+
+            add_timed_idea = {
+                idea = efw_industrialization_campaign_idea
+                days = 180
+            }
+
+            country_event = {
+                id = efw_national_mobilization.10
+                days = 180
+            }
+
+            country_event = {
+                id = efw_national_mobilization.11
+                days = 730
             }
         }
 
-        cost = 75
+        ai_will_do = { factor = 0 }
+    }
+
+
+    # ------------------------------------------------------------------------
+    # 40 PP / 100k manpower for 1 year / +4 permanent offsite civs
+    # ------------------------------------------------------------------------
+    efw_army_public_works = {
+        visible = { is_ai = no }
+
+        available = {
+            has_manpower > 99999
+        }
+
+        cost = 40
+        fire_only_once = yes
+
+        complete_effect = {
+            add_manpower = -100000
+
+            add_offsite_building = {
+                type = industrial_complex
+                level = 4
+            }
+
+            country_event = {
+                id = efw_national_mobilization.12
+                days = 365
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+
+    # ------------------------------------------------------------------------
+    # 50 PP / 2-year state subsidy program
+    # ------------------------------------------------------------------------
+    efw_state_industry_subsidies = {
+        visible = { is_ai = no }
+
+        available = {
+            NOT = { has_idea = efw_state_industry_subsidies_idea }
+        }
+
+        cost = 50
+        fire_only_once = yes
+
+        complete_effect = {
+            add_timed_idea = {
+                idea = efw_state_industry_subsidies_idea
+                days = 730
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+
+    # ------------------------------------------------------------------------
+    # 25 PP / 5 trains for 1 year
+    # +20% infrastructure / +20% railway / +5% general construction
+    # ------------------------------------------------------------------------
+    efw_national_infrastructure_program = {
+        visible = { is_ai = no }
+
+        available = {
+            num_equipment@train_equipment > 4
+        }
+
+        cost = 25
+        fire_only_once = yes
+
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = train_equipment
+                amount = -5
+            }
+
+            add_timed_idea = {
+                idea = efw_national_infrastructure_program_idea
+                days = 365
+            }
+
+            country_event = {
+                id = efw_national_mobilization.13
+                days = 365
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+
+    # ------------------------------------------------------------------------
+    # NATIONAL INVESTMENTS - 1 Propaganda / 50 PP
+    # ------------------------------------------------------------------------
+    efw_launch_national_investments = {
+        visible = { is_ai = no }
+
+        available = {
+            efw_propaganda_center > 0
+            NOT = { has_country_flag = efw_national_investments_started }
+        }
+
+        cost = 50
         fire_only_once = yes
 
         complete_effect = {
@@ -28,21 +160,17 @@ efw_national_mobilization_category = {
         ai_will_do = { factor = 0 }
     }
 
+
+    # ------------------------------------------------------------------------
+    # BONDS
+    # ------------------------------------------------------------------------
     efw_issue_national_bonds = {
-        visible = {
-            is_ai = no
-        }
+        visible = { is_ai = no }
 
         available = {
             has_country_flag = efw_national_investments_started
-
-            NOT = {
-                has_country_flag = efw_national_bond_active
-            }
-
-            NOT = {
-                has_country_flag = efw_national_bond_cooldown
-            }
+            NOT = { has_country_flag = efw_national_bond_active }
+            NOT = { has_country_flag = efw_national_bond_cooldown }
         }
 
         cost = 0
@@ -51,31 +179,19 @@ efw_national_mobilization_category = {
         complete_effect = {
             add_political_power = 100
             set_country_flag = efw_national_bond_active
-
-            country_event = {
-                id = efw_national_mobilization.1
-                days = 365
-            }
+            country_event = { id = efw_national_mobilization.1 days = 365 }
         }
 
         ai_will_do = { factor = 0 }
     }
 
     efw_issue_long_term_national_loan = {
-        visible = {
-            is_ai = no
-        }
+        visible = { is_ai = no }
 
         available = {
             has_country_flag = efw_national_investments_started
-
-            NOT = {
-                has_country_flag = efw_national_bond_active
-            }
-
-            NOT = {
-                has_country_flag = efw_national_bond_cooldown
-            }
+            NOT = { has_country_flag = efw_national_bond_active }
+            NOT = { has_country_flag = efw_national_bond_cooldown }
         }
 
         cost = 0
@@ -84,29 +200,24 @@ efw_national_mobilization_category = {
         complete_effect = {
             add_political_power = 120
             set_country_flag = efw_national_bond_active
-
-            country_event = {
-                id = efw_national_mobilization.2
-                days = 730
-            }
+            country_event = { id = efw_national_mobilization.2 days = 730 }
         }
 
         ai_will_do = { factor = 0 }
     }
 
+
+    # ------------------------------------------------------------------------
+    # COORDINATED ECONOMY - Investments + 3 Propaganda + 1 Labour / 100 PP
+    # ------------------------------------------------------------------------
     efw_coordinate_national_economy = {
-        visible = {
-            is_ai = no
-        }
+        visible = { is_ai = no }
 
         available = {
             has_country_flag = efw_national_investments_started
-            efw_propaganda_center > 4
-            efw_labor_directorate > 1
-
-            NOT = {
-                has_country_flag = efw_coordinated_economy_started
-            }
+            efw_propaganda_center > 2
+            efw_labor_directorate > 0
+            NOT = { has_country_flag = efw_coordinated_economy_started }
         }
 
         cost = 100
@@ -120,21 +231,20 @@ efw_national_mobilization_category = {
         ai_will_do = { factor = 0 }
     }
 
+
+    # ------------------------------------------------------------------------
+    # FULL MOBILIZATION - 4 Propaganda + 2 Labour + 1 Research + 1 Logistics
+    # ------------------------------------------------------------------------
     efw_mobilize_the_nation = {
-        visible = {
-            is_ai = no
-        }
+        visible = { is_ai = no }
 
         available = {
             has_country_flag = efw_coordinated_economy_started
-            efw_propaganda_center > 4
-            efw_labor_directorate > 2
-            efw_research_center > 1
-            efw_logistics_center > 1
-
-            NOT = {
-                has_country_flag = efw_full_national_mobilization
-            }
+            efw_propaganda_center > 3
+            efw_labor_directorate > 1
+            efw_research_center > 0
+            efw_logistics_center > 0
+            NOT = { has_country_flag = efw_full_national_mobilization }
         }
 
         cost = 150

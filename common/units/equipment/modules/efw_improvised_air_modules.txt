@@ -1,20 +1,91 @@
 equipment_modules = {
 
     efw_wooden_construction = {
+
         category = plane_special_module_small
 
-        add_stats = {
-            build_cost_ic = -3
-            air_defence = -1
-            air_agility = 3
-            maximum_speed = 40
-            air_range = 250
-            weight = -1
+
+        # =====================================================
+        # ROLE
+        # =====================================================
+
+        # Aggiunge il ruolo CAS al velivolo.
+        # Il light_mg_2x continua a dargli il ruolo fighter.
+        add_equipment_type = {
+            cas
         }
 
-        multiply_stats = {
-            reliability = -0.10
+
+        # =====================================================
+        # BASE STATS
+        # =====================================================
+
+        add_stats = {
+
+            # Riduzione fissa del costo.
+            build_cost_ic = -2
+
+            # Struttura in legno: più fragile.
+            air_defence = -1
+
+            # Molto leggero e maneggevole.
+            air_agility = 3
+
+            # Piccolo bonus prestazionale.
+            maximum_speed = 25
+
+            # Buona autonomia per la semplicità del mezzo.
+            air_range = 200
+
+            # Struttura più leggera.
+            weight = -1
+
+            # Bombe leggere / ordigni improvvisati.
+            air_ground_attack = 4
         }
+
+
+        # =====================================================
+        # PERCENTAGE MODIFIERS
+        # =====================================================
+
+        multiply_stats = {
+
+            # MOLTO importante:
+            # -45% costo complessivo del progetto.
+            build_cost_ic = -0.45
+
+            # Costruzione economica = meno affidabile.
+            reliability = -0.15
+
+            # Legno e tela sono poco resistenti.
+            air_defence = -0.10
+        }
+
+
+        # =====================================================
+        # MISSIONS
+        # =====================================================
+
+        allow_mission_type = {
+            cas
+            attack_logistics
+        }
+
+
+        # Bonus specifici quando usato contro bersagli terrestri.
+        mission_type_stats = {
+
+            limit = {
+                cas
+                attack_logistics
+            }
+
+            add_stats = {
+                air_ground_attack = 2
+            }
+        }
+
 
         xp_cost = 0
     }

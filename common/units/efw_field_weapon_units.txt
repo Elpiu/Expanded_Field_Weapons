@@ -4,43 +4,90 @@ sub_units = {
     # SUPPORT: MACHINE GUN COMPANY
     # =========================================================
     efw_machinegun_company = {
+
         sprite = efw_machinegun_company
+
         map_icon_category = infantry
+
+        priority = 2
+        ai_priority = 3
+
         active = no
-        cavalry = no
-        special_forces = no
-        can_be_parachuted = yes
-        affects_speed = no
 
-        priority = 710
-        ai_priority = 225
+        type = {
+            infantry
+            support
+        }
 
-        type = { support infantry }
         group = support
+
         categories = {
-            category_army
+            category_front_line
             category_support_battalions
+            category_army
         }
 
         combat_width = 0
-        max_strength = 8
-        max_organisation = 0
-        default_morale = 0.10
+
+        max_strength = 2
+        max_organisation = 20
+        default_morale = 0.3
+
         manpower = 220
-        training_time = 90
-        weight = 0.10
-        supply_consumption = 0.07
+        training_time = 120
+
+        weight = 0.08
+        supply_consumption = 0.04
+
+        # =====================================================
+        # DEFENSIVE ROLE
+        # =====================================================
+
+        # Simula postazioni MG preparate.
+        entrenchment = 1.5
+
+        # Più valore difensivo dall'equipaggiamento.
+        defense = 0.20
+
+        # MG molto efficaci contro fanteria.
+        soft_attack = 0.15
+
+        # Poco utili nell'attacco mobile.
+        breakthrough = -0.10
+
+
+        # =====================================================
+        # TERRAIN DEFENSIVE BONUSES
+        # =====================================================
+
+        plains = {
+            defence = 0.05
+        }
+
+        forest = {
+            defence = 0.05
+        }
+
+        hills = {
+            defence = 0.05
+        }
+
+        urban = {
+            defence = 0.08
+        }
+
+        fort = {
+            defence = 0.10
+        }
+
+
+        essential = {
+            efw_machinegun_equipment
+        }
 
         need = {
             efw_machinegun_equipment = 30
         }
-
-        # Keep a useful but not extreme portion of equipment stats.
-        defense = -0.20
-        breakthrough = -0.40
-        soft_attack = -0.25
-        hard_attack = -0.50
-        ap_attack = -0.50
     }
 
 

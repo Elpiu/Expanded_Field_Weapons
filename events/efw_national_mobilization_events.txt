@@ -1,5 +1,10 @@
+# ============================================================================
+# EFW NATIONAL MOBILIZATION EVENTS v0.5
+# ============================================================================
+
 add_namespace = efw_national_mobilization
 
+# National bond: +100 now / -150 after 365 days
 country_event = {
     id = efw_national_mobilization.1
     title = efw_national_mobilization.1.t
@@ -10,14 +15,11 @@ country_event = {
         name = efw_national_mobilization.1.a
         add_political_power = -150
         clr_country_flag = efw_national_bond_active
-
-        set_country_flag = {
-            flag = efw_national_bond_cooldown
-            days = 90
-        }
+        set_country_flag = { flag = efw_national_bond_cooldown days = 90 }
     }
 }
 
+# Long loan: +120 now / -200 after 730 days
 country_event = {
     id = efw_national_mobilization.2
     title = efw_national_mobilization.2.t
@@ -28,10 +30,52 @@ country_event = {
         name = efw_national_mobilization.2.a
         add_political_power = -200
         clr_country_flag = efw_national_bond_active
+        set_country_flag = { flag = efw_national_bond_cooldown days = 90 }
+    }
+}
 
-        set_country_flag = {
-            flag = efw_national_bond_cooldown
-            days = 90
+# Return 10 trains after 180 days.
+country_event = {
+    id = efw_national_mobilization.10
+    is_triggered_only = yes
+    hidden = yes
+    immediate = {
+        add_equipment_to_stockpile = {
+            type = train_equipment
+            amount = 10
+        }
+    }
+}
+
+# Return 200k manpower 730 days after industrialization begins.
+country_event = {
+    id = efw_national_mobilization.11
+    is_triggered_only = yes
+    hidden = yes
+    immediate = {
+        add_manpower = 200000
+    }
+}
+
+# Return 100k manpower after one year of army public works.
+country_event = {
+    id = efw_national_mobilization.12
+    is_triggered_only = yes
+    hidden = yes
+    immediate = {
+        add_manpower = 100000
+    }
+}
+
+# Return 5 trains after the infrastructure program.
+country_event = {
+    id = efw_national_mobilization.13
+    is_triggered_only = yes
+    hidden = yes
+    immediate = {
+        add_equipment_to_stockpile = {
+            type = train_equipment
+            amount = 5
         }
     }
 }

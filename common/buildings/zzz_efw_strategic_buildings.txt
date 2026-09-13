@@ -1,10 +1,12 @@
-# EFW STRATEGIC MOBILIZATION v0.4 ULTRA SIMPLE
-# All buildings are available from day 1.
+# ============================================================================
+# EFW STRATEGIC MOBILIZATION v0.5 FAST START
+# All four buildings are available from day 1.
+# ============================================================================
 
 buildings = {
 
     efw_propaganda_center = {
-        base_cost = 1800
+        base_cost = 1000
         infrastructure_construction_effect = yes
         value = 3
         icon_frame = 16
@@ -13,7 +15,7 @@ buildings = {
 
         country_modifiers = {
             modifiers = {
-                political_power_factor = 0.02
+                political_power_factor = 0.03
                 stability_factor = 0.005
                 war_support_factor = 0.005
             }
@@ -29,7 +31,7 @@ buildings = {
     }
 
     efw_labor_directorate = {
-        base_cost = 2400
+        base_cost = 1600
         infrastructure_construction_effect = yes
         value = 4
         icon_frame = 13
@@ -38,8 +40,8 @@ buildings = {
 
         country_modifiers = {
             modifiers = {
-                industrial_capacity_factory = 0.02
-                production_speed_buildings_factor = 0.02
+                industrial_capacity_factory = 0.03
+                production_speed_buildings_factor = 0.03
             }
         }
 
@@ -54,8 +56,8 @@ buildings = {
     }
 
     efw_research_center = {
-        base_cost = 4500
-        per_controlled_building_extra_cost = 1200
+        base_cost = 3000
+        per_controlled_building_extra_cost = 1000
         infrastructure_construction_effect = yes
         value = 6
         icon_frame = 15
@@ -64,7 +66,7 @@ buildings = {
 
         country_modifiers = {
             modifiers = {
-                research_speed_factor = 0.02
+                research_speed_factor = 0.025
             }
         }
 
@@ -75,7 +77,7 @@ buildings = {
     }
 
     efw_logistics_center = {
-        base_cost = 3200
+        base_cost = 2200
         infrastructure_construction_effect = yes
         value = 5
         icon_frame = 14
