@@ -47,3 +47,15 @@
  efw_midget_sub_engine_desc:0 "A tiny propulsion system for extremely small submarines."
  efw_midget_sub_torpedo:0 "Midget Submarine Light Torpedo"
  efw_midget_sub_torpedo_desc:0 "A compact torpedo installation intended for midget submarines."
+
+  efw_wooden_fighter_equipment:0 "Improvised Wooden Fighter"
+ efw_wooden_fighter_equipment_desc:0 "An extremely cheap aircraft built from non-strategic materials and simple components. Easy to manufacture, but slow, fragile and lightly armed."
+
+ efw_tin_tank_equipment:0 "Tin Tank"
+ efw_tin_tank_equipment_desc:0 "A rudimentary light tank protected by thin riveted plates and armed primarily with a machine gun. Cheap to manufacture, but vulnerable to almost any anti-tank weapon."
+
+ efw_wooden_air_bba_unlock:0 "Improvised Aircraft Programme"
+ efw_wooden_air_legacy_unlock:0 "Improvised Aircraft Programme"
+ efw_tin_tank_nsb_unlock:0 "Improvised Armour Programme"
+ efw_tin_tank_legacy_unlock:0 "Improvised Armour Programme"
+

@@ -1,83 +1,157 @@
 # Expanded Field Weapons v1.2.0
-# Uses the same daily synchronization approach confirmed working in v1.1.1.
+# Daily synchronization for the core EFW infantry/support equipment.
+#
+# This file intentionally applies the hidden progression technologies
+# to both human and AI countries.
+#
+# Aircraft and naval improvised variants are handled separately
+# in their dedicated on_action files.
 
 on_actions = {
 
+    # =========================================================
+    # STARTUP
+    # =========================================================
+
     on_startup = {
         effect = {
+
+            # Show the EFW startup confirmation only to human players.
             every_country = {
-                limit = { is_ai = no }
-                country_event = { id = efw_test.1 days = 1 }
+                limit = {
+                    is_ai = no
+                }
+
+                country_event = {
+                    id = efw_test.1
+                    days = 1
+                }
             }
         }
     }
 
+
+    # =========================================================
+    # DAILY TECHNOLOGY SYNCHRONIZATION
+    # =========================================================
+
     on_daily = {
         effect = {
 
-            # Support Weapons I: unlock everything once.
+            # -------------------------------------------------
+            # SUPPORT WEAPONS I
+            # Unlock the permanent EFW equipment and formations.
+            # -------------------------------------------------
+
             if = {
                 limit = {
                     has_tech = support_weapons
-                    NOT = { has_tech = efw_unlock_core_weapons }
+
+                    NOT = {
+                        has_tech = efw_unlock_core_weapons
+                    }
                 }
+
                 set_technology = {
                     efw_unlock_core_weapons = 1
                     popup = no
                 }
             }
 
-            # Later Support Weapons research improves the units, not the equipment.
+
+            # -------------------------------------------------
+            # SUPPORT WEAPONS II
+            # -------------------------------------------------
+
             if = {
                 limit = {
                     has_tech = support_weapons2
-                    NOT = { has_tech = efw_support_upgrade_2 }
+
+                    NOT = {
+                        has_tech = efw_support_upgrade_2
+                    }
                 }
+
                 set_technology = {
                     efw_support_upgrade_2 = 1
                     popup = no
                 }
             }
 
+
+            # -------------------------------------------------
+            # SUPPORT WEAPONS III
+            # -------------------------------------------------
+
             if = {
                 limit = {
                     has_tech = support_weapons3
-                    NOT = { has_tech = efw_support_upgrade_3 }
+
+                    NOT = {
+                        has_tech = efw_support_upgrade_3
+                    }
                 }
+
                 set_technology = {
                     efw_support_upgrade_3 = 1
                     popup = no
                 }
             }
 
+
+            # -------------------------------------------------
+            # SUPPORT WEAPONS IV
+            # -------------------------------------------------
+
             if = {
                 limit = {
                     has_tech = support_weapons4
-                    NOT = { has_tech = efw_support_upgrade_4 }
+
+                    NOT = {
+                        has_tech = efw_support_upgrade_4
+                    }
                 }
+
                 set_technology = {
                     efw_support_upgrade_4 = 1
                     popup = no
                 }
             }
 
-            # Vanilla infantry AT research gives focused bonuses to AT formations.
+
+            # -------------------------------------------------
+            # VANILLA INFANTRY AT I
+            # -------------------------------------------------
+
             if = {
                 limit = {
                     has_tech = infantry_at
-                    NOT = { has_tech = efw_at_upgrade_1 }
+
+                    NOT = {
+                        has_tech = efw_at_upgrade_1
+                    }
                 }
+
                 set_technology = {
                     efw_at_upgrade_1 = 1
                     popup = no
                 }
             }
 
+
+            # -------------------------------------------------
+            # VANILLA INFANTRY AT II
+            # -------------------------------------------------
+
             if = {
                 limit = {
                     has_tech = infantry_at2
-                    NOT = { has_tech = efw_at_upgrade_2 }
+
+                    NOT = {
+                        has_tech = efw_at_upgrade_2
+                    }
                 }
+
                 set_technology = {
                     efw_at_upgrade_2 = 1
                     popup = no

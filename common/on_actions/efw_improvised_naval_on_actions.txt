@@ -1,98 +1,177 @@
-# EFW Naval Improvised v0.4 EASY
+# EFW Naval Improvised v0.5 SAFE
 #
-# This deliberately uses VANILLA hull types:
+# Uses VANILLA naval hulls:
+#
 #   ship_hull_light_1
 #   ship_hull_submarine_1
 #
-# create_equipment_variant with those hulls is known to work in the user's game.
+# The designs are created ONLY for human players.
+#
+# Initialization happens in two stages:
+#
+# DAY 1:
+#   - unlock vanilla early hull technologies
+#   - unlock EFW naval modules
+#
+# DAY 2:
+#   - create the two EFW naval variants
+#
+# This prevents create_equipment_variant from attempting to
+# auto-unlock a chassis while the design is being created.
 
 on_actions = {
 
     on_daily = {
         effect = {
 
-            # Unlock our primitive modules.
+            # =====================================================
+            # HUMAN PLAYERS ONLY
+            # =====================================================
+
             if = {
                 limit = {
-                    NOT = {
-                        has_tech = efw_improvised_naval_modules_unlock
+                    is_ai = no
+                }
+
+
+                # =================================================
+                # STAGE 1
+                # Unlock chassis + EFW modules.
+                #
+                # Because this is an IF / ELSE_IF chain,
+                # the designs will NOT be created during
+                # the same daily tick.
+                # =================================================
+
+                if = {
+                    limit = {
+
+                        NOT = {
+                            has_country_flag = efw_improvised_naval_chassis_ready
+                        }
                     }
-                }
-
-                set_technology = {
-                    efw_improvised_naval_modules_unlock = 1
-                    popup = no
-                }
-            }
 
 
-            # Create the two variants exactly once.
-            if = {
-                limit = {
-                    has_tech = efw_improvised_naval_modules_unlock
+                    # ---------------------------------------------
+                    # VANILLA EARLY NAVAL HULLS
+                    # ---------------------------------------------
 
-                    NOT = {
-                        has_country_flag = efw_improvised_naval_v04_created
+                    set_technology = {
+                        early_ship_hull_light = 1
+                        early_ship_hull_submarine = 1
+
+                        popup = no
                     }
-                }
 
-                # =====================================================
-                # IMPROVISED MOTORBOAT
-                # Vanilla destroyer hull + EFW low-cost modules.
-                # =====================================================
-                create_equipment_variant = {
-                    name = "EFW Improvised Motorboat"
 
-                    type = ship_hull_light_1
+                    # ---------------------------------------------
+                    # EFW PRIMITIVE NAVAL MODULES
+                    # ---------------------------------------------
 
-                    parent_version = 0
-                    show_position = no
-                    obsolete = no
-                    allow_without_tech = yes
-                    role_icon_index = auto
+                    set_technology = {
+                        efw_improvised_naval_modules_unlock = 1
 
-                    icon = "GFX_efw_motorboat_medium"
-
-                    modules = {
-                        fixed_ship_battery_slot = efw_motorboat_machinegun
-                        fixed_ship_anti_air_slot = empty
-                        fixed_ship_fire_control_system_slot = empty
-                        fixed_ship_radar_slot = empty
-                        fixed_ship_engine_slot = efw_motorboat_engine
-                        fixed_ship_torpedo_slot = empty
-                        mid_1_custom_slot = empty
-                        rear_1_custom_slot = empty
+                        popup = no
                     }
+
+
+                    set_country_flag = efw_improvised_naval_chassis_ready
                 }
 
 
-                # =====================================================
-                # ONE-MAN MIDGET SUBMARINE
-                # Vanilla submarine hull + tiny EFW engine and torpedoes.
-                # Two tiny torpedo mounts give it a real offensive niche.
-                # =====================================================
-                create_equipment_variant = {
-                    name = "EFW One-Man Midget Submarine"
+                # =================================================
+                # STAGE 2
+                # Create the actual designs on the NEXT daily tick.
+                # =================================================
 
-                    type = ship_hull_submarine_1
+                else_if = {
+                    limit = {
 
-                    parent_version = 0
-                    show_position = no
-                    obsolete = no
-                    allow_without_tech = yes
-                    role_icon_index = auto
-
-                    icon = "GFX_efw_midget_sub_medium"
-
-                    modules = {
-                        fixed_ship_torpedo_slot = efw_midget_sub_torpedo
-                        fixed_ship_engine_slot = efw_midget_sub_engine
-                        rear_1_custom_slot = efw_midget_sub_torpedo
+                        NOT = {
+                            has_country_flag = efw_improvised_naval_v04_created
+                        }
                     }
+
+
+                    # =================================================
+                    # IMPROVISED MOTORBOAT
+                    # =================================================
+
+                    create_equipment_variant = {
+
+                        name = "EFW Improvised Motorboat"
+
+                        type = ship_hull_light_1
+
+                        parent_version = 0
+
+                        show_position = no
+                        obsolete = no
+
+                        allow_without_tech = yes
+
+                        role_icon_index = auto
+
+                        icon = "GFX_efw_motorboat_medium"
+
+
+                        modules = {
+
+                            fixed_ship_battery_slot = efw_motorboat_machinegun
+
+                            fixed_ship_anti_air_slot = empty
+
+                            fixed_ship_fire_control_system_slot = empty
+
+                            fixed_ship_radar_slot = empty
+
+                            fixed_ship_engine_slot = efw_motorboat_engine
+
+                            fixed_ship_torpedo_slot = empty
+
+                            mid_1_custom_slot = empty
+
+                            rear_1_custom_slot = empty
+                        }
+                    }
+
+
+                    # =================================================
+                    # ONE-MAN MIDGET SUBMARINE
+                    # =================================================
+
+                    create_equipment_variant = {
+
+                        name = "EFW One-Man Midget Submarine"
+
+                        type = ship_hull_submarine_1
+
+                        parent_version = 0
+
+                        show_position = no
+                        obsolete = no
+
+                        allow_without_tech = yes
+
+                        role_icon_index = auto
+
+                        icon = "GFX_efw_midget_sub_medium"
+
+
+                        modules = {
+
+                            fixed_ship_torpedo_slot = efw_midget_sub_torpedo
+
+                            fixed_ship_engine_slot = efw_midget_sub_engine
+
+                            rear_1_custom_slot = efw_midget_sub_torpedo
+                        }
+                    }
+
+
+                    # Prevent the designs from being created again.
+                    set_country_flag = efw_improvised_naval_v04_created
                 }
-
-
-                set_country_flag = efw_improvised_naval_v04_created
             }
         }
     }

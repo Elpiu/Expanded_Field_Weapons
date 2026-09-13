@@ -1,0 +1,40 @@
+spriteTypes = {
+
+    # Wooden aircraft
+    spriteType = {
+        name = "GFX_efw_wooden_plane"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_wooden_plane.dds"
+    }
+
+    spriteType = {
+        name = "GFX_EMI_efw_wooden_construction"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_wooden_plane.dds"
+    }
+
+    spriteType = {
+        name = "GFX_efw_wooden_plane_medium"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_wooden_plane.dds"
+    }
+
+
+    # Tin tank
+    spriteType = {
+        name = "GFX_efw_tin_tank_equipment"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_tin_tank.dds"
+    }
+
+    spriteType = {
+        name = "GFX_efw_tin_tank_equipment_medium"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_tin_tank.dds"
+    }
+
+    spriteType = {
+        name = "GFX_efw_tin_tank"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_tin_tank.dds"
+    }
+
+    spriteType = {
+        name = "GFX_efw_tin_tank_medium"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_tin_tank.dds"
+    }
+}

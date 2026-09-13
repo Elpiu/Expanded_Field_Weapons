@@ -47,3 +47,14 @@
  efw_midget_sub_engine_desc:0 "Un piccolo sistema propulsivo per sommergibili di dimensioni minime."
  efw_midget_sub_torpedo:0 "Siluro Leggero per Mini-Sub"
  efw_midget_sub_torpedo_desc:0 "Un impianto silurante compatto destinato a sommergibili tascabili."
+
+ efw_wooden_fighter_equipment:0 "Caccia in Legno Improvvisato"
+ efw_wooden_fighter_equipment_desc:0 "Un velivolo estremamente economico costruito con materiali non strategici e componenti semplici. Facile da produrre, ma lento, fragile e scarsamente armato."
+
+ efw_tin_tank_equipment:0 "Carro Armato in Latta"
+ efw_tin_tank_equipment_desc:0 "Un carro leggerissimo e rudimentale protetto da sottili piastre rivettate e armato principalmente con una mitragliatrice. Economico, ma vulnerabile praticamente a qualsiasi arma anticarro."
+
+ efw_wooden_air_bba_unlock:0 "Programma Aereo Improvvisato"
+ efw_wooden_air_legacy_unlock:0 "Programma Aereo Improvvisato"
+ efw_tin_tank_nsb_unlock:0 "Programma Corazzato Improvvisato"
+ efw_tin_tank_legacy_unlock:0 "Programma Corazzato Improvvisato"

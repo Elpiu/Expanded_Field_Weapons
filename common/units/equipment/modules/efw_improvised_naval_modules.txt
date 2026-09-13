@@ -17,16 +17,15 @@ equipment_modules = {
         sfx = sfx_ui_sd_module_engine
 
         add_stats = {
-            naval_speed = 4        # Raddoppiato (era 2)
+            naval_speed = 4      
             fuel_consumption = 1
             build_cost_ic = 5
-            manpower = -490        # Riduce l'equipaggio totale a 10
         }
 
         multiply_stats = {
-            build_cost_ic = -0.70    # Modificato da -0.55 per un ulteriore -30% sui costi
+            build_cost_ic = -0.70    
             max_strength = -0.70
-            naval_range = -0.20      # Riduzione portata attenuata per estendere l'autonomia
+            naval_range = -0.20     
             reliability = -0.20
             surface_visibility = -0.30
         }
@@ -76,16 +75,15 @@ equipment_modules = {
         sfx = sfx_ui_sd_module_engine
 
         add_stats = {
-            naval_speed = 2        # Raddoppiato (era 1)
+            naval_speed = 2       
             fuel_consumption = 0.25
             build_cost_ic = 5
-            manpower = -98         # Riduce l'equipaggio totale a 2
         }
 
         multiply_stats = {
-            build_cost_ic = -0.755   # Modificato da -0.65 per renderlo il 30% più economico
+            build_cost_ic = -0.755 
             max_strength = -0.80
-            naval_range = -0.30      # Portata aumentata (taglio ridotto rispetto a -0.75)
+            naval_range = -0.30      
             reliability = -0.30
             surface_visibility = -0.55
             sub_visibility = -0.35
