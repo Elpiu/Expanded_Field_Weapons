@@ -283,3 +283,7 @@
  efw_national_mobilization.2.t:0 "The Great National Loan Matures"
  efw_national_mobilization.2.d:0 "The great national loan has matured."
  efw_national_mobilization.2.a:0 "The debt will be repaid."
+
+ efw_pipe_gun_rifle:0 "Pipe-Gun Rifle"
+ efw_pipe_gun_rifle_short:0 "Pipe Rifle"
+ efw_pipe_gun_rifle_desc:0 "A crude improvised weapon assembled rapidly from hydraulic pipe and salvaged components. Rudimentary, unreliable and lacking any industrial standard, but capable of being produced with almost no resources."

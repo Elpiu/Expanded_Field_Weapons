@@ -34,7 +34,7 @@ equipments = {
 
         defense = 2
         breakthrough = 8
-        hardness = 0.50
+        hardness = 1
         armor_value = 4
 
         soft_attack = 5
@@ -43,12 +43,12 @@ equipments = {
         air_attack = 0
 
         lend_lease_cost = 4
-        build_cost_ic = 3.5
+        build_cost_ic = 3
 
         resources = {
             steel = 1
         }
 
-        fuel_consumption = 0.5
+        fuel_consumption = 0.4
     }
 }

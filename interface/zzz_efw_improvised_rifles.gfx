@@ -1,0 +1,7 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_efw_pipe_gun_rifle_medium"
+        texturefile = "gfx/interface/equipment/efw/efw_pipe_gun_rifle.dds"
+    }
+}

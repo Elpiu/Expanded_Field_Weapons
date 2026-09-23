@@ -313,3 +313,7 @@
  efw_national_mobilization.2.t:0 "Scadenza del Grande Prestito Nazionale"
  efw_national_mobilization.2.d:0 "Il grande prestito nazionale è giunto a scadenza."
  efw_national_mobilization.2.a:0 "Il debito sarà ripagato."
+
+ efw_pipe_gun_rifle:0 "Fucile artigianale a tubo"
+ efw_pipe_gun_rifle_short:0 "Fucile a tubo"
+ efw_pipe_gun_rifle_desc:0 "Un'arma grezza e improvvisata, assemblata rapidamente usando tubi idraulici e componenti di recupero. Rudimentale, inaffidabile e priva di qualsiasi standard industriale, ma capace di essere prodotta con risorse quasi inesistenti."

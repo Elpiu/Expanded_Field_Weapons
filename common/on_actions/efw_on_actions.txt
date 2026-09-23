@@ -16,6 +16,11 @@ on_actions = {
     on_startup = {
         effect = {
 
+            # Sblocca la Pipe Gun per tutte le nazioni del gioco
+            every_country = {
+                enable_equipments = { efw_pipe_gun_rifle }
+            }
+
             # Show the EFW startup confirmation only to human players.
             every_country = {
                 limit = {

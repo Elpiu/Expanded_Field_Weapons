@@ -1,0 +1,31 @@
+equipments = {
+
+    efw_pipe_gun_rifle = {
+        year = 1918
+
+        # FONDAMENTALE: Dice al gioco a quale famiglia di armi appartiene
+        archetype = infantry_equipment
+        priority = 1
+        visual_level = 0
+
+        # Rende l'arma attiva e producibile immediatamente fin dall'inizio
+        active = yes
+
+        # GFX: cercherà GFX_efw_pipe_gun_rifle_medium
+        picture = efw_pipe_gun_rifle
+
+        # Statistiche industriali ultra-economiche
+        build_cost_ic = 0.05
+        resources = {
+            steel = 0   # 1 acciaio per ogni fabbrica assegnata alla linea
+        }
+
+        # --- STATISTICHE COMBATTIMENTO ---
+        soft_attack = 4.0     # Danno alla fanteria nemica
+        hard_attack = 0.8     # Danno leggero contro mezzi/blindati
+        defense = 16.0        # Ottima per tenere le posizioni
+        breakthrough = 2.0    # Basso, ideale per restare in trincea
+        reliability = 0.50    # Molto grezza/inaffidabile (50% reliability)
+    }
+
+}
