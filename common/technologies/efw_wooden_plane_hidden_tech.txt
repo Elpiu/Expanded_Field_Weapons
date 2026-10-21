@@ -2,19 +2,15 @@ technologies = {
 
     efw_wooden_construction_unlock = {
 
-        research_cost = 1
-        start_year = 1918
-
-        allow = {
-            always = no
-        }
-
         enable_equipment_modules = {
-            efw_wooden_construction
+            efw_wooden_boost_airframe
+            efw_improvised_drop_tank
+            efw_multirole_combat_rack
+            efw_cast_iron_stove_armor
+            efw_bazooka_charlie_tubes
         }
 
-        ai_will_do = {
-            factor = 0
-        }
+        research_cost = 1
+        start_year = 1936
     }
-}
+} 

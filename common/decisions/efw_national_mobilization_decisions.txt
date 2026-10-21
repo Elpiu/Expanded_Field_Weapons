@@ -1,77 +1,64 @@
 # ============================================================================
-# EFW NATIONAL MOBILIZATION v0.5 FAST START
-# All decisions visible from day 1 to the human player.
+# EXPANDED FIELD WEAPONS (EFW) - COMPACT MOBILIZATION SUITE
+# Exactly 6 streamlined master decisions available from day 1.
 # ============================================================================
 
 efw_national_mobilization_category = {
 
     # ------------------------------------------------------------------------
-    # 25 PP / 200k manpower / 10 trains
-    # +20% construction for 180 days
+    # 1A. PIANO INDUSTRIALE: FASE I - FONDAZIONI E RILANCIO
+    # Costo: 35 PP / 50k manp / 5 treni / 200 camion
+    # Effetto: Subito +8 Civili e +2 Militari offsite, +15% velocita costruzione per 180 gg
+    # Sblocca la Fase II al termine dei 180 giorni.
     # ------------------------------------------------------------------------
-    efw_early_industrialization_campaign = {
-        visible = { is_ai = no }
-
-        available = {
-            has_manpower > 199999
-            num_equipment@train_equipment > 9
+    efw_industrial_plan_phase_1 = {
+        visible = {
+            is_ai = no
+            NOT = { has_country_flag = efw_industrial_phase_1_done }
         }
 
-        cost = 25
+        available = {
+            has_manpower > 49999
+            num_equipment@train_equipment > 4
+            num_equipment@motorized_equipment > 199
+            NOT = { has_country_flag = efw_industrial_phase_1_started }
+        }
+
+        cost = 35
         fire_only_once = yes
 
         complete_effect = {
-            add_manpower = -200000
+            set_country_flag = efw_industrial_phase_1_started
+            add_manpower = -50000
 
             add_equipment_to_stockpile = {
                 type = train_equipment
-                amount = -10
+                amount = -5
             }
 
-            add_timed_idea = {
-                idea = efw_industrialization_campaign_idea
-                days = 180
+            add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = -200
             }
-
-            country_event = {
-                id = efw_national_mobilization.10
-                days = 180
-            }
-
-            country_event = {
-                id = efw_national_mobilization.11
-                days = 730
-            }
-        }
-
-        ai_will_do = { factor = 0 }
-    }
-
-
-    # ------------------------------------------------------------------------
-    # 40 PP / 100k manpower for 1 year / +4 permanent offsite civs
-    # ------------------------------------------------------------------------
-    efw_army_public_works = {
-        visible = { is_ai = no }
-
-        available = {
-            has_manpower > 99999
-        }
-
-        cost = 40
-        fire_only_once = yes
-
-        complete_effect = {
-            add_manpower = -100000
 
             add_offsite_building = {
                 type = industrial_complex
-                level = 4
+                level = 8
+            }
+
+            add_offsite_building = {
+                type = arms_factory
+                level = 2
+            }
+
+            add_timed_idea = {
+                idea = efw_industrial_phase_1_idea
+                days = 180
             }
 
             country_event = {
-                id = efw_national_mobilization.12
-                days = 365
+                id = efw_national_mobilization.30
+                days = 180
             }
         }
 
@@ -80,22 +67,127 @@ efw_national_mobilization_category = {
 
 
     # ------------------------------------------------------------------------
-    # 50 PP / 2-year state subsidy program
+    # 1B. PIANO INDUSTRIALE: FASE II - CONSOLIDAMENTO POLO PESANTE
+    # Sostituisce la Fase I al giorno 180.
+    # Costo: 35 PP / 50k manp / 5 treni / 200 camion
+    # Effetto: Subito +7 Civili e +4 Militari offsite.
+    # A 365 giorni dal via restituisce tutti i 10 treni, 400 camion e 50k manp.
     # ------------------------------------------------------------------------
-    efw_state_industry_subsidies = {
+    efw_industrial_plan_phase_2 = {
+        visible = {
+            is_ai = no
+            has_country_flag = efw_industrial_phase_1_done
+        }
+
+        available = {
+            has_manpower > 49999
+            num_equipment@train_equipment > 4
+            num_equipment@motorized_equipment > 199
+            NOT = { has_country_flag = efw_industrial_phase_2_started }
+        }
+
+        cost = 35
+        fire_only_once = yes
+
+        complete_effect = {
+            set_country_flag = efw_industrial_phase_2_started
+            add_manpower = -50000
+
+            add_equipment_to_stockpile = {
+                type = train_equipment
+                amount = -5
+            }
+
+            add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = -200
+            }
+
+            add_offsite_building = {
+                type = industrial_complex
+                level = 7
+            }
+
+            add_offsite_building = {
+                type = arms_factory
+                level = 4
+            }
+
+            add_timed_idea = {
+                idea = efw_industrial_phase_2_idea
+                days = 180
+            }
+
+            country_event = {
+                id = efw_national_mobilization.31
+                days = 180
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+
+    # ------------------------------------------------------------------------
+    # 2. GRANDI OPERE E PIANI REGOLATORI NAZIONALI
+    # Costo: 50 PP / 60k manp / 15 treni / 500 camion
+    # Effetto: +1 Infrastruttura (se < 5) e +2 Slot Fabbrica sui Core metropolitani.
+    # +30% Velocita di costruzione per 540 giorni. Risorse restituite alla fine.
+    # ------------------------------------------------------------------------
+    efw_grand_public_works = {
         visible = { is_ai = no }
 
         available = {
-            NOT = { has_idea = efw_state_industry_subsidies_idea }
+            has_manpower > 59999
+            num_equipment@train_equipment > 14
+            num_equipment@motorized_equipment > 499
+            NOT = { has_country_flag = efw_grand_works_active }
         }
 
         cost = 50
         fire_only_once = yes
 
         complete_effect = {
+            set_country_flag = efw_grand_works_active
+            add_manpower = -60000
+
+            add_equipment_to_stockpile = {
+                type = train_equipment
+                amount = -15
+            }
+
+            add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = -500
+            }
+
+            every_owned_state = {
+                limit = {
+                    is_core_of = ROOT
+                    infrastructure < 5
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+
+            every_owned_state = {
+                limit = {
+                    is_core_of = ROOT
+                }
+                add_extra_state_shared_building_slots = 2
+            }
+
             add_timed_idea = {
-                idea = efw_state_industry_subsidies_idea
-                days = 730
+                idea = efw_grand_works_idea
+                days = 540
+            }
+
+            country_event = {
+                id = efw_national_mobilization.32
+                days = 540
             }
         }
 
@@ -104,17 +196,21 @@ efw_national_mobilization_category = {
 
 
     # ------------------------------------------------------------------------
-    # 25 PP / 5 trains for 1 year
-    # +20% infrastructure / +20% railway / +5% general construction
+    # 3. PATTO SOCIALE E PRODUZIONE DIFFUSA (Famiglia + Botteghe)
+    # Costo: 40 PP / 5 treni / 300 camion
+    # Durata: 3 Anni (1095 giorni)
+    # +500 manpower/sett., +25% pop growth, +6% ricerca, +8% efficienza max, +10% mil output
     # ------------------------------------------------------------------------
-    efw_national_infrastructure_program = {
+    efw_social_welfare_and_workshops = {
         visible = { is_ai = no }
 
         available = {
             num_equipment@train_equipment > 4
+            num_equipment@motorized_equipment > 299
+            NOT = { has_idea = efw_social_welfare_workshops_idea }
         }
 
-        cost = 25
+        cost = 40
         fire_only_once = yes
 
         complete_effect = {
@@ -123,14 +219,14 @@ efw_national_mobilization_category = {
                 amount = -5
             }
 
-            add_timed_idea = {
-                idea = efw_national_infrastructure_program_idea
-                days = 365
+            add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = -300
             }
 
-            country_event = {
-                id = efw_national_mobilization.13
-                days = 365
+            add_timed_idea = {
+                idea = efw_social_welfare_workshops_idea
+                days = 1095
             }
         }
 
@@ -139,22 +235,40 @@ efw_national_mobilization_category = {
 
 
     # ------------------------------------------------------------------------
-    # NATIONAL INVESTMENTS - 1 Propaganda / 50 PP
+    # 4. PROGRAMMA NAVALE STRAORDINARIO
+    # Costo: 40 PP / 50k manp / 200 camion
+    # Effetto: +6 Cantieri Navali offsite permanenti. Mezzi e uomini rimborsati dopo 1 anno.
     # ------------------------------------------------------------------------
-    efw_launch_national_investments = {
+    efw_emergency_naval_program = {
         visible = { is_ai = no }
 
         available = {
-            efw_propaganda_center > 0
-            NOT = { has_country_flag = efw_national_investments_started }
+            has_manpower > 49999
+            num_equipment@motorized_equipment > 199
+            NOT = { has_country_flag = efw_naval_program_active }
         }
 
-        cost = 50
+        cost = 40
         fire_only_once = yes
 
         complete_effect = {
-            add_ideas = efw_national_investments_idea
-            set_country_flag = efw_national_investments_started
+            set_country_flag = efw_naval_program_active
+            add_manpower = -50000
+
+            add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = -200
+            }
+
+            add_offsite_building = {
+                type = dockyard
+                level = 6
+            }
+
+            country_event = {
+                id = efw_national_mobilization.33
+                days = 365
+            }
         }
 
         ai_will_do = { factor = 0 }
@@ -162,34 +276,13 @@ efw_national_mobilization_category = {
 
 
     # ------------------------------------------------------------------------
-    # BONDS
+    # 5. EMISSIONE OBBLIGAZIONI STATALI (Unica decisione a rotazione)
+    # Effetto: +120 PP immediati. Rimborso: -180 PP dopo 365 giorni. Cooldown 90 giorni.
     # ------------------------------------------------------------------------
     efw_issue_national_bonds = {
         visible = { is_ai = no }
 
         available = {
-            has_country_flag = efw_national_investments_started
-            NOT = { has_country_flag = efw_national_bond_active }
-            NOT = { has_country_flag = efw_national_bond_cooldown }
-        }
-
-        cost = 0
-        fire_only_once = no
-
-        complete_effect = {
-            add_political_power = 100
-            set_country_flag = efw_national_bond_active
-            country_event = { id = efw_national_mobilization.1 days = 365 }
-        }
-
-        ai_will_do = { factor = 0 }
-    }
-
-    efw_issue_long_term_national_loan = {
-        visible = { is_ai = no }
-
-        available = {
-            has_country_flag = efw_national_investments_started
             NOT = { has_country_flag = efw_national_bond_active }
             NOT = { has_country_flag = efw_national_bond_cooldown }
         }
@@ -200,7 +293,10 @@ efw_national_mobilization_category = {
         complete_effect = {
             add_political_power = 120
             set_country_flag = efw_national_bond_active
-            country_event = { id = efw_national_mobilization.2 days = 730 }
+            country_event = {
+                id = efw_national_mobilization.34
+                days = 365
+            }
         }
 
         ai_will_do = { factor = 0 }
@@ -208,19 +304,21 @@ efw_national_mobilization_category = {
 
 
     # ------------------------------------------------------------------------
-    # COORDINATED ECONOMY - Investments + 3 Propaganda + 1 Labour / 100 PP
+    # 6A. COORDINAMENTO ISTITUZIONALE: ECONOMIA COORDINATA (Livello 1)
+    # Richiede: 2 Centri Propaganda e 1 Direzione Lavoro
     # ------------------------------------------------------------------------
     efw_coordinate_national_economy = {
-        visible = { is_ai = no }
-
-        available = {
-            has_country_flag = efw_national_investments_started
-            efw_propaganda_center > 2
-            efw_labor_directorate > 0
+        visible = {
+            is_ai = no
             NOT = { has_country_flag = efw_coordinated_economy_started }
         }
 
-        cost = 100
+        available = {
+            efw_propaganda_center > 1
+            efw_labor_directorate > 0
+        }
+
+        cost = 75
         fire_only_once = yes
 
         complete_effect = {
@@ -233,13 +331,17 @@ efw_national_mobilization_category = {
 
 
     # ------------------------------------------------------------------------
-    # FULL MOBILIZATION - 4 Propaganda + 2 Labour + 1 Research + 1 Logistics
+    # 6B. COORDINAMENTO ISTITUZIONALE: MOBILITAZIONE TOTALE (Livello 2)
+    # Sostituisce il Livello 1 una volta completata la rete strategica.
+    # Richiede: 4 Propaganda, 2 Lavoro, 1 Ricerca, 1 Logistica
     # ------------------------------------------------------------------------
     efw_mobilize_the_nation = {
-        visible = { is_ai = no }
+        visible = {
+            is_ai = no
+            has_country_flag = efw_coordinated_economy_started
+        }
 
         available = {
-            has_country_flag = efw_coordinated_economy_started
             efw_propaganda_center > 3
             efw_labor_directorate > 1
             efw_research_center > 0
@@ -247,7 +349,7 @@ efw_national_mobilization_category = {
             NOT = { has_country_flag = efw_full_national_mobilization }
         }
 
-        cost = 150
+        cost = 100
         fire_only_once = yes
 
         complete_effect = {

@@ -1,22 +1,56 @@
-# ============================================================================
-# EFW NATIONAL MOBILIZATION - IDEAS v0.5 FAST START
-# ============================================================================
-
 ideas = {
     country = {
 
-        efw_national_investments_idea = {
-            picture = generic_industry
+        # Fase I Industriale (180 giorni)
+        efw_industrial_phase_1_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+
             modifier = {
-                production_speed_efw_propaganda_center_factor = 0.40
-                production_speed_efw_labor_directorate_factor = 0.40
-                production_speed_buildings_factor = 0.10
-                industrial_capacity_factory = 0.05
+                production_speed_buildings_factor = 0.15
             }
         }
 
+        # Fase II Industriale (180 giorni)
+        efw_industrial_phase_2_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+                production_speed_buildings_factor = 0.15
+            }
+        }
+
+        # Grandi Opere (540 giorni)
+        efw_grand_works_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+                production_speed_buildings_factor = 0.30
+            }
+        }
+
+        # Patto Sociale e Produzione Diffusa (3 anni)
+        efw_social_welfare_workshops_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+                weekly_manpower = 500
+                monthly_population = 0.25
+                research_speed_factor = 0.06
+                production_factory_max_efficiency_factor = 0.08
+                industrial_capacity_factory = 0.10
+                consumer_goods_factor = 0.04
+            }
+        }
+
+        # Livello 1: Economia Coordinata
         efw_coordinated_economy_idea = {
-            picture = generic_industry
+            allowed = { always = no }
+            removal_cost = -1
+
             modifier = {
                 industrial_capacity_factory = 0.10
                 industrial_capacity_dockyard = 0.10
@@ -29,8 +63,11 @@ ideas = {
             }
         }
 
+        # Livello 2: Piena Mobilitazione Bellica
         efw_national_mobilization_idea = {
-            picture = generic_industry
+            allowed = { always = no }
+            removal_cost = -1
+
             modifier = {
                 industrial_capacity_factory = 0.18
                 industrial_capacity_dockyard = 0.15
@@ -41,36 +78,6 @@ ideas = {
                 production_speed_efw_logistics_center_factor = 0.35
                 war_support_factor = 0.075
                 stability_factor = -0.05
-            }
-        }
-
-        # 180 days
-        efw_industrialization_campaign_idea = {
-            picture = generic_industry
-            modifier = {
-                production_speed_buildings_factor = 0.20
-            }
-        }
-
-        # 730 days
-        efw_state_industry_subsidies_idea = {
-            picture = generic_industry
-            modifier = {
-                consumer_goods_factor = 0.10
-                research_speed_factor = 0.06
-                industrial_capacity_factory = 0.03
-                industrial_capacity_dockyard = 0.03
-                political_power_factor = 0.10
-            }
-        }
-
-        # 365 days
-        efw_national_infrastructure_program_idea = {
-            picture = generic_infrastructure
-            modifier = {
-                production_speed_infrastructure_factor = 0.20
-                production_speed_rail_way_factor = 0.20
-                production_speed_buildings_factor = 0.05
             }
         }
     }

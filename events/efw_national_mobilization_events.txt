@@ -1,81 +1,104 @@
 # ============================================================================
-# EFW NATIONAL MOBILIZATION EVENTS v0.5
+# EFW NATIONAL MOBILIZATION SUITE - EVENTS
+# Correctly closed scopes and delayed returns.
 # ============================================================================
 
 add_namespace = efw_national_mobilization
 
-# National bond: +100 now / -150 after 365 days
+# Completamento Fase I Industriale (180 giorni) -> Sblocca Fase II
 country_event = {
-    id = efw_national_mobilization.1
-    title = efw_national_mobilization.1.t
-    desc = efw_national_mobilization.1.d
+    id = efw_national_mobilization.30
+    title = efw_national_mobilization.30.t
+    desc = efw_national_mobilization.30.d
+    picture = GFX_report_event_generic_factory
+
     is_triggered_only = yes
 
+    immediate = {
+        set_country_flag = efw_industrial_phase_1_done
+    }
+
     option = {
-        name = efw_national_mobilization.1.a
-        add_political_power = -150
-        clr_country_flag = efw_national_bond_active
-        set_country_flag = { flag = efw_national_bond_cooldown days = 90 }
+        name = efw_national_mobilization.30.a
     }
 }
 
-# Long loan: +120 now / -200 after 730 days
+# Completamento Fase II Industriale (365 giorni dal via) -> Restituisce mezzi e manpower parziale
 country_event = {
-    id = efw_national_mobilization.2
-    title = efw_national_mobilization.2.t
-    desc = efw_national_mobilization.2.d
+    id = efw_national_mobilization.31
+    title = efw_national_mobilization.31.t
+    desc = efw_national_mobilization.31.d
+    picture = GFX_report_event_industry_complex
+
     is_triggered_only = yes
 
-    option = {
-        name = efw_national_mobilization.2.a
-        add_political_power = -200
-        clr_country_flag = efw_national_bond_active
-        set_country_flag = { flag = efw_national_bond_cooldown days = 90 }
-    }
-}
-
-# Return 10 trains after 180 days.
-country_event = {
-    id = efw_national_mobilization.10
-    is_triggered_only = yes
-    hidden = yes
     immediate = {
         add_equipment_to_stockpile = {
             type = train_equipment
             amount = 10
         }
+        add_equipment_to_stockpile = {
+            type = motorized_equipment
+            amount = 400
+        }
+        add_manpower = 50000
+        set_country_flag = efw_industrial_jumpstart_complete
+    }
+
+    option = {
+        name = efw_national_mobilization.31.a
     }
 }
 
-# Return 200k manpower 730 days after industrialization begins.
+# Rimborso Grandi Opere (540 giorni)
 country_event = {
-    id = efw_national_mobilization.11
+    id = efw_national_mobilization.32
     is_triggered_only = yes
     hidden = yes
-    immediate = {
-        add_manpower = 200000
-    }
-}
 
-# Return 100k manpower after one year of army public works.
-country_event = {
-    id = efw_national_mobilization.12
-    is_triggered_only = yes
-    hidden = yes
     immediate = {
-        add_manpower = 100000
-    }
-}
-
-# Return 5 trains after the infrastructure program.
-country_event = {
-    id = efw_national_mobilization.13
-    is_triggered_only = yes
-    hidden = yes
-    immediate = {
+        add_manpower = 60000
         add_equipment_to_stockpile = {
             type = train_equipment
-            amount = 5
+            amount = 15
         }
+        add_equipment_to_stockpile = {
+            type = motorized_equipment
+            amount = 500
+        }
+        clr_country_flag = efw_grand_works_active
+    }
+}
+
+# Rimborso Programma Navale (365 giorni)
+country_event = {
+    id = efw_national_mobilization.33
+    is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+        add_manpower = 50000
+        add_equipment_to_stockpile = {
+            type = motorized_equipment
+            amount = 200
+        }
+        clr_country_flag = efw_naval_program_active
+    }
+}
+
+# Scadenza Obbligazioni Statali (365 giorni)
+country_event = {
+    id = efw_national_mobilization.34
+    title = efw_national_mobilization.34.t
+    desc = efw_national_mobilization.34.d
+    picture = GFX_report_event_generic_sign_treaty3
+
+    is_triggered_only = yes
+
+    option = {
+        name = efw_national_mobilization.34.a
+        add_political_power = -180
+        clr_country_flag = efw_national_bond_active
+        set_country_flag = { flag = efw_national_bond_cooldown days = 90 }
     }
 }

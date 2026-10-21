@@ -15,7 +15,7 @@ equipments = {
         picture = efw_pipe_gun_rifle
 
         # Statistiche industriali ultra-economiche
-        build_cost_ic = 0.05
+        build_cost_ic = 0.12
         resources = {
             steel = 0   # 1 acciaio per ogni fabbrica assegnata alla linea
         }
@@ -23,9 +23,9 @@ equipments = {
         # --- STATISTICHE COMBATTIMENTO ---
         soft_attack = 4.0     # Danno alla fanteria nemica
         hard_attack = 0.8     # Danno leggero contro mezzi/blindati
-        defense = 16.0        # Ottima per tenere le posizioni
+        defense = 18.0        # Ottima per tenere le posizioni
         breakthrough = 2.0    # Basso, ideale per restare in trincea
-        reliability = 0.50    # Molto grezza/inaffidabile (50% reliability)
+        reliability = 0.70    # Molto grezza/inaffidabile (50% reliability)
     }
 
 }

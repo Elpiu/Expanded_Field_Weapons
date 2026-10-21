@@ -134,7 +134,6 @@
  efw_national_mobilization_category:0 "Mobilitazione e Investimenti Nazionali"
  efw_national_mobilization_category_desc:0 "Sviluppare gradualmente una rete nazionale di propaganda, lavoro, ricerca e logistica per mobilitare l'economia del paese."
 
- # BUILDINGS
  efw_propaganda_center:0 "Centro di Propaganda e Mobilitazione"
  efw_propaganda_center_desc:0 "Un centro amministrativo e propagandistico che coordina campagne politiche e mobilitazione dell'opinione pubblica. Ogni centro aumenta il Potere Politico nazionale."
 
@@ -147,7 +146,6 @@
  efw_logistics_center:0 "Centro Logistico e Difesa Civile"
  efw_logistics_center_desc:0 "Un centro regionale per scorte, trasporti, manutenzione, infrastrutture e difesa civile."
 
- # BUILDING-SPECIFIC CONSTRUCTION SPEED MODIFIERS
  modifier_production_speed_efw_propaganda_center_factor:0 "Velocità costruzione Centri di Propaganda"
  modifier_production_speed_efw_propaganda_center_factor_desc:0 "Modifica la velocità di costruzione dei Centri di Propaganda e Mobilitazione."
 
@@ -160,7 +158,6 @@
  modifier_production_speed_efw_logistics_center_factor:0 "Velocità costruzione Centri Logistici"
  modifier_production_speed_efw_logistics_center_factor_desc:0 "Modifica la velocità di costruzione dei Centri Logistici e di Difesa Civile."
 
- # IDEAS
  efw_national_investments_idea:0 "Programma di Investimenti Nazionali"
  efw_national_investments_idea_desc:0 "Gli investimenti pubblici vengono concentrati sulla propaganda, sull'organizzazione del lavoro e sull'espansione delle infrastrutture nazionali."
 
@@ -170,7 +167,6 @@
  efw_national_mobilization_idea:0 "Mobilitazione Nazionale"
  efw_national_mobilization_idea_desc:0 "L'intero apparato economico e amministrativo della nazione è orientato allo sforzo nazionale."
 
- # DECISIONS
  efw_launch_national_investments:0 "Avviare gli Investimenti Nazionali"
  efw_launch_national_investments_desc:0 "Dopo aver costruito almeno §Y2 Centri di Propaganda§!, possiamo spendere §Y75 Potere Politico§! per avviare un programma nazionale di investimenti. Sblocca le §YDirezioni del Lavoro Nazionale§! e accelera la costruzione di entrambi gli edifici."
 
@@ -180,14 +176,12 @@
  efw_mobilize_the_nation:0 "Mobilitare la Nazione"
  efw_mobilize_the_nation_desc:0 "Con una rete completa di propaganda, lavoro, ricerca e logistica possiamo mobilitare pienamente l'economia nazionale."
 
- # BONDS
  efw_issue_national_bonds:0 "Emettere Obbligazioni Nazionali"
  efw_issue_national_bonds_desc:0 "Otteniamo §G+100 Potere Politico§! immediatamente. Dopo §Y365 giorni§! dovremo ripagare §R150 Potere Politico§!."
 
  efw_issue_long_term_national_loan:0 "Grande Prestito Nazionale"
  efw_issue_long_term_national_loan_desc:0 "Otteniamo §G+120 Potere Politico§! immediatamente. Dopo §Y730 giorni§! dovremo ripagare §R200 Potere Politico§!."
 
- # EVENTS
  efw_national_mobilization.1.t:0 "Scadenza delle Obbligazioni Nazionali"
  efw_national_mobilization.1.d:0 "Le obbligazioni emesse un anno fa sono giunte a scadenza. Capitale e interessi devono ora essere ripagati."
  efw_national_mobilization.1.a:0 "Onoreremo i nostri impegni."
@@ -196,7 +190,6 @@
  efw_national_mobilization.2.d:0 "Il grande prestito nazionale contratto due anni fa è giunto a scadenza."
  efw_national_mobilization.2.a:0 "Il debito sarà ripagato."
 
- # HIDDEN TECHS (only useful if shown by debug)
  efw_propaganda_center_unlock:0 "Rete di Propaganda EFW"
  efw_labor_directorate_unlock:0 "Organizzazione del Lavoro EFW"
  efw_research_center_unlock:0 "Rete di Ricerca EFW"
@@ -317,3 +310,118 @@
  efw_pipe_gun_rifle:0 "Fucile artigianale a tubo"
  efw_pipe_gun_rifle_short:0 "Fucile a tubo"
  efw_pipe_gun_rifle_desc:0 "Un'arma grezza e improvvisata, assemblata rapidamente usando tubi idraulici e componenti di recupero. Rudimentale, inaffidabile e priva di qualsiasi standard industriale, ma capace di essere prodotta con risorse quasi inesistenti."
+
+ efw_army_munitions_works:0 "Costruzione Arsenali dell'Esercito"
+ efw_army_munitions_works_desc:0 "Mobilita 100.000 coscritti nei programmi di produzione militare per un anno per costruire permanentemente 4 fabbriche militari fuori mappa."
+
+ efw_naval_yard_expansion:0 "Espansione Cantieri Navali"
+ efw_naval_yard_expansion_desc:0 "Assegna 100.000 coscritti alle infrastrutture marittime per un anno, realizzando permanentemente 4 cantieri navali fuori mappa."
+
+
+
+
+ efw_national_mobilization_category:0 "Mobilitazione Economica Nazionale"
+ efw_national_mobilization_category_desc:0 "Piani strategici di coordinamento industriale, infrastrutturale e sociale per massimizzare la preparazione bellica del paese."
+
+ efw_industrial_plan_phase_1:0 "Piano Industriale: Fase I — Rilancio e Fondazioni"
+ efw_industrial_plan_phase_1_desc:0 "Investe capitali, convogli ferroviari e manodopera per costruire le fondamenta della rinascita industriale nazionale. Fornisce subito §G+8 Fabbriche Civili§! e §G+2 Fabbriche Militari§! e accelera la costruzione. Al termine dei 180 giorni renderà accessibile la Fase II."
+ efw_industrial_phase_1_idea:0 "Piano Industriale: Mobilitazione Fase I"
+
+ efw_industrial_plan_phase_2:0 "Piano Industriale: Fase II — Consolidamento Pesante"
+ efw_industrial_plan_phase_2_desc:0 "La seconda e decisiva tappa dell'espansione industriale. Integra altri §G+7 Complessi Civili§! e §G+4 Stabilimenti d'Armamento§! nella rete produttiva. Al termine dei lavori, i mezzi logistici e parte della manodopera torneranno alle proprie mansioni."
+ efw_industrial_phase_2_idea:0 "Piano Industriale: Mobilitazione Fase II"
+
+ efw_national_mobilization.30.t:0 "Piano Industriale: Completamento Fase I"
+ efw_national_mobilization.30.d:0 "I primi cantieri pesanti e gli impianti metallurgici sono entrati in servizio con successo. Con le basi operative completate, la nazione è ora pronta a lanciare la Fase II del programma."
+ efw_national_mobilization.30.a:0 "Avanti con la Fase II!"
+
+ efw_national_mobilization.31.t:0 "Piano Industriale: Trionfo Produttivo"
+ efw_national_mobilization.31.d:0 "Ad un anno esatto dall'avvio del piano, l'intero apparato produttivo è completato: 15 complessi civili e 6 stabilimenti bellici lavorano a pieno regime. I convogli e i mezzi speciali vengono restituiti alle riserve nazionali."
+ efw_national_mobilization.31.a:0 "Un colosso industriale è nato!"
+
+ efw_grand_public_works:0 "Mobilitazione delle Grandi Opere Nazionali"
+ efw_grand_public_works_desc:0 "Impiega il genio civile e una flotta di autocarri per ampliare il potenziale del territorio metropolitano. Aggiunge §G+1 Infrastruttura§! (se inferiore a 5) e §G+2 Slot Fabbrica§! in tutti gli stati nazionali Core, garantendo inoltre un bonus del §G+30%§! alla velocità di costruzione per 540 giorni."
+ efw_grand_works_idea:0 "Corsa alle Grandi Opere"
+
+ efw_social_welfare_and_workshops:0 "Patto Sociale e Produzione Diffusa"
+ efw_social_welfare_and_workshops_desc:0 "Combina il supporto demografico alle famiglie numerose con la razionalizzazione logistica della fitta rete di botteghe artigiane. Aumenta costantemente la popolazione e il manpower di riserva, stimola la ricerca e innalza il rendimento e il tetto massimo di efficienza delle linee produttive per 3 anni."
+ efw_social_welfare_workshops_idea:0 "Patto Sociale e Officine Diffuse"
+
+ efw_emergency_naval_program:0 "Programma Navale Straordinario"
+ efw_emergency_naval_program_desc:0 "Concentra manodopera specializzata edili e forniture per istituire §G+6 Cantieri Navali offsite permanenti§!. Il personale e i mezzi logistici requisiti verranno restituiti alla riserva al termine dell'anno di mobilitazione."
+
+ efw_issue_national_bonds:0 "Emissione di Obbligazioni Statali"
+ efw_issue_national_bonds_desc:0 "Emette titoli di debito pubblico per ottenere immediatamente §G+120 Potere Politico§!. Dopo 365 giorni lo Stato dovrà saldare il debito con gli interessi rimettendo §R-180 Potere Politico§!."
+ efw_national_mobilization.34.t:0 "Scadenza delle Obbligazioni Statali"
+ efw_national_mobilization.34.d:0 "I titoli di debito emessi l'anno scorso sono giunti a maturazione. Il tesoro deve saldare gli interessi agli investitori nazionali per preservare il credito e la fiducia politica."
+ efw_national_mobilization.34.a:0 "Onoriamo i nostri impegni finanziari."
+
+ efw_coordinate_national_economy:0 "Coordinamento dell'Economia Nazionale"
+ efw_coordinate_national_economy_desc:0 "Coordina l'azione dei Centri di Propaganda e della Direzione del Lavoro verso una pianificazione economica centralizzata, aumentando la produzione industriale e navale e accelerando la costruzione dei centri avanzati."
+ efw_coordinated_economy_idea:0 "Economia Nazionale Coordinata"
+
+ efw_mobilize_the_nation:0 "Piena Mobilitazione Nazionale"
+ efw_mobilize_the_nation_desc:0 "Il vertice dell'impegno economico e statale: salda propaganda, lavoro, ricerca e logistica in una sola macchina da guerra. Fornisce massimi incrementi alla conscrizione e all'output produttivo a fronte di un moderato sforzo sociale."
+ efw_national_mobilization_idea:0 "Mobilitazione Totale della Nazione"
+
+
+  efw_wooden_construction:0 "Struttura Leggera in Legno"
+ efw_wooden_construction_desc:0 "Fusoliera e longheroni in compensato e tela trattata. Abbassa drasticamente i costi industriali del velivolo."
+
+ efw_wooden_frame_component:0 "Pannellatura Strutturale in Legno"
+ efw_wooden_frame_component_desc:0 "Sostituisce componenti metallici con legno e tela. Riduce peso e costo IC a fronte di una minore integrità. Può essere installato più volte."
+
+ efw_extended_fuel_tank:0 "Serbatoio Ausiliario Esterno"
+ efw_extended_fuel_tank_desc:0 "Serbatoio sganciabile subalare che incrementa considerevolmente l'autonomia operativa."
+
+ efw_airdrop_supply_pod:0 "Pod Rifornimento Aviolanciato"
+ efw_airdrop_supply_pod_desc:0 "Contenitori d'emergenza con paracadute per rifornire truppe isolate e fornire supporto tattico al suolo."
+
+ efw_boost_power_system:0 "Sistema di Sovralimentazione 'Burst Power'"
+ efw_boost_power_system_desc:0 "Compressore ausiliario che incrementa la velocità massima e genera spinta aggiuntiva per sostenere carichi pesanti."
+
+ efw_universal_hardpoint:0 "Gancio Universale per Armamenti Speciali"
+ efw_universal_hardpoint_desc:0 "Attacco subalare polivalente: attiva bombe in CAS, fuoco ausiliario in superiorità aerea o siluri e cariche in missioni navali."
+
+ efw_plywood_frame_module:0 "Plywood & Fabric Airframe"
+ efw_plywood_frame_module_desc:0 "Replaces scarce aluminum with glued plywood sheets and treated canvas. Drastically slashes industrial cost and weight, offering sublime agility at the cost of fragile survivability."
+
+ efw_overboost_compressor_module:0 "Handmade 'Overboost' Compressor"
+ efw_overboost_compressor_module_desc:0 "Overclocks the engine manifold with high-pressure alcohol injection. Grants phenomenal engine thrust (+8 Thrust) and top speed at the expense of severe mechanical wear."
+
+ efw_improvised_bomb_rack_module:0 "Improvised Shrapnel & Bomb Rack"
+ efw_improvised_bomb_rack_module_desc:0 "Underwing racks fitting ground mortar rounds and cluster munitions. Enables expedient light aircraft to deliver blistering close air support against enemy formations (+6 Ground Attack)."
+
+ efw_infantry_mg_pod_module:0 "Infantry Heavy Machine Gun Pod"
+ efw_infantry_mg_pod_module_desc:0 "Repurposes ground infantry machine guns into wing-mounted pods. Turns low-cost aircraft into deadly, high-firepower interceptors in close-in dogfights (+8 Air Attack)."
+
+ efw_paper_drop_tank_module:0 "Pressed-Paper Drop Tanks"
+ efw_paper_drop_tank_module_desc:0 "Disposable external fuel tanks crafted from lacquered papier-mache and cheap resin. Grants immense operational range at almost zero cost, but poses severe fire hazards when hit."
+
+ efw_stripped_cockpit_module:0 "Stripped Cockpit & Ring Sight"
+ efw_stripped_cockpit_module_desc:0 "Strips cockpit armor, heating, and heavy avionics down to an open canopy and simple wire-ring sight. Saves weight and boosts gunnery response, leaving the pilot completely exposed."
+
+ efw_wooden_boost_airframe:0 "Telaio in Legno e Compressore Overboost"
+ efw_wooden_boost_airframe_desc:0 "Sostituisce le leghe metalliche con compensato ultraleggero e modifica il motore con iniezione ad alta pressione. Riduce drasticamente peso e costo di fabbricazione aumentando velocità e spinta motore (+7 Thrust), ma sacrifica pesantemente affidabilità (-25%) e protezione. Può essere installato più volte: ogni modulo moltiplica i benefici ma peggiora l'usura."
+
+ efw_improvised_drop_tank:0 "Serbatoio Ausiliario in Carta Pressata"
+ efw_improvised_drop_tank_desc:0 "Serbatoio sganciabile economico realizzato in cartone laccato e resina. Aumenta notevolmente il raggio d'azione del velivolo (+300 km) a costo irrisorio, ma risulta vulnerabile alle fiamme."
+
+ efw_multirole_combat_rack:0 "Rastrelliera d'Armamento Polivalente da Campo"
+ efw_multirole_combat_rack_desc:0 "Un sistema modulare subalare che adatta le proprie armi alla missione attiva: sgancia spezzoni e bombe contro truppe terrestri (+5 CAS), aziona mitragliatrici pesanti per il dogfight (+6 Caccia) o arma siluri d'emergenza contro navi nemiche (+6 Navale)."
+
+ efw_wooden_boost_airframe:0 "Wooden Frame & Overboost Compressor"
+ efw_wooden_boost_airframe_desc:0 "Replaces metal alloys with featherweight plywood while supercharging the engine manifold. Slashes IC cost and weight while massively boosting speed and thrust (+7 Thrust), at the cost of severe reliability hits (-25%) and fragile defense. Can be equipped multiple times: stacking modules multiplies performance while worsening wear and accidents."
+
+ efw_improvised_drop_tank:0 "Pressed-Paper Auxiliary Drop Tank"
+ efw_improvised_drop_tank_desc:0 "Disposable external fuel tank crafted from lacquered papier-mache and cheap resin. Substantially increases operational range (+300 km) at negligible cost, though highly flammable."
+
+ efw_multirole_combat_rack:0 "Field Multirole Weapons Rack"
+ efw_multirole_combat_rack_desc:0 "An adaptable underwing weapons suite that shifts functionality based on active mission orders: drops fragmentation bombs against ground divisions (+5 CAS), fires auxiliary machine guns in air duels (+6 Fighter), or launches improvised torpedoes at sea (+6 Naval)."
+
+
+ efw_cast_iron_stove_armor:0 "Blindatura Improvvisata 'Stufa da Campo'"
+ efw_cast_iron_stove_armor_desc:0 "Una pesante piastra di ghisa o un coperchio di tombino fissato sotto il sedile del pilota. Garantisce una solida protezione balistica (+7 Difesa), ma appesantisce notevolmente la cellula (+4 Peso) riducendo leggermente velocità massima e autonomia."
+
+ efw_bazooka_charlie_tubes:0 "Tubi Lanciarazzi 'Bazooka Charlie'"
+ efw_bazooka_charlie_tubes_desc:0 "Una batteria di tubi lanciarazzi di fanteria saldati a mano sotto i montanti alari. Sgancia salve devastating contro divisioni corazzate e bersagli navali (+8 Attacco al Suolo), ma il costo industriale e il peso sono consistenti, peggiorando sensibilmente agilità e difesa del velivolo."

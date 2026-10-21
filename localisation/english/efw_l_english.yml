@@ -287,3 +287,106 @@
  efw_pipe_gun_rifle:0 "Pipe-Gun Rifle"
  efw_pipe_gun_rifle_short:0 "Pipe Rifle"
  efw_pipe_gun_rifle_desc:0 "A crude improvised weapon assembled rapidly from hydraulic pipe and salvaged components. Rudimentary, unreliable and lacking any industrial standard, but capable of being produced with almost no resources."
+ efw_army_munitions_works:0 "Army Arsenal Construction Works"
+ efw_army_munitions_works_desc:0 "Mobilize 100,000 recruits into military manufacturing programs for one year to permanently construct 4 offsite military factories."
+
+ efw_naval_yard_expansion:0 "Naval Shipyard Construction Drive"
+ efw_naval_yard_expansion_desc:0 "Direct 100,000 recruits to coastal maritime construction programs for one year, establishing 4 permanent offsite dockyards."
+
+
+
+
+ efw_national_mobilization_category:0 "National Economic Mobilization"
+ efw_national_mobilization_category_desc:0 "Strategic masterplans coordinating industry, logistics, infrastructure, and society to maximize national wartime readiness."
+
+ efw_industrial_plan_phase_1:0 "Industrial Masterplan: Phase I — Foundations"
+ efw_industrial_plan_phase_1_desc:0 "Invests political capital, trains, and manpower to lay down the foundations of a massive national industrial renaissance. Immediately delivers §G+8 Civilian Factories§! and §G+2 Military Factories§! offsite and speeds up construction. Unlocks Phase II upon completion after 180 days."
+ efw_industrial_phase_1_idea:0 "Industrial Plan: Phase I Mobilization"
+
+ efw_industrial_plan_phase_2:0 "Industrial Masterplan: Phase II — Heavy Expansion"
+ efw_industrial_plan_phase_2_desc:0 "The concluding phase of the industrial expansion. Integrates an additional §G+7 Civilian Factories§! and §G+4 Military Factories§! offsite into the grid. Upon project completion, all equipment and half the mobilized workforce will be returned."
+ efw_industrial_phase_2_idea:0 "Industrial Plan: Phase II Mobilization"
+
+ efw_national_mobilization.30.t:0 "Industrial Plan: Phase I Completed"
+ efw_national_mobilization.30.d:0 "The initial heavy factories and metallurgical complexes are now fully operational. With the foundation laid, the nation is ready to begin Phase II of the masterplan."
+ efw_national_mobilization.30.a:0 "Proceed with Phase II!"
+
+ efw_national_mobilization.31.t:0 "Industrial Plan: Industrial Triumph"
+ efw_national_mobilization.31.d:0 "Exactly one year after the program began, the industrial expansion is complete: 15 civilian complexes and 6 armament factories are operating at peak efficiency. Transport trains and trucks have been returned to active stockpiles."
+ efw_national_mobilization.31.a:0 "A productive giant has emerged!"
+
+ efw_grand_public_works:0 "National Grand Public Works Mobilization"
+ efw_grand_public_works_desc:0 "Deploys public works brigades, engineers, and trucks to expand the homeland's territorial capacity. Adds §G+1 Infrastructure§! (if below 5) and §G+2 Building Slots§! to all core metropolitan states, granting §G+30%§! construction speed for 540 days."
+ efw_grand_works_idea:0 "Grand Public Works Surge"
+
+ efw_social_welfare_and_workshops:0 "Social Compact and Dispersed Workshops"
+ efw_social_welfare_and_workshops_desc:0 "Pairs family demographic welfare with the logistical integration of small artisan workshops. Steadies manpower growth, aids scientific research, and raises both factory output and max efficiency caps for 3 years."
+ efw_social_welfare_workshops_idea:0 "Social Compact & Workshop Network"
+
+ efw_emergency_naval_program:0 "Emergency Naval Expansion Program"
+ efw_emergency_naval_program_desc:0 "Concentrates specialized dockyard workers and equipment to establish §G+6 Permanent Offsite Dockyards§!. Mobilized personnel and trucks are returned to service after one year."
+
+ efw_issue_national_bonds:0 "Issue National Treasury Bonds"
+ efw_issue_national_bonds_desc:0 "Issues state treasury bonds to immediately secure §G+120 Political Power§!. After 365 days, the state must repay the principal and interest with §R-180 Political Power§!."
+ efw_national_mobilization.34.t:0 "Maturity of National Bonds"
+ efw_national_mobilization.34.d:0 "The treasury bonds issued last year have matured. The government must now repay bondholders with accrued interest to uphold fiscal credibility."
+ efw_national_mobilization.34.a:0 "Honor our financial commitments."
+
+ efw_coordinate_national_economy:0 "Coordinate the National Economy"
+ efw_coordinate_national_economy_desc:0 "Coordinates regional Propaganda Centers and the Labor Directorate into a centralized economic framework, accelerating industrial output and advanced facility construction."
+ efw_coordinated_economy_idea:0 "Coordinated National Economy"
+
+ efw_mobilize_the_nation:0 "Full National Mobilization"
+ efw_mobilize_the_nation_desc:0 "The culmination of state mobilization: unites propaganda, labor, scientific research, and civil defense into a total war effort, drastically boosting conscription and industrial capacity."
+ efw_national_mobilization_idea:0 "Total National Mobilization"
+
+ efw_wooden_construction:0 "Lightweight Wooden Structure"
+ efw_wooden_construction_desc:0 "Plywood fuselage and spars with treated canvas. Drastically lowers the aircraft's industrial costs."
+
+ efw_wooden_frame_component:0 "Wooden Structural Panelling"
+ efw_wooden_frame_component_desc:0 "Replaces metal components with wood and canvas. Reduces weight and IC cost at the expense of lower integrity. Can be installed multiple times."
+
+ efw_extended_fuel_tank:0 "External Auxiliary Fuel Tank"
+ efw_extended_fuel_tank_desc:0 "Underwing drop tank that considerably increases operational range."
+
+ efw_airdrop_supply_pod:0 "Airdrop Supply Pod"
+ efw_airdrop_supply_pod_desc:0 "Emergency parachute containers to resupply isolated troops and provide tactical ground support."
+
+ efw_boost_power_system:0 "'Burst Power' Supercharging System"
+ efw_boost_power_system_desc:0 "Auxiliary compressor that increases top speed and generates additional thrust to sustain heavy loads."
+
+ efw_universal_hardpoint:0 "Universal Hardpoint for Special Armament"
+ efw_universal_hardpoint_desc:0 "Multi-purpose underwing mount: enables bombs in CAS, auxiliary fire in air superiority, or torpedoes and charges in naval missions."
+
+ efw_plywood_frame_module:0 "Plywood & Fabric Airframe"
+ efw_plywood_frame_module_desc:0 "Replaces scarce aluminum with glued plywood sheets and treated canvas. Drastically slashes industrial cost and weight, offering sublime agility at the cost of fragile survivability."
+
+ efw_overboost_compressor_module:0 "Handmade 'Overboost' Compressor"
+ efw_overboost_compressor_module_desc:0 "Overclocks the engine manifold with high-pressure alcohol injection. Grants phenomenal engine thrust (+8 Thrust) and top speed at the expense of severe mechanical wear."
+
+ efw_improvised_bomb_rack_module:0 "Improvised Shrapnel & Bomb Rack"
+ efw_improvised_bomb_rack_module_desc:0 "Underwing racks fitting ground mortar rounds and cluster munitions. Enables expedient light aircraft to deliver blistering close air support against enemy formations (+6 Ground Attack)."
+
+ efw_infantry_mg_pod_module:0 "Infantry Heavy Machine Gun Pod"
+ efw_infantry_mg_pod_module_desc:0 "Repurposes ground infantry machine guns into wing-mounted pods. Turns low-cost aircraft into deadly, high-firepower interceptors in close-in dogfights (+8 Air Attack)."
+
+ efw_paper_drop_tank_module:0 "Pressed-Paper Drop Tanks"
+ efw_paper_drop_tank_module_desc:0 "Disposable external fuel tanks crafted from lacquered papier-mache and cheap resin. Grants immense operational range at almost zero cost, but poses severe fire hazards when hit."
+
+ efw_stripped_cockpit_module:0 "Stripped Cockpit & Ring Sight"
+ efw_stripped_cockpit_module_desc:0 "Strips cockpit armor, heating, and heavy avionics down to an open canopy and simple wire-ring sight. Saves weight and boosts gunnery response, leaving the pilot completely exposed."
+
+ efw_wooden_boost_airframe:0 "Wooden Frame & Overboost Compressor"
+ efw_wooden_boost_airframe_desc:0 "Replaces metal alloys with featherweight plywood while supercharging the engine manifold. Slashes IC cost and weight while massively boosting speed and thrust (+7 Thrust), at the cost of severe reliability hits (-25%) and fragile defense. Can be equipped multiple times: stacking modules multiplies performance while worsening wear and accidents."
+
+ efw_improvised_drop_tank:0 "Pressed-Paper Auxiliary Drop Tank"
+ efw_improvised_drop_tank_desc:0 "Disposable external fuel tank crafted from lacquered papier-mache and cheap resin. Substantially increases operational range (+300 km) at negligible cost, though highly flammable."
+
+ efw_multirole_combat_rack:0 "Field Multirole Weapons Rack"
+ efw_multirole_combat_rack_desc:0 "An adaptable underwing weapons suite that shifts functionality based on active mission orders: drops fragmentation bombs against ground divisions (+5 CAS), fires auxiliary machine guns in air duels (+6 Fighter), or launches improvised torpedoes at sea (+6 Naval)."
+
+ efw_cast_iron_stove_armor:0 "Improvised 'Field Stove' Armor"
+ efw_cast_iron_stove_armor_desc:0 "A heavy cast iron plate or manhole cover fixed beneath the pilot's seat. Grants solid ballistic protection (+7 Defense), but significantly weighs down the airframe (+4 Weight) while slightly reducing top speed and range."
+
+ efw_bazooka_charlie_tubes:0 "'Bazooka Charlie' Rocket Launcher Tubes"
+ efw_bazooka_charlie_tubes_desc:0 "A battery of hand-welded infantry rocket launcher tubes mounted beneath the wing struts. Fires devastating salvos against armored divisions and naval targets (+8 Ground Attack), but the industrial cost and weight are substantial, noticeably worsening the aircraft's agility and defense."
