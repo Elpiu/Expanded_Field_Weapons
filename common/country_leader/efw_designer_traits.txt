@@ -1,0 +1,478 @@
+# Generic designers adapted from "Designers Extend" (Steam Workshop 2742251002).
+# EFW changes: efw_ prefix, 1.19 airframe types instead of the old plane equipment,
+# duplicated stats removed. Disable the original mod when using EFW.
+
+leader_traits = {	
+
+	efw_aircraft_manufacturer1 = {
+		random = no
+		equipment_bonus = {
+			small_plane_airframe = {
+				air_agility = 0.1
+				maximum_speed = 0.1
+			}
+			cv_small_plane_airframe = {
+				air_agility = 0.1
+				maximum_speed = 0.1
+			}
+			small_plane_cas_airframe = {
+				air_ground_attack = 0.1
+				reliability = 0.1
+			}
+			cv_small_plane_cas_airframe = {
+				air_ground_attack = 0.1
+				reliability = 0.1
+			}	
+			medium_plane_fighter_airframe = {
+				reliability = 0.2
+			}
+			medium_plane_airframe = {
+				reliability = 0.2
+			}
+			medium_plane_scout_plane_airframe = {
+				reliability = 0.2
+			}
+			large_plane_airframe = {
+				air_bombing = 0.1
+			}			
+			small_plane_naval_bomber_airframe = {
+				reliability = 0.1
+			}
+			cv_small_plane_naval_bomber_airframe = {
+				reliability = 0.1
+			}
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	efw_aircraft_manufacturer2 = {
+		random = no
+		equipment_bonus = {
+			small_plane_airframe = {
+				air_agility = 0.1
+				maximum_speed = 0.1
+				air_range = 0.1
+				reliability = 0.2
+			}
+			cv_small_plane_airframe = {
+				air_agility = 0.1
+				maximum_speed = 0.1
+				air_range = 0.1
+				reliability = 0.2
+			}
+			small_plane_cas_airframe = {
+				air_ground_attack = 0.1
+				reliability = 0.2
+				air_range = 0.1
+			}
+			cv_small_plane_cas_airframe = {
+				air_ground_attack = 0.1
+				reliability = 0.2
+				air_range = 0.1
+			}	
+			medium_plane_fighter_airframe = {
+				reliability = 0.2
+				air_range = 0.1
+			}
+			medium_plane_airframe = {
+				reliability = 0.2
+				air_range = 0.1
+			}
+			medium_plane_scout_plane_airframe = {
+				reliability = 0.2
+				air_range = 0.1
+			}
+			large_plane_airframe = {
+				air_bombing = 0.1
+				air_range = 0.1
+			}
+			small_plane_naval_bomber_airframe = {
+				air_range = 0.1
+				reliability = 0.2
+			}
+			cv_small_plane_naval_bomber_airframe = {
+				air_range = 0.1
+				reliability = 0.2
+			}
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	efw_aircraft_manufacturer3 = {
+		random = no
+		equipment_bonus = {
+			small_plane_airframe = {
+				air_agility = 0.2
+				maximum_speed = 0.2
+				air_range = 0.2
+				reliability = 0.2
+			}
+			cv_small_plane_airframe = {
+				air_agility = 0.2
+				maximum_speed = 0.2
+				air_range = 0.2
+				reliability = 0.2
+			}
+			small_plane_cas_airframe = {
+				air_ground_attack = 0.2
+				reliability = 0.2
+				air_range = 0.2
+			}
+			cv_small_plane_cas_airframe = {
+				air_ground_attack = 0.2
+				reliability = 0.2
+				air_range = 0.2
+			}	
+			medium_plane_fighter_airframe = {
+				reliability = 0.2
+				air_range = 0.2
+			}
+			medium_plane_airframe = {
+				reliability = 0.2
+				air_range = 0.2
+			}
+			medium_plane_scout_plane_airframe = {
+				reliability = 0.2
+				air_range = 0.2
+			}
+			large_plane_airframe = {
+				air_bombing = 0.2
+				air_range = 0.2
+				reliability = 0.2
+			}
+			small_plane_naval_bomber_airframe = {
+				reliability = 0.2
+				air_range = 0.2
+			}
+			cv_small_plane_naval_bomber_airframe = {
+				reliability = 0.2
+				air_range = 0.2
+			}
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	efw_tank_manufacturer1 = {
+		random = no
+		#generic
+
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.1
+				reliability = 0.1
+				armor_value = 0.1
+				soft_attack = 0.1
+				hard_attack = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	efw_tank_manufacturer2 = {
+		random = no
+		#generic
+
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.2
+				reliability = 0.2
+				armor_value = 0.2
+				soft_attack = 0.2
+				hard_attack = 0.2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	efw_tank_manufacturer3 = {
+		random = no
+		#generic
+
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.3
+				reliability = 0.3
+				armor_value = 0.3
+				soft_attack = 0.3
+				hard_attack = 0.3
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	efw_naval_manufacturer1 = {
+		random = no
+		equipment_bonus = {
+			screen_ship = {
+				sub_detection = 0.1
+				naval_range = 0.1
+				naval_speed = 0.1
+				torpedo_attack = 0.1
+			}
+			submarine = {
+				sub_visibility = -0.1
+				naval_range = 0.1
+				naval_speed = 0.1
+			}
+			capital_ship = {
+				naval_range = 0.1
+				naval_speed = 0.1
+				hg_attack = 0.1
+				armor_value = 0.1
+			}
+			carrier = {
+				carrier_size = 0.1
+				armor_value = 0.5
+				naval_range = 0.1
+				naval_speed = 0.1
+				max_strength = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	efw_naval_manufacturer2 = {
+		random = no
+		equipment_bonus = {
+			screen_ship = {
+				sub_detection = 0.1
+				naval_range = 0.25
+				naval_speed = 0.1
+				torpedo_attack = 0.25
+			}
+			submarine = {
+				sub_visibility = -0.1
+				naval_range = 0.25
+				naval_speed = 0.1
+			}
+			capital_ship = {
+				naval_range = 0.25
+				naval_speed = 0.1
+				hg_attack = 0.1
+				armor_value = 0.1
+			}
+			carrier = {
+				carrier_size = 0.25
+				armor_value = 0.5
+				naval_range = 0.25
+				naval_speed = 0.1
+				max_strength = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	efw_naval_manufacturer3 = {
+		random = no
+		equipment_bonus = {
+			screen_ship = {
+				build_cost_ic = -0.05
+				sub_detection = 0.2
+				naval_range = 0.25
+				naval_speed = 0.2
+				torpedo_attack = 0.25
+			}
+			submarine = {
+				build_cost_ic = -0.05
+				sub_visibility = -0.1
+				naval_range = 0.25
+				naval_speed = 0.2
+			}
+			capital_ship = {
+				build_cost_ic = -0.05
+				naval_range = 0.25
+				naval_speed = 0.2
+				hg_attack = 0.1
+				armor_value = 0.2
+			}
+			carrier = {
+				build_cost_ic = -0.05
+				carrier_size = 0.25
+				armor_value = 0.5
+				naval_range = 0.25
+				naval_speed = 0.2
+				max_strength = 0.2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# =====================================================================
+	# EFW: TRATTI DEI DESIGNER DI MATERIALE
+	# Ogni tratto ha un bonus e un malus (costo o affidabilita).
+	# =====================================================================
+
+	efw_materiel_infantry_trait = {
+		random = no
+		equipment_bonus = {
+			infantry_equipment = {
+				soft_attack = 0.05
+				reliability = 0.05
+				build_cost_ic = 0.05
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	efw_materiel_artillery_trait = {
+		random = no
+		equipment_bonus = {
+			artillery_equipment = {
+				soft_attack = 0.10
+				build_cost_ic = 0.05
+			}
+			rocket_artillery_equipment = {
+				soft_attack = 0.05
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	efw_materiel_motorized_trait = {
+		random = no
+		equipment_bonus = {
+			motorized_equipment = {
+				reliability = 0.10
+				maximum_speed = 0.05
+			}
+			armored_car_equipment = {
+				reliability = 0.10
+				build_cost_ic = 0.05
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	efw_materiel_heavy_weapons_trait = {
+		random = no
+		equipment_bonus = {
+			support_equipment = {
+				reliability = 0.10
+			}
+			anti_tank_equipment = {
+				hard_attack = 0.10
+				ap_attack = 0.05
+			}
+			anti_air_equipment = {
+				air_attack = 0.05
+				build_cost_ic = 0.05
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	efw_materiel_economy_trait = {
+		random = no
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.10
+				reliability = -0.05
+			}
+			support_equipment = {
+				build_cost_ic = -0.10
+			}
+			artillery_equipment = {
+				build_cost_ic = -0.05
+				reliability = -0.05
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	efw_materiel_integrated_trait = {
+		random = no
+		equipment_bonus = {
+			infantry_equipment = {
+				soft_attack = 0.05
+				defense = 0.05
+			}
+			artillery_equipment = {
+				soft_attack = 0.05
+			}
+			anti_tank_equipment = {
+				hard_attack = 0.05
+			}
+			motorized_equipment = {
+				reliability = 0.05
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	# =====================================================================
+	# EFW: TRATTI DELLE CONCESSIONI INDUSTRIALI (modificatori nazionali)
+	# =====================================================================
+
+	efw_concern_steel_trait = {
+		random = no
+		country_resource_steel = 8
+		consumer_goods_factor = 0.01
+		ai_will_do = { factor = 1 }
+	}
+
+	efw_concern_power_trait = {
+		random = no
+		factory_energy_consumption = -0.10
+		production_speed_buildings_factor = -0.02
+		ai_will_do = { factor = 1 }
+	}
+
+	efw_concern_synthetic_trait = {
+		random = no
+		production_speed_synthetic_refinery_factor = 0.15
+		fuel_gain_factor = 0.05
+		consumer_goods_factor = 0.01
+		ai_will_do = { factor = 1 }
+	}
+
+	efw_concern_construction_trait = {
+		random = no
+		production_speed_buildings_factor = 0.05
+		production_speed_infrastructure_factor = 0.10
+		consumer_goods_factor = 0.01
+		ai_will_do = { factor = 1 }
+	}
+
+	efw_concern_mining_trait = {
+		random = no
+		country_resource_tungsten = 4
+		country_resource_chromium = 4
+		local_resources_factor = 0.05
+		stability_factor = -0.01
+		ai_will_do = { factor = 1 }
+	}
+
+	efw_concern_conglomerate_trait = {
+		random = no
+		industrial_capacity_factory = 0.03
+		production_factory_efficiency_gain_factor = 0.05
+		political_power_factor = -0.05
+		ai_will_do = { factor = 1 }
+	}
+}

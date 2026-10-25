@@ -1,0 +1,13 @@
+# ============================================================================
+# EFW - OPZIONI MILITARI
+# Interruttori attivabili/disattivabili dal giocatore.
+# ============================================================================
+
+efw_military_options_category = {
+    icon = generic_naval
+    visible = {
+        is_ai = no
+    }
+    visible_when_empty = yes
+    priority = 15
+}

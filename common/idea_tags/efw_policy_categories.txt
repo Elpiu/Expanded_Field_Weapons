@@ -1,0 +1,60 @@
+# Generated from laws_data.py - EFW politics-panel laws.
+# Concepts and icons adapted from Better Laws and Policies (Workshop 3097661966).
+idea_categories = {
+
+    efw_economy_policies = {
+        slot = efw_ec_fiscal
+        slot = efw_ec_trade
+        slot = efw_ec_industry
+        slot = efw_ec_foreign_capital
+        slot = efw_ec_subsidies
+        slot = efw_ec_resources
+
+        ledger = civilian
+
+        cost = 100
+        removal_cost = -1
+    }
+
+    efw_society_policies = {
+        slot = efw_ec_labour
+        slot = efw_ec_press
+        slot = efw_ec_order
+        slot = efw_so_education
+        slot = efw_so_population
+        slot = efw_so_civil_defence
+
+        ledger = civilian
+
+        cost = 100
+        removal_cost = -1
+    }
+
+    efw_military_policies = {
+        slot = efw_mil_command
+        slot = efw_mil_recruitment
+        slot = efw_mil_logistics
+        slot = efw_mil_field_weapons
+        slot = efw_mil_conduct
+        slot = efw_mil_operations
+
+        ledger = civilian
+
+        cost = 100
+        removal_cost = -1
+    }
+
+    efw_navy_air_policies = {
+        slot = efw_na_fleet
+        slot = efw_na_convoys
+        slot = efw_na_air_force
+        slot = efw_na_air_support
+        slot = efw_na_intelligence
+        slot = efw_na_foreign_ops
+
+        ledger = civilian
+
+        cost = 100
+        removal_cost = -1
+    }
+}

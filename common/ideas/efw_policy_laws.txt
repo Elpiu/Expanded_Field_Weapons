@@ -1,0 +1,2999 @@
+# Generated from laws_data.py - EFW politics-panel laws.
+# Concepts and icons adapted from Better Laws and Policies (Workshop 3097661966).
+# No default law: slots start empty and only the player fills them (ai_will_do = 0).
+# Each slot: 5 laws at 50 PP, then 3 slightly stronger laws at 100 PP.
+
+ideas = {
+
+    # ======================================================================
+    # ECONOMIA E FINANZA
+    # ======================================================================
+
+    efw_ec_fiscal = {
+        law = yes
+        use_list_view = yes
+
+        efw_fis_low_taxes = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_tax_low
+
+            modifier = {
+                stability_factor = 0.05
+                political_power_factor = -0.08
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fis_high_taxes = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_tax_high
+
+            modifier = {
+                political_power_factor = 0.1
+                stability_factor = -0.04
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fis_consumption_tax = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_tax_standard
+
+            modifier = {
+                consumer_goods_factor = -0.03
+                stability_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fis_war_profits_tax = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_tax_very_high
+
+            modifier = {
+                industrial_capacity_factory = 0.04
+                stability_factor = -0.02
+                political_power_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fis_balanced_budget = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_tax_stagnating
+
+            modifier = {
+                political_power_factor = 0.06
+                stability_factor = 0.02
+                production_speed_buildings_factor = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fis_progressive = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_tax_mutual_aid
+
+            modifier = {
+                stability_factor = 0.06
+                political_power_factor = 0.06
+                war_support_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fis_war_finance = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_bonds_forced
+
+            modifier = {
+                industrial_capacity_factory = 0.08
+                consumer_goods_factor = -0.03
+                political_power_factor = -0.08
+                stability_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fis_state_monopolies = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_base_business
+
+            modifier = {
+                political_power_factor = 0.15
+                consumer_goods_factor = 0.03
+                trade_opinion_factor = -0.15
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_ec_trade = {
+        law = yes
+        use_list_view = yes
+
+        efw_trade_free = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_tariff_none
+
+            modifier = {
+                trade_opinion_factor = 0.2
+                research_speed_factor = 0.02
+                min_export = 0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_trade_moderate_protection = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_tariff_low
+
+            modifier = {
+                industrial_capacity_factory = 0.03
+                trade_opinion_factor = -0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_trade_export_drive = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_tariff_average
+
+            modifier = {
+                political_power_factor = 0.05
+                min_export = 0.15
+                production_lack_of_resource_penalty_factor = 0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_trade_import_quotas = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_tariff_high
+
+            modifier = {
+                production_lack_of_resource_penalty_factor = -0.08
+                trade_opinion_factor = -0.1
+                consumer_goods_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_trade_bilateral = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_fi_allowed
+
+            modifier = {
+                trade_opinion_factor = 0.15
+                production_factory_efficiency_gain_factor = 0.03
+                political_power_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_trade_autarky = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_tariff_extreme
+
+            modifier = {
+                production_lack_of_resource_penalty_factor = -0.15
+                industrial_capacity_factory = 0.04
+                trade_opinion_factor = -0.4
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_trade_free_ports = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_fi_encouraged
+
+            modifier = {
+                trade_opinion_factor = 0.3
+                production_factory_max_efficiency_factor = 0.04
+                min_export = 0.2
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_trade_strategic_reserves = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_res_extraction
+
+            modifier = {
+                production_lack_of_resource_penalty_factor = -0.1
+                fuel_gain_factor = 0.1
+                consumer_goods_factor = 0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_ec_industry = {
+        law = yes
+        use_list_view = yes
+
+        efw_ind_civil_priority = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sub_industry
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1
+                production_speed_arms_factory_factor = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ind_military_priority = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sub_military
+
+            modifier = {
+                production_speed_arms_factory_factor = 0.1
+                production_speed_industrial_complex_factor = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ind_roads_rails = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_build_infra
+
+            modifier = {
+                production_speed_infrastructure_factor = 0.2
+                production_speed_industrial_complex_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ind_defence_works = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_build_defense
+
+            modifier = {
+                production_speed_bunker_factor = 0.25
+                production_speed_coastal_bunker_factor = 0.25
+                production_speed_buildings_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ind_scientific_management = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_base_industry
+
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.06
+                stability_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ind_heavy_industry = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_build_military
+
+            modifier = {
+                industrial_capacity_factory = 0.06
+                production_speed_arms_factory_factor = 0.08
+                consumer_goods_factor = 0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ind_great_shipyards = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_sub_foreign
+
+            modifier = {
+                industrial_capacity_dockyard = 0.08
+                production_speed_dockyard_factor = 0.15
+                industrial_capacity_factory = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ind_five_year_plan = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_planned_economy
+
+            modifier = {
+                production_speed_buildings_factor = 0.12
+                production_factory_max_efficiency_factor = 0.04
+                political_power_factor = -0.08
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_ec_foreign_capital = {
+        law = yes
+        use_list_view = yes
+
+        efw_fc_closed_economy = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_fi_banned
+
+            modifier = {
+                drift_defence_factor = 0.1
+                stability_factor = 0.02
+                production_factory_max_efficiency_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fc_regulated = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_fi_regulated
+
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.03
+                political_power_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fc_licences = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sub_foreign
+
+            modifier = {
+                license_purchase_cost = -0.25
+                license_production_speed = 0.15
+                research_speed_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fc_foreign_engineers = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_fi_allowed
+
+            modifier = {
+                production_factory_max_efficiency_factor = 0.03
+                research_speed_factor = 0.02
+                political_power_factor = -0.04
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fc_concessions = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_rentier_state
+
+            modifier = {
+                political_power_factor = 0.06
+                min_export = 0.15
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fc_encouraged = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_fi_encouraged
+
+            modifier = {
+                production_factory_max_efficiency_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.05
+                political_power_factor = -0.05
+                min_export = 0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fc_joint_ventures = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_base_business
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.12
+                license_production_speed = 0.15
+                drift_defence_factor = -0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fc_nationalisation = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_state_capitalism
+
+            modifier = {
+                industrial_capacity_factory = 0.05
+                political_power_factor = 0.05
+                trade_opinion_factor = -0.25
+                production_factory_efficiency_gain_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_ec_subsidies = {
+        law = yes
+        use_list_view = yes
+
+        efw_sub_research_grants = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sub_science
+
+            modifier = {
+                research_speed_factor = 0.04
+                consumer_goods_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_sub_industrial_credit = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sub_industry
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.08
+                political_power_factor = -0.04
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_sub_rural_development = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_base_agrarian
+
+            modifier = {
+                monthly_population = 0.1
+                stability_factor = 0.02
+                consumer_goods_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_sub_public_works = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_build_infra
+
+            modifier = {
+                production_speed_buildings_factor = 0.06
+                consumer_goods_factor = 0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_sub_armaments_contracts = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sub_military
+
+            modifier = {
+                production_speed_arms_factory_factor = 0.08
+                stability_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_sub_development_bank = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_base_banking
+
+            modifier = {
+                production_speed_buildings_factor = 0.1
+                production_speed_industrial_complex_factor = 0.08
+                political_power_factor = -0.06
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_sub_defence_budget = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_idea_mobilization
+
+            modifier = {
+                production_speed_arms_factory_factor = 0.1
+                industrial_capacity_factory = 0.04
+                consumer_goods_factor = 0.04
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_sub_science_city = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_health_research
+
+            modifier = {
+                research_speed_factor = 0.07
+                consumer_goods_factor = 0.03
+                political_power_factor = -0.04
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_ec_resources = {
+        law = yes
+        use_list_view = yes
+
+        efw_res_scrap_drive = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_res_alternative
+
+            modifier = {
+                production_lack_of_resource_penalty_factor = -0.06
+                stability_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_res_new_mines = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_res_extraction
+
+            modifier = {
+                local_resources_factor = 0.05
+                consumer_goods_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_res_synthetic = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_res_synthetic
+
+            modifier = {
+                production_speed_synthetic_refinery_factor = 0.2
+                fuel_gain_factor = 0.05
+                consumer_goods_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_res_rationing = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_tax_very_low
+
+            modifier = {
+                fuel_gain_factor = 0.1
+                stability_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_res_export_quotas = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_base_natural
+
+            modifier = {
+                min_export = -0.1
+                trade_opinion_factor = -0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_res_intensive_mining = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_base_industry
+
+            modifier = {
+                local_resources_factor = 0.1
+                stability_factor = -0.03
+                monthly_population = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_res_substitutes = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_res_alternative
+
+            modifier = {
+                production_lack_of_resource_penalty_factor = -0.12
+                production_factory_max_efficiency_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_res_strategic_stockpile = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_res_synthetic
+
+            modifier = {
+                fuel_gain_factor = 0.15
+                max_fuel_factor = 0.2
+                consumer_goods_factor = 0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    # ======================================================================
+    # SOCIETÀ E ORDINE INTERNO
+    # ======================================================================
+
+    efw_ec_labour = {
+        law = yes
+        use_list_view = yes
+
+        efw_lab_eight_hours = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_work_8
+
+            modifier = {
+                stability_factor = 0.05
+                industrial_capacity_factory = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_lab_long_shifts = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_work_12
+
+            modifier = {
+                industrial_capacity_factory = 0.05
+                stability_factor = -0.04
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_lab_state_unions = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_unions_state
+
+            modifier = {
+                stability_factor = 0.03
+                political_power_factor = 0.03
+                production_factory_efficiency_gain_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_lab_family_support = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_pop_encourage
+
+            modifier = {
+                monthly_population = 0.2
+                consumer_goods_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_lab_social_insurance = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_welfare_basic
+
+            modifier = {
+                stability_factor = 0.04
+                war_support_factor = 0.02
+                consumer_goods_factor = 0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_lab_extended_welfare = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_welfare_generous
+
+            modifier = {
+                stability_factor = 0.08
+                monthly_population = 0.15
+                consumer_goods_factor = 0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_lab_labour_mobilization = {
+            available = {
+                has_war_support > 0.39
+            }
+
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_work_14
+
+            modifier = {
+                industrial_capacity_factory = 0.08
+                industrial_capacity_dockyard = 0.06
+                stability_factor = -0.06
+                monthly_population = -0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_lab_corporatism = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_unions_banned
+
+            modifier = {
+                industrial_capacity_factory = 0.05
+                stability_factor = 0.04
+                political_power_factor = -0.05
+                research_speed_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_ec_press = {
+        law = yes
+        use_list_view = yes
+
+        efw_prs_free_press = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_press_free
+
+            modifier = {
+                research_speed_factor = 0.02
+                stability_factor = 0.02
+                war_support_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_prs_moderate_censorship = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_press_limited
+
+            modifier = {
+                war_support_factor = 0.03
+                stability_factor = 0.02
+                research_speed_factor = -0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_prs_patriotic_propaganda = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_edu_propaganda
+
+            modifier = {
+                war_support_factor = 0.05
+                political_power_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_prs_state_radio = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_idea_mobilization
+
+            modifier = {
+                stability_factor = 0.03
+                political_power_factor = 0.03
+                consumer_goods_factor = 0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_prs_newsreels = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_meet_monitored
+
+            modifier = {
+                war_support_factor = 0.03
+                conscription_factor = 0.02
+                consumer_goods_factor = 0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_prs_state_press = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_press_state
+
+            modifier = {
+                war_support_factor = 0.07
+                stability_factor = 0.04
+                drift_defence_factor = 0.15
+                research_speed_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_prs_total_propaganda = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_idea_nationalism
+
+            modifier = {
+                war_support_factor = 0.1
+                political_power_factor = 0.05
+                stability_factor = -0.03
+                research_speed_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_prs_national_culture = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_edu_elite
+
+            modifier = {
+                stability_factor = 0.06
+                research_speed_factor = 0.03
+                war_support_factor = -0.02
+                political_power_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_ec_order = {
+        law = yes
+        use_list_view = yes
+
+        efw_ord_civil_police = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sec_police
+
+            modifier = {
+                stability_factor = 0.03
+                political_power_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ord_gendarmerie = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sec_gendarmerie
+
+            modifier = {
+                resistance_target = -0.08
+                required_garrison_factor = -0.05
+                political_power_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ord_amnesty = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_penal_rehab
+
+            modifier = {
+                stability_factor = 0.04
+                weekly_manpower = 100
+                war_support_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ord_penal_labour = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_penal_labour
+
+            modifier = {
+                production_speed_infrastructure_factor = 0.1
+                production_speed_buildings_factor = 0.03
+                stability_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ord_informants = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sec_counter
+
+            modifier = {
+                drift_defence_factor = 0.15
+                stability_factor = 0.02
+                research_speed_factor = -0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ord_secret_police = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_sec_secret
+
+            modifier = {
+                stability_factor = 0.07
+                drift_defence_factor = 0.25
+                political_power_factor = -0.03
+                research_speed_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ord_occupation_police = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_sec_military
+
+            modifier = {
+                resistance_target = -0.15
+                required_garrison_factor = -0.15
+                political_power_factor = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ord_martial_law = {
+            available = {
+                has_war = yes
+            }
+
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_jud_politicized
+
+            modifier = {
+                stability_factor = 0.08
+                war_support_factor = 0.05
+                political_power_factor = -0.1
+                research_speed_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_so_education = {
+        law = yes
+        use_list_view = yes
+
+        efw_edu_basic_schools = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_edu_business
+
+            modifier = {
+                research_speed_factor = 0.02
+                consumer_goods_factor = 0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_edu_technical_schools = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_edu_medical
+
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.04
+                research_speed_factor = -0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_edu_military_schools = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_edu_military
+
+            modifier = {
+                experience_gain_army_factor = 0.05
+                research_speed_factor = -0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_edu_patriotic_education = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_edu_propaganda
+
+            modifier = {
+                war_support_factor = 0.03
+                research_speed_factor = -0.02
+                stability_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_edu_scholarships = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sub_science
+
+            modifier = {
+                research_speed_factor = 0.03
+                political_power_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_edu_elite_universities = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_edu_elite
+
+            modifier = {
+                research_speed_factor = 0.06
+                consumer_goods_factor = 0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_edu_military_research = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_health_research
+
+            modifier = {
+                research_speed_factor = 0.05
+                experience_gain_army_factor = 0.05
+                stability_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_edu_research_exchange = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_fi_allowed
+
+            modifier = {
+                research_sharing_per_country_bonus_factor = 0.25
+                research_speed_factor = 0.03
+                drift_defence_factor = -0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_so_population = {
+        law = yes
+        use_list_view = yes
+
+        efw_pop_public_health = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_health_basic
+
+            modifier = {
+                monthly_population = 0.1
+                consumer_goods_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_pop_birth_campaign = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_pop_encourage
+
+            modifier = {
+                monthly_population = 0.2
+                industrial_capacity_factory = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_pop_colonial_recruitment = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_nc_integrated
+
+            modifier = {
+                non_core_manpower = 0.03
+                stability_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_pop_internal_migration = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_pop_standard
+
+            modifier = {
+                production_speed_buildings_factor = 0.04
+                stability_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_pop_reservists = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_vol_small
+
+            modifier = {
+                conscription_factor = 0.03
+                monthly_population = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_pop_national_health = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_health_standard
+
+            modifier = {
+                monthly_population = 0.2
+                stability_factor = 0.04
+                consumer_goods_factor = 0.04
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_pop_total_manpower = {
+            available = {
+                has_war_support > 0.39
+            }
+
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_idea_partisans
+
+            modifier = {
+                conscription_factor = 0.05
+                non_core_manpower = 0.03
+                stability_factor = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_pop_war_economy_families = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_welfare_moderate
+
+            modifier = {
+                weekly_manpower = 400
+                industrial_capacity_factory = 0.03
+                consumer_goods_factor = 0.04
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_so_civil_defence = {
+        law = yes
+        use_list_view = yes
+
+        efw_cd_air_raid_wardens = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sec_police
+
+            modifier = {
+                static_anti_air_hit_chance_factor = 0.1
+                consumer_goods_factor = 0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cd_shelters = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_build_defense
+
+            modifier = {
+                stability_factor = 0.03
+                production_speed_buildings_factor = -0.04
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cd_coastal_watch = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sec_counter
+
+            modifier = {
+                production_speed_coastal_bunker_factor = 0.2
+                navy_intel_factor = 0.05
+                political_power_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cd_home_guard = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_arms_licenses
+
+            modifier = {
+                army_core_defence_factor = 0.04
+                industrial_capacity_factory = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cd_decoys = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_res_alternative
+
+            modifier = {
+                static_anti_air_damage_factor = 0.1
+                consumer_goods_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cd_anti_air_belt = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_build_military
+
+            modifier = {
+                production_speed_anti_air_building_factor = 0.3
+                static_anti_air_damage_factor = 0.15
+                consumer_goods_factor = 0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cd_fortress_nation = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_build_defense
+
+            modifier = {
+                production_speed_bunker_factor = 0.3
+                army_core_defence_factor = 0.05
+                production_speed_industrial_complex_factor = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cd_people_in_arms = {
+            available = {
+                has_war_support > 0.39
+            }
+
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_arms_right
+
+            modifier = {
+                army_core_defence_factor = 0.08
+                conscription_factor = 0.02
+                stability_factor = -0.04
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    # ======================================================================
+    # ESERCITO E STATO MAGGIORE
+    # ======================================================================
+
+    efw_mil_command = {
+        law = yes
+        use_list_view = yes
+
+        efw_cmd_junior_officers = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_off_junior
+
+            modifier = {
+                experience_gain_army_factor = 0.05
+                training_time_army_factor = -0.05
+                army_org_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cmd_military_academies = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_edu_military
+
+            modifier = {
+                army_org_factor = 0.03
+                training_time_army_factor = 0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cmd_centralized = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_cmd_centralized
+
+            modifier = {
+                planning_speed = 0.1
+                experience_gain_army_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cmd_decentralized = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_cmd_decentralized
+
+            modifier = {
+                army_morale_factor = 0.05
+                planning_speed = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cmd_foreign_missions = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_off_foreign
+
+            modifier = {
+                experience_gain_army_factor = 0.1
+                political_power_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cmd_war_college = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_off_advanced
+
+            modifier = {
+                planning_speed = 0.1
+                max_planning = 0.05
+                army_org_factor = 0.03
+                political_power_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cmd_general_staff = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_off_major
+
+            modifier = {
+                command_power_gain_mult = 0.15
+                army_org_factor = 0.04
+                political_power_factor = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cmd_veteran_cadres = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_sf_army_support
+
+            modifier = {
+                experience_gain_army_factor = 0.15
+                experience_loss_factor = -0.1
+                training_time_army_factor = 0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_mil_recruitment = {
+        law = yes
+        use_list_view = yes
+
+        efw_rec_quick_training = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_train_minimal
+
+            modifier = {
+                training_time_army_factor = -0.15
+                army_org_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_rec_extended_training = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_train_advanced
+
+            modifier = {
+                training_time_army_factor = 0.1
+                army_org_factor = 0.03
+                army_morale_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_rec_territorial_reserves = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_nc_integrated
+
+            modifier = {
+                conscription_factor = 0.03
+                consumer_goods_factor = 0.01
+                stability_factor = -0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_rec_volunteer_corps = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_vol_small
+
+            modifier = {
+                send_volunteer_size = 2
+                experience_gain_army_factor = 0.03
+                political_power_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_rec_auxiliaries = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_fem_support
+
+            modifier = {
+                conscription_factor = 0.03
+                industrial_capacity_factory = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_rec_mass_conscription = {
+            available = {
+                has_war_support > 0.39
+            }
+
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_train_none
+
+            modifier = {
+                conscription_factor = 0.06
+                training_time_army_factor = -0.1
+                stability_factor = -0.04
+                industrial_capacity_factory = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_rec_elite_units = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_sf_special_ops
+
+            modifier = {
+                army_attack_factor = 0.04
+                army_defence_factor = 0.03
+                training_time_army_factor = 0.15
+                conscription_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_rec_live_fire = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_train_extensive
+
+            modifier = {
+                army_org_factor = 0.05
+                army_morale_factor = 0.05
+                training_time_army_factor = 0.1
+                conscription_factor = -0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_mil_logistics = {
+        law = yes
+        use_list_view = yes
+
+        efw_log_push_supply = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_log_push
+
+            modifier = {
+                supply_consumption_factor = -0.05
+                attrition = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_log_forward_depots = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_build_military
+
+            modifier = {
+                attrition = -0.05
+                consumer_goods_factor = 0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_log_rail_priority = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_log_pull
+
+            modifier = {
+                land_reinforce_rate = 0.02
+                consumer_goods_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_log_mules = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_res_alternative
+
+            modifier = {
+                supply_consumption_factor = -0.03
+                attrition = -0.03
+                army_speed_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_log_motor_pool = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sub_industry
+
+            modifier = {
+                army_speed_factor = 0.05
+                supply_consumption_factor = 0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_log_integrated = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_build_infra
+
+            modifier = {
+                supply_consumption_factor = -0.08
+                attrition = -0.05
+                land_reinforce_rate = 0.02
+                consumer_goods_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_log_war_requisitions = {
+            available = {
+                has_war = yes
+            }
+
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_res_extraction
+
+            modifier = {
+                supply_consumption_factor = -0.1
+                land_reinforce_rate = 0.03
+                stability_factor = -0.04
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_log_fuel_economy = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_res_synthetic
+
+            modifier = {
+                fuel_gain_factor = 0.15
+                max_fuel_factor = 0.15
+                army_speed_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_mil_field_weapons = {
+        law = yes
+        use_list_view = yes
+
+        efw_fw_mg_doctrine = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sf_army_support
+
+            modifier = {
+                army_defence_factor = 0.04
+                army_attack_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fw_light_indirect_fire = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_off_advanced
+
+            modifier = {
+                army_attack_factor = 0.03
+                supply_consumption_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fw_antitank_teams = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_arms_right
+
+            modifier = {
+                army_core_defence_factor = 0.05
+                army_attack_factor = -0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fw_local_workshops = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_base_small
+
+            modifier = {
+                production_speed_arms_factory_factor = 0.08
+                consumer_goods_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fw_entrenchment = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_build_defense
+
+            modifier = {
+                max_dig_in = 3
+                army_attack_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fw_heavy_weapons = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_sub_military
+
+            modifier = {
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                supply_consumption_factor = 0.06
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fw_assault_squads = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_eth_honour
+
+            modifier = {
+                army_attack_factor = 0.07
+                breakthrough_factor = 0.05
+                army_org_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fw_defence_in_depth = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_arms_harsh
+
+            modifier = {
+                army_defence_factor = 0.07
+                army_core_defence_factor = 0.05
+                army_attack_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_mil_conduct = {
+        law = yes
+        use_list_view = yes
+
+        efw_con_field_hospitals = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_health_military
+
+            modifier = {
+                experience_loss_factor = -0.1
+                consumer_goods_factor = 0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_con_iron_discipline = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_eth_strict
+
+            modifier = {
+                army_org_factor = 0.03
+                stability_factor = -0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_con_code_of_honour = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_eth_honour
+
+            modifier = {
+                army_morale_factor = 0.04
+                equipment_capture_factor = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_con_spoils_of_war = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_eth_none
+
+            modifier = {
+                equipment_capture_factor = 0.1
+                stability_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_con_chaplains = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_health_basic
+
+            modifier = {
+                army_morale_factor = 0.03
+                war_support_factor = 0.02
+                political_power_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_con_modern_medicine = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_health_standard
+
+            modifier = {
+                experience_loss_factor = -0.2
+                land_reinforce_rate = 0.03
+                consumer_goods_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_con_no_retreat = {
+            available = {
+                has_war = yes
+            }
+
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_eth_brutality
+
+            modifier = {
+                army_defence_factor = 0.06
+                army_morale_factor = 0.05
+                experience_loss_factor = 0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_con_total_war = {
+            available = {
+                has_war = yes
+            }
+
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_eth_merciless
+
+            modifier = {
+                army_attack_factor = 0.06
+                equipment_capture_factor = 0.15
+                political_power_factor = -0.08
+                stability_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_mil_operations = {
+        law = yes
+        use_list_view = yes
+
+        efw_ops_mobile_warfare = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sf_special_ops
+
+            modifier = {
+                army_speed_factor = 0.05
+                army_fuel_consumption_factor = 0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ops_methodical = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_off_major
+
+            modifier = {
+                planning_speed = 0.08
+                army_speed_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ops_night_operations = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_idea_covert
+
+            modifier = {
+                army_morale_factor = 0.03
+                org_loss_when_moving = -0.05
+                army_org_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ops_mountain_troops = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_eth_honour
+
+            modifier = {
+                acclimatization_cold_climate_gain_factor = 0.25
+                army_speed_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ops_desert_troops = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_eth_none
+
+            modifier = {
+                acclimatization_hot_climate_gain_factor = 0.25
+                attrition = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ops_blitz = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_idea_planning
+
+            modifier = {
+                army_speed_factor = 0.08
+                breakthrough_factor = 0.05
+                army_fuel_consumption_factor = 0.15
+                army_defence_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ops_war_of_attrition = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_eth_strict
+
+            modifier = {
+                army_defence_factor = 0.06
+                out_of_supply_factor = -0.1
+                army_speed_factor = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_ops_river_assault = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_cmd_decentralized
+
+            modifier = {
+                river_crossing_factor = 0.2
+                army_attack_factor = 0.03
+                army_org_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    # ======================================================================
+    # MARINA, AVIAZIONE E SERVIZI
+    # ======================================================================
+
+    efw_na_fleet = {
+        law = yes
+        use_list_view = yes
+
+        efw_fleet_coastal_navy = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_build_defense
+
+            modifier = {
+                naval_defense_factor = 0.04
+                navy_max_range_factor = -0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fleet_gunnery = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sf_army_support
+
+            modifier = {
+                naval_hit_chance = 0.05
+                navy_fuel_consumption_factor = 0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fleet_damage_control = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_health_military
+
+            modifier = {
+                repair_speed_factor = 0.1
+                industrial_capacity_dockyard = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fleet_naval_training = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_edu_business
+
+            modifier = {
+                experience_gain_navy_factor = 0.1
+                naval_accidents_chance = 0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fleet_preservation = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_cmd_centralized
+
+            modifier = {
+                naval_retreat_chance = 0.1
+                naval_damage_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fleet_blue_water = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_base_industry
+
+            modifier = {
+                naval_damage_factor = 0.05
+                naval_defense_factor = 0.05
+                navy_max_range_factor = 0.1
+                consumer_goods_factor = 0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fleet_torpedo_doctrine = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_sf_foreign
+
+            modifier = {
+                naval_torpedo_hit_chance_factor = 0.1
+                naval_critical_score_chance_factor = 0.1
+                naval_defense_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fleet_rapid_refit = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_sub_foreign
+
+            modifier = {
+                refit_speed = 0.2
+                repair_speed_factor = 0.15
+                production_speed_dockyard_factor = -0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_na_convoys = {
+        law = yes
+        use_list_view = yes
+
+        efw_cv_escort = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sec_counter
+
+            modifier = {
+                convoy_escort_efficiency = 0.1
+                convoy_raiding_efficiency_factor = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cv_wolfpacks = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_idea_covert
+
+            modifier = {
+                convoy_raiding_efficiency_factor = 0.1
+                convoy_escort_efficiency = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cv_dispersed_routes = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_log_pull
+
+            modifier = {
+                convoy_retreat_speed = 0.15
+                navy_max_range_factor = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cv_minefields = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_build_defense
+
+            modifier = {
+                mines_planting_by_fleets_factor = 0.2
+                naval_accidents_chance = 0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cv_sonar = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_edu_medical
+
+            modifier = {
+                navy_submarine_detection_factor = 0.1
+                research_speed_factor = -0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cv_total_sub_war = {
+            available = {
+                has_war = yes
+            }
+
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_eth_merciless
+
+            modifier = {
+                convoy_raiding_efficiency_factor = 0.2
+                naval_torpedo_hit_chance_factor = 0.05
+                political_power_factor = -0.06
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cv_convoy_system = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_log_push
+
+            modifier = {
+                convoy_escort_efficiency = 0.2
+                navy_submarine_detection_factor = 0.05
+                industrial_capacity_dockyard = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_cv_stealth_boats = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_sf_special_ops
+
+            modifier = {
+                navy_visibility = -0.1
+                convoy_raiding_efficiency_factor = 0.08
+                naval_defense_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_na_air_force = {
+        law = yes
+        use_list_view = yes
+
+        efw_af_flight_schools = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_edu_medical
+
+            modifier = {
+                air_training_xp_gain_factor = 0.15
+                air_accidents_factor = -0.1
+                consumer_goods_factor = 0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_af_aces = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_idea_nationalism
+
+            modifier = {
+                air_ace_generation_chance_factor = 0.25
+                air_wing_xp_loss_when_killed_factor = 0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_af_interceptors = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sec_military
+
+            modifier = {
+                air_superiority_efficiency = 0.05
+                air_range_factor = -0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_af_long_range = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sf_foreign
+
+            modifier = {
+                air_range_factor = 0.15
+                air_agility_factor = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_af_radar_network = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sec_counter
+
+            modifier = {
+                airforce_intel_factor = 0.1
+                air_night_penalty = -0.1
+                research_speed_factor = -0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_af_air_superiority = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_idea_planning
+
+            modifier = {
+                air_superiority_efficiency = 0.08
+                air_attack_factor = 0.04
+                air_accidents_factor = 0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_af_veteran_squadrons = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_off_advanced
+
+            modifier = {
+                experience_gain_air_factor = 0.15
+                air_ace_bonuses_factor = 0.15
+                air_training_xp_gain_factor = -0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_af_all_weather = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_idea_mobilization
+
+            modifier = {
+                air_weather_penalty = -0.2
+                air_night_penalty = -0.15
+                air_accidents_factor = 0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_na_air_support = {
+        law = yes
+        use_list_view = yes
+
+        efw_as_close_support = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sf_army_support
+
+            modifier = {
+                air_cas_efficiency = 0.08
+                air_superiority_efficiency = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_as_dive_bombing = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_tax_very_high
+
+            modifier = {
+                air_bombing_targetting = 0.1
+                air_accidents_factor = 0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_as_naval_strike = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sub_foreign
+
+            modifier = {
+                naval_strike_attack_factor = 0.08
+                naval_strike_targetting_factor = 0.05
+                air_cas_efficiency = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_as_air_reconnaissance = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_edu_business
+
+            modifier = {
+                army_intel_factor = 0.1
+                recon_factor = 0.05
+                air_fuel_consumption_factor = 0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_as_forward_airfields = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_build_military
+
+            modifier = {
+                production_speed_air_base_factor = 0.25
+                production_speed_naval_base_factor = -0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_as_strategic_bombing = {
+            available = {
+                has_war = yes
+            }
+
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_idea_partisans
+
+            modifier = {
+                air_strategic_bomber_bombing_factor = 0.15
+                air_mission_efficiency = 0.03
+                political_power_factor = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_as_army_cooperation = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_cmd_decentralized
+
+            modifier = {
+                air_cas_efficiency = 0.12
+                army_attack_factor = 0.02
+                air_superiority_efficiency = -0.04
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_as_maritime_patrol = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_log_push
+
+            modifier = {
+                naval_strike_attack_factor = 0.1
+                navy_submarine_detection_factor = 0.08
+                air_fuel_consumption_factor = 0.1
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_na_intelligence = {
+        law = yes
+        use_list_view = yes
+
+        efw_int_codebreakers = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_off_advanced
+
+            modifier = {
+                decryption_factor = 0.1
+                research_speed_factor = -0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_int_secure_codes = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sec_secret
+
+            modifier = {
+                encryption_factor = 0.1
+                political_power_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_int_foreign_networks = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_idea_covert
+
+            modifier = {
+                intel_network_gain_factor = 0.15
+                political_power_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_int_counter_espionage = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sec_counter
+
+            modifier = {
+                enemy_operative_detection_chance_factor = 0.15
+                stability_factor = -0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_int_military_intelligence = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sf_army_support
+
+            modifier = {
+                army_intel_factor = 0.1
+                navy_intel_factor = 0.05
+                civilian_intel_factor = -0.05
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_int_central_agency = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_sf_special_ops
+
+            modifier = {
+                intel_network_gain_factor = 0.2
+                civilian_intel_factor = 0.1
+                political_power_factor = -0.06
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_int_cipher_bureau = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_edu_elite
+
+            modifier = {
+                decryption_factor = 0.15
+                encryption_factor = 0.1
+                research_speed_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_int_deception = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_jud_politicized
+
+            modifier = {
+                army_intel_factor = 0.15
+                enemy_operative_detection_chance_factor = 0.1
+                stability_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+
+    efw_na_foreign_ops = {
+        law = yes
+        use_list_view = yes
+
+        efw_fo_volunteer_corps = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_vol_small
+
+            modifier = {
+                send_volunteer_size = 2
+                send_volunteers_tension = -0.2
+                political_power_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fo_air_volunteers = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_vol_large
+
+            modifier = {
+                air_volunteer_cap = 2
+                experience_gain_air_factor = 0.03
+                political_power_factor = -0.02
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fo_military_aid = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_sub_military
+
+            modifier = {
+                lend_lease_tension = -0.25
+                opinion_gain_monthly_factor = 0.1
+                consumer_goods_factor = 0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fo_neutrality = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_vol_none
+
+            modifier = {
+                stability_factor = 0.03
+                experience_gain_army_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fo_guarantees = {
+            cost = 50
+            removal_cost = -1
+            picture = efw_law_fi_regulated
+
+            modifier = {
+                guarantee_cost = -0.25
+                war_support_factor = 0.02
+                stability_factor = -0.01
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fo_foreign_legion = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_vol_large
+
+            modifier = {
+                send_volunteer_size = 4
+                experience_gain_army_factor = 0.05
+                political_power_factor = -0.04
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fo_war_plans = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_idea_planning
+
+            modifier = {
+                justify_war_goal_time = -0.25
+                generate_wargoal_tension = -0.25
+                stability_factor = -0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+
+        efw_fo_great_power = {
+            cost = 100
+            removal_cost = -1
+            picture = efw_law_idea_nationalism
+
+            modifier = {
+                opinion_gain_monthly_factor = 0.2
+                political_power_factor = 0.05
+                consumer_goods_factor = 0.03
+            }
+
+            cancel_if_invalid = no
+            ai_will_do = { factor = 0 }
+        }
+    }
+}

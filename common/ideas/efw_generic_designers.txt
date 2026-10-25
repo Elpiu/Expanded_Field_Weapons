@@ -1,0 +1,322 @@
+# Generic designers adapted from "Designers Extend" (Steam Workshop 2742251002).
+# EFW changes: efw_ prefix, 1.19 airframe types instead of the old plane equipment,
+# duplicated stats removed. Disable the original mod when using EFW.
+
+ideas = {
+	tank_manufacturer = {
+		designer = yes
+		efw_hornet_tank_manufacturer = {
+
+			picture = scania
+			
+			allowed = {
+			}
+			
+			cost = 500
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.2
+			}
+			
+			traits = { efw_tank_manufacturer1 }
+		}
+
+		efw_fury_tank_manufacturer = {
+
+			picture = SOV_mytishchy_machine_building_plant
+			
+			allowed = {
+			}
+			
+			cost = 1000
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.3
+			}
+			
+			traits = { efw_tank_manufacturer2 }
+		}
+
+		efw_raven_tank_manufacturer = {
+
+			picture = ger_revive_the_kaiserreich
+			
+			allowed = {
+			}
+			
+			cost = 2000
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.4
+			}
+			
+			traits = { efw_tank_manufacturer3 }
+		}
+	}
+	naval_manufacturer = { 
+	
+		designer = yes
+
+		efw_siren_naval_manufacturer = {
+			
+			picture = gre_astilleros_onassis
+
+			allowed = {
+			}
+			
+			cost = 500
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { efw_naval_manufacturer1 }
+		}
+
+		efw_leviathan_naval_manufacturer = {
+			
+			picture = SOV_mine_warfare
+
+			allowed = {
+			}
+			
+			cost = 1000
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.2
+			}
+			
+			traits = { efw_naval_manufacturer2 }
+		}
+
+		efw_poseidon_naval_manufacturer = {
+			
+			picture = piaggio
+
+			allowed = {
+			}
+			
+			cost = 2000
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.3
+			}
+			
+			traits = { efw_naval_manufacturer3 }
+		}
+	}
+
+	aircraft_manufacturer = { 
+	
+		designer = yes
+
+		efw_insomnia_aircraft_manufacturer = {
+			
+			picture = generic_fighter_production_diverted
+
+			allowed = {
+			}
+			
+			cost = 500
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			
+			traits = { efw_aircraft_manufacturer1 }
+		}
+
+		efw_wardon_aircraft_manufacturer = {
+			
+			picture = por_ogma
+
+			allowed = {
+			}
+			
+			cost = 1000
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.2
+			}
+			
+			traits = { efw_aircraft_manufacturer2 }
+		}
+
+		efw_shadow_aircraft_manufacturer = {
+			
+			picture = usa_airborne_divisions
+
+			allowed = {
+			}
+			
+			cost = 2000
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.3
+			}
+			
+			traits = { efw_aircraft_manufacturer3 }
+		}
+	}
+
+	# =====================================================================
+	# EFW: DESIGNER DI MATERIALE (non presenti in Designers Extend)
+	# =====================================================================
+	materiel_manufacturer = {
+
+		designer = yes
+
+		efw_national_armoury_manufacturer = {
+			picture = generic_infantry_equipment_manufacturer_1
+			allowed = { }
+			cost = 500
+			removal_cost = 10
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			traits = { efw_materiel_infantry_trait }
+		}
+
+		efw_artillery_foundries_manufacturer = {
+			picture = generic_artillery_manufacturer_1
+			allowed = { }
+			cost = 500
+			removal_cost = 10
+			research_bonus = {
+				artillery = 0.15
+			}
+			traits = { efw_materiel_artillery_trait }
+		}
+
+		efw_motor_works_manufacturer = {
+			picture = generic_motorized_equipment_manufacturer_1
+			allowed = { }
+			cost = 500
+			removal_cost = 10
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			traits = { efw_materiel_motorized_trait }
+		}
+
+		efw_heavy_weapons_consortium_manufacturer = {
+			picture = generic_infantry_equipment_manufacturer_2
+			allowed = { }
+			cost = 1000
+			removal_cost = 10
+			research_bonus = {
+				support_tech = 0.15
+				infantry_weapons = 0.05
+			}
+			traits = { efw_materiel_heavy_weapons_trait }
+		}
+
+		efw_economy_arsenal_manufacturer = {
+			picture = generic_artillery_manufacturer_2
+			allowed = { }
+			cost = 1000
+			removal_cost = 10
+			research_bonus = {
+				infantry_weapons = 0.10
+				artillery = 0.05
+			}
+			traits = { efw_materiel_economy_trait }
+		}
+
+		efw_integrated_armaments_manufacturer = {
+			picture = generic_infantry_equipment_manufacturer_3
+			allowed = { }
+			cost = 2000
+			removal_cost = 10
+			research_bonus = {
+				infantry_weapons = 0.15
+				artillery = 0.15
+				support_tech = 0.15
+				motorized_equipment = 0.10
+			}
+			traits = { efw_materiel_integrated_trait }
+		}
+	}
+
+	# =====================================================================
+	# EFW: CONCESSIONI INDUSTRIALI (non presenti in Designers Extend)
+	# =====================================================================
+	industrial_concern = {
+
+		efw_united_steelworks_concern = {
+			picture = generic_industrial_concern_1
+			allowed = { }
+			cost = 500
+			removal_cost = 10
+			research_bonus = {
+				industry = 0.10
+			}
+			traits = { efw_concern_steel_trait }
+		}
+
+		efw_national_power_company_concern = {
+			picture = generic_electronics_concern_1
+			allowed = { }
+			cost = 500
+			removal_cost = 10
+			research_bonus = {
+				electronics = 0.10
+			}
+			traits = { efw_concern_power_trait }
+		}
+
+		efw_synthetic_refineries_concern = {
+			picture = generic_refining_concern_1
+			allowed = { }
+			cost = 500
+			removal_cost = 10
+			research_bonus = {
+				synth_resources = 0.15
+			}
+			traits = { efw_concern_synthetic_trait }
+		}
+
+		efw_construction_firms_concern = {
+			picture = generic_improved_industries
+			allowed = { }
+			cost = 1000
+			removal_cost = 10
+			research_bonus = {
+				construction_tech = 0.15
+			}
+			traits = { efw_concern_construction_trait }
+		}
+
+		efw_mining_consortium_concern = {
+			picture = generic_industrial_concern_2
+			allowed = { }
+			cost = 1000
+			removal_cost = 10
+			research_bonus = {
+				excavation_tech = 0.15
+			}
+			traits = { efw_concern_mining_trait }
+		}
+
+		efw_industrial_conglomerate_concern = {
+			picture = generic_industrial_concern_3
+			allowed = { }
+			cost = 2000
+			removal_cost = 10
+			research_bonus = {
+				industry = 0.15
+				electronics = 0.10
+			}
+			traits = { efw_concern_conglomerate_trait }
+		}
+	}
+}

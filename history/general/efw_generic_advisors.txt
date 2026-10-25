@@ -1,0 +1,137 @@
+# ============================================================================
+# EFW - CONSIGLIERI POLITICI GENERICI
+# Stesso meccanismo di history/general/generic_advisors.txt (vanilla):
+# generate_character crea una copia di ogni consigliere per ogni paese
+# all'inizio di una nuova partita. Nome casuale, ritratto generico vanilla.
+# Tratti in common/country_leader/efw_advisor_traits.txt.
+# ============================================================================
+
+every_possible_country = {
+    limit = {
+        is_dynamic_country = no
+    }
+
+    # ------------------------------------------------------------------------
+    # CONSIGLIERI DI GOVERNO: uno per ideologia, solo con quel partito al potere
+    # ------------------------------------------------------------------------
+
+    generate_character = {
+        token_base = efw_adv_parliamentary_statesman
+        advisor = {
+            slot = political_advisor
+            cost = 150
+            traits = { efw_parliamentary_statesman }
+            available = {
+                has_government = democratic
+            }
+            ai_will_do = { factor = 1 }
+        }
+        portraits = {
+            army = { small = GFX_idea_generic_political_advisor_europe_1 }
+        }
+    }
+
+    generate_character = {
+        token_base = efw_adv_plan_commissar
+        advisor = {
+            slot = political_advisor
+            cost = 150
+            traits = { efw_plan_commissar }
+            available = {
+                has_government = communism
+            }
+            ai_will_do = { factor = 1 }
+        }
+        portraits = {
+            army = { small = GFX_idea_generic_political_advisor_europe_2 }
+        }
+    }
+
+    generate_character = {
+        token_base = efw_adv_party_hierarch
+        advisor = {
+            slot = political_advisor
+            cost = 150
+            traits = { efw_party_hierarch }
+            available = {
+                has_government = fascism
+            }
+            ai_will_do = { factor = 1 }
+        }
+        portraits = {
+            army = { small = GFX_idea_generic_political_advisor_europe_3 }
+        }
+    }
+
+    generate_character = {
+        token_base = efw_adv_man_of_order
+        advisor = {
+            slot = political_advisor
+            cost = 150
+            traits = { efw_man_of_order }
+            available = {
+                has_government = neutrality
+            }
+            ai_will_do = { factor = 1 }
+        }
+        portraits = {
+            army = { small = GFX_idea_generic_political_advisor_europe_4 }
+        }
+    }
+
+    # ------------------------------------------------------------------------
+    # CONSIGLIERI TECNICI: disponibili per tutti
+    # ------------------------------------------------------------------------
+
+    generate_character = {
+        token_base = efw_adv_armaments_minister
+        advisor = {
+            slot = political_advisor
+            cost = 150
+            traits = { efw_armaments_minister }
+            ai_will_do = { factor = 1 }
+        }
+        portraits = {
+            army = { small = GFX_idea_generic_political_advisor_europe_5 }
+        }
+    }
+
+    generate_character = {
+        token_base = efw_adv_propaganda_chief
+        advisor = {
+            slot = political_advisor
+            cost = 150
+            traits = { efw_propaganda_chief }
+            ai_will_do = { factor = 1 }
+        }
+        portraits = {
+            army = { small = GFX_idea_generic_political_advisor_europe_6 }
+        }
+    }
+
+    generate_character = {
+        token_base = efw_adv_career_diplomat
+        advisor = {
+            slot = political_advisor
+            cost = 150
+            traits = { efw_career_diplomat }
+            ai_will_do = { factor = 1 }
+        }
+        portraits = {
+            army = { small = GFX_idea_generic_political_advisor_female_europe }
+        }
+    }
+
+    generate_character = {
+        token_base = efw_adv_war_economist
+        advisor = {
+            slot = political_advisor
+            cost = 150
+            traits = { efw_war_economist }
+            ai_will_do = { factor = 1 }
+        }
+        portraits = {
+            army = { small = GFX_idea_generic_political_advisor_asia_1 }
+        }
+    }
+}

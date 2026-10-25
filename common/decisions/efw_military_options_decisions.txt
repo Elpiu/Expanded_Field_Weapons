@@ -1,0 +1,42 @@
+# ============================================================================
+# EFW - INVASIONI RAPIDE (interruttore)
+# Basato sui define di "Invasions" (Workshop 3709777606). I define sono statici
+# e non si possono attivare in partita, quindi l'effetto e riprodotto con i
+# modificatori nazionali dell'idea efw_rapid_invasions_idea.
+# Le due decisioni si alternano: gratuite e ripetibili.
+# ============================================================================
+
+efw_military_options_category = {
+
+    efw_enable_rapid_invasions = {
+        icon = generic_military
+        visible = {
+            is_ai = no
+            NOT = { has_idea = efw_rapid_invasions_idea }
+        }
+
+        cost = 0
+
+        complete_effect = {
+            add_ideas = efw_rapid_invasions_idea
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_disable_rapid_invasions = {
+        icon = generic_military
+        visible = {
+            is_ai = no
+            has_idea = efw_rapid_invasions_idea
+        }
+
+        cost = 0
+
+        complete_effect = {
+            remove_ideas = efw_rapid_invasions_idea
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+}

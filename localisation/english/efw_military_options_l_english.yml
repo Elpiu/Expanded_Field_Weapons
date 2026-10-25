@@ -1,0 +1,9 @@
+﻿l_english:
+ efw_military_options_category:0 "EFW Military Options"
+ efw_military_options_category_desc:0 "Optional military rules that can be switched on and off at any time."
+ efw_enable_rapid_invasions:0 "Enable Rapid Invasions"
+ efw_enable_rapid_invasions_desc:0 "Naval and airborne invasions need no preparation time, and there is practically no limit on planned naval invasions or on the divisions assigned to them."
+ efw_disable_rapid_invasions:0 "Disable Rapid Invasions"
+ efw_disable_rapid_invasions_desc:0 "Return to the normal invasion rules: preparation time and limits on plans and divisions apply again."
+ efw_rapid_invasions_idea:0 "Rapid Invasions"
+ efw_rapid_invasions_idea_desc:0 "Landing operations are planned and launched with no preparation time and no practical limit on plans or divisions. Can be disabled from the EFW Military Options decisions."

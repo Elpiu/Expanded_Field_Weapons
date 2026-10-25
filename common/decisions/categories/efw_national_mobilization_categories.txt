@@ -1,4 +1,11 @@
+# ============================================================================
+# EFW - CATEGORIA DECISIONI
+# Le linee Tesoro, Fronte Interno e Stato Maggiore sono leggi nel pannello
+# politico (common/idea_tags/efw_policy_categories.txt), non decisioni.
+# ============================================================================
+
 efw_national_mobilization_category = {
+    icon = generic_industry
     visible = {
         is_ai = no
     }

@@ -50,7 +50,7 @@ on_actions = {
                         modules = {
                             fixed_main_weapon_slot = light_mg_2x
                             engine_type_slot = engine_1_1x
-                            special_type_slot_1 = efw_wooden_construction
+                            special_type_slot_1 = efw_wooden_boost_airframe
                         }
                     }
 

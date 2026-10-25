@@ -1,0 +1,9 @@
+# Overrides vanilla GFX_idea_categories (countrypoliticsview.gfx) with 20 frames:
+# frames 15-18 are the EFW policy categories. zzz_ so it loads after vanilla.
+spriteTypes = {
+    spriteType = {
+        name = "GFX_idea_categories"
+        texturefile = "gfx/interface/efw_idea_categories.dds"
+        noOfFrames = 20
+    }
+}

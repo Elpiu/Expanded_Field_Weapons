@@ -1,12 +1,19 @@
 # ============================================================================
-# EFW STRATEGIC MOBILIZATION v0.5 FAST START
+# EFW STRATEGIC MOBILIZATION v0.6.1 (bonuses +20%)
 # All four buildings are available from day 1.
+# country_modifiers stack once per building (one per state), so the national
+# buildings use per_controlled_building_extra_cost: the first few are cheap,
+# building one in every state of a large country is expensive.
+# Each building has a thematic drawback.
 # ============================================================================
 
 buildings = {
 
+    # Propaganda: politics, recruitment, ideological defence.
+    # Drawback: censorship slows research.
     efw_propaganda_center = {
         base_cost = 1000
+        per_controlled_building_extra_cost = 1500
         infrastructure_construction_effect = yes
         value = 3
         icon_frame = 16
@@ -15,14 +22,17 @@ buildings = {
 
         country_modifiers = {
             modifiers = {
-                political_power_factor = 0.03
-                stability_factor = 0.005
-                war_support_factor = 0.005
+                political_power_factor = 0.036
+                stability_factor = 0.0036
+                war_support_factor = 0.0036
+                drift_defence_factor = 0.036
+                conscription_factor = 0.012
+                research_speed_factor = -0.005
             }
         }
 
         state_modifiers = {
-            resistance_target = -0.02
+            resistance_target = -0.024
         }
 
         level_cap = {
@@ -30,8 +40,11 @@ buildings = {
         }
     }
 
+    # Labour: industry and construction.
+    # Drawback: harsh working conditions lower population growth and stability.
     efw_labor_directorate = {
         base_cost = 1600
+        per_controlled_building_extra_cost = 2000
         infrastructure_construction_effect = yes
         value = 4
         icon_frame = 13
@@ -40,13 +53,16 @@ buildings = {
 
         country_modifiers = {
             modifiers = {
-                industrial_capacity_factory = 0.03
-                production_speed_buildings_factor = 0.03
+                industrial_capacity_factory = 0.048
+                production_speed_buildings_factor = 0.036
+                production_factory_efficiency_gain_factor = 0.036
+                monthly_population = -0.03
+                stability_factor = -0.004
             }
         }
 
         state_modifiers = {
-            local_resources_factor = 0.05
+            local_resources_factor = 0.06
         }
 
         level_cap = {
@@ -55,6 +71,8 @@ buildings = {
         }
     }
 
+    # Research: research speed and know-how transferred to new production lines.
+    # Drawback: laboratories and specialists raise consumer goods demand.
     efw_research_center = {
         base_cost = 3000
         per_controlled_building_extra_cost = 1000
@@ -66,7 +84,9 @@ buildings = {
 
         country_modifiers = {
             modifiers = {
-                research_speed_factor = 0.025
+                research_speed_factor = 0.03
+                production_factory_start_efficiency_factor = 0.012
+                consumer_goods_factor = 0.005
             }
         }
 
@@ -76,6 +96,8 @@ buildings = {
         }
     }
 
+    # Logistics: local effects only (supply, attrition, transport construction),
+    # so it needs neither escalating cost nor a drawback.
     efw_logistics_center = {
         base_cost = 2200
         infrastructure_construction_effect = yes
@@ -85,9 +107,12 @@ buildings = {
         show_modifier = yes
 
         state_modifiers = {
-            local_supplies = 0.25
-            state_production_speed_infrastructure_factor = 0.10
-            state_production_speed_buildings_factor = 0.05
+            local_supplies = 0.30
+            attrition_for_controller = -0.12
+            state_production_speed_infrastructure_factor = 0.12
+            state_production_speed_rail_way_factor = 0.12
+            state_production_speed_supply_node_factor = 0.12
+            state_production_speed_buildings_factor = 0.06
         }
 
         level_cap = {

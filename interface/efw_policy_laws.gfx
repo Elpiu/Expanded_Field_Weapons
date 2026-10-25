@@ -1,0 +1,624 @@
+# Generated from laws_data.py - EFW politics-panel laws.
+# Concepts and icons adapted from Better Laws and Policies (Workshop 3097661966).
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_idea_efw_law_arms_harsh"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_arms_harsh.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_arms_licenses"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_arms_licenses.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_arms_right"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_arms_right.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_base_agrarian"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_base_agrarian.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_base_banking"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_base_banking.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_base_business"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_base_business.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_base_industry"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_base_industry.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_base_natural"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_base_natural.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_base_small"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_base_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_bonds_forced"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_bonds_forced.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_build_defense"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_build_defense.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_build_infra"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_build_infra.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_build_military"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_build_military.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_cmd_centralized"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_cmd_centralized.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_cmd_decentralized"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_cmd_decentralized.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_edu_business"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_edu_business.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_edu_elite"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_edu_elite.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_edu_medical"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_edu_medical.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_edu_military"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_edu_military.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_edu_propaganda"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_edu_propaganda.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_eth_brutality"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_eth_brutality.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_eth_honour"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_eth_honour.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_eth_merciless"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_eth_merciless.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_eth_none"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_eth_none.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_eth_strict"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_eth_strict.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_fem_support"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_fem_support.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_fi_allowed"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_fi_allowed.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_fi_banned"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_fi_banned.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_fi_encouraged"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_fi_encouraged.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_fi_regulated"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_fi_regulated.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_health_basic"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_health_basic.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_health_military"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_health_military.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_health_research"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_health_research.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_health_standard"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_health_standard.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_idea_covert"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_idea_covert.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_idea_mobilization"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_idea_mobilization.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_idea_nationalism"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_idea_nationalism.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_idea_partisans"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_idea_partisans.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_idea_planning"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_idea_planning.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_jud_politicized"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_jud_politicized.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_log_pull"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_log_pull.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_log_push"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_log_push.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_meet_monitored"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_meet_monitored.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_nc_integrated"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_nc_integrated.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_off_advanced"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_off_advanced.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_off_foreign"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_off_foreign.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_off_junior"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_off_junior.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_off_major"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_off_major.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_penal_labour"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_penal_labour.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_penal_rehab"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_penal_rehab.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_planned_economy"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_planned_economy.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_pop_encourage"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_pop_encourage.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_pop_standard"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_pop_standard.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_press_free"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_press_free.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_press_limited"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_press_limited.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_press_state"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_press_state.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_rentier_state"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_rentier_state.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_res_alternative"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_res_alternative.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_res_extraction"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_res_extraction.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_res_synthetic"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_res_synthetic.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_sec_counter"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_sec_counter.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_sec_gendarmerie"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_sec_gendarmerie.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_sec_military"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_sec_military.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_sec_police"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_sec_police.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_sec_secret"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_sec_secret.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_sf_army_support"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_sf_army_support.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_sf_foreign"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_sf_foreign.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_sf_special_ops"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_sf_special_ops.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_state_capitalism"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_state_capitalism.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_sub_foreign"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_sub_foreign.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_sub_industry"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_sub_industry.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_sub_military"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_sub_military.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_sub_science"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_sub_science.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_tariff_average"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_tariff_average.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_tariff_extreme"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_tariff_extreme.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_tariff_high"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_tariff_high.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_tariff_low"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_tariff_low.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_tariff_none"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_tariff_none.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_tax_high"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_tax_high.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_tax_low"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_tax_low.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_tax_mutual_aid"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_tax_mutual_aid.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_tax_stagnating"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_tax_stagnating.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_tax_standard"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_tax_standard.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_tax_very_high"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_tax_very_high.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_tax_very_low"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_tax_very_low.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_train_advanced"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_train_advanced.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_train_extensive"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_train_extensive.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_train_minimal"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_train_minimal.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_train_none"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_train_none.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_unions_banned"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_unions_banned.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_unions_state"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_unions_state.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_vol_large"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_vol_large.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_vol_none"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_vol_none.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_vol_small"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_vol_small.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_welfare_basic"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_welfare_basic.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_welfare_generous"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_welfare_generous.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_welfare_moderate"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_welfare_moderate.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_work_12"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_work_12.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_work_14"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_work_14.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_law_work_8"
+        texturefile = "gfx/interface/ideas/efw_laws/efw_law_work_8.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_ec_fiscal"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_economy.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_ec_trade"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_economy.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_ec_industry"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_economy.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_ec_foreign_capital"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_economy.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_ec_subsidies"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_economy.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_ec_resources"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_economy.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_ec_labour"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_internal_policies.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_ec_press"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_internal_policies.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_ec_order"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_internal_policies.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_so_education"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_internal_policies.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_so_population"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_internal_policies.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_so_civil_defence"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_internal_policies.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_mil_command"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_high_command.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_mil_recruitment"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_high_command.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_mil_logistics"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_high_command.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_mil_field_weapons"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_high_command.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_mil_conduct"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_high_command.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_mil_operations"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_high_command.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_na_fleet"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_army.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_na_convoys"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_army.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_na_air_force"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_army.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_na_air_support"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_army.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_na_intelligence"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_army.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_slot_efw_na_foreign_ops"
+        texturefile = "gfx/interface/efw_idea_slots/idea_slot_army.dds"
+    }
+}

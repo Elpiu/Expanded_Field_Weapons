@@ -1,0 +1,17 @@
+﻿l_english:
+ # === MOBILISATION: FUEL AUTARKY ===
+ efw_autarky_fuel_plan:0 "Fuel Autarky"
+ efw_autarky_fuel_plan_desc:0 "Petrol from coal, alcohol from potatoes and a lot of hope.\n\n§R-30,000 manpower§!. For §Y365 days§!: faster synthetic refineries and more fuel. §R30%§! chance the smell in the cities becomes a political problem."
+ efw_autarky_fuel_idea:0 "Fuel Autarky"
+ efw_autarky_fuel_idea_desc:0 "Every drop of fuel made at home is one less to buy abroad."
+ efw_tt_autarky_ok:0 "The refineries work. More or less."
+ efw_tt_autarky_smell:0 "§RThe cities smell of burnt cabbage.§!"
+
+ # === HIDDEN TECHNOLOGIES ===
+ efw_pipe_gun_unlock:0 "EFW: Improvised Pipe Gun"
+
+ # === MOBILISATION IDEA DESCRIPTIONS ===
+ efw_industrial_phase_1_idea_desc:0 "Foundations and relaunch: industrial sites open across the country."
+ efw_industrial_phase_2_idea_desc:0 "Heavy industry consolidation: the new factories reach full output."
+ efw_grand_works_idea_desc:0 "Roads, railways and town plans: the nation is one huge construction site."
+ efw_social_welfare_workshops_idea_desc:0 "Supported families and widespread workshops: production grows from the ground up."

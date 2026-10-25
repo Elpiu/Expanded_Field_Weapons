@@ -151,10 +151,12 @@ create_equipment_variant = {
     modules = {
         fixed_main_weapon_slot = light_mg_2x
         engine_type_slot = engine_1_1x
-        special_type_slot_1 = efw_wooden_construction
+        special_type_slot_1 = efw_wooden_boost_airframe
     }
 }
 ```
+
+Il modulo è sbloccato dalla tech nascosta `efw_wooden_construction_unlock`, assegnata in `common/on_actions/efw_improvised_air_tank_on_actions.txt`.
 
 ### Lezione
 Se una variante smette di apparire dopo aver aggiunto un modulo:
@@ -173,7 +175,8 @@ Malformed token: fighter_equipment
 Malformed token: light_tank_equipment
 ```
 
-Può succedere se un file custom viene caricato prima che l'archetipo vanilla sia disponibile.
+Può succedere se un file custom viene caricato prima che l'archetipo vanilla sia disponibile.  
+Attenzione: `light_tank_equipment` in 1.19 **non esiste proprio** (i carri sono chassis), quindi lì nessun ordine di caricamento aiutava. Il Tin Tank che lo usava è stato rimosso.
 
 ### Best practice
 Quando serve caricare un file dopo vanilla:
@@ -236,7 +239,28 @@ Le decisioni state-targeted e gli unlock nascosti hanno introdotto troppi punti 
 
 La soluzione semplice è molto più robusta e facile da bilanciare.
 
+### Bilanciamento (v0.6)
+I `country_modifiers` degli edifici si sommano **per ogni edificio** (uno per stato): senza limiti una nazione con 40 stati otteneva +120% PP / produzione.
+- Propaganda, Lavoro e Ricerca usano `per_controlled_building_extra_cost` (1500 / 2000 / 1000).
+- Ogni edificio con bonus nazionali ha un malus a tema: Propaganda -0.5% ricerca, Lavoro -3% crescita popolazione e -0.4% stabilità, Ricerca +0.5% consumer goods.
+- Il Centro Logistico ha solo effetti locali: niente costo crescente né malus.
+
+## Edifici risorse e civili (da "Resource Plants" 3513657215)
+
+File: `common/buildings/zzz_efw_resource_buildings.txt`.
+
+- Ogni coppia piccolo/grande della mod originale è fusa in un solo edificio con valori medi (costo 5500 + 3500/livello, 30 risorse; tungsteno/cromo 18). Il carbone resta com'era.
+- Gli edifici risorse **non** usano slot (come l'originale). Compaiono nella riga alta della vista stato: `interface/countrystateview.gui` (copia vanilla 1.19) la porta a 3 righe x 5 e allunga la finestra di 168 px, con sfondo `gfx/interface/stateview/efw_stateview_bg.dds` (sprite `GFX_efw_stateview_bg` in `interface/efw_stateview.gfx`). Edifici senza slot attuali: 4 vanilla + 9 EFW = 13 su 15 posti. Aggiungendone altri senza slot va aggiunta un'altra riga.
+- `efw_public_housing` (+10% manpower locale, +10% popolazione reclutabile) e `efw_wheat_fields` (-0.5% consumer goods per stato, stackabile, +3 slot di costruzione) usano uno slot e hanno `state_max = 1`.
+- Icone: `gfx/interface/buildings/building_icon_strip.dds` = 31 frame vanilla + 9 EFW (32-40). Il numero frame è in `interface/countrystateview.gfx` (copia vanilla 1.19 con solo `noOfFrames = 40`). **Dopo ogni patch HOI4 che aggiunge edifici vanilla** la strip e quel file vanno rigenerati partendo dai nuovi vanilla.
+
 ---
+
+## Define resi attivabili (Invasioni Rapide)
+
+I define (`common/defines/*.lua`) sono statici: valgono per tutti i paesi e non si possono cambiare in partita. Per rendere un define attivabile serve un modificatore nazionale equivalente in un'idea, aggiunta/tolta da due decisioni che si alternano (`has_idea` nel `visible`).
+
+Esempio: `efw_rapid_invasions_idea` (`common/ideas/efw_military_options_ideas.txt`) con le decisioni in `common/decisions/efw_military_options_decisions.txt`, categoria `efw_military_options_category`. Per i limiti si somma la differenza dal valore vanilla (es. piani invasione 1 -> 1000 = `naval_invasion_plan_cap = 999`). Controllare in `documentation/modifiers_documentation.md` del gioco che il modificatore esista: non tutti i define ne hanno uno.
 
 ## Conteggio edifici nelle decisioni
 
@@ -266,7 +290,7 @@ La filosofia migliore emersa è:
 
 Le decisioni early-game devono dare un beneficio subito, ma avere un costo reale.
 
-Esempi progettati:
+Esempi progettati nella prima versione (le decisioni attuali, con costi ed effetti, sono nel README, sezione 8):
 
 ### Campagna Nazionale di Industrializzazione
 - 25 PP;
@@ -311,24 +335,20 @@ Idea temporanea:
 
 # Bond / debito politico
 
-Sistema volutamente semplice:
+Sistema volutamente semplice, una sola decisione ripetibile (`efw_issue_national_bonds`):
 
-### Bond breve
-```text
-+100 PP ora
--150 PP dopo 365 giorni
-```
-
-### Prestito lungo
 ```text
 +120 PP ora
--200 PP dopo 730 giorni
+-180 PP dopo 365 giorni (evento efw_national_mobilization.34)
+90 giorni di cooldown dopo il rimborso
 ```
+
+Il vecchio "Grande Prestito Nazionale" (+120 / -200 dopo 730 giorni) non esiste più: le sue chiavi di localisation sono rimaste in `efw_l_*.yml` ma non sono usate.
 
 Usare:
 - flag `efw_national_bond_active`;
 - evento ritardato;
-- breve cooldown dopo il rimborso.
+- flag a tempo `efw_national_bond_cooldown` dopo il rimborso.
 
 Evita un sistema di debito con troppe variabili finché non serve davvero.
 
@@ -462,7 +482,75 @@ Molto utile per controllare:
 
 ---
 
+# Leggi nel pannello politico (idea_categories)
+
+Le sezioni del pannello politico sono `idea_categories` in `common/idea_tags/`. Ogni `slot = X` è un gruppo di leggi `X = { law = yes use_list_view = yes ... }` in `common/ideas/`.
+
+File EFW: `common/idea_tags/efw_policy_categories.txt`, `common/ideas/efw_policy_laws.txt`. **Sono generati** da `utility/efw_laws/gen_laws.py` partendo da `utility/efw_laws/laws_data.py`: modificare la tabella e rilanciare, non i file generati.
+
+Regole verificate in gioco (1.19.3):
+- il pannello mostra **al massimo 6 slot per riga**: il 7° esce dal pannello e non si vede;
+- l'icona della sezione è il frame N di `GFX_idea_categories`, dove N è la posizione (da 1) della categoria tra tutte quelle definite. Vanilla ne definisce 14, quindi le 4 EFW sono i frame 15-18. EFW sovrascrive lo sprite in `interface/zzz_efw_idea_categories.gfx` (20 frame da 48x33). Se un'altra mod aggiunge categorie, le posizioni si spostano;
+- l'icona dello slot vuoto è `GFX_idea_slot_<slot>`, quella della legge `GFX_idea_<picture>`;
+- localisation: chiave della categoria e `_desc`, chiave dello slot, chiave della legge e `_desc`;
+- ogni slot ha 8 leggi: 5 da 50 PP e 3 da 100 PP (un po' più forti), ognuna con almeno un bonus e un malus. Nessuna legge ha `default = yes`: gli slot partono vuoti e tutte le leggi hanno `ai_will_do = { factor = 0 }`, quindi l'IA non le usa. (Una versione precedente aveva una legge neutra di default per slot: rimossa su richiesta.)
+- `cancel_if_invalid = no`, come le leggi economiche vanilla: un requisito (`available`) blocca solo l'adozione.
+
+Le leggi (4 sezioni da 6 slot: Economia e Finanza, Società e Ordine Interno, Esercito e Stato Maggiore, Marina, Aviazione e Servizi) sostituiscono le vecchie categorie di decisioni Tesoro / Fronte Interno / Stato Maggiore: per scelte permanenti e alternative tra loro una legge in uno slot è più chiara di più decisioni a tempo.
+
+---
+
+# Grafica di unità e moduli
+
+## Modello 3D delle unità
+- `sprite = X` in un sub_unit sceglie il modello 3D `X_entity` (con varianti di cultura). Un nome custom senza entity fa sparire l'unità sulla mappa e in battaglia: usare sprite vanilla (`infantry`, `artillery`, `anti_tank`, ...).
+- Il modello della divisione è quello del battaglione con `priority` più alta. Le compagnie di supporto devono avere `priority = 0` come quelle vanilla.
+
+## Icone delle unità
+Le icone si cercano per **nome del sub_unit**, non per `sprite`:
+```text
+GFX_unit_<sub_unit>_icon_medium   designer divisioni, 152x42, noOfFrames = 2 (76x42: disegno | simbolo NATO)
+GFX_unit_<sub_unit>_icon_small    finestra di battaglia e tooltip ("Couldnt find texticon" se manca)
+```
+Un'immagine unica centrata su tutta la texture viene tagliata a metà dai 2 frame.
+
+## Icone dei moduli del designer
+```text
+aerei   GFX_EMI_<modulo>
+navi    GFX_SMI_<gfx> se il modulo ha gfx = ..., altrimenti GFX_SMI_<modulo>
+```
+Le icone EFW sono in `interface/efw_module_icons.gfx`, generate da `utility/efw_module_icons/make_module_icons.py`. Icone aerei 56x42, navi 76x42, DDS non compressi A8R8G8B8 come i vanilla.
+
+---
+
+# Define
+
+- I define grafici stanno in `NDefines_Graphics` (`common/defines/00_graphics.lua`), non in `NDefines`. `NDefines.NGraphics.X = ...` è un errore Lua che blocca il resto del file.
+- Una chiave nella tabella sbagliata (es. `NDefines.NAir.BOMBERS_DIVISION_FACTOR` invece di `NDefines_Graphics.NAirGfx`) non dà errore e non ha effetto. Verificare sempre la tabella in `00_defines.lua` / `00_graphics.lua`.
+- File EFW: `common/defines/zzz_efw_fps_defines.lua` (ottimizzazione FPS). `zzz_` per caricarlo dopo i file vanilla.
+- `gfx/posteffect_volumes.txt` vuoto dà errore ("should atleast have one for base values"): non sovrascriverlo con un file vuoto.
+- In `common/weather.txt` le soglie `weather_ground_snow_*` sono gameplay (malus a attacco, velocità e rifornimenti): togliere solo le `weather_effect` (particelle).
+
+---
+
 # Errori da NON ripetere
+
+Trigger ed effetti che non esistono (o non più) in 1.19:
+```text
+num_equipment@train_equipment > 4     ->  has_equipment = { train_equipment > 4 }
+enable_equipments in un effetto        ->  solo dentro una tecnologia (vedi efw_pipe_gun_unlock + set_technology)
+allow_mission_type = { naval_strike }  ->  naval_bomber
+archetype = light_tank_equipment       ->  i carri sono chassis (light_tank_chassis): usare create_equipment_variant
+equipment_bonus = { fighter_equipment } ->  airframe 1.19: small_plane_airframe, cv_small_plane_airframe,
+                                            small_plane_cas_airframe, medium_plane_airframe,
+                                            medium_plane_fighter_airframe, large_plane_airframe, ...
+```
+
+Nei tratti dei designer (`common/country_leader/`) una statistica ripetuta nello stesso blocco viene sommata ("Duplicated equipment stat type ... combining values" nel game.log): scriverla una volta sola. I designer generici EFW sono in `common/ideas/efw_generic_designers.txt` e `common/country_leader/efw_designer_traits.txt`.
+
+Designer di materiale e concessioni industriali: i `materiel_manufacturer` hanno `designer = yes` e i tratti usano `equipment_bonus` (tipi validi: `infantry_equipment`, `support_equipment`, `artillery_equipment`, `anti_tank_equipment`, `anti_air_equipment`, `motorized_equipment`, `armored_car_equipment`, `rocket_artillery_equipment`). Gli `industrial_concern` non hanno `designer = yes` e i loro tratti contengono direttamente modificatori nazionali (`country_resource_steel`, `factory_energy_consumption`, ...). Non usare le armi EFW dentro `equipment_bonus`: non sono nell'enum `script_enum_equipment_bonus_type`.
+
+Consiglieri politici generici: dalla 1.11 i consiglieri sono personaggi, non idee. Per darli a tutti i paesi si usa `every_possible_country` + `generate_character` in `history/general/` (come `generic_advisors.txt` vanilla): una copia per paese, a inizio partita. EFW: `history/general/efw_generic_advisors.txt`, tratti in `common/country_leader/efw_advisor_traits.txt`; i 4 consiglieri di governo hanno `available = { has_government = <ideologia> }` (`democratic`, `communism`, `fascism`, `neutrality`). Ritratti: `GFX_idea_generic_political_advisor_*` vanilla.
 
 Non usare alla cieca modifier come:
 ```text

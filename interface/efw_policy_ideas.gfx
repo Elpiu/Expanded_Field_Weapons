@@ -1,0 +1,33 @@
+# EFW - Icone delle idee della linea Mobilitazione (adattate da Better Laws and Policies, Workshop 3097661966)
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_idea_efw_pol_autarky_fuel"
+        texturefile = "gfx/interface/ideas/efw_policies/efw_pol_autarky_fuel.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_pol_coordinated_economy"
+        texturefile = "gfx/interface/ideas/efw_policies/efw_pol_coordinated_economy.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_pol_grand_works"
+        texturefile = "gfx/interface/ideas/efw_policies/efw_pol_grand_works.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_pol_industrial_phase"
+        texturefile = "gfx/interface/ideas/efw_policies/efw_pol_industrial_phase.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_pol_national_mobilization"
+        texturefile = "gfx/interface/ideas/efw_policies/efw_pol_national_mobilization.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_efw_pol_social_pact"
+        texturefile = "gfx/interface/ideas/efw_policies/efw_pol_social_pact.dds"
+    }
+}

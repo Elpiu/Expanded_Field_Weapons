@@ -5,6 +5,7 @@ ideas = {
         efw_industrial_phase_1_idea = {
             allowed = { always = no }
             removal_cost = -1
+            picture = efw_pol_industrial_phase
 
             modifier = {
                 production_speed_buildings_factor = 0.15
@@ -15,6 +16,7 @@ ideas = {
         efw_industrial_phase_2_idea = {
             allowed = { always = no }
             removal_cost = -1
+            picture = efw_pol_industrial_phase
 
             modifier = {
                 production_speed_buildings_factor = 0.15
@@ -25,9 +27,23 @@ ideas = {
         efw_grand_works_idea = {
             allowed = { always = no }
             removal_cost = -1
+            picture = efw_pol_grand_works
 
             modifier = {
                 production_speed_buildings_factor = 0.30
+            }
+        }
+
+        # Autarchia del Carburante (365 giorni, ripetibile)
+        efw_autarky_fuel_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = efw_pol_autarky_fuel
+
+            modifier = {
+                production_speed_synthetic_refinery_factor = 0.30
+                fuel_gain_factor = 0.10
+                consumer_goods_factor = 0.02
             }
         }
 
@@ -35,6 +51,7 @@ ideas = {
         efw_social_welfare_workshops_idea = {
             allowed = { always = no }
             removal_cost = -1
+            picture = efw_pol_social_pact
 
             modifier = {
                 weekly_manpower = 500
@@ -50,6 +67,7 @@ ideas = {
         efw_coordinated_economy_idea = {
             allowed = { always = no }
             removal_cost = -1
+            picture = efw_pol_coordinated_economy
 
             modifier = {
                 industrial_capacity_factory = 0.10
@@ -67,6 +85,7 @@ ideas = {
         efw_national_mobilization_idea = {
             allowed = { always = no }
             removal_cost = -1
+            picture = efw_pol_national_mobilization
 
             modifier = {
                 industrial_capacity_factory = 0.18

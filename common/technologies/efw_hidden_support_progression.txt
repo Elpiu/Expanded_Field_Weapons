@@ -39,6 +39,41 @@ technologies = {
 
 
     # =========================================================
+    # PIPE GUN: fucile improvvisato, assegnato a tutti all'avvio
+    # da efw_on_actions.txt (on_startup).
+    # =========================================================
+    efw_pipe_gun_unlock = {
+        research_cost = 1
+        start_year = 1918
+        allow = { always = no }
+        categories = { infantry_weapons }
+
+        enable_equipments = {
+            efw_pipe_gun_rifle
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+
+    # =========================================================
+    # LEGIONARI DELL'IMPERO: player-only militia formation
+    # =========================================================
+    efw_legionari_unlock = {
+        research_cost = 1
+        start_year = 1918
+        allow = { always = no }
+        categories = { infantry_weapons }
+
+        enable_subunits = {
+            efw_legionari_dellimpero
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+
+    # =========================================================
     # SUPPORT WEAPONS II
     # =========================================================
     efw_support_upgrade_2 = {
@@ -71,6 +106,12 @@ technologies = {
             ap_attack = 0.05
             defense = 0.05
             breakthrough = 0.05
+            max_organisation = 1
+        }
+
+        efw_legionari_dellimpero = {
+            soft_attack = 0.05
+            defense = 0.05
             max_organisation = 1
         }
 
@@ -114,6 +155,12 @@ technologies = {
             max_organisation = 1
         }
 
+        efw_legionari_dellimpero = {
+            soft_attack = 0.05
+            defense = 0.05
+            max_organisation = 1
+        }
+
         ai_will_do = { factor = 0 }
     }
 
@@ -151,6 +198,12 @@ technologies = {
             ap_attack = 0.08
             defense = 0.06
             breakthrough = 0.06
+            max_organisation = 1
+        }
+
+        efw_legionari_dellimpero = {
+            soft_attack = 0.05
+            defense = 0.05
             max_organisation = 1
         }
 

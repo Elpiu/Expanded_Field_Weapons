@@ -1,0 +1,9 @@
+﻿l_italian:
+ efw_military_options_category:0 "Opzioni Militari EFW"
+ efw_military_options_category_desc:0 "Regole militari opzionali, attivabili e disattivabili in qualsiasi momento."
+ efw_enable_rapid_invasions:0 "Attiva Invasioni Rapide"
+ efw_enable_rapid_invasions_desc:0 "Le invasioni navali e aviotrasportate non richiedono tempo di preparazione, e non c'è praticamente limite alle invasioni navali pianificate né alle divisioni assegnate."
+ efw_disable_rapid_invasions:0 "Disattiva Invasioni Rapide"
+ efw_disable_rapid_invasions_desc:0 "Torna alle regole normali delle invasioni: tempo di preparazione e limiti su piani e divisioni tornano attivi."
+ efw_rapid_invasions_idea:0 "Invasioni Rapide"
+ efw_rapid_invasions_idea_desc:0 "Gli sbarchi vengono pianificati e lanciati senza tempo di preparazione e senza limiti pratici su piani e divisioni. Si può disattivare dalle decisioni Opzioni Militari EFW."

@@ -1,0 +1,9 @@
+spriteTypes = {
+	# Vanilla ww_stateview_bg stretched by 168 px (2 extra rows of non-shared buildings).
+	# Used by interface/countrystateview.gui.
+	spriteType = {
+		name = "GFX_efw_stateview_bg"
+		textureFile = "gfx/interface/stateview/efw_stateview_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+}

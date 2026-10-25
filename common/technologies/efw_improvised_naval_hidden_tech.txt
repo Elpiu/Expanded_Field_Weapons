@@ -16,6 +16,23 @@ technologies = {
             efw_motorboat_machinegun
             efw_midget_sub_engine
             efw_midget_sub_torpedo
+            efw_scrap_multirole_mount
+            efw_improvised_torpedo_rack
+            efw_improvised_depth_charge_rack
+            efw_improvised_fuel_tank
+            efw_wooden_sub_coating
+            efw_wooden_surface_refit
+            efw_improvised_mine_rack
+            efw_improvised_sub_mine_rack
+            efw_small_sail
+            efw_large_sail
+            efw_careened_hull
+            efw_fishing_net_armor
+            efw_wooden_plank_armor
+            efw_scrap_plate_armor
+            efw_fishing_net_armor_heavy
+            efw_wooden_plank_armor_heavy
+            efw_scrap_plate_armor_heavy
         }
 
         ai_will_do = {

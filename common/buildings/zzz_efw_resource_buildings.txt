@@ -1,0 +1,173 @@
+# ============================================================================
+# EFW RESOURCE & CIVIL BUILDINGS
+# Based on the "Resource Plants" workshop mod (3513657215): each small/large
+# pair (mine + mill) is merged into a single building with averaged values:
+#   cost      (1000 + 10000) / 2 = 5500,  per level (2000 + 5000) / 2 = 3500
+#   output    (10 + 50) / 2 = 30
+#   tungsten/chromium: small 10, large 25 (rare earth refinery split) -> 18
+# Coal had a single building and keeps its original values.
+#
+# Resource buildings do NOT use building slots (as in the original mod).
+# They show in the top row of the state view, which interface/countrystateview.gui
+# enlarges to 3 rows x 5 (vanilla 4 + EFW 9 = 13 buildings without slots).
+# Public housing and wheat fields use a slot; wheat fields give 3 back.
+# Icons: frames 32-40 of gfx/interface/buildings/building_icon_strip.dds
+# (frame count set in interface/countrystateview.gfx).
+# ============================================================================
+
+buildings = {
+
+    efw_steel_works = {
+        base_cost = 5500
+        per_level_extra_cost = 3500
+        infrastructure_construction_effect = yes
+        refinery = yes
+        value = 3
+        icon_frame = 32
+
+        local_resources_steel = 30
+
+        level_cap = {
+            state_max = 5
+        }
+    }
+
+    efw_oil_complex = {
+        base_cost = 5500
+        per_level_extra_cost = 3500
+        infrastructure_construction_effect = yes
+        refinery = yes
+        value = 3
+        icon_frame = 33
+
+        local_resources_oil = 30
+
+        level_cap = {
+            state_max = 5
+        }
+    }
+
+    efw_rubber_plantation = {
+        base_cost = 5500
+        per_level_extra_cost = 3500
+        infrastructure_construction_effect = yes
+        refinery = yes
+        value = 3
+        icon_frame = 34
+
+        local_resources_rubber = 30
+
+        level_cap = {
+            state_max = 5
+        }
+    }
+
+    efw_aluminium_works = {
+        base_cost = 5500
+        per_level_extra_cost = 3500
+        infrastructure_construction_effect = yes
+        refinery = yes
+        value = 3
+        icon_frame = 35
+
+        local_resources_aluminium = 30
+
+        level_cap = {
+            state_max = 5
+        }
+    }
+
+    efw_tungsten_mine = {
+        base_cost = 5500
+        per_level_extra_cost = 3500
+        infrastructure_construction_effect = yes
+        refinery = yes
+        value = 3
+        icon_frame = 36
+
+        local_resources_tungsten = 18
+
+        level_cap = {
+            state_max = 5
+        }
+    }
+
+    efw_chromium_mine = {
+        base_cost = 5500
+        per_level_extra_cost = 3500
+        infrastructure_construction_effect = yes
+        refinery = yes
+        value = 3
+        icon_frame = 37
+
+        local_resources_chromium = 18
+
+        level_cap = {
+            state_max = 5
+        }
+    }
+
+    efw_coal_mine = {
+        base_cost = 1000
+        per_level_extra_cost = 2000
+        infrastructure_construction_effect = yes
+        refinery = yes
+        value = 2
+        icon_frame = 38
+
+        local_resources_coal = 25
+
+        level_cap = {
+            state_max = 10
+        }
+    }
+
+    # Public housing: more population and recruits in the state.
+    # state_max = 1 because state_modifiers are not guaranteed to stack per level.
+    efw_public_housing = {
+        base_cost = 4000
+        infrastructure_construction_effect = yes
+        value = 2
+        icon_frame = 39
+        damage_factor = 0.25
+        show_modifier = yes
+
+        state_modifiers = {
+            local_manpower = 0.10
+            recruitable_population_factor = 0.10
+        }
+
+        level_cap = {
+            shares_slots = yes
+            state_max = 1
+        }
+    }
+
+    # Wheat fields: country_modifiers stack per building, so each state with
+    # fields lowers consumer goods a little (10 states = -5%).
+    # Uses 1 slot and adds 3 (net +2).
+    efw_wheat_fields = {
+        base_cost = 3000
+        infrastructure_construction_effect = yes
+        value = 1
+        icon_frame = 40
+        damage_factor = 0.25
+        show_modifier = yes
+
+        country_modifiers = {
+            modifiers = {
+                consumer_goods_factor = -0.005
+            }
+        }
+
+        state_modifiers = {
+            local_building_slots = 3
+            local_supplies = 0.10
+        }
+
+        level_cap = {
+            shares_slots = yes
+            state_max = 1
+        }
+    }
+}

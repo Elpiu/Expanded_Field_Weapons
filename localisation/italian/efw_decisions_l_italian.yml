@@ -1,0 +1,17 @@
+﻿l_italian:
+ # === MOBILITAZIONE: AUTARCHIA DEL CARBURANTE ===
+ efw_autarky_fuel_plan:0 "Autarchia del Carburante"
+ efw_autarky_fuel_plan_desc:0 "Benzina dal carbone, alcool dalle patate e tanta, tanta speranza.\n\n§R-30.000 manpower§!. Per §Y365 giorni§!: raffinerie sintetiche più rapide e più carburante. §R30%§! di probabilità che l'odore nelle città diventi un problema politico."
+ efw_autarky_fuel_idea:0 "Autarchia del Carburante"
+ efw_autarky_fuel_idea_desc:0 "Ogni goccia di carburante prodotta in casa è una goccia in meno da comprare all'estero."
+ efw_tt_autarky_ok:0 "Le raffinerie funzionano. Più o meno."
+ efw_tt_autarky_smell:0 "§RLe città puzzano di cavolo bruciato.§!"
+
+ # === TECNOLOGIE NASCOSTE ===
+ efw_pipe_gun_unlock:0 "EFW: Fucile Improvvisato (Pipe Gun)"
+
+ # === DESCRIZIONI IDEE MOBILITAZIONE ===
+ efw_industrial_phase_1_idea_desc:0 "Fondazioni e rilancio: cantieri industriali aperti in tutto il paese."
+ efw_industrial_phase_2_idea_desc:0 "Consolidamento del polo pesante: le nuove fabbriche entrano a regime."
+ efw_grand_works_idea_desc:0 "Strade, ferrovie e piani regolatori: la nazione è un unico grande cantiere."
+ efw_social_welfare_workshops_idea_desc:0 "Famiglie sostenute e botteghe diffuse: la produzione cresce dal basso."

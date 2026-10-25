@@ -1,6 +1,9 @@
 # ============================================================================
-# EXPANDED FIELD WEAPONS (EFW) - COMPACT MOBILIZATION SUITE
-# Exactly 6 streamlined master decisions available from day 1.
+# EXPANDED FIELD WEAPONS (EFW) - LINEA 2: MOBILITAZIONE E GRANDI OPERE
+# Piani industriali, grandi opere, programma navale, autarchia e i due
+# livelli finali (piu costosi) di coordinamento istituzionale.
+# Le linee Tesoro, Fronte Interno e Stato Maggiore sono leggi nel pannello
+# politico: vedi common/ideas/efw_policy_laws.txt.
 # ============================================================================
 
 efw_national_mobilization_category = {
@@ -12,6 +15,7 @@ efw_national_mobilization_category = {
     # Sblocca la Fase II al termine dei 180 giorni.
     # ------------------------------------------------------------------------
     efw_industrial_plan_phase_1 = {
+        icon = generic_industry
         visible = {
             is_ai = no
             NOT = { has_country_flag = efw_industrial_phase_1_done }
@@ -19,8 +23,8 @@ efw_national_mobilization_category = {
 
         available = {
             has_manpower > 49999
-            num_equipment@train_equipment > 4
-            num_equipment@motorized_equipment > 199
+            has_equipment = { train_equipment > 4 }
+            has_equipment = { motorized_equipment > 199 }
             NOT = { has_country_flag = efw_industrial_phase_1_started }
         }
 
@@ -74,6 +78,7 @@ efw_national_mobilization_category = {
     # A 365 giorni dal via restituisce tutti i 10 treni, 400 camion e 50k manp.
     # ------------------------------------------------------------------------
     efw_industrial_plan_phase_2 = {
+        icon = generic_factory
         visible = {
             is_ai = no
             has_country_flag = efw_industrial_phase_1_done
@@ -81,8 +86,8 @@ efw_national_mobilization_category = {
 
         available = {
             has_manpower > 49999
-            num_equipment@train_equipment > 4
-            num_equipment@motorized_equipment > 199
+            has_equipment = { train_equipment > 4 }
+            has_equipment = { motorized_equipment > 199 }
             NOT = { has_country_flag = efw_industrial_phase_2_started }
         }
 
@@ -135,12 +140,13 @@ efw_national_mobilization_category = {
     # +30% Velocita di costruzione per 540 giorni. Risorse restituite alla fine.
     # ------------------------------------------------------------------------
     efw_grand_public_works = {
+        icon = generic_construction
         visible = { is_ai = no }
 
         available = {
             has_manpower > 59999
-            num_equipment@train_equipment > 14
-            num_equipment@motorized_equipment > 499
+            has_equipment = { train_equipment > 14 }
+            has_equipment = { motorized_equipment > 499 }
             NOT = { has_country_flag = efw_grand_works_active }
         }
 
@@ -196,55 +202,17 @@ efw_national_mobilization_category = {
 
 
     # ------------------------------------------------------------------------
-    # 3. PATTO SOCIALE E PRODUZIONE DIFFUSA (Famiglia + Botteghe)
-    # Costo: 40 PP / 5 treni / 300 camion
-    # Durata: 3 Anni (1095 giorni)
-    # +500 manpower/sett., +25% pop growth, +6% ricerca, +8% efficienza max, +10% mil output
-    # ------------------------------------------------------------------------
-    efw_social_welfare_and_workshops = {
-        visible = { is_ai = no }
-
-        available = {
-            num_equipment@train_equipment > 4
-            num_equipment@motorized_equipment > 299
-            NOT = { has_idea = efw_social_welfare_workshops_idea }
-        }
-
-        cost = 40
-        fire_only_once = yes
-
-        complete_effect = {
-            add_equipment_to_stockpile = {
-                type = train_equipment
-                amount = -5
-            }
-
-            add_equipment_to_stockpile = {
-                type = motorized_equipment
-                amount = -300
-            }
-
-            add_timed_idea = {
-                idea = efw_social_welfare_workshops_idea
-                days = 1095
-            }
-        }
-
-        ai_will_do = { factor = 0 }
-    }
-
-
-    # ------------------------------------------------------------------------
     # 4. PROGRAMMA NAVALE STRAORDINARIO
     # Costo: 40 PP / 50k manp / 200 camion
     # Effetto: +6 Cantieri Navali offsite permanenti. Mezzi e uomini rimborsati dopo 1 anno.
     # ------------------------------------------------------------------------
     efw_emergency_naval_program = {
+        icon = generic_naval
         visible = { is_ai = no }
 
         available = {
             has_manpower > 49999
-            num_equipment@motorized_equipment > 199
+            has_equipment = { motorized_equipment > 199 }
             NOT = { has_country_flag = efw_naval_program_active }
         }
 
@@ -276,10 +244,48 @@ efw_national_mobilization_category = {
 
 
     # ------------------------------------------------------------------------
-    # 5. EMISSIONE OBBLIGAZIONI STATALI (Unica decisione a rotazione)
+    # 5. AUTARCHIA DEL CARBURANTE (idea adattata da Better Laws and Policies)
+    # Costo: 45 PP / 30k manp. Durata 365 giorni, ripetibile a idea scaduta.
+    # ------------------------------------------------------------------------
+    efw_autarky_fuel_plan = {
+        icon = oil
+        visible = { is_ai = no }
+
+        available = {
+            has_manpower > 29999
+            NOT = { has_idea = efw_autarky_fuel_idea }
+        }
+
+        cost = 45
+        fire_only_once = no
+
+        complete_effect = {
+            add_manpower = -30000
+            add_timed_idea = {
+                idea = efw_autarky_fuel_idea
+                days = 365
+            }
+            random_list = {
+                70 = {
+                    custom_effect_tooltip = efw_tt_autarky_ok
+                }
+                30 = {
+                    add_stability = -0.02
+                    custom_effect_tooltip = efw_tt_autarky_smell
+                }
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+
+    # ------------------------------------------------------------------------
+    # 6. EMISSIONE OBBLIGAZIONI STATALI (unica decisione a rotazione)
     # Effetto: +120 PP immediati. Rimborso: -180 PP dopo 365 giorni. Cooldown 90 giorni.
     # ------------------------------------------------------------------------
     efw_issue_national_bonds = {
+        icon = generic_fundraising
         visible = { is_ai = no }
 
         available = {
@@ -304,10 +310,49 @@ efw_national_mobilization_category = {
 
 
     # ------------------------------------------------------------------------
-    # 6A. COORDINAMENTO ISTITUZIONALE: ECONOMIA COORDINATA (Livello 1)
+    # 7. PATTO SOCIALE E PRODUZIONE DIFFUSA (Famiglia + Botteghe)
+    # Costo: 40 PP / 5 treni / 300 camion. Durata: 3 anni.
+    # ------------------------------------------------------------------------
+    efw_social_welfare_and_workshops = {
+        icon = generic_welfare
+        visible = { is_ai = no }
+
+        available = {
+            has_equipment = { train_equipment > 4 }
+            has_equipment = { motorized_equipment > 299 }
+            NOT = { has_idea = efw_social_welfare_workshops_idea }
+        }
+
+        cost = 40
+        fire_only_once = yes
+
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = train_equipment
+                amount = -5
+            }
+
+            add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = -300
+            }
+
+            add_timed_idea = {
+                idea = efw_social_welfare_workshops_idea
+                days = 1095
+            }
+        }
+
+        ai_will_do = { factor = 0 }
+    }
+
+
+    # ------------------------------------------------------------------------
+    # 8A. COORDINAMENTO ISTITUZIONALE: ECONOMIA COORDINATA (Livello 1)
     # Richiede: 2 Centri Propaganda e 1 Direzione Lavoro
     # ------------------------------------------------------------------------
     efw_coordinate_national_economy = {
+        icon = generic_political_discourse
         visible = {
             is_ai = no
             NOT = { has_country_flag = efw_coordinated_economy_started }
@@ -331,11 +376,12 @@ efw_national_mobilization_category = {
 
 
     # ------------------------------------------------------------------------
-    # 6B. COORDINAMENTO ISTITUZIONALE: MOBILITAZIONE TOTALE (Livello 2)
+    # 8B. COORDINAMENTO ISTITUZIONALE: MOBILITAZIONE TOTALE (Livello 2)
     # Sostituisce il Livello 1 una volta completata la rete strategica.
     # Richiede: 4 Propaganda, 2 Lavoro, 1 Ricerca, 1 Logistica
     # ------------------------------------------------------------------------
     efw_mobilize_the_nation = {
+        icon = generic_nationalism
         visible = {
             is_ai = no
             has_country_flag = efw_coordinated_economy_started
