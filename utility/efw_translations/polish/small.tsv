@@ -1,0 +1,119 @@
+# Doradcy
+efw_parliamentary_statesman	Mąż stanu parlamentu
+efw_plan_commissar	Komisarz planu
+efw_party_hierarch	Hierarcha partyjny
+efw_man_of_order	Człowiek porządku
+efw_armaments_minister	Minister uzbrojenia
+efw_propaganda_chief	Szef propagandy
+efw_career_diplomat	Zawodowy dyplomata
+efw_war_economist	Ekonomista wojenny
+# Decyzje
+efw_autarky_fuel_plan	Autarkia paliwowa
+efw_autarky_fuel_plan_desc	Benzyna z węgla, spirytus z ziemniaków i mnóstwo nadziei.\n\n§R-30 000 rezerw ludzkich§!. Przez §Y365 dni§!: szybsze rafinerie syntetyczne i więcej paliwa. §R30%§! szans, że zapach w miastach stanie się problemem politycznym.
+efw_autarky_fuel_idea	Autarkia paliwowa
+efw_autarky_fuel_idea_desc	Każda kropla paliwa wyprodukowana w kraju to o jedną mniej do kupienia za granicą.
+efw_tt_autarky_ok	Rafinerie działają. Mniej więcej.
+efw_tt_autarky_smell	§RMiasta pachną przypaloną kapustą.§!
+efw_pipe_gun_unlock	EFW: improwizowany karabin z rury
+efw_industrial_phase_1_idea_desc	Fundamenty i ponowny start: budowy przemysłowe ruszają w całym kraju.
+efw_industrial_phase_2_idea_desc	Konsolidacja przemysłu ciężkiego: nowe fabryki osiągają pełną wydajność.
+efw_grand_works_idea_desc	Drogi, koleje i plany zabudowy: cały kraj to jeden wielki plac budowy.
+efw_social_welfare_workshops_idea_desc	Wsparcie rodzin i sieć warsztatów: produkcja rośnie od dołu.
+# Opcje wojskowe
+efw_military_options_category	Opcje wojskowe EFW
+efw_military_options_category_desc	Opcjonalne zasady wojskowe, które można w każdej chwili włączyć i wyłączyć.
+efw_enable_rapid_invasions	Włącz szybkie inwazje
+efw_enable_rapid_invasions_desc	Inwazje morskie i powietrzne nie wymagają przygotowań, a liczba planowanych inwazji morskich i przydzielonych dywizji jest praktycznie nieograniczona.
+efw_disable_rapid_invasions	Wyłącz szybkie inwazje
+efw_disable_rapid_invasions_desc	Powrót do zwykłych zasad inwazji: znów obowiązują czas przygotowań i limity planów oraz dywizji.
+efw_rapid_invasions_idea	Szybkie inwazje
+efw_rapid_invasions_idea_desc	Operacje desantowe są planowane i rozpoczynane bez przygotowań i bez praktycznych limitów planów czy dywizji. Można je wyłączyć w decyzjach „Opcje wojskowe EFW”.
+# Projektanci
+efw_hornet_tank_manufacturer	Kompania Hornet
+efw_fury_tank_manufacturer	Koncern Fury
+efw_raven_tank_manufacturer	Raven Corporation
+efw_insomnia_aircraft_manufacturer	Kompania Insomnia
+efw_wardon_aircraft_manufacturer	Koncern Wardon
+efw_shadow_aircraft_manufacturer	Shadow Corporation
+efw_siren_naval_manufacturer	Kompania Siren
+efw_leviathan_naval_manufacturer	Koncern Leviathan
+efw_poseidon_naval_manufacturer	Poseidon Corporation
+efw_tank_manufacturer1	Podstawowy projektant czołgów
+efw_tank_manufacturer2	Ulepszony projektant czołgów
+efw_tank_manufacturer3	Nowoczesny projektant czołgów
+efw_aircraft_manufacturer1	Podstawowy projektant samolotów
+efw_aircraft_manufacturer2	Ulepszony projektant samolotów
+efw_aircraft_manufacturer3	Nowoczesny projektant samolotów
+efw_naval_manufacturer1	Podstawowy projektant okrętów
+efw_naval_manufacturer2	Ulepszony projektant okrętów
+efw_naval_manufacturer3	Nowoczesny projektant okrętów
+efw_national_armoury_manufacturer	Narodowa Zbrojownia
+efw_artillery_foundries_manufacturer	Odlewnie Artylerii
+efw_motor_works_manufacturer	Zakłady Motoryzacyjne
+efw_heavy_weapons_consortium_manufacturer	Konsorcjum Broni Ciężkiej
+efw_economy_arsenal_manufacturer	Arsenał Oszczędnościowy
+efw_integrated_armaments_manufacturer	Grupa Zintegrowanego Uzbrojenia
+efw_materiel_infantry_trait	Precyzyjna broń strzelecka
+efw_materiel_artillery_trait	Specjalista od artylerii
+efw_materiel_motorized_trait	Specjalista od motoryzacji
+efw_materiel_heavy_weapons_trait	Broń ciężka piechoty
+efw_materiel_economy_trait	Produkcja oszczędnościowa
+efw_materiel_integrated_trait	Zintegrowane uzbrojenie
+efw_united_steelworks_concern	Zjednoczone Huty
+efw_national_power_company_concern	Narodowa Spółka Energetyczna
+efw_synthetic_refineries_concern	Rafinerie Syntetyczne
+efw_construction_firms_concern	Firmy Budowlane
+efw_mining_consortium_concern	Konsorcjum Górnicze
+efw_industrial_conglomerate_concern	Konglomerat Przemysłowy
+efw_concern_steel_trait	Ciężki przemysł stalowy
+efw_concern_power_trait	Narodowa sieć energetyczna
+efw_concern_synthetic_trait	Chemia paliw
+efw_concern_construction_trait	Wielkie kontrakty
+efw_concern_mining_trait	Operacje górnicze
+efw_concern_conglomerate_trait	Konglomerat przemysłowy
+# Budynki
+efw_steel_works	Huta stali
+efw_steel_works_plural	Huty stali
+efw_oil_complex	Kompleks naftowy
+efw_oil_complex_plural	Kompleksy naftowe
+efw_rubber_plantation	Plantacja kauczuku
+efw_rubber_plantation_plural	Plantacje kauczuku
+efw_aluminium_works	Zakład aluminium
+efw_aluminium_works_plural	Zakłady aluminium
+efw_tungsten_mine	Kopalnia wolframu
+efw_tungsten_mine_plural	Kopalnie wolframu
+efw_chromium_mine	Kopalnia chromu
+efw_chromium_mine_plural	Kopalnie chromu
+efw_coal_mine	Kopalnia węgla
+efw_coal_mine_plural	Kopalnie węgla
+efw_public_housing	Mieszkania komunalne
+efw_public_housing_plural	Osiedla komunalne
+efw_public_housing_desc	Państwowe osiedla przyciągają do regionu robotników i ich rodziny, zwiększając miejscową ludność i liczbę mężczyzn zdolnych do służby.
+efw_wheat_fields	Pola pszenicy
+efw_wheat_fields_plural	Pola pszenicy
+efw_wheat_fields_desc	Państwowe gospodarstwa, które czynią naród samowystarczalnym w żywności: chleb dla miast i frontu bez żadnego importu. Każdy region z polami pszenicy obniża §Ydobra konsumpcyjne o 1%§! i zwiększa stabilność oraz przyrost ludności. Melioracja otwiera nowe miejsce pod budowę, a spichlerze zaopatrują przechodzące wojska.
+# Pojazdy
+efw_tankette_equipment	Tankietki
+efw_tankette_equipment_desc	Dwóch ludzi, karabin maszynowy i silnik od ciężarówki w blaszanej skrzynce. Szybsza niż własna odwaga: tania i zwrotna, ale każde działo przeciwpancerne otwiera ją jak puszkę sardynek.
+efw_tankette_equipment_1	Tankietka EFW
+efw_tankette_equipment_1_short	Tankietka
+efw_tankette_equipment_1_desc	Dwóch ludzi, karabin maszynowy i silnik od ciężarówki w blaszanej skrzynce. Szybsza niż własna odwaga: tania i zwrotna, ale każde działo przeciwpancerne otwiera ją jak puszkę sardynek.
+efw_tankette_battalion	Batalion tankietek
+efw_tankette_battalion_desc	Dwuosobowe miniczołgi. Batalion kosztuje mniej więcej ćwierć batalionu lekkich czołgów i miażdży piechotę bez broni przeciwpancernej, ale pancerz jest cienki. Używa tankietek EFW.
+efw_tankette_unlock	EFW: tankietki
+efw_motorcycle_mg_equipment	Motocykle z karabinem maszynowym
+efw_motorcycle_mg_equipment_desc	Motocykl, przyczepa i karabin maszynowy tam, gdzie powinna siedzieć teściowa. Szybki, głośny i zaskakująco zabójczy na polnych drogach.
+efw_motorcycle_mg_equipment_1	Motocykl z KM EFW
+efw_motorcycle_mg_equipment_1_short	Motocykl z KM
+efw_motorcycle_mg_equipment_1_desc	Motocykl, przyczepa i karabin maszynowy tam, gdzie powinna siedzieć teściowa. Szybki, głośny i zaskakująco zabójczy na polnych drogach.
+efw_motorcycle_mg_company	Kompania motocyklistów-cekaemistów
+efw_motorcycle_mg_company_desc	Rozpoznanie zmotoryzowane na motocyklach z uzbrojoną przyczepą. Widzi tak daleko jak rozpoznanie zmotoryzowane, kosztuje mniej i daje całej piechocie dywizji §G+5% ataku§!. Zajmuje miejsce rozpoznania.
+efw_motorcycle_unlock	EFW: motocykliści-cekaemiści
+efw_gun_truck_equipment	Ciężarówki z działem
+efw_gun_truck_equipment_desc	Weź ciężarówkę. Weź działo przeciwpancerne. Zwiąż je razem dużą ilością sznura i odrobiną wiary. Strzela do piechoty i lekkich pojazdów i odjeżdża, zanim ktoś odpowie: pancerza brak.
+efw_gun_truck_equipment_1	Improwizowane autodziało EFW
+efw_gun_truck_equipment_1_short	Autodziało
+efw_gun_truck_equipment_1_desc	Weź ciężarówkę. Weź działo przeciwpancerne. Zwiąż je razem dużą ilością sznura i odrobiną wiary. Strzela do piechoty i lekkich pojazdów i odjeżdża, zanim ktoś odpowie: pancerza brak.
+efw_gun_truck_battalion	Bateria autodział
+efw_gun_truck_battalion_desc	Działa przeciwpancerne na ciężarówkach. Artyleria liniowa szybka jak piechota zmotoryzowana, z dobrą przebijalnością i bez ochrony. Używa improwizowanych autodział EFW.
+efw_gun_truck_unlock	EFW: improwizowane autodziała

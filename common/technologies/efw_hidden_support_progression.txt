@@ -1,4 +1,4 @@
-# Expanded Field Weapons v1.2.0
+# Expanded Field Weapons v1.3.0
 # These technologies are hidden and assigned by efw_on_actions.txt.
 # They do NOT appear in the research tree.
 #

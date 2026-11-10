@@ -1,0 +1,416 @@
+efw_economy_policies	Gospodarka i finanse
+efw_economy_policies_desc	Podatki, handel, przemysł, kapitał, subsydia i zasoby: jak kraj produkuje i płaci.
+efw_ec_fiscal	Polityka podatkowa
+efw_fis_low_taxes	Niskie podatki
+efw_fis_low_taxes_desc	Mniej podatków, spokojniejsi obywatele, mniej swobody dla rządu.
+efw_fis_high_taxes	Wysokie podatki
+efw_fis_high_taxes_desc	Więcej dochodów dla państwa, więcej niezadowolenia na placach.
+efw_fis_consumption_tax	Podatki konsumpcyjne
+efw_fis_consumption_tax_desc	Opodatkowane jest wszystko, co się kupuje: mniej dóbr konsumpcyjnych, wyższe ceny.
+efw_fis_war_profits_tax	Podatek od zysków wojennych
+efw_fis_war_profits_tax_desc	Zyski przemysłu zbrojeniowego wracają do wysiłku narodowego.
+efw_fis_balanced_budget	Zrównoważony budżet
+efw_fis_balanced_budget_desc	Zdrowe finanse i wiarygodny rząd, ale mało pieniędzy na budowy.
+efw_fis_progressive	Podatek progresywny
+efw_fis_progressive_desc	Kto ma więcej, płaci więcej: poparcie rośnie, zapał wojenny mniej.
+efw_fis_war_finance	Finanse wojenne
+efw_fis_war_finance_desc	Długi, pożyczki i drukowane pieniądze w służbie produkcji wojskowej.
+efw_fis_state_monopolies	Monopole państwowe
+efw_fis_state_monopolies_desc	Sól, tytoń i zapałki stają się dochodem rządu.
+efw_ec_trade	Handel i cła
+efw_trade_free	Wolny handel
+efw_trade_free_desc	Drzwi otwarte dla towarów i idei; w zamian eksportujemy więcej zasobów.
+efw_trade_moderate_protection	Umiarkowany protekcjonizm
+efw_trade_moderate_protection_desc	Skromne cła chroniące krajowy przemysł.
+efw_trade_export_drive	Ofensywa eksportowa
+efw_trade_export_drive_desc	Eksport przynosi prestiż, ale zasoby opuszczają kraj.
+efw_trade_import_quotas	Kontyngenty importowe
+efw_trade_import_quotas_desc	Najpierw import strategiczny, dobra konsumpcyjne poczekają.
+efw_trade_bilateral	Umowy dwustronne
+efw_trade_bilateral_desc	Traktaty handlowe z każdym krajem osobno: długo negocjować, warto mieć.
+efw_trade_autarky	Autarkia
+efw_trade_autarky_desc	Wszystko własnej produkcji: przemysł mniej zależny, partnerzy niezadowoleni.
+efw_trade_free_ports	Wolne porty
+efw_trade_free_ports_desc	Towary i kapitał bez ceł: wydajniejsze fabryki, odpływające zasoby.
+efw_trade_strategic_reserves	Rezerwy strategiczne
+efw_trade_strategic_reserves_desc	Magazyny pełne zasobów i paliwa, opłacone fabrykami cywilnymi.
+efw_ec_industry	Przemysł i budownictwo
+efw_ind_civil_priority	Priorytet cywilny
+efw_ind_civil_priority_desc	Najpierw fabryki cywilne, wojskowe później.
+efw_ind_military_priority	Priorytet wojskowy
+efw_ind_military_priority_desc	Najpierw fabryki zbrojeniowe, wszystko inne później.
+efw_ind_roads_rails	Drogi i koleje
+efw_ind_roads_rails_desc	Infrastruktura rośnie szybko, nowe fabryki nieco wolniej.
+efw_ind_defence_works	Prace obronne
+efw_ind_defence_works_desc	Bunkry i baterie nadbrzeżne mają pierwszeństwo na budowach.
+efw_ind_scientific_management	Naukowa organizacja pracy
+efw_ind_scientific_management_desc	Stopery i taśmy montażowe: linie szybko się poprawiają, robotnicy narzekają.
+efw_ind_heavy_industry	Przemysł ciężki
+efw_ind_heavy_industry_desc	Huty i zakłady maszynowe w sercu gospodarki.
+efw_ind_great_shipyards	Wielkie stocznie
+efw_ind_great_shipyards_desc	Flota przede wszystkim: ludzie i stal idą do portów.
+efw_ind_five_year_plan	Plan pięcioletni
+efw_ind_five_year_plan_desc	Cele narzucone z góry każdej budowie i każdej fabryce.
+efw_ec_foreign_capital	Kapitał zagraniczny
+efw_fc_closed_economy	Gospodarka zamknięta
+efw_fc_closed_economy_desc	Żadnego kapitału zagranicznego: mniej wpływów z zewnątrz, mniej nowoczesne fabryki.
+efw_fc_regulated	Regulowane inwestycje
+efw_fc_regulated_desc	Cudzoziemcy mogą inwestować, ale pod ścisłą kontrolą.
+efw_fc_licences	Produkcja licencyjna
+efw_fc_licences_desc	Kupujemy cudze projekty zamiast rozwijać własne.
+efw_fc_foreign_engineers	Zagraniczni inżynierowie
+efw_fc_foreign_engineers_desc	Dobrze opłacani zagraniczni technicy uczą nasze fabryki.
+efw_fc_concessions	Koncesje górnicze
+efw_fc_concessions_desc	Kopalnie dzierżawione cudzoziemcom dobrze płacą, ale zasoby wyjeżdżają.
+efw_fc_encouraged	Zachęty inwestycyjne
+efw_fc_encouraged_desc	Ulgi podatkowe i gwarancje dla każdego, kto inwestuje w kraju.
+efw_fc_joint_ventures	Spółki mieszane
+efw_fc_joint_ventures_desc	Firmy z kapitałem mieszanym budują i produkują, przynosząc obce pomysły.
+efw_fc_nationalisation	Nacjonalizacja
+efw_fc_nationalisation_desc	Zagraniczne firmy przechodzą na własność państwa. Ich rządy nie są zadowolone.
+efw_ec_subsidies	Subsydia i inwestycje
+efw_sub_research_grants	Granty badawcze
+efw_sub_research_grants_desc	Środki publiczne dla uczelni i laboratoriów.
+efw_sub_industrial_credit	Kredyt przemysłowy
+efw_sub_industrial_credit_desc	Tanie kredyty dla każdego, kto otwiera nowe fabryki.
+efw_sub_rural_development	Rozwój wsi
+efw_sub_rural_development_desc	Melioracja i pomoc dla wsi: więcej rodzin, więcej wydatków.
+efw_sub_public_works	Roboty publiczne
+efw_sub_public_works_desc	Opłacane przez państwo budowy w całym kraju.
+efw_sub_armaments_contracts	Zamówienia zbrojeniowe
+efw_sub_armaments_contracts_desc	Gwarantowane kontrakty dla każdego, kto produkuje dla armii.
+efw_sub_development_bank	Bank Rozwoju
+efw_sub_development_bank_desc	Publiczna instytucja finansuje każdy duży projekt.
+efw_sub_defence_budget	Budżet obronny
+efw_sub_defence_budget_desc	Rosnąca część budżetu trafia do przemysłu zbrojeniowego.
+efw_sub_science_city	Miasto nauki
+efw_sub_science_city_desc	Laboratoria, instytuty i naukowcy zebrani w jednym dużym ośrodku.
+efw_ec_resources	Surowce
+efw_res_scrap_drive	Zbiórka złomu
+efw_res_scrap_drive_desc	Bramy i garnki trafiają do odlewni.
+efw_res_new_mines	Nowe kopalnie
+efw_res_new_mines_desc	Poszukiwania i nowe szyby w całym kraju.
+efw_res_synthetic	Produkty syntetyczne
+efw_res_synthetic_desc	Kauczuk i paliwo z chemii.
+efw_res_rationing	Racjonowanie
+efw_res_rationing_desc	Kartki na paliwo i materiały: więcej rezerw, mniej uśmiechów.
+efw_res_export_quotas	Kontyngenty eksportowe
+efw_res_export_quotas_desc	Zasoby zostają w kraju, partnerzy narzekają.
+efw_res_intensive_mining	Wydobycie intensywne
+efw_res_intensive_mining_desc	Podwójne zmiany w kopalniach i bezpieczeństwo ograniczone do minimum.
+efw_res_substitutes	Materiały zastępcze
+efw_res_substitutes_desc	Produkcja trwa nawet bez właściwych zasobów, w gorszej jakości.
+efw_res_strategic_stockpile	Narodowa rezerwa paliwa
+efw_res_strategic_stockpile_desc	Ogromne składy paliwa zbudowane kosztem cywilów.
+efw_society_policies	Społeczeństwo i porządek wewnętrzny
+efw_society_policies_desc	Praca, prasa, porządek publiczny, szkoły, ludność i obrona cywilna: front wewnętrzny.
+efw_ec_labour	Praca i opieka społeczna
+efw_lab_eight_hours	Ośmiogodzinny dzień pracy
+efw_lab_eight_hours_desc	Wypoczęci i zadowoleni robotnicy, ale kilka zmian mniej.
+efw_lab_long_shifts	Długie zmiany
+efw_lab_long_shifts_desc	Więcej godzin w fabryce, większa produkcja, większe zmęczenie.
+efw_lab_state_unions	Związki państwowe
+efw_lab_state_unions_desc	Żadnych strajków, ale i mało pomysłów z hali.
+efw_lab_family_support	Wsparcie rodzin
+efw_lab_family_support_desc	Zasiłki i premie za dzieci: więcej ludności, więcej wydatków.
+efw_lab_social_insurance	Ubezpieczenia społeczne
+efw_lab_social_insurance_desc	Emerytury i ubezpieczenia: wierniejsi obywatele, zajęte fabryki cywilne.
+efw_lab_extended_welfare	Rozbudowane państwo opiekuńcze
+efw_lab_extended_welfare_desc	Zdrowie, szkoły i pomoc dla wszystkich. Drogo, ale trzyma kraj w całości.
+efw_lab_labour_mobilization	Mobilizacja pracy
+efw_lab_labour_mobilization_desc	Każdy robotnik skierowany tam, gdzie potrzebuje go wysiłek narodowy.
+efw_lab_corporatism	Korporacjonizm
+efw_lab_corporatism_desc	Właściciele i robotnicy w jednej korporacji, pod arbitrażem państwa.
+efw_ec_press	Prasa i propaganda
+efw_prs_free_press	Wolna prasa
+efw_prs_free_press_desc	Otwarta debata i nowe pomysły, ale mniejsza wola walki.
+efw_prs_moderate_censorship	Umiarkowana cenzura
+efw_prs_moderate_censorship_desc	Kilka niewygodnych historii nigdy nie trafia do kiosków.
+efw_prs_patriotic_propaganda	Propaganda patriotyczna
+efw_prs_patriotic_propaganda_desc	Plakaty, pieśni i przemówienia: naród się szykuje.
+efw_prs_state_radio	Radio państwowe
+efw_prs_state_radio_desc	Głos rządu wchodzi do każdego domu.
+efw_prs_newsreels	Kroniki filmowe
+efw_prs_newsreels_desc	Przed filmem czyny armii. Ochotników przybywa.
+efw_prs_state_press	Prasa państwowa
+efw_prs_state_press_desc	Jedna linia redakcyjna dla całego kraju.
+efw_prs_total_propaganda	Propaganda totalna
+efw_prs_total_propaganda_desc	Każdy środek przekazu pracuje dla sprawy narodowej.
+efw_prs_national_culture	Kultura narodowa
+efw_prs_national_culture_desc	Muzea, szkoły i uczelnie jako duma kraju.
+efw_ec_order	Porządek publiczny
+efw_ord_civil_police	Policja cywilna
+efw_ord_civil_police_desc	Dzielnicowi i komisariaty: porządek bez przesady.
+efw_ord_gendarmerie	Żandarmeria
+efw_ord_gendarmerie_desc	Rozbudowana policja wojskowa dla miast i wsi.
+efw_ord_amnesty	Amnestia
+efw_ord_amnesty_desc	Opróżnione więzienia: więcej dostępnych mężczyzn, mniej rygoru.
+efw_ord_penal_labour	Praca karna
+efw_ord_penal_labour_desc	Więźniowie budują drogi i koleje.
+efw_ord_informants	Sieć informatorów
+efw_ord_informants_desc	Dozorcy i barmani donoszą komu trzeba.
+efw_ord_secret_police	Tajna policja
+efw_ord_secret_police_desc	Sprzeciw gaśnie, zanim się narodzi.
+efw_ord_occupation_police	Policja wojskowa na terytoriach
+efw_ord_occupation_police_desc	Oddziały do kontroli okupowanych ziem.
+efw_ord_martial_law	Stan wojenny
+efw_ord_martial_law_desc	W czasie wojny rządzą sądy wojskowe.
+efw_so_education	Edukacja i nauka
+efw_edu_basic_schools	Obowiązek szkolny
+efw_edu_basic_schools_desc	Wszyscy do szkoły: czytający naród uczy się szybciej.
+efw_edu_technical_schools	Szkoły techniczne
+efw_edu_technical_schools_desc	Technicy i fachowcy zamiast profesorów.
+efw_edu_military_schools	Szkoły wojskowe
+efw_edu_military_schools_desc	Chłopcy uczą się taktyki obok łaciny.
+efw_edu_patriotic_education	Wychowanie patriotyczne
+efw_edu_patriotic_education_desc	Historia i geografia uczone z narodową dumą.
+efw_edu_scholarships	Stypendia
+efw_edu_scholarships_desc	Najlepsi studenci uczą się na koszt państwa.
+efw_edu_elite_universities	Elitarne uczelnie
+efw_edu_elite_universities_desc	Niewiele uczelni, finansowanych jak żadne inne.
+efw_edu_military_research	Badania wojskowe
+efw_edu_military_research_desc	Naukowcy pracują nad projektami armii.
+efw_edu_research_exchange	Wymiana naukowa
+efw_edu_research_exchange_desc	Badania dzielone z sojusznikami: więcej pomysłów, mniej tajemnic.
+efw_so_population	Ludność i zdrowie
+efw_pop_public_health	Zdrowie publiczne
+efw_pop_public_health_desc	Przychodnie i szczepienia: zdrowsza ludność, więcej wydatków cywilnych.
+efw_pop_birth_campaign	Kampania urodzeń
+efw_pop_birth_campaign_desc	Premie dla rodzin wielodzietnych, mniej kobiet w fabrykach.
+efw_pop_colonial_recruitment	Werbunek na terytoriach
+efw_pop_colonial_recruitment_desc	Werbujemy także w regionach nienarodowych.
+efw_pop_internal_migration	Migracje wewnętrzne
+efw_pop_internal_migration_desc	Robotnicy przenoszeni tam, gdzie potrzebują ich budowy.
+efw_pop_reservists	Powołanie rezerwistów
+efw_pop_reservists_desc	Więcej gotowych mężczyzn, mniej rosnących rodzin.
+efw_pop_national_health	Narodowa służba zdrowia
+efw_pop_national_health_desc	Opieka dla wszystkich, opłacana przez wszystkich.
+efw_pop_total_manpower	Mobilizacja demograficzna
+efw_pop_total_manpower_desc	Każdy region musi dostarczyć swój kontyngent ludzi.
+efw_pop_war_economy_families	Pracujące rodziny
+efw_pop_war_economy_families_desc	Żłobki i stołówki zakładowe: więcej robotników i więcej rekrutów.
+efw_so_civil_defence	Obrona cywilna
+efw_cd_air_raid_wardens	Straż przeciwlotnicza
+efw_cd_air_raid_wardens_desc	Ochotnicy, syreny i zaciemnienie: działa plot strzelają celniej.
+efw_cd_shelters	Schrony przeciwlotnicze
+efw_cd_shelters_desc	Każda dzielnica ma swój schron, wykopany zamiast nowych fabryk.
+efw_cd_coastal_watch	Straż wybrzeża
+efw_cd_coastal_watch_desc	Posterunki obserwacyjne wzdłuż każdego wybrzeża.
+efw_cd_home_guard	Gwardia narodowa
+efw_cd_home_guard_desc	Obywatele wyszkoleni do obrony własnego miasta.
+efw_cd_decoys	Cele pozorne
+efw_cd_decoys_desc	Fałszywe fabryki i mylące światła przyciągają bombowce.
+efw_cd_anti_air_belt	Pierścień przeciwlotniczy
+efw_cd_anti_air_belt_desc	Baterie plot wokół każdego ośrodka przemysłowego.
+efw_cd_fortress_nation	Naród-twierdza
+efw_cd_fortress_nation_desc	Ojczyzna staje się siecią fortyfikacji.
+efw_cd_people_in_arms	Naród pod bronią
+efw_cd_people_in_arms_desc	Każdy obywatel gotów bronić ojczyzny.
+efw_military_policies	Armia i sztab generalny
+efw_military_policies_desc	Dowodzenie, werbunek, logistyka, broń polowa, sanitariat i doktryna: jak walczy armia.
+efw_mil_command	Dowodzenie i oficerowie
+efw_cmd_junior_officers	Kursy podporuczników
+efw_cmd_junior_officers_desc	Młodzi oficerowie szkoleni naprędce: więcej doświadczenia, mniej spójności.
+efw_cmd_military_academies	Akademie wojskowe
+efw_cmd_military_academies_desc	Dobrze przygotowani oficerowie, ale ich szkolenie trwa miesiące dłużej.
+efw_cmd_centralized	Dowodzenie scentralizowane
+efw_cmd_centralized_desc	Plany przychodzą z góry; lokalna inicjatywa maleje.
+efw_cmd_decentralized	Dowodzenie zdecentralizowane
+efw_cmd_decentralized_desc	Dowódcy w polu decydują sami: zmotywowane oddziały, wolniejsze plany.
+efw_cmd_foreign_missions	Misje zagraniczne
+efw_cmd_foreign_missions_desc	Nasi oficerowie obserwują cudze wojny.
+efw_cmd_war_college	Wyższa Szkoła Wojenna
+efw_cmd_war_college_desc	Sztab wyszkolony do planowania złożonych operacji.
+efw_cmd_general_staff	Wielki Sztab Generalny
+efw_cmd_general_staff_desc	Jedno autorytatywne dowództwo wszystkich sił lądowych.
+efw_cmd_veteran_cadres	Kadry weteranów
+efw_cmd_veteran_cadres_desc	Doświadczeni podoficerowie w każdej jednostce: więcej nauki, wolniejszy werbunek.
+efw_mil_recruitment	Szkolenie i werbunek
+efw_rec_quick_training	Szkolenie przyspieszone
+efw_rec_quick_training_desc	Rekruci gotowi szybciej, ale gorzej przygotowani.
+efw_rec_extended_training	Szkolenie wydłużone
+efw_rec_extended_training_desc	Więcej tygodni w koszarach, twardsi żołnierze.
+efw_rec_territorial_reserves	Rezerwy terytorialne
+efw_rec_territorial_reserves_desc	Każdy okręg utrzymuje własnych rezerwistów.
+efw_rec_volunteer_corps	Korpus ochotniczy
+efw_rec_volunteer_corps_desc	Ochotnicy za granicą zdobywają doświadczenie.
+efw_rec_auxiliaries	Służby pomocnicze
+efw_rec_auxiliaries_desc	Kobiety w rolach pomocniczych: więcej żołnierzy na froncie, mniej robotników.
+efw_rec_mass_conscription	Pobór masowy
+efw_rec_mass_conscription_desc	Każdy zdolny mężczyzna pod bronią.
+efw_rec_elite_units	Oddziały doborowe
+efw_rec_elite_units_desc	Surowa selekcja i ciężkie szkolenie: mniej, ale lepiej.
+efw_rec_live_fire	Ćwiczenia z ostrą amunicją
+efw_rec_live_fire_desc	Realistyczne manewry z ostrą amunicją.
+efw_mil_logistics	Logistyka i zaopatrzenie
+efw_log_push_supply	Zaopatrzenie wypychane
+efw_log_push_supply_desc	Wszystko wysyłane do przodu: mniejsze zużycie, więcej strat po drodze.
+efw_log_forward_depots	Wysunięte składy
+efw_log_forward_depots_desc	Magazyny blisko frontu, zbudowane kosztem cywilów.
+efw_log_rail_priority	Pierwszeństwo kolei
+efw_log_rail_priority_desc	Pociągi wojskowe jadą pierwsze.
+efw_log_mules	Muły i wozy
+efw_log_mules_desc	Gdzie nie dojedzie ciężarówka, dojdzie muł – powoli.
+efw_log_motor_pool	Park samochodowy
+efw_log_motor_pool_desc	Więcej ciężarówek w oddziałach: szybciej, ale łapczywiej.
+efw_log_integrated	Zintegrowana logistyka
+efw_log_integrated_desc	Koleje, ciężarówki i składy pod jednym dowództwem.
+efw_log_war_requisitions	Rekwizycje wojenne
+efw_log_war_requisitions_desc	Cywilne pojazdy i zapasy zarekwirowane dla frontu.
+efw_log_fuel_economy	Oszczędność paliwa
+efw_log_fuel_economy_desc	Liczy się każdy litr: większe rezerwy, ostrożniejsze pojazdy.
+efw_mil_field_weapons	Broń polowa i piechota
+efw_fw_mg_doctrine	Doktryna karabinu maszynowego
+efw_fw_mg_doctrine_desc	Piechota trzyma linię wokół swoich karabinów maszynowych.
+efw_fw_light_indirect_fire	Lekki ogień stromotorowy
+efw_fw_light_indirect_fire_desc	Moździerze w każdym plutonie: więcej ognia, więcej amunicji do noszenia.
+efw_fw_antitank_teams	Zespoły przeciwpancerne
+efw_fw_antitank_teams_desc	Niszczyciele czołgów w zasadzce na własnej ziemi.
+efw_fw_local_workshops	Lokalne warsztaty
+efw_fw_local_workshops_desc	Małe warsztaty wytwarzają części broni dla armii.
+efw_fw_entrenchment	Okopywanie się
+efw_fw_entrenchment_desc	Każda pozycja jest okopana i ufortyfikowana.
+efw_fw_heavy_weapons	Broń ciężka dla wszystkich
+efw_fw_heavy_weapons_desc	Karabiny maszynowe, moździerze i broń ppanc. w każdej kompanii.
+efw_fw_assault_squads	Oddziały szturmowe
+efw_fw_assault_squads_desc	Wojska uderzeniowe do przełamywania linii wroga.
+efw_fw_defence_in_depth	Obrona w głąb
+efw_fw_defence_in_depth_desc	Linia za linią: wróg wykrwawia się w natarciu.
+efw_mil_conduct	Sanitariat i postępowanie
+efw_con_field_hospitals	Szpitale polowe
+efw_con_field_hospitals_desc	Ranni weterani są leczeni i wracają do jednostki.
+efw_con_iron_discipline	Żelazna dyscyplina
+efw_con_iron_discipline_desc	Surowy regulamin i przykładne kary.
+efw_con_code_of_honour	Kodeks honorowy
+efw_con_code_of_honour_desc	Walczymy z honorem i szanujemy wroga.
+efw_con_spoils_of_war	Łupy wojenne
+efw_con_spoils_of_war_desc	Zdobyta broń trafia prosto do naszych oddziałów.
+efw_con_chaplains	Kapelani wojskowi
+efw_con_chaplains_desc	Pociecha duchowa na froncie i w kraju.
+efw_con_modern_medicine	Nowoczesna medycyna wojskowa
+efw_con_modern_medicine_desc	Chirurdzy, karetki i szpitale dla armii.
+efw_con_no_retreat	Ani kroku wstecz
+efw_con_no_retreat_desc	Każdej pozycji trzeba bronić za wszelką cenę.
+efw_con_total_war	Wojna bez zasad
+efw_con_total_war_desc	Konwencje zostają na papierze.
+efw_mil_operations	Doktryna operacyjna
+efw_ops_mobile_warfare	Wojna manewrowa
+efw_ops_mobile_warfare_desc	Szybsze oddziały, baki pustoszeją szybciej.
+efw_ops_methodical	Bitwa metodyczna
+efw_ops_methodical_desc	Każdy atak przygotowany w szczegółach, kosztem tempa.
+efw_ops_night_operations	Operacje nocne
+efw_ops_night_operations_desc	Ruszamy nocą, by uniknąć lotnictwa wroga.
+efw_ops_mountain_troops	Wojska górskie
+efw_ops_mountain_troops_desc	Oddziały przyzwyczajone do zimna i wysokości.
+efw_ops_desert_troops	Wojska kolonialne
+efw_ops_desert_troops_desc	Oddziały wyszkolone do upału i piasku.
+efw_ops_blitz	Wojna błyskawiczna
+efw_ops_blitz_desc	Przełamać i nacierać bez zatrzymywania się.
+efw_ops_war_of_attrition	Wojna na wyczerpanie
+efw_ops_war_of_attrition_desc	Wróg wykrwawia się na naszych liniach.
+efw_ops_river_assault	Saperzy szturmowi
+efw_ops_river_assault_desc	Saperzy i łodzie szturmowe, by sforsować każdą rzekę.
+efw_navy_air_policies	Marynarka, lotnictwo i służby
+efw_navy_air_policies_desc	Flota, konwoje, myśliwce, wsparcie lotnicze, wywiad i operacje zagraniczne.
+efw_na_fleet	Flota
+efw_fleet_coastal_navy	Marynarka przybrzeżna
+efw_fleet_coastal_navy_desc	Okręty do obrony własnych wód.
+efw_fleet_gunnery	Szkolenie artyleryjskie
+efw_fleet_gunnery_desc	Ciągłe ćwiczenia strzeleckie: więcej trafień, więcej spalonego paliwa.
+efw_fleet_damage_control	Walka o żywotność
+efw_fleet_damage_control_desc	Ekipy naprawcze na pokładzie i w porcie.
+efw_fleet_naval_training	Szkolenie morskie
+efw_fleet_naval_training_desc	Intensywne ćwiczenia na morzu: więcej doświadczenia, więcej wypadków.
+efw_fleet_preservation	Flota jako zagrożenie
+efw_fleet_preservation_desc	Okrętów się nie ryzykuje: wycofują się wcześniej i trafiają słabiej.
+efw_fleet_blue_water	Flota oceaniczna
+efw_fleet_blue_water_desc	Flota zbudowana do walki na otwartym morzu.
+efw_fleet_torpedo_doctrine	Doktryna torpedowa
+efw_fleet_torpedo_doctrine_desc	Agresywne niszczyciele i nocne ataki torpedowe.
+efw_fleet_rapid_refit	Arsenały modernizacyjne
+efw_fleet_rapid_refit_desc	Stocznie najpierw naprawiają i modernizują istniejące okręty.
+efw_na_convoys	Konwoje i okręty podwodne
+efw_cv_escort	Eskorta konwojów
+efw_cv_escort_desc	Marynarka chroni szlaki handlowe kosztem najazdów.
+efw_cv_wolfpacks	Wilcze stada
+efw_cv_wolfpacks_desc	Okręty podwodne polują stadami; nasze konwoje są słabiej chronione.
+efw_cv_dispersed_routes	Rozproszone szlaki
+efw_cv_dispersed_routes_desc	Konwoje płyną osobno i rozpraszają się przy pierwszym zagrożeniu.
+efw_cv_minefields	Pola minowe
+efw_cv_minefields_desc	Nasze wody pełne min, kilka w niewłaściwych miejscach.
+efw_cv_sonar	Nasłuch podwodny
+efw_cv_sonar_desc	Hydrofony i sonary na każdym okręcie eskorty.
+efw_cv_total_sub_war	Nieograniczona wojna podwodna
+efw_cv_total_sub_war_desc	Każdy wrogi statek jest celem, bez ostrzeżenia.
+efw_cv_convoy_system	System konwojów
+efw_cv_convoy_system_desc	Każdy statek handlowy płynie pod eskortą.
+efw_cv_stealth_boats	Ciche okręty podwodne
+efw_cv_stealth_boats_desc	Mniejsze kadłuby i ciche silniki: niewidoczne, ale kruche.
+efw_na_air_force	Lotnictwo myśliwskie
+efw_af_flight_schools	Szkoły lotnicze
+efw_af_flight_schools_desc	Lepiej wyszkoleni piloci i mniej strat w szkoleniu.
+efw_af_aces	Kult asów
+efw_af_aces_desc	Najlepsi piloci stają się bohaterami, a ich strata boli bardziej.
+efw_af_interceptors	Myśliwce przechwytujące
+efw_af_interceptors_desc	Szybkie myśliwce krótkiego zasięgu do obrony kraju.
+efw_af_long_range	Myśliwce eskortowe
+efw_af_long_range_desc	Więcej paliwa na pokładzie, mniejsza zwrotność w walce.
+efw_af_radar_network	Sieć ostrzegania
+efw_af_radar_network_desc	Obserwatorzy i radary naprowadzają myśliwce na cele.
+efw_af_air_superiority	Doktryna przewagi powietrznej
+efw_af_air_superiority_desc	Panowanie w powietrzu ponad wszystko, nawet kosztem zmęczenia pilotów.
+efw_af_veteran_squadrons	Pułki weteranów
+efw_af_veteran_squadrons_desc	Doświadczeni piloci zostają na froncie zamiast szkolić rekrutów.
+efw_af_all_weather	Loty w każdych warunkach
+efw_af_all_weather_desc	Latamy nocą i przy każdej pogodzie. Nie wszyscy wracają.
+efw_na_air_support	Wsparcie lotnicze
+efw_as_close_support	Bezpośrednie wsparcie lotnicze
+efw_as_close_support_desc	Lotnictwo pracuje dla piechoty, mniej dla panowania w powietrzu.
+efw_as_dive_bombing	Bombardowanie z lotu nurkowego
+efw_as_dive_bombing_desc	Bardzo wysoka precyzja, piloci pod presją.
+efw_as_naval_strike	Samoloty torpedowe
+efw_as_naval_strike_desc	Eskadry wyspecjalizowane przeciw wrogim okrętom.
+efw_as_air_reconnaissance	Rozpoznanie lotnicze
+efw_as_air_reconnaissance_desc	Samoloty rozpoznawcze nad każdym frontem.
+efw_as_forward_airfields	Wysunięte lotniska
+efw_as_forward_airfields_desc	Pasy startowe mają pierwszeństwo przed portami.
+efw_as_strategic_bombing	Bombardowanie strategiczne
+efw_as_strategic_bombing_desc	Wrogie fabryki i miasta pod bombami.
+efw_as_army_cooperation	Współpraca powietrze-ziemia
+efw_as_army_cooperation_desc	Oficerowie łącznikowi z radiostacjami na pierwszej linii.
+efw_as_maritime_patrol	Patrole morskie
+efw_as_maritime_patrol_desc	Łodzie latające i bombowce dalekiego zasięgu nad szlakami morskimi.
+efw_na_intelligence	Wywiad
+efw_int_codebreakers	Kryptolodzy
+efw_int_codebreakers_desc	Matematycy pracują nad szyframi wroga.
+efw_int_secure_codes	Bezpieczne szyfry
+efw_int_secure_codes_desc	Nowe maszyny szyfrujące dla każdej łączności.
+efw_int_foreign_networks	Siatki zagraniczne
+efw_int_foreign_networks_desc	Agenci i informatorzy w obcych stolicach.
+efw_int_counter_espionage	Kontrwywiad
+efw_int_counter_espionage_desc	Każdy cudzoziemiec jest potencjalnym podejrzanym.
+efw_int_military_intelligence	Służba wywiadu wojskowego
+efw_int_military_intelligence_desc	Wywiad pracuje dla frontu, mniej dla dyplomacji.
+efw_int_central_agency	Agencja centralna
+efw_int_central_agency_desc	Jedna tajna służba z własnymi ludźmi i środkami.
+efw_int_cipher_bureau	Biuro Szyfrów
+efw_int_cipher_bureau_desc	Najlepsze umysły kraju zamknięte, by łamać i tworzyć szyfry.
+efw_int_deception	Strategiczne wprowadzanie w błąd
+efw_int_deception_desc	Fałszywe plany, armie widma i podwójni agenci.
+efw_na_foreign_ops	Operacje zagraniczne
+efw_fo_volunteer_corps	Korpus ochotniczy
+efw_fo_volunteer_corps_desc	Ochotnicy za granicą zdobywają doświadczenie.
+efw_fo_air_volunteers	Legion lotniczy
+efw_fo_air_volunteers_desc	Eskadry ochotników w cudzych wojnach.
+efw_fo_military_aid	Pomoc wojskowa
+efw_fo_military_aid_desc	Broń i doradcy dla zaprzyjaźnionych krajów.
+efw_fo_neutrality	Zbrojna neutralność
+efw_fo_neutrality_desc	Cudze wojny pozostają cudze.
+efw_fo_guarantees	Gwarancje dla sąsiadów
+efw_fo_guarantees_desc	Obiecujemy ochronę małym sąsiednim krajom.
+efw_fo_foreign_legion	Legia Cudzoziemska
+efw_fo_foreign_legion_desc	Awanturnicy, wygnańcy i romantycy: wszyscy mile widziani, bez pytań.
+efw_fo_war_plans	Plany wojenne
+efw_fo_war_plans_desc	Sztab generalny przygotowuje preteksty i plany na każdego sąsiada.
+efw_fo_great_power	Polityka mocarstwowa
+efw_fo_great_power_desc	Ambasady, parady i pożyczki: świat musi wiedzieć, kim jesteśmy.

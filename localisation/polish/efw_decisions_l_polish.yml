@@ -1,0 +1,12 @@
+﻿l_polish:
+ efw_autarky_fuel_plan:0 "Autarkia paliwowa"
+ efw_autarky_fuel_plan_desc:0 "Benzyna z węgla, spirytus z ziemniaków i mnóstwo nadziei.\n\n§R-30 000 rezerw ludzkich§!. Przez §Y365 dni§!: szybsze rafinerie syntetyczne i więcej paliwa. §R30%§! szans, że zapach w miastach stanie się problemem politycznym."
+ efw_autarky_fuel_idea:0 "Autarkia paliwowa"
+ efw_autarky_fuel_idea_desc:0 "Każda kropla paliwa wyprodukowana w kraju to o jedną mniej do kupienia za granicą."
+ efw_tt_autarky_ok:0 "Rafinerie działają. Mniej więcej."
+ efw_tt_autarky_smell:0 "§RMiasta pachną przypaloną kapustą.§!"
+ efw_pipe_gun_unlock:0 "EFW: improwizowany karabin z rury"
+ efw_industrial_phase_1_idea_desc:0 "Fundamenty i ponowny start: budowy przemysłowe ruszają w całym kraju."
+ efw_industrial_phase_2_idea_desc:0 "Konsolidacja przemysłu ciężkiego: nowe fabryki osiągają pełną wydajność."
+ efw_grand_works_idea_desc:0 "Drogi, koleje i plany zabudowy: cały kraj to jeden wielki plac budowy."
+ efw_social_welfare_workshops_idea_desc:0 "Wsparcie rodzin i sieć warsztatów: produkcja rośnie od dołu."

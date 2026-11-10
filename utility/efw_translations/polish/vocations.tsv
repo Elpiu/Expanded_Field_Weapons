@@ -1,0 +1,82 @@
+efw_welcome.1.t	Inspektor z rurą hydrauliczną
+efw_welcome.1.d	Urzędnik Ministerstwa Uzbrojenia wchodzi bez pukania. Pod pachą ma rurę hydrauliczną, rolkę taśmy izolacyjnej i teczkę z napisem §YEXPANDED FIELD WEAPONS§!.\n\n„Ekscelencjo, karabiny maszynowe, moździerze i broń przeciwpancerna mają teraz własne linie produkcyjne, z §YBronią wsparcia I§!. Mamy karabin, który nie kosztuje stali. Drewniany myśliwiec, żaglowce i flotę motorówek. I cztery nowe działy ustaw.”\n\nPotem ścisza głos: „Ale prawdziwa nowość to §YPowołania narodowe§!. Wybierzcie drogę, zbudujcie właściwe budynki, uchwalcie właściwe ustawy... a ministerstwo wszystko pomnoży. Aż do §G+40% badań§!, jeśli starczy uporu.”\n\nKładzie rurę na biurku. „Tymczasem mały prezent powitalny. Co wolicie?”
+efw_welcome.1.a	„Do laboratoriów!”
+efw_welcome.1.b	„Więcej fabryk, mniej gadania.”
+efw_welcome.1.c	„Żołnierz przede wszystkim.”
+efw_welcome.1.e	„Znaleźliśmy w piwnicy trochę rur.”
+efw_welcome.1.f	„Żadnych prezentów. Mam wojnę do przygotowania.”
+efw_welcome_vocation_tt	§YWskazówka:§! kategoria decyzji §YPowołania narodowe§! wyjaśnia, jak zamienić ten prezent w stałą premię.
+efw_welcome_research_idea	Entuzjazm w laboratoriach
+efw_welcome_research_idea_desc	Naukowcy dostali od rządu list z wyrazami uznania. Oprawili go w ramkę.
+efw_welcome_industry_idea	Pierwsze budowy
+efw_welcome_industry_idea_desc	Nowe spychacze, nowe kaski, ci sami robotnicy. Ale zmotywowani.
+efw_welcome_army_idea	Zmotywowani rekruci
+efw_welcome_army_idea_desc	Sierżant obiecał przepustkę temu, kto złoży karabin z zawiązanymi oczami.
+efw_vocation_category	Powołania narodowe
+efw_vocation_category_desc	Każdy naród jest w czymś dobry. Wybierzcie §YJEDNO§! i postawcie na nie wszystko: każdy poziom wymaga budynków EFW i pasujących ustaw, a na trzecim poziomie premia staje się ogromna. Ale kto specjalizuje się we wszystkim, nie specjalizuje się w niczym: kary uderzają w inne dziedziny.\n\n§RJedno powołanie na naród. Między poziomami musi minąć 120 dni.§!
+efw_vocation_settling_tt	Ministerstwo wciąż się organizuje (§Y120 dni§! między poziomami)
+efw_vocation_crisis_tt	Brak trwającego §Rnarodowego kryzysu tożsamości§!
+efw_vocation_research_1	Powołanie: Republika Uczonych
+efw_vocation_research_1_desc	Mikroskopy zamiast armat: naród stawia wszystko na naukę.\n\n§YDroga:§!\n§YI§! §G+10% badań§!\n§YII§! §G+22% badań§!: 2 Narodowe Ośrodki Badawcze, 4 sloty badań i jedna ustawa spośród: Stypendia, Elitarne uczelnie, Wymiana naukowa lub Badania wojskowe\n§YIII§! §G+40% badań§!: 4 ośrodki badawcze, 5 slotów badań, Elitarne uczelnie lub Wymiana naukowa, Granty badawcze lub Miasto nauki\n\n§RRosnące kary:§! dobra konsumpcyjne, produkcja wojskowa, a na końcu poparcie dla wojny.
+efw_vocation_research_2	Uczeni: Wielkie laboratorium
+efw_vocation_research_2_desc	Profesorowie poprosili o więcej pieniędzy. O dziwo, dostali.
+efw_vocation_research_3	Uczeni: Umysły u władzy
+efw_vocation_research_3_desc	Rada ministrów obraduje teraz w sali wykładowej. Slajdy obowiązkowe.
+efw_voc_research_1	Republika Uczonych I
+efw_voc_research_1_desc	Każda szkoła ma laboratorium, każde laboratorium marzenie.
+efw_voc_research_2	Republika Uczonych II
+efw_voc_research_2_desc	Fabryki oddają inżynierów laboratoriom. Fabryki nie są zachwycone.
+efw_voc_research_3	Republika Uczonych III
+efw_voc_research_3_desc	Naród myśli szybciej niż ktokolwiek. Walczyć lubi za to mniej.
+efw_vocation_industry_1	Powołanie: Warsztat Narodu
+efw_vocation_industry_1_desc	Kominy, zmiany i syreny: naród staje się fabryką.\n\n§YDroga:§!\n§YI§! §G+6% produkcji, +8% budowy§!\n§YII§! §G+14% produkcji, +15% budowy, +10% przyrostu wydajności§!: 2 Dyrekcje Pracy i jedna ustawa spośród: Przemysł ciężki, Plan pięcioletni lub Naukowa organizacja pracy\n§YIII§! §G+28% produkcji, +25% budowy, +20% przyrostu wydajności, +5% maksymalnej wydajności§!: 4 Dyrekcje Pracy, 2 Ośrodki Propagandy, Przemysł ciężki lub Plan pięcioletni, jedna ustawa spośród: Długie zmiany, Mobilizacja pracy lub Korporacjonizm\n\n§RRosnące kary:§! badania, stabilność i przyrost ludności.
+efw_vocation_industry_2	Warsztat: Kominy wszędzie
+efw_vocation_industry_2_desc	Niebo jest szare, PKB zielone.
+efw_vocation_industry_3	Warsztat: Kraj to fabryka
+efw_vocation_industry_3_desc	Syrena nocnej zmiany stała się nieoficjalnym hymnem.
+efw_voc_industry_1	Warsztat Narodu I
+efw_voc_industry_1_desc	Pierwsza zmiana zaczyna się o szóstej. Druga też, tylko gdzie indziej.
+efw_voc_industry_2	Warsztat Narodu II
+efw_voc_industry_2_desc	Każde miasto ma fabrykę. Niektóre miasta są fabryką.
+efw_voc_industry_3	Warsztat Narodu III
+efw_voc_industry_3_desc	Naród produkuje więcej niż ktokolwiek. Obywatele śpią, kiedy mogą.
+efw_vocation_army_1	Powołanie: Naród pod bronią
+efw_vocation_army_1_desc	Na każdym placu koszary, każdy chłopak z plecakiem.\n\n§YDroga:§!\n§YI§! §G+3% ataku i obrony, -5% czasu szkolenia§!\n§YII§! §G+8% ataku i obrony, +3% poboru, -10% czasu szkolenia§!: 2 Ośrodki Propagandy i jedna ustawa spośród: Broń ciężka dla wszystkich, Oddziały szturmowe lub Obrona w głąb\n§YIII§! §G+16% ataku i obrony, +5% organizacji, +6% poboru, -20% czasu szkolenia, +15% doświadczenia§!: 4 Ośrodki Propagandy, 2 Ośrodki Logistyki, ustawa broni polowej za 100 SP i jedna spośród: Wyższa Szkoła Wojenna, Wielki Sztab Generalny lub Kadry weteranów\n\n§RRosnące kary:§! badania, dobra konsumpcyjne i stabilność.
+efw_vocation_army_2	Armia: Każdy obywatel żołnierzem
+efw_vocation_army_2_desc	Nawet listonosz umie rozebrać karabin maszynowy. Listy przychodzą z opóźnieniem.
+efw_vocation_army_3	Armia: Narodowe koszary
+efw_vocation_army_3_desc	Cały kraj wstaje o piątej. Z mocy ustawy.
+efw_voc_army_1	Naród pod bronią I
+efw_voc_army_1_desc	Sobotnia defilada stała się stałym punktem programu.
+efw_voc_army_2	Naród pod bronią II
+efw_voc_army_2_desc	W szkołach geografii uczy się z map sztabu generalnego.
+efw_voc_army_3	Naród pod bronią III
+efw_voc_army_3_desc	Najlepsza armia kontynentu. Laboratoria tymczasem zamykają o piątej.
+efw_vocation_navy_1	Powołanie: Władcy mórz
+efw_vocation_navy_1_desc	Przyszłość narodu unosi się na wodzie.\n\n§YDroga:§!\n§YI§! §G+6% produkcji stoczni, +3% obrażeń morskich§!\n§YII§! §G+15% produkcji stoczni, +6% obrażeń i obrony morskiej, +10% napraw§!: 10 stoczni i jedna ustawa spośród: Wielkie stocznie, Flota oceaniczna, Doktryna torpedowa lub Arsenały modernizacyjne\n§YIII§! §G+30% produkcji stoczni, +12% obrażeń i obrony morskiej, +25% napraw i modernizacji§!: 25 stoczni, Wielkie stocznie i jedna ustawa spośród: Flota oceaniczna, Doktryna torpedowa, Arsenały modernizacyjne lub System konwojów\n\n§RRosnące kary:§! produkcja wojskowa i szkolenie armii.
+efw_vocation_navy_2	Morze: Wodowanie za wodowaniem
+efw_vocation_navy_2_desc	W każdy poniedziałek o dziób rozbija się butelka. Szkło oddajemy do recyklingu.
+efw_vocation_navy_3	Morze: Panowie fal
+efw_vocation_navy_3_desc	Na wrogich mapach morskich pojawił się nowy symbol: nasz.
+efw_voc_navy_1	Władcy mórz I
+efw_voc_navy_1_desc	Dzieci bawią się stateczkami. Ministerstwo robi notatki.
+efw_voc_navy_2	Władcy mórz II
+efw_voc_navy_2_desc	Stocznie pracują dniem i nocą; pułki czekają na swoje ciężarówki.
+efw_voc_navy_3	Władcy mórz III
+efw_voc_navy_3_desc	Najlepsza flota oceanów. Armia tymczasem ćwiczy na nabrzeżu.
+efw_vocation_scrap_1	Powołanie: Sztuka radzenia sobie
+efw_vocation_scrap_1_desc	Nie ma stali? Nie ma kauczuku? Żaden problem. Mamy drut.\n\n§YDroga:§!\n§YI§! §G-15% kary za brak zasobów, +5% wydajności początkowej§!\n§YII§! §G-35% kary, +10% wydajności początkowej, +5% zasobów lokalnych, +5% produkcji§!: §Y5000 karabinów z rury§! w magazynie i Zbiórka złomu lub Materiały zastępcze\n§YIII§! §G-60% kary, +20% wydajności początkowej, +5% maksymalnej wydajności, +10% zasobów lokalnych, +12% produkcji§!: §Y20 000 karabinów z rury§! w magazynie, Zbiórka złomu lub Materiały zastępcze, Autarkia lub Kontyngenty importowe\n\nIdealne dla krajów ubogich w surowce.\n\n§RRosnące kary:§! badania i stabilność.
+efw_vocation_scrap_2	Radzimy sobie: Wszystko się przyda
+efw_vocation_scrap_2_desc	Ogrodzenia parków zniknęły. Ławki też. I kilka latarni.
+efw_vocation_scrap_3	Radzimy sobie: Geniusz drutu
+efw_vocation_scrap_3_desc	Zagraniczni inżynierowie zwiedzają nasze fabryki i nie rozumieją, jak one działają. My też nie.
+efw_voc_scrap_1	Sztuka radzenia sobie I
+efw_voc_scrap_1_desc	Taśmę izolacyjną ogłoszono materiałem strategicznym.
+efw_voc_scrap_2	Sztuka radzenia sobie II
+efw_voc_scrap_2_desc	Każda piwnica to skład, każdy dziadek to doradca techniczny.
+efw_voc_scrap_3	Sztuka radzenia sobie III
+efw_voc_scrap_3_desc	Fabryki pracują pełną parą na połowie zasobów. Nikt nie pyta jak.
+efw_vocation_abandon	Wyrzec się powołania
+efw_vocation_abandon_desc	Skręciliśmy w złą stronę. Zdarza się. Zawracamy, tracimy osiągnięty poziom, a przez §Y180 dni§! kraj przechodzi §Rnarodowy kryzys tożsamości§!: żadnego nowego powołania, dopóki nie minie.
+efw_vocation_crisis_idea	Narodowy kryzys tożsamości
+efw_vocation_crisis_idea_desc	Gazety pytają, kim jesteśmy. Rząd, szczerze mówiąc, nie wie.

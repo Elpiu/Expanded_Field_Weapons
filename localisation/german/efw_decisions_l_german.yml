@@ -1,0 +1,12 @@
+﻿l_german:
+ efw_autarky_fuel_plan:0 "Treibstoffautarkie"
+ efw_autarky_fuel_plan_desc:0 "Benzin aus Kohle, Alkohol aus Kartoffeln und sehr viel Hoffnung.\n\n§R-30.000 Mannstärke§!. Für §Y365 Tage§!: schnellere Synthetikraffinerien und mehr Treibstoff. §R30 %§! Chance, dass der Geruch in den Städten zum politischen Problem wird."
+ efw_autarky_fuel_idea:0 "Treibstoffautarkie"
+ efw_autarky_fuel_idea_desc:0 "Jeder Tropfen Treibstoff aus eigener Herstellung ist einer weniger, den wir im Ausland kaufen müssen."
+ efw_tt_autarky_ok:0 "Die Raffinerien laufen. Mehr oder weniger."
+ efw_tt_autarky_smell:0 "§RDie Städte riechen nach verbranntem Kohl.§!"
+ efw_pipe_gun_unlock:0 "EFW: Improvisiertes Rohrgewehr"
+ efw_industrial_phase_1_idea_desc:0 "Fundamente und Neustart: Industriebaustellen öffnen im ganzen Land."
+ efw_industrial_phase_2_idea_desc:0 "Ausbau der Schwerindustrie: Die neuen Fabriken erreichen volle Leistung."
+ efw_grand_works_idea_desc:0 "Straßen, Eisenbahnen und Bebauungspläne: Die ganze Nation ist eine riesige Baustelle."
+ efw_social_welfare_workshops_idea_desc:0 "Unterstützte Familien und verbreitete Werkstätten: Die Produktion wächst von unten."

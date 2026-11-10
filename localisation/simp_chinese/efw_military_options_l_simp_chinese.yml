@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+ efw_military_options_category:0 "EFW军事选项"
+ efw_military_options_category_desc:0 "可随时开启或关闭的可选军事规则。"
+ efw_enable_rapid_invasions:0 "开启快速登陆"
+ efw_enable_rapid_invasions_desc:0 "海上和空降登陆无需准备时间，计划中的海上登陆数量及其分配的师几乎不受限制。"
+ efw_disable_rapid_invasions:0 "关闭快速登陆"
+ efw_disable_rapid_invasions_desc:0 "恢复正常登陆规则：准备时间以及计划和师的数量限制重新生效。"
+ efw_rapid_invasions_idea:0 "快速登陆"
+ efw_rapid_invasions_idea_desc:0 "登陆作战无需准备时间即可计划和发动，计划和师的数量几乎没有限制。可在“EFW军事选项”决议中关闭。"

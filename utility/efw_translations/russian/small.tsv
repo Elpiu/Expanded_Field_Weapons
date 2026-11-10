@@ -1,0 +1,119 @@
+# Консультанты
+efw_parliamentary_statesman	Парламентский государственник
+efw_plan_commissar	Комиссар плана
+efw_party_hierarch	Партийный иерарх
+efw_man_of_order	Человек порядка
+efw_armaments_minister	Министр вооружений
+efw_propaganda_chief	Глава пропаганды
+efw_career_diplomat	Карьерный дипломат
+efw_war_economist	Военный экономист
+# Решения
+efw_autarky_fuel_plan	Топливная автаркия
+efw_autarky_fuel_plan_desc	Бензин из угля, спирт из картошки и очень много надежды.\n\n§R-30 000 призывников§!. На §Y365 дней§!: синтетические заводы работают быстрее, топлива больше. §R30%§! шанс, что запах в городах станет политической проблемой.
+efw_autarky_fuel_idea	Топливная автаркия
+efw_autarky_fuel_idea_desc	Каждая капля топлива, сделанная дома, — на одну меньше покупать за границей.
+efw_tt_autarky_ok	Заводы работают. Более-менее.
+efw_tt_autarky_smell	§RВ городах пахнет горелой капустой.§!
+efw_pipe_gun_unlock	EFW: самодельная трубная винтовка
+efw_industrial_phase_1_idea_desc	Фундамент и перезапуск: промышленные стройки открываются по всей стране.
+efw_industrial_phase_2_idea_desc	Укрепление тяжёлой промышленности: новые заводы выходят на полную мощность.
+efw_grand_works_idea_desc	Дороги, железные дороги и планы застройки: вся страна — одна огромная стройка.
+efw_social_welfare_workshops_idea_desc	Поддержка семей и сеть мастерских: производство растёт снизу.
+# Военные опции
+efw_military_options_category	Военные опции EFW
+efw_military_options_category_desc	Необязательные военные правила, которые можно включать и выключать в любой момент.
+efw_enable_rapid_invasions	Включить быстрые десанты
+efw_enable_rapid_invasions_desc	Морским и воздушным десантам не нужна подготовка, а число планов морских десантов и выделенных дивизий практически не ограничено.
+efw_disable_rapid_invasions	Выключить быстрые десанты
+efw_disable_rapid_invasions_desc	Возврат к обычным правилам: снова действуют время подготовки и ограничения на планы и дивизии.
+efw_rapid_invasions_idea	Быстрые десанты
+efw_rapid_invasions_idea_desc	Десантные операции планируются и начинаются без подготовки и без практических ограничений на планы и дивизии. Отключается в решениях «Военные опции EFW».
+# Конструкторы
+efw_hornet_tank_manufacturer	Компания «Хорнет»
+efw_fury_tank_manufacturer	Концерн «Фьюри»
+efw_raven_tank_manufacturer	Корпорация «Рэйвен»
+efw_insomnia_aircraft_manufacturer	Компания «Инсомния»
+efw_wardon_aircraft_manufacturer	Концерн «Уордон»
+efw_shadow_aircraft_manufacturer	Корпорация «Шэдоу»
+efw_siren_naval_manufacturer	Компания «Сирена»
+efw_leviathan_naval_manufacturer	Концерн «Левиафан»
+efw_poseidon_naval_manufacturer	Корпорация «Посейдон»
+efw_tank_manufacturer1	Базовый конструктор танков
+efw_tank_manufacturer2	Улучшенный конструктор танков
+efw_tank_manufacturer3	Современный конструктор танков
+efw_aircraft_manufacturer1	Базовый авиаконструктор
+efw_aircraft_manufacturer2	Улучшенный авиаконструктор
+efw_aircraft_manufacturer3	Современный авиаконструктор
+efw_naval_manufacturer1	Базовый кораблестроитель
+efw_naval_manufacturer2	Улучшенный кораблестроитель
+efw_naval_manufacturer3	Современный кораблестроитель
+efw_national_armoury_manufacturer	Национальный арсенал
+efw_artillery_foundries_manufacturer	Артиллерийские литейные заводы
+efw_motor_works_manufacturer	Моторные заводы
+efw_heavy_weapons_consortium_manufacturer	Консорциум тяжёлого вооружения
+efw_economy_arsenal_manufacturer	Экономичный арсенал
+efw_integrated_armaments_manufacturer	Группа комплексных вооружений
+efw_materiel_infantry_trait	Точное стрелковое оружие
+efw_materiel_artillery_trait	Специалист по артиллерии
+efw_materiel_motorized_trait	Специалист по моторизации
+efw_materiel_heavy_weapons_trait	Тяжёлое вооружение пехоты
+efw_materiel_economy_trait	Экономичное производство
+efw_materiel_integrated_trait	Комплексные вооружения
+efw_united_steelworks_concern	Объединённые сталелитейные заводы
+efw_national_power_company_concern	Национальная энергокомпания
+efw_synthetic_refineries_concern	Синтетические заводы
+efw_construction_firms_concern	Строительные фирмы
+efw_mining_consortium_concern	Горнодобывающий консорциум
+efw_industrial_conglomerate_concern	Промышленный конгломерат
+efw_concern_steel_trait	Тяжёлая сталелитейная промышленность
+efw_concern_power_trait	Национальная энергосеть
+efw_concern_synthetic_trait	Топливная химия
+efw_concern_construction_trait	Крупные подряды
+efw_concern_mining_trait	Горные работы
+efw_concern_conglomerate_trait	Промышленный конгломерат
+# Здания
+efw_steel_works	Металлургический комбинат
+efw_steel_works_plural	Металлургические комбинаты
+efw_oil_complex	Нефтяной комплекс
+efw_oil_complex_plural	Нефтяные комплексы
+efw_rubber_plantation	Каучуковая плантация
+efw_rubber_plantation_plural	Каучуковые плантации
+efw_aluminium_works	Алюминиевый завод
+efw_aluminium_works_plural	Алюминиевые заводы
+efw_tungsten_mine	Вольфрамовый рудник
+efw_tungsten_mine_plural	Вольфрамовые рудники
+efw_chromium_mine	Хромовый рудник
+efw_chromium_mine_plural	Хромовые рудники
+efw_coal_mine	Угольная шахта
+efw_coal_mine_plural	Угольные шахты
+efw_public_housing	Народное жильё
+efw_public_housing_plural	Кварталы народного жилья
+efw_public_housing_desc	Государственные жилые кварталы привлекают в регион рабочих и их семьи, увеличивая местное население и число людей, годных к службе.
+efw_wheat_fields	Пшеничные поля
+efw_wheat_fields_plural	Пшеничные поля
+efw_wheat_fields_desc	Государственные хозяйства, которые делают страну независимой в продовольствии: хлеб для городов и фронта без всякого импорта. Каждый регион с пшеничными полями снижает §Yтовары народного потребления на 1%§! и повышает стабильность и рост населения. Мелиорация открывает новое место для строительства, а амбары снабжают проходящие войска.
+# Техника
+efw_tankette_equipment	Танкетки
+efw_tankette_equipment_desc	Два человека, пулемёт и мотор от грузовика в жестяной коробке. Быстрее собственной храбрости: дешёвая и манёвренная, но любая противотанковая пушка вскрывает её как банку сардин.
+efw_tankette_equipment_1	Танкетка EFW
+efw_tankette_equipment_1_short	Танкетка
+efw_tankette_equipment_1_desc	Два человека, пулемёт и мотор от грузовика в жестяной коробке. Быстрее собственной храбрости: дешёвая и манёвренная, но любая противотанковая пушка вскрывает её как банку сардин.
+efw_tankette_battalion	Батальон танкеток
+efw_tankette_battalion_desc	Двухместные мини-танки. Батальон стоит примерно четверть батальона лёгких танков и сминает пехоту без противотанковых средств, но броня тонкая. Использует танкетки EFW.
+efw_tankette_unlock	EFW: танкетки
+efw_motorcycle_mg_equipment	Пулемётные мотоциклы
+efw_motorcycle_mg_equipment_desc	Мотоцикл, коляска и пулемёт там, где должна сидеть тёща. Быстрый, шумный и удивительно смертоносный на просёлках.
+efw_motorcycle_mg_equipment_1	Пулемётный мотоцикл EFW
+efw_motorcycle_mg_equipment_1_short	Мотоцикл с пулемётом
+efw_motorcycle_mg_equipment_1_desc	Мотоцикл, коляска и пулемёт там, где должна сидеть тёща. Быстрый, шумный и удивительно смертоносный на просёлках.
+efw_motorcycle_mg_company	Рота мотоциклистов-пулемётчиков
+efw_motorcycle_mg_company_desc	Моторизованная разведка на мотоциклах с вооружёнными колясками. Видит так же далеко, как моторизованная разведка, стоит дешевле и даёт §G+5% к атаке§! всей пехоте дивизии. Занимает слот разведки.
+efw_motorcycle_unlock	EFW: мотоциклисты-пулемётчики
+efw_gun_truck_equipment	Грузовики с пушкой
+efw_gun_truck_equipment_desc	Возьмите грузовик. Возьмите противотанковую пушку. Свяжите их вместе большим количеством верёвки и капелькой веры. Стреляет по пехоте и лёгкой технике и уезжает раньше, чем кто-то ответит: брони нет.
+efw_gun_truck_equipment_1	Самодельная автопушка EFW
+efw_gun_truck_equipment_1_short	Автопушка
+efw_gun_truck_equipment_1_desc	Возьмите грузовик. Возьмите противотанковую пушку. Свяжите их вместе большим количеством верёвки и капелькой веры. Стреляет по пехоте и лёгкой технике и уезжает раньше, чем кто-то ответит: брони нет.
+efw_gun_truck_battalion	Батарея автопушек
+efw_gun_truck_battalion_desc	Противотанковые пушки на грузовиках. Линейная артиллерия, быстрая как моторизованная пехота, с хорошей бронепробиваемостью и без защиты. Использует самодельные автопушки EFW.
+efw_gun_truck_unlock	EFW: самодельные автопушки

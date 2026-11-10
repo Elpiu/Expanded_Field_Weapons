@@ -8,7 +8,8 @@
 
 [![Steam Workshop](https://img.shields.io/badge/Steam%20Workshop-3801242021-1b2838?logo=steam&logoColor=white)](https://steamcommunity.com/sharedfiles/filedetails/?id=3801242021)
 ![HOI4](https://img.shields.io/badge/Hearts%20of%20Iron%20IV-1.19.x-8b5a2b)
-![Lingue](https://img.shields.io/badge/lingue-italiano%20%7C%20english-4a7a3a)
+![Versione](https://img.shields.io/badge/versione-1.3.0-2f6f9f)
+![Lingue](https://img.shields.io/badge/lingue-EN%20%7C%20RU%20%7C%20DE%20%7C%20PL%20%7C%20中文%20%7C%20IT-4a7a3a)
 ![Stato](https://img.shields.io/badge/stato-in%20sviluppo-orange)
 
 </div>
@@ -30,7 +31,7 @@ Gran parte dei contenuti è pensata per il giocatore umano: l'IA non li usa, cos
 | 📜 [Decisioni](#-mobilitazione-e-investimenti-nazionali) | 📖 [Leggi](#-leggi-nel-pannello-politico) | 👔 [Designer e consiglieri](#-designer-e-consiglieri) |
 | 🎯 [Vocazioni Nazionali](#-vocazioni-nazionali) | 🚢 [Invasioni Rapide](#-opzioni-militari-invasioni-rapide) | ⚡ [FPS e prestazioni](#-ottimizzazione-fps-e-prestazioni) |
 | 👋 [Benvenuto](#-evento-di-benvenuto) | 📦 [Installazione](#-installazione) | 🧩 [Compatibilità](#-compatibilità) |
-| 🛵 [Mezzi leggeri](#-mezzi-leggeri-improvvisati) | | |
+| 🛵 [Mezzi leggeri](#-mezzi-leggeri-improvvisati) | 🌍 [Lingue](#-lingue) | 📝 [Changelog](CHANGELOG.md) |
 
 ---
 
@@ -419,6 +420,24 @@ Per i pacchetti `MERGE`: copia il contenuto nella root di EFW e scegli **Sovrasc
 
 ---
 
+## 🌍 Lingue
+
+| Lingua | Stato |
+|---|---|
+| 🇬🇧 Inglese | completa (lingua di riferimento) |
+| 🇷🇺 Russo · 🇩🇪 Tedesco · 🇵🇱 Polacco · 🇨🇳 Cinese semplificato | complete, 888 testi ciascuna (v1.3.0) |
+| 🇮🇹 Italiano | completa, ma **HOI4 non supporta ufficialmente l'italiano**: i testi italiani si vedono solo con una mod di traduzione italiana |
+
+Le traduzioni sono state generate e controllate automaticamente (codici colore, variabili, a capo). Chi parla una di queste lingue e trova errori può segnalarli o correggere i file in `utility/efw_translations/<lingua>/`, poi rigenerare con:
+
+```bash
+python utility/efw_translations/build_translations.py
+```
+
+Le chiavi mancanti restano in inglese, quindi una traduzione incompleta non rompe mai il gioco.
+
+---
+
 ## 🧩 Compatibilità
 
 EFW usa ID con prefisso `efw_`, file separati e varianti invece di sostituire contenuti vanilla. Fanno eccezione questi file:
@@ -457,6 +476,7 @@ utility/efw_module_icons/make_module_icons.py  genera le icone dei moduli di aer
 utility/make_readme_images.py                  converte le icone DDS nei PNG di docs/images/ per questo README
 utility/efw_vehicle_icons/make_gun_truck_icon.py  genera l'icona del Furgone con Cannone da due icone vanilla
 utility/efw_building_icons/make_building_icons.py  disegna le 4 icone degli edifici strategici (frame 41-44 della strip)
+utility/efw_translations/build_translations.py     costruisce le traduzioni dai TSV e controlla codici colore e variabili
 utility/generic_sprite_cropper_v3.py           ritaglio sprite generico
 ```
 
@@ -469,7 +489,7 @@ events/        benvenuto, inizializzazione ed eventi delle decisioni
 history/       consiglieri politici generici
 interface/     sprite e GUI
 gfx/           icone (DDS)
-localisation/  italiano e inglese
+localisation/  inglese, italiano, russo, tedesco, polacco, cinese semplificato
 docs/images/   immagini del README (ignorate dal gioco)
 utility/       script di sviluppo
 ```
@@ -488,6 +508,8 @@ utility/       script di sviluppo
 ---
 
 ## 🗺️ Stato del progetto
+
+Versione attuale: **1.3.0**. Tutte le novità sono nel [CHANGELOG](CHANGELOG.md).
 
 EFW è in sviluppo continuo: bilanciamento, costi e requisiti possono cambiare.
 

@@ -1,0 +1,12 @@
+﻿l_simp_chinese:
+ efw_autarky_fuel_plan:0 "燃料自给"
+ efw_autarky_fuel_plan_desc:0 "煤炼汽油，土豆酿酒精，再加上满满的希望。\n\n§R-30000人力§!。§Y365天§!内：合成炼油厂建造更快，燃料更多。有§R30%§!的几率城市里的气味会变成政治问题。"
+ efw_autarky_fuel_idea:0 "燃料自给"
+ efw_autarky_fuel_idea_desc:0 "国内每生产一滴燃料，就少从国外买一滴。"
+ efw_tt_autarky_ok:0 "炼油厂在运转。大概吧。"
+ efw_tt_autarky_smell:0 "§R城里一股烧焦卷心菜的味道。§!"
+ efw_pipe_gun_unlock:0 "EFW：简易管枪"
+ efw_industrial_phase_1_idea_desc:0 "奠基与重启：全国各地的工业工地纷纷开工。"
+ efw_industrial_phase_2_idea_desc:0 "重工业巩固：新工厂达到满负荷生产。"
+ efw_grand_works_idea_desc:0 "公路、铁路和城市规划：整个国家就是一个巨大的工地。"
+ efw_social_welfare_workshops_idea_desc:0 "扶持家庭，遍布作坊：生产自下而上增长。"

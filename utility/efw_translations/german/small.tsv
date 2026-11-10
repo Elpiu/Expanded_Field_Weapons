@@ -1,0 +1,119 @@
+# Berater
+efw_parliamentary_statesman	Parlamentarischer Staatsmann
+efw_plan_commissar	Plankommissar
+efw_party_hierarch	Parteihierarch
+efw_man_of_order	Mann der Ordnung
+efw_armaments_minister	Rüstungsminister
+efw_propaganda_chief	Propagandachef
+efw_career_diplomat	Berufsdiplomat
+efw_war_economist	Kriegsökonom
+# Entscheidungen
+efw_autarky_fuel_plan	Treibstoffautarkie
+efw_autarky_fuel_plan_desc	Benzin aus Kohle, Alkohol aus Kartoffeln und sehr viel Hoffnung.\n\n§R-30.000 Mannstärke§!. Für §Y365 Tage§!: schnellere Synthetikraffinerien und mehr Treibstoff. §R30 %§! Chance, dass der Geruch in den Städten zum politischen Problem wird.
+efw_autarky_fuel_idea	Treibstoffautarkie
+efw_autarky_fuel_idea_desc	Jeder Tropfen Treibstoff aus eigener Herstellung ist einer weniger, den wir im Ausland kaufen müssen.
+efw_tt_autarky_ok	Die Raffinerien laufen. Mehr oder weniger.
+efw_tt_autarky_smell	§RDie Städte riechen nach verbranntem Kohl.§!
+efw_pipe_gun_unlock	EFW: Improvisiertes Rohrgewehr
+efw_industrial_phase_1_idea_desc	Fundamente und Neustart: Industriebaustellen öffnen im ganzen Land.
+efw_industrial_phase_2_idea_desc	Ausbau der Schwerindustrie: Die neuen Fabriken erreichen volle Leistung.
+efw_grand_works_idea_desc	Straßen, Eisenbahnen und Bebauungspläne: Die ganze Nation ist eine riesige Baustelle.
+efw_social_welfare_workshops_idea_desc	Unterstützte Familien und verbreitete Werkstätten: Die Produktion wächst von unten.
+# Militärische Optionen
+efw_military_options_category	EFW-Militäroptionen
+efw_military_options_category_desc	Optionale Militärregeln, die jederzeit ein- und ausgeschaltet werden können.
+efw_enable_rapid_invasions	Schnelle Invasionen aktivieren
+efw_enable_rapid_invasions_desc	See- und Luftlandeinvasionen brauchen keine Vorbereitungszeit, und geplante Seeinvasionen sowie die zugewiesenen Divisionen sind praktisch unbegrenzt.
+efw_disable_rapid_invasions	Schnelle Invasionen deaktivieren
+efw_disable_rapid_invasions_desc	Zurück zu den normalen Invasionsregeln: Vorbereitungszeit und Grenzen für Pläne und Divisionen gelten wieder.
+efw_rapid_invasions_idea	Schnelle Invasionen
+efw_rapid_invasions_idea_desc	Landungsoperationen werden ohne Vorbereitungszeit und ohne praktische Grenze für Pläne oder Divisionen geplant und gestartet. Kann in den Entscheidungen der EFW-Militäroptionen deaktiviert werden.
+# Designer
+efw_hornet_tank_manufacturer	Hornet-Gesellschaft
+efw_fury_tank_manufacturer	Fury-Konzern
+efw_raven_tank_manufacturer	Raven Corporation
+efw_insomnia_aircraft_manufacturer	Insomnia-Gesellschaft
+efw_wardon_aircraft_manufacturer	Wardon-Konzern
+efw_shadow_aircraft_manufacturer	Shadow Corporation
+efw_siren_naval_manufacturer	Siren-Gesellschaft
+efw_leviathan_naval_manufacturer	Leviathan-Konzern
+efw_poseidon_naval_manufacturer	Poseidon Corporation
+efw_tank_manufacturer1	Einfacher Panzerkonstrukteur
+efw_tank_manufacturer2	Verbesserter Panzerkonstrukteur
+efw_tank_manufacturer3	Moderner Panzerkonstrukteur
+efw_aircraft_manufacturer1	Einfacher Flugzeugkonstrukteur
+efw_aircraft_manufacturer2	Verbesserter Flugzeugkonstrukteur
+efw_aircraft_manufacturer3	Moderner Flugzeugkonstrukteur
+efw_naval_manufacturer1	Einfacher Schiffskonstrukteur
+efw_naval_manufacturer2	Verbesserter Schiffskonstrukteur
+efw_naval_manufacturer3	Moderner Schiffskonstrukteur
+efw_national_armoury_manufacturer	Nationale Waffenfabrik
+efw_artillery_foundries_manufacturer	Artilleriegießereien
+efw_motor_works_manufacturer	Motorenwerke
+efw_heavy_weapons_consortium_manufacturer	Konsortium für schwere Waffen
+efw_economy_arsenal_manufacturer	Spararsenal
+efw_integrated_armaments_manufacturer	Gruppe integrierte Rüstung
+efw_materiel_infantry_trait	Präzisionshandwaffen
+efw_materiel_artillery_trait	Artilleriespezialist
+efw_materiel_motorized_trait	Motorisierungsspezialist
+efw_materiel_heavy_weapons_trait	Schwere Infanteriewaffen
+efw_materiel_economy_trait	Sparproduktion
+efw_materiel_integrated_trait	Integrierte Rüstung
+efw_united_steelworks_concern	Vereinigte Stahlwerke
+efw_national_power_company_concern	Nationale Elektrizitätsgesellschaft
+efw_synthetic_refineries_concern	Synthetikraffinerien
+efw_construction_firms_concern	Baufirmen
+efw_mining_consortium_concern	Bergbaukonsortium
+efw_industrial_conglomerate_concern	Industriekonglomerat
+efw_concern_steel_trait	Schwerstahlindustrie
+efw_concern_power_trait	Nationales Stromnetz
+efw_concern_synthetic_trait	Treibstoffchemie
+efw_concern_construction_trait	Großaufträge
+efw_concern_mining_trait	Bergbaubetrieb
+efw_concern_conglomerate_trait	Industriekonglomerat
+# Gebäude
+efw_steel_works	Stahlwerk
+efw_steel_works_plural	Stahlwerke
+efw_oil_complex	Ölkomplex
+efw_oil_complex_plural	Ölkomplexe
+efw_rubber_plantation	Kautschukplantage
+efw_rubber_plantation_plural	Kautschukplantagen
+efw_aluminium_works	Aluminiumwerk
+efw_aluminium_works_plural	Aluminiumwerke
+efw_tungsten_mine	Wolframmine
+efw_tungsten_mine_plural	Wolframminen
+efw_chromium_mine	Chrommine
+efw_chromium_mine_plural	Chromminen
+efw_coal_mine	Kohlemine
+efw_coal_mine_plural	Kohleminen
+efw_public_housing	Sozialwohnungen
+efw_public_housing_plural	Sozialwohnblöcke
+efw_public_housing_desc	Staatliche Wohnblöcke ziehen Arbeiter und Familien in die Region und erhöhen die örtliche Bevölkerung und die Zahl der Wehrfähigen.
+efw_wheat_fields	Weizenfelder
+efw_wheat_fields_plural	Weizenfelder
+efw_wheat_fields_desc	Staatsgüter, die die Nation in der Ernährung unabhängig machen: Brot für Städte und Front, ganz ohne Importe. Jeder Staat mit Weizenfeldern senkt die §YKonsumgüter um 1 %§! und erhöht Stabilität und Bevölkerungswachstum. Landgewinnung schafft neuen Bauplatz, und die Kornspeicher versorgen durchziehende Truppen.
+# Fahrzeuge
+efw_tankette_equipment	Tanketten
+efw_tankette_equipment_desc	Zwei Mann, ein Maschinengewehr und ein Lkw-Motor in einer Blechkiste. Schneller als der eigene Mut: billig und wendig, aber jede Panzerabwehrkanone öffnet sie wie eine Sardinenbüchse.
+efw_tankette_equipment_1	EFW-Tankette
+efw_tankette_equipment_1_short	Tankette
+efw_tankette_equipment_1_desc	Zwei Mann, ein Maschinengewehr und ein Lkw-Motor in einer Blechkiste. Schneller als der eigene Mut: billig und wendig, aber jede Panzerabwehrkanone öffnet sie wie eine Sardinenbüchse.
+efw_tankette_battalion	Tankettenbataillon
+efw_tankette_battalion_desc	Zweimann-Minipanzer. Ein Bataillon kostet etwa ein Viertel eines leichten Panzerbataillons und überrollt Infanterie ohne Panzerabwehr, aber die Panzerung ist dünn. Nutzt EFW-Tanketten.
+efw_tankette_unlock	EFW: Tanketten
+efw_motorcycle_mg_equipment	MG-Motorräder
+efw_motorcycle_mg_equipment_desc	Ein Motorrad, ein Beiwagen und ein Maschinengewehr dort, wo eigentlich die Schwiegermutter sitzen sollte. Schnell, laut und erstaunlich tödlich auf Feldwegen.
+efw_motorcycle_mg_equipment_1	EFW-MG-Motorrad
+efw_motorcycle_mg_equipment_1_short	MG-Motorrad
+efw_motorcycle_mg_equipment_1_desc	Ein Motorrad, ein Beiwagen und ein Maschinengewehr dort, wo eigentlich die Schwiegermutter sitzen sollte. Schnell, laut und erstaunlich tödlich auf Feldwegen.
+efw_motorcycle_mg_company	Kradschützen-MG-Kompanie
+efw_motorcycle_mg_company_desc	Motorisierte Aufklärung auf Motorrädern mit bewaffnetem Beiwagen. Sieht so weit wie motorisierte Aufklärung, kostet weniger und gibt der gesamten Infanterie der Division §G+5 % Angriff§!. Belegt den Aufklärungsplatz.
+efw_motorcycle_unlock	EFW: Kradschützen
+efw_gun_truck_equipment	Geschütz-Lkw
+efw_gun_truck_equipment_desc	Man nehme einen Lkw. Man nehme eine Panzerabwehrkanone. Man binde beides mit viel Seil und etwas Glauben zusammen. Schießt auf Infanterie und leichte Fahrzeuge und fährt davon, bevor jemand antwortet: Panzerung gibt es keine.
+efw_gun_truck_equipment_1	Improvisierter EFW-Geschützwagen
+efw_gun_truck_equipment_1_short	Geschützwagen
+efw_gun_truck_equipment_1_desc	Man nehme einen Lkw. Man nehme eine Panzerabwehrkanone. Man binde beides mit viel Seil und etwas Glauben zusammen. Schießt auf Infanterie und leichte Fahrzeuge und fährt davon, bevor jemand antwortet: Panzerung gibt es keine.
+efw_gun_truck_battalion	Geschützwagen-Batterie
+efw_gun_truck_battalion_desc	Panzerabwehrkanonen auf Lastwagen. Linienartillerie, so schnell wie motorisierte Infanterie, mit guter Durchschlagskraft und ohne Schutz. Nutzt improvisierte EFW-Geschützwagen.
+efw_gun_truck_unlock	EFW: Improvisierte Geschützwagen

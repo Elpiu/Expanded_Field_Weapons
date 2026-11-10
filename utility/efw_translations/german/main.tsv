@@ -1,0 +1,204 @@
+efw_national_mobilization_category	Nationale Mobilisierung und Investitionen
+efw_national_mobilization_category_desc	Ein Netz aus Propaganda, Arbeitsorganisation, Forschung und Logistik kann das Land schrittweise in eine voll mobilisierte Wirtschafts- und Kriegsmaschine verwandeln.
+efw_propaganda_center	Propaganda- und Mobilisierungszentrum
+efw_propaganda_center_desc	Ein Verwaltungs- und Propagandazentrum, das politische Kampagnen, zivile Anwerbung und öffentliche Mobilisierung koordiniert.
+efw_labor_directorate	Nationale Arbeitsdirektion
+efw_labor_directorate_desc	Eine Organisation, die Arbeit, Bau, Produktion und die Nutzung lokaler Ressourcen koordiniert.
+efw_research_center	Nationales Forschungszentrum
+efw_research_center_desc	Ein Komplex für angewandte Forschung, der Institute, Universitäten und nationale Labore koordiniert.
+efw_logistics_center	Logistik- und Zivilschutzzentrum
+efw_logistics_center_desc	Ein regionaler Knotenpunkt für Lager, Transport, Instandhaltung, Infrastruktur und Zivilschutz.
+efw_national_investments_idea	Nationales Investitionsprogramm
+efw_national_investments_idea_desc	Der Staat bündelt politische und administrative Mittel für den Ausbau der Propaganda und der nationalen Arbeitsorganisation.
+efw_coordinated_economy_idea	Koordinierte Volkswirtschaft
+efw_coordinated_economy_idea_desc	Industrie, Werften und Verwaltung werden nach einem nationalen Wirtschaftsplan koordiniert – zu einem sozialen Preis.
+efw_research_funding_idea	Nationale Forschungsförderung
+efw_research_funding_idea_desc	Fördermittel und beschleunigte Verfahren unterstützen den Aufbau eines nationalen Forschungsnetzes.
+efw_logistics_plan_idea	Nationaler Infrastrukturplan
+efw_logistics_plan_idea_desc	Die Regierung fördert den Aufbau regionaler Logistikzentren und der zugehörigen Infrastruktur.
+efw_national_mobilization_idea	Nationale Mobilisierung
+efw_national_mobilization_idea_desc	Der wirtschaftliche und administrative Apparat des Landes ist ganz auf die nationalen Anstrengungen ausgerichtet.
+efw_commission_propaganda_center	Propagandazentrum bauen
+efw_commission_propaganda_center_desc	§Y10.000 öffentliche Arbeiter§! für den Bau eines Propaganda- und Mobilisierungszentrums im gewählten Staat einsetzen.
+efw_commission_labor_directorate	Arbeitsdirektion gründen
+efw_commission_labor_directorate_desc	§Y20.000 Arbeiter§! für die Gründung einer Nationalen Arbeitsdirektion im gewählten Staat einsetzen.
+efw_commission_research_center	Nationales Forschungszentrum bauen
+efw_commission_research_center_desc	§Y15.000 Techniker, Forscher und Mitarbeiter§! für die Gründung eines Nationalen Forschungszentrums einsetzen.
+efw_commission_logistics_center	Logistikzentrum bauen
+efw_commission_logistics_center_desc	§Y12.000 Arbeiter und Logistikpersonal§! für die Gründung eines Logistik- und Zivilschutzzentrums einsetzen.
+efw_launch_national_investments	Nationale Investitionen starten
+efw_launch_national_investments_desc	Mit dem ersten funktionierenden Propagandanetz lassen sich öffentliche Investitionen zentralisieren und beschleunigen.
+efw_coordinate_national_economy	Volkswirtschaft koordinieren
+efw_coordinate_national_economy_desc	Das Verwaltungs- und Arbeitsnetz ist groß genug, um Industrie und Bau landesweit zu koordinieren.
+efw_fund_national_research	Nationale Forschung fördern
+efw_fund_national_research_desc	Politische und administrative Mittel für ein koordiniertes nationales Forschungsnetz bereitstellen.
+efw_launch_national_infrastructure_plan	Nationaler Infrastrukturplan
+efw_launch_national_infrastructure_plan_desc	Ein nationales Programm für Logistik, Transport, Lager und Zivilschutz schaffen.
+efw_mobilize_the_nation	Die Nation mobilisieren
+efw_mobilize_the_nation_desc	Propaganda, Arbeit, Forschung und Logistik sind weit genug entwickelt für die volle wirtschaftliche Mobilisierung der Nation.
+efw_issue_national_bonds	Staatsanleihen ausgeben
+efw_issue_national_bonds_desc	Sofort §G+100 politische Macht§! erhalten, aber nach §Y365 Tagen§! §R150 politische Macht§! zurückzahlen.
+efw_issue_long_term_national_loan	Große Nationalanleihe
+efw_issue_long_term_national_loan_desc	Sofort §G+120 politische Macht§! erhalten, aber nach §Y730 Tagen§! §R200 politische Macht§! zurückzahlen.
+efw_national_mobilization.1.t	Staatsanleihen werden fällig
+efw_national_mobilization.1.d	Die vor einem Jahr ausgegebenen Anleihen sind fällig. Kapital und Zinsen müssen nun zurückgezahlt werden.
+efw_national_mobilization.1.a	Wir halten unsere Verpflichtungen ein.
+efw_national_mobilization.2.t	Die Große Nationalanleihe wird fällig
+efw_national_mobilization.2.d	Die vor zwei Jahren aufgenommene Nationalanleihe ist fällig. Kapital und Zinsen müssen nun zurückgezahlt werden.
+efw_national_mobilization.2.a	Die Schuld wird beglichen.
+EFW_MOD_NAME	Expanded Field Weapons
+efw_machinegun_equipment	Unterstützungs-Maschinengewehre
+efw_machinegun_equipment_desc	Leichte, mittlere und schwere Maschinengewehre in einer Produktionskategorie zusammengefasst. Die Ausrüstung bleibt gleich, während die Forschung an Unterstützungswaffen die Verbände verbessert, die sie nutzen.
+efw_machinegun_equipment_standard	Maschinengewehre
+efw_machinegun_equipment_standard_short	MGs
+efw_mortar_equipment	Infanteriemörser
+efw_mortar_equipment_desc	Leichte und mittlere Mörser für organische Steilfeuerunterstützung auf kurze Distanz.
+efw_mortar_equipment_standard	Mörser
+efw_mortar_equipment_standard_short	Mörser
+efw_antitank_equipment	Tragbare Panzerabwehrwaffen
+efw_antitank_equipment_desc	Organische Panzerabwehrwaffen der Infanterie. Verbesserte Doktrin, Munition und Einsatz werden durch Technologieboni statt durch neue Modelle dargestellt.
+efw_antitank_equipment_standard	Panzerabwehrwaffen
+efw_antitank_equipment_standard_short	Pak-Waffen
+efw_machinegun_company	Maschinengewehrkompanie
+efw_machinegun_company_desc	Eine Unterstützungskompanie für anhaltendes Dauerfeuer. Nutzt EFW-Maschinengewehre.
+efw_mortar_company	Mörserkompanie
+efw_mortar_company_desc	Eine Unterstützungskompanie für Steilfeuer auf kurze Distanz. Nutzt EFW-Mörser.
+efw_antitank_company	Panzerabwehrkompanie
+efw_antitank_company_desc	Tragbare Panzerabwehrtrupps im Verband. Nutzt EFW-Panzerabwehrwaffen.
+efw_elite_heavy_weapons_battalion	Elite-Bataillon schwerer Waffen
+efw_elite_heavy_weapons_battalion_desc	Ein teures und nachschubhungriges Frontbataillon, das Maschinengewehre, Mörser und Panzerabwehrwaffen mit ausgewählter Infanterie verbindet.
+efw_legionari_dellimpero	Legionari dell'Impero
+efw_legionari_dellimpero_desc	Ein großes Milizbataillon mit Gewehren und organischen Maschinengewehren. Starke Unterdrückung und defensive Feuerkraft, etwas geringerer Nachschubbedarf als normale Infanterie, aber lange Ausbildung: Unerfahrene Verbände sind fragil, voll ausgebildete Legionäre übertreffen reguläre Infanterie.
+efw_unlock_core_weapons	EFW: Integrierte Unterstützungswaffen
+efw_legionari_unlock	EFW: Legionari dell'Impero
+efw_support_upgrade_2	EFW: Unterstützungswaffen II
+efw_support_upgrade_3	EFW: Unterstützungswaffen III
+efw_support_upgrade_4	EFW: Unterstützungswaffen IV
+efw_at_upgrade_1	EFW: Panzerabwehrverbesserungen I
+efw_at_upgrade_2	EFW: Panzerabwehrverbesserungen II
+efw_improvised_naval_modules_unlock	Improvisiertes Marineprogramm
+efw_motorboat_engine	Improvisierter Motorbootmotor
+efw_motorboat_engine_desc	Ein einfacher Motor für winzige Küstenboote. Senkt Kosten, Reichweite und Haltbarkeit des Schiffs drastisch.
+efw_motorboat_machinegun	Marine-MG-Lafette
+efw_motorboat_machinegun_desc	Ein schweres Maschinengewehr für den Einsatz auf See.
+efw_midget_sub_engine	Kleinst-U-Boot-Antrieb
+efw_midget_sub_engine_desc	Ein winziger Antrieb für extrem kleine U-Boote.
+efw_midget_sub_torpedo	Leichter Torpedo für Kleinst-U-Boote
+efw_midget_sub_torpedo_desc	Eine kompakte Torpedoanlage für Kleinst-U-Boote.
+efw_scrap_multirole_mount	Improvisierte Mehrzwecklafette
+efw_scrap_multirole_mount_desc	Eine geschweißte Doppelzwecklafette aus übrigen leichten Geschützen und improvisierten Flakvisieren. Bringt etwas leichte und Flugabwehr-Feuerkraft, passt in mehrere Plätze, senkt aber leicht Geschwindigkeit und Zuverlässigkeit.
+efw_improvised_torpedo_rack	Improvisiertes Torpedogestell
+efw_improvised_torpedo_rack_desc	Ein einfaches Deckgestell für Reservetorpedos mit selbstgebauter Auslösung. Etwas Torpedoschlagkraft und Trefferchance, stapelbar, kostet aber Geschwindigkeit und Zuverlässigkeit.
+efw_improvised_depth_charge_rack	Improvisiertes Wasserbombengestell
+efw_improvised_depth_charge_rack_desc	Ein leichtes Wasserbombengestell mit einfacher Hydrophonverkabelung. Etwas mehr U-Jagd-Angriff und Ortung, stapelbar, verlangsamt das Schiff aber leicht und senkt die Zuverlässigkeit.
+efw_improvised_fuel_tank	Improvisierter Zusatztank
+efw_improvised_fuel_tank_desc	Ein billiger Tank, aus Schrottstahl geschweißt. Mehr Reichweite für wenig Geld, senkt aber leicht Geschwindigkeit und Zuverlässigkeit und kann bei Treffern lecken.
+efw_wooden_sub_coating	Holzbeplankung für U-Boote
+efw_wooden_sub_coating_desc	Schichten aus behandeltem Holz, Segeltuch und Teer ersetzen knappe Metallplatten. Senkt die Kosten, schwächt aber den Rumpf und macht das U-Boot leichter auffindbar.
+efw_wooden_surface_refit	Hölzerner Umbau
+efw_wooden_surface_refit_desc	Ein Notumbau mit hölzernen Aufbauten und nicht-strategischen Materialien. Senkt die Kosten, schwächt aber den Rumpf, verlangsamt das Schiff und schadet der Zuverlässigkeit.
+efw_improvised_mine_rack	Improvisiertes Minengestell (10 Minen)
+efw_improvised_mine_rack_desc	Ein einfaches Deckgestell für etwa zehn Kontaktminen. Erhöht die Minenlegekapazität stark, kostet aber Geschwindigkeit und Zuverlässigkeit.
+efw_improvised_sub_mine_rack	Improvisiertes U-Boot-Minengestell (10 Minen)
+efw_improvised_sub_mine_rack_desc	Ein kompaktes Außengestell für etwa zehn Minen. Erhöht die Minenlegekapazität des U-Boots stark bei geringen Einbußen an Geschwindigkeit und Zuverlässigkeit.
+efw_small_sail	Kleines improvisiertes Segel
+efw_small_sail_desc	Ein kleines Segeltuchsegel an Deck. +15 % Geschwindigkeit, aber das Schiff wird sichtbarer und etwas unzuverlässiger. Passt in den Treibstofftankplatz.
+efw_large_sail	Großes improvisiertes Segel
+efw_large_sail_desc	Ein riesiges Notsegel macht das Schiff zu einem behelfsmäßigen Windjammer. +25 % Geschwindigkeit, aber stark erhöhte Sichtbarkeit und weniger Zuverlässigkeit und Rumpfstärke. Passt in den Treibstofftankplatz.
+efw_careened_hull	Gekielholter und polierter Rumpf
+efw_careened_hull_desc	Der Rumpf wird abgekratzt, geteert und poliert, wo möglich mit improvisiertem Kupferbeschlag. Verbessert Zuverlässigkeit, Geschwindigkeit, Reichweite und Ortung, senkt leicht die Sichtbarkeit und gibt etwas Rumpfstärke. Ein solides Allzweckmodul für den Treibstofftankplatz.
+efw_fishing_net_armor	Fischernetzpanzerung
+efw_fishing_net_armor_desc	Tarnnetze und verhedderte Fischernetze statt echter Panzerung. Senkt leicht Sichtbarkeit und Torpedoschaden und spart sogar etwas Kosten, bietet aber keinen Panzerwert.
+efw_wooden_plank_armor	Holzplankenpanzerung
+efw_wooden_plank_armor_desc	Geschichtete Holzplanken, an den Rumpf geschraubt. Billiger Zusatzschutz und etwas Haltbarkeit auf Kosten von Geschwindigkeit und Zuverlässigkeit.
+efw_scrap_plate_armor	Schrottplattenpanzerung
+efw_scrap_plate_armor_desc	Zusammengeschweißte Altstahlplatten. Besserer Schutz als Holz, aber schwerer, langsamer und unzuverlässiger.
+efw_fishing_net_armor_heavy	Fischernetzpanzerung (schwer)
+efw_fishing_net_armor_heavy_desc	Schwere Tarn- und Fischernetze über einem Großkampfschiff. Senken leicht Sichtbarkeit und Torpedoschaden, bieten aber keine echte Panzerung.
+efw_wooden_plank_armor_heavy	Holzplankenpanzerung (schwer)
+efw_wooden_plank_armor_heavy_desc	Massive Holzplanken am Rumpf eines Großkampfschiffs. Billiger Schutz und zusätzliche Haltbarkeit auf Kosten von Geschwindigkeit und Zuverlässigkeit.
+efw_scrap_plate_armor_heavy	Schrottplattenpanzerung (schwer)
+efw_scrap_plate_armor_heavy_desc	Dicke Altstahlplatten am Rumpf eines Großkampfschiffs. Solider Behelfsschutz, aber schwer, langsam und unzuverlässig.
+efw_wooden_fighter_equipment	Improvisierter Holzjäger
+efw_wooden_fighter_equipment_desc	Ein extrem billiges Flugzeug aus nicht-strategischen Materialien und einfachen Bauteilen. Leicht herzustellen, aber langsam, zerbrechlich und schwach bewaffnet.
+efw_tin_tank_equipment	Blechpanzer
+efw_tin_tank_equipment_desc	Ein primitiver leichter Panzer mit dünnen genieteten Platten, vor allem mit einem Maschinengewehr bewaffnet. Billig herzustellen, aber verwundbar durch fast jede Panzerabwehrwaffe.
+efw_wooden_air_bba_unlock	Improvisiertes Flugzeugprogramm
+efw_wooden_air_legacy_unlock	Improvisiertes Flugzeugprogramm
+efw_tin_tank_nsb_unlock	Improvisiertes Panzerprogramm
+efw_tin_tank_legacy_unlock	Improvisiertes Panzerprogramm
+efw_propaganda_center_unlock	EFW-Propagandanetz
+efw_labor_directorate_unlock	EFW-Arbeitsorganisation
+efw_research_center_unlock	EFW-Forschungsnetz
+efw_logistics_center_unlock	EFW-Logistiknetz
+efw_industrialization_campaign_idea	Nationale Industrialisierungskampagne
+efw_state_industry_subsidies_idea	Staatliche Industriesubventionen
+efw_national_infrastructure_program_idea	Nationales Infrastrukturprogramm
+efw_early_industrialization_campaign	Industrialisierungskampagne starten
+efw_army_public_works	Armee für öffentliche Arbeiten einsetzen
+efw_state_industry_subsidies	Staatliche Industriesubventionen
+efw_national_infrastructure_program	Nationales Infrastrukturprogramm
+efw_pipe_gun_rifle	Rohrgewehr
+efw_pipe_gun_rifle_short	Rohrgewehr
+efw_pipe_gun_rifle_desc	Eine grobe improvisierte Waffe, hastig aus Hydraulikrohr und Altteilen zusammengebaut. Primitiv, unzuverlässig und ohne jeden Industriestandard, aber fast ohne Ressourcen herstellbar.
+efw_army_munitions_works	Bau von Heeresarsenalen
+efw_army_munitions_works_desc	100.000 Rekruten für ein Jahr in die Rüstungsfertigung schicken, um dauerhaft 4 externe Militärfabriken zu errichten.
+efw_naval_yard_expansion	Werftenbauoffensive
+efw_naval_yard_expansion_desc	100.000 Rekruten für ein Jahr in den Küstenbau schicken und 4 dauerhafte externe Werften errichten.
+efw_industrial_plan_phase_1	Industrieller Gesamtplan: Phase I – Fundamente
+efw_industrial_plan_phase_1_desc	Investiert politisches Kapital, Züge und Arbeitskräfte in die Fundamente einer gewaltigen nationalen Industrierenaissance. Liefert sofort §G+8 zivile Fabriken§! und §G+2 Militärfabriken§! extern und beschleunigt den Bau. Schaltet nach 180 Tagen Phase II frei.
+efw_industrial_phase_1_idea	Industrieplan: Mobilisierung Phase I
+efw_industrial_plan_phase_2	Industrieller Gesamtplan: Phase II – Schwerer Ausbau
+efw_industrial_plan_phase_2_desc	Die abschließende Phase des Industrieausbaus. Fügt weitere §G+7 zivile Fabriken§! und §G+4 Militärfabriken§! extern hinzu. Nach Abschluss werden alle Ausrüstung und die Hälfte der mobilisierten Arbeitskräfte zurückgegeben.
+efw_industrial_phase_2_idea	Industrieplan: Mobilisierung Phase II
+efw_national_mobilization.30.t	Industrieplan: Phase I abgeschlossen
+efw_national_mobilization.30.d	Die ersten Schwerfabriken und Hüttenwerke sind voll in Betrieb. Das Fundament ist gelegt, die Nation ist bereit für Phase II des Gesamtplans.
+efw_national_mobilization.30.a	Weiter mit Phase II!
+efw_national_mobilization.31.t	Industrieplan: Industrieller Triumph
+efw_national_mobilization.31.d	Genau ein Jahr nach Programmbeginn ist der Ausbau abgeschlossen: 15 zivile Komplexe und 6 Rüstungsfabriken arbeiten mit höchster Effizienz. Züge und Lastwagen sind in die Bestände zurückgekehrt.
+efw_national_mobilization.31.a	Ein Produktionsriese ist entstanden!
+efw_grand_public_works	Mobilisierung für große öffentliche Arbeiten
+efw_grand_public_works_desc	Setzt Arbeitsbrigaden, Ingenieure und Lastwagen ein, um die Kapazität des Heimatlandes zu erweitern. Gibt allen Kernstaaten des Mutterlands §G+1 Infrastruktur§! (wenn unter 5) und §G+2 Bauplätze§! sowie §G+30 %§! Baugeschwindigkeit für 540 Tage.
+efw_grand_works_idea	Aufschwung der großen Bauvorhaben
+efw_social_welfare_and_workshops	Sozialpakt und verstreute Werkstätten
+efw_social_welfare_and_workshops_desc	Verbindet Familienförderung mit der logistischen Einbindung kleiner Handwerksbetriebe. Stabilisiert das Wachstum der Mannstärke, hilft der Forschung und erhöht Fabrikleistung und maximale Effizienz für 3 Jahre.
+efw_social_welfare_workshops_idea	Sozialpakt und Werkstattnetz
+efw_emergency_naval_program	Notprogramm zum Flottenausbau
+efw_emergency_naval_program_desc	Bündelt spezialisierte Werftarbeiter und Ausrüstung für §G+6 dauerhafte externe Werften§!. Mobilisiertes Personal und Lastwagen kehren nach einem Jahr zurück.
+efw_national_mobilization.34.t	Fälligkeit der Staatsanleihen
+efw_national_mobilization.34.d	Die im Vorjahr ausgegebenen Schatzanleihen sind fällig. Die Regierung muss die Gläubiger mit Zinsen auszahlen, um ihre finanzielle Glaubwürdigkeit zu wahren.
+efw_national_mobilization.34.a	Unsere finanziellen Zusagen einhalten.
+efw_wooden_construction	Leichte Holzstruktur
+efw_wooden_construction_desc	Sperrholzrumpf und Holme mit behandeltem Segeltuch. Senkt die Industriekosten des Flugzeugs drastisch.
+efw_wooden_frame_component	Hölzerne Strukturverkleidung
+efw_wooden_frame_component_desc	Ersetzt Metallteile durch Holz und Segeltuch. Senkt Gewicht und Kosten bei geringerer Stabilität. Mehrfach einbaubar.
+efw_extended_fuel_tank	Externer Zusatztank
+efw_extended_fuel_tank_desc	Abwerfbarer Unterflügeltank, der die Reichweite deutlich erhöht.
+efw_airdrop_supply_pod	Abwurf-Versorgungsbehälter
+efw_airdrop_supply_pod_desc	Notfall-Fallschirmbehälter zur Versorgung eingeschlossener Truppen und für taktische Bodenunterstützung.
+efw_boost_power_system	Aufladesystem „Kraftstoß“
+efw_boost_power_system_desc	Hilfsverdichter, der die Höchstgeschwindigkeit erhöht und zusätzlichen Schub für schwere Lasten liefert.
+efw_universal_hardpoint	Universelle Aufhängung für Sonderbewaffnung
+efw_universal_hardpoint_desc	Mehrzweck-Unterflügelaufhängung: Bomben für Luftnahunterstützung, Zusatzfeuer für Luftüberlegenheit oder Torpedos und Ladungen für Seeeinsätze.
+efw_plywood_frame_module	Zelle aus Sperrholz und Stoff
+efw_plywood_frame_module_desc	Ersetzt knappes Aluminium durch verleimtes Sperrholz und behandelten Stoff. Senkt Kosten und Gewicht drastisch, bietet hervorragende Wendigkeit, ist aber zerbrechlich.
+efw_overboost_compressor_module	Handgefertigter „Overboost“-Verdichter
+efw_overboost_compressor_module_desc	Übertaktet den Motor mit Hochdruck-Alkoholeinspritzung. Gibt enormen Schub (+8 Schub) und Höchstgeschwindigkeit auf Kosten starken Verschleißes.
+efw_improvised_bomb_rack_module	Improvisiertes Splitter- und Bombengestell
+efw_improvised_bomb_rack_module_desc	Unterflügelgestelle für Mörsergranaten und Streumunition. Erlaubt leichten Behelfsflugzeugen verheerende Luftnahunterstützung gegen feindliche Verbände (+6 Bodenangriff).
+efw_infantry_mg_pod_module	Behälter mit schwerem Infanterie-MG
+efw_infantry_mg_pod_module_desc	Schwere Infanterie-MGs in Flügelbehältern. Macht billige Flugzeuge zu gefährlichen Abfangjägern im Nahkampf (+8 Luftangriff).
+efw_paper_drop_tank_module	Abwurftanks aus Pressspan
+efw_paper_drop_tank_module_desc	Einweg-Zusatztanks aus lackiertem Pappmaché und billigem Harz. Riesige Reichweite fast ohne Kosten, aber bei Treffern hohe Brandgefahr.
+efw_stripped_cockpit_module	Entkerntes Cockpit und Ringvisier
+efw_stripped_cockpit_module_desc	Cockpitpanzerung, Heizung und schwere Instrumente entfernt – übrig bleiben offene Haube und einfaches Ringvisier. Spart Gewicht und verbessert das Schießen, lässt den Piloten aber völlig ungeschützt.
+efw_wooden_boost_airframe	Holzzelle und „Overboost“-Verdichter
+efw_wooden_boost_airframe_desc	Federleichtes Sperrholz statt Metalllegierungen plus aufgeladener Motor. Senkt Kosten und Gewicht, mit moderatem Gewinn an Geschwindigkeit und Schub (+5 Schub). Jedes Exemplar kostet 6 % Zuverlässigkeit und 8 % Luftverteidigung, aber die Abzüge steigen nur sanft: Zwei oder drei Exemplare bleiben brauchbar und machen das Flugzeug viel billiger.
+efw_improvised_drop_tank	Zusatz-Abwurftank aus Pressspan
+efw_improvised_drop_tank_desc	Einweg-Zusatztank aus lackiertem Pappmaché und billigem Harz. Erhöht die Reichweite deutlich (+300 km) bei vernachlässigbaren Kosten, ist aber leicht entflammbar.
+efw_multirole_combat_rack	Feld-Mehrzweckwaffengestell
+efw_multirole_combat_rack_desc	Ein kompaktes Feldgestell, das jede Zelle zu einem bescheidenen Mehrzweckflugzeug macht: +2 Luftangriff, +2 Bodenangriff, +2 strategische Bombardierung, +2 Seeangriff und +2 Seezielerfassung. Ermöglicht außerdem Luftüberlegenheit, Abfangen, Luftnahunterstützung, Logistikangriff, Seeangriff, Seepatrouille, Hafenangriff und strategische Bombardierung. Der zusätzliche Luftwiderstand kostet 15 Höchstgeschwindigkeit und 1,5 Wendigkeit, aber das Modul ist stapelbar: Boni und Nachteile addieren sich.
+efw_cast_iron_stove_armor	Improvisierte „Feldofen“-Panzerung
+efw_cast_iron_stove_armor_desc	Eine schwere Gusseisenplatte oder ein Kanaldeckel unter dem Pilotensitz. Solider ballistischer Schutz (+7 Verteidigung), aber deutlich schwerere Zelle (+4 Gewicht) und etwas weniger Höchstgeschwindigkeit und Reichweite.
+efw_bazooka_charlie_tubes	„Bazooka Charlie“-Raketenrohre
+efw_bazooka_charlie_tubes_desc	Eine Batterie handgeschweißter Infanterie-Raketenrohre unter den Flügelstreben. Verheerende Salven gegen Panzerdivisionen und Seeziele (+8 Bodenangriff), aber hohe Kosten und viel Gewicht verschlechtern Wendigkeit und Verteidigung spürbar.

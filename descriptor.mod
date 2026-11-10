@@ -1,4 +1,4 @@
-version="1.19.*"
+version="1.3.0"
 tags={
 	"Gameplay"
 	"Technologies"

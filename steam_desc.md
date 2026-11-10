@@ -18,6 +18,8 @@ Early-game economic decisions allow countries to accelerate industrialization th
 
 **Built-in FPS optimisation:** lighter map graphics (no shadows, trees, water refraction, civilian 3D buildings or 3D weather particles), shorter logs and less frequent AI recalculation. EFW's own scripts have no daily checks: technology sync runs weekly and switches itself off once a country has unlocked everything. Ground snow and every other weather effect on combat are unchanged.
 
+**Languages:** English, Russian, German, Polish and Simplified Chinese (plus Italian for players using an Italian translation mod).
+
 ### Main features:
 
 - **EFW Pipe-Gun Rifle** – Ultra-cheap, zero-resource improvised rifle designed for mass garrisoning, desperate last stands, and minor nations
@@ -42,6 +44,7 @@ Early-game economic decisions allow countries to accelerate industrialization th
 - Welcome event with a starting gift
 - Early-game industrial plans, public works, naval programme and national bonds
 - Built-in FPS optimisation
+- Translated into Russian, German, Polish and Simplified Chinese
 - Designed primarily for HOI4 1.19.x
 
 ---
@@ -78,3 +81,13 @@ The FPS optimisation is based on **FPS BOOSTER** (Workshop 3765424442), correcte
 ---
 
 The mod is still under active development and balance values may change based on testing and feedback.\_
+
+---
+
+### Changelog — v1.3.0
+
+- **New:** National Vocations, welcome event, Tankette / MG Motorcycle / Gun Truck available from day one, Russian, German, Polish and Simplified Chinese translations, new strategic building icons.
+- **Balance:** stronger Wheat Fields; Propaganda Center and Logistics Center reworked.
+- **Performance:** no daily scripts anymore; weekly technology sync that switches itself off.
+- **Fixes:** two building modifiers that had no effect, swapped strategic building icons.
+- **A new game is recommended.**

@@ -1,0 +1,9 @@
+﻿l_polish:
+ efw_military_options_category:0 "Opcje wojskowe EFW"
+ efw_military_options_category_desc:0 "Opcjonalne zasady wojskowe, które można w każdej chwili włączyć i wyłączyć."
+ efw_enable_rapid_invasions:0 "Włącz szybkie inwazje"
+ efw_enable_rapid_invasions_desc:0 "Inwazje morskie i powietrzne nie wymagają przygotowań, a liczba planowanych inwazji morskich i przydzielonych dywizji jest praktycznie nieograniczona."
+ efw_disable_rapid_invasions:0 "Wyłącz szybkie inwazje"
+ efw_disable_rapid_invasions_desc:0 "Powrót do zwykłych zasad inwazji: znów obowiązują czas przygotowań i limity planów oraz dywizji."
+ efw_rapid_invasions_idea:0 "Szybkie inwazje"
+ efw_rapid_invasions_idea_desc:0 "Operacje desantowe są planowane i rozpoczynane bez przygotowań i bez praktycznych limitów planów czy dywizji. Można je wyłączyć w decyzjach „Opcje wojskowe EFW”."

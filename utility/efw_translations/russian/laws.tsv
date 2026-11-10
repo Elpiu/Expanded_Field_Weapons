@@ -1,0 +1,416 @@
+efw_economy_policies	Экономика и финансы
+efw_economy_policies_desc	Налоги, торговля, промышленность, капитал, субсидии и ресурсы: как страна производит и платит.
+efw_ec_fiscal	Налоговая политика
+efw_fis_low_taxes	Низкие налоги
+efw_fis_low_taxes_desc	Меньше налогов — спокойнее граждане, но у правительства меньше свободы.
+efw_fis_high_taxes	Высокие налоги
+efw_fis_high_taxes_desc	Больше доходов государству, больше недовольства на площадях.
+efw_fis_consumption_tax	Налоги на потребление
+efw_fis_consumption_tax_desc	Облагается всё, что покупают: меньше потребительских товаров, выше цены.
+efw_fis_war_profits_tax	Налог на военные прибыли
+efw_fis_war_profits_tax_desc	Прибыль военной промышленности возвращается в общие усилия нации.
+efw_fis_balanced_budget	Сбалансированный бюджет
+efw_fis_balanced_budget_desc	Здоровые финансы и авторитетное правительство, но мало денег на стройки.
+efw_fis_progressive	Прогрессивный налог
+efw_fis_progressive_desc	Кто имеет больше, платит больше: поддержка растёт, воинственность — меньше.
+efw_fis_war_finance	Военные финансы
+efw_fis_war_finance_desc	Долги, займы и печатный станок на службе военного производства.
+efw_fis_state_monopolies	Государственные монополии
+efw_fis_state_monopolies_desc	Соль, табак и спички становятся доходом правительства.
+efw_ec_trade	Торговля и таможня
+efw_trade_free	Свободная торговля
+efw_trade_free_desc	Двери открыты товарам и идеям; взамен мы вывозим больше ресурсов.
+efw_trade_moderate_protection	Умеренный протекционизм
+efw_trade_moderate_protection_desc	Скромные пошлины для защиты отечественной промышленности.
+efw_trade_export_drive	Курс на экспорт
+efw_trade_export_drive_desc	Экспорт приносит престиж, но ресурсы уходят из страны.
+efw_trade_import_quotas	Импортные квоты
+efw_trade_import_quotas_desc	Сначала стратегический импорт, потребительские товары подождут.
+efw_trade_bilateral	Двусторонние соглашения
+efw_trade_bilateral_desc	Торговые договоры с каждой страной отдельно: долго согласовывать, полезно иметь.
+efw_trade_autarky	Автаркия
+efw_trade_autarky_desc	Всё своё: промышленность менее зависима, партнёры недовольны.
+efw_trade_free_ports	Свободные порты
+efw_trade_free_ports_desc	Товары и капитал проходят без пошлин: заводы эффективнее, ресурсы утекают.
+efw_trade_strategic_reserves	Стратегические резервы
+efw_trade_strategic_reserves_desc	Склады полны ресурсов и топлива за счёт гражданских заводов.
+efw_ec_industry	Промышленность и строительство
+efw_ind_civil_priority	Гражданский приоритет
+efw_ind_civil_priority_desc	Сначала гражданские заводы, военные потом.
+efw_ind_military_priority	Военный приоритет
+efw_ind_military_priority_desc	Сначала военные заводы, всё остальное потом.
+efw_ind_roads_rails	Дороги и железные дороги
+efw_ind_roads_rails_desc	Инфраструктура строится быстро, новые заводы — чуть медленнее.
+efw_ind_defence_works	Оборонительные работы
+efw_ind_defence_works_desc	Бункеры и береговые батареи в приоритете на стройках.
+efw_ind_scientific_management	Научная организация труда
+efw_ind_scientific_management_desc	Секундомеры и конвейеры: линии быстро совершенствуются, рабочие ворчат.
+efw_ind_heavy_industry	Тяжёлая промышленность
+efw_ind_heavy_industry_desc	Сталелитейные и машиностроительные заводы — сердце экономики.
+efw_ind_great_shipyards	Великие верфи
+efw_ind_great_shipyards_desc	Флот прежде всего: люди и сталь идут в порты.
+efw_ind_five_year_plan	Пятилетний план
+efw_ind_five_year_plan_desc	Планы сверху для каждой стройки и каждого завода.
+efw_ec_foreign_capital	Иностранный капитал
+efw_fc_closed_economy	Закрытая экономика
+efw_fc_closed_economy_desc	Никакого иностранного капитала: меньше влияния извне, менее современные заводы.
+efw_fc_regulated	Регулируемые инвестиции
+efw_fc_regulated_desc	Иностранцы могут вкладывать, но под строгим контролем.
+efw_fc_licences	Лицензионное производство
+efw_fc_licences_desc	Покупаем чужие разработки вместо своих.
+efw_fc_foreign_engineers	Иностранные инженеры
+efw_fc_foreign_engineers_desc	Хорошо оплачиваемые иностранные специалисты учат наши заводы.
+efw_fc_concessions	Горные концессии
+efw_fc_concessions_desc	Рудники в аренде у иностранцев хорошо платят, но ресурсы уходят.
+efw_fc_encouraged	Поощрение инвестиций
+efw_fc_encouraged_desc	Налоговые льготы и гарантии для всех, кто вкладывает в страну.
+efw_fc_joint_ventures	Совместные предприятия
+efw_fc_joint_ventures_desc	Фирмы со смешанным капиталом строят и производят, принося иностранные идеи.
+efw_fc_nationalisation	Национализация
+efw_fc_nationalisation_desc	Иностранные компании переходят государству. Их правительства недовольны.
+efw_ec_subsidies	Субсидии и инвестиции
+efw_sub_research_grants	Научные гранты
+efw_sub_research_grants_desc	Государственные средства для университетов и лабораторий.
+efw_sub_industrial_credit	Промышленный кредит
+efw_sub_industrial_credit_desc	Дешёвые кредиты тем, кто открывает новые заводы.
+efw_sub_rural_development	Развитие деревни
+efw_sub_rural_development_desc	Мелиорация и помощь селу: больше семей, больше расходов.
+efw_sub_public_works	Общественные работы
+efw_sub_public_works_desc	Стройки за счёт государства по всей стране.
+efw_sub_armaments_contracts	Военные заказы
+efw_sub_armaments_contracts_desc	Гарантированные контракты для тех, кто работает на армию.
+efw_sub_development_bank	Банк развития
+efw_sub_development_bank_desc	Государственный институт финансирует каждый крупный проект.
+efw_sub_defence_budget	Оборонный бюджет
+efw_sub_defence_budget_desc	Растущая доля бюджета уходит военной промышленности.
+efw_sub_science_city	Наукоград
+efw_sub_science_city_desc	Лаборатории, институты и учёные собраны в одном большом центре.
+efw_ec_resources	Сырьё
+efw_res_scrap_drive	Сбор металлолома
+efw_res_scrap_drive_desc	Ворота и кастрюли отправляются в литейную.
+efw_res_new_mines	Новые рудники
+efw_res_new_mines_desc	Разведка и новые шахты по всей стране.
+efw_res_synthetic	Синтетические продукты
+efw_res_synthetic_desc	Каучук и топливо из химии.
+efw_res_rationing	Нормирование
+efw_res_rationing_desc	Карточки на топливо и материалы: больше запасов, меньше улыбок.
+efw_res_export_quotas	Экспортные квоты
+efw_res_export_quotas_desc	Ресурсы остаются дома, партнёры жалуются.
+efw_res_intensive_mining	Интенсивная добыча
+efw_res_intensive_mining_desc	Двойные смены в шахтах и безопасность урезана до предела.
+efw_res_substitutes	Заменители
+efw_res_substitutes_desc	Производство идёт даже без нужных ресурсов, но качество ниже.
+efw_res_strategic_stockpile	Национальный топливный резерв
+efw_res_strategic_stockpile_desc	Огромные топливные склады за счёт гражданских.
+efw_society_policies	Общество и внутренний порядок
+efw_society_policies_desc	Труд, пресса, общественный порядок, школы, население и гражданская оборона: внутренний фронт.
+efw_ec_labour	Труд и соцобеспечение
+efw_lab_eight_hours	Восьмичасовой день
+efw_lab_eight_hours_desc	Отдохнувшие и довольные рабочие, но смен чуть меньше.
+efw_lab_long_shifts	Длинные смены
+efw_lab_long_shifts_desc	Больше часов на заводе, больше выпуска, больше усталости.
+efw_lab_state_unions	Государственные профсоюзы
+efw_lab_state_unions_desc	Никаких забастовок, но и мало идей из цехов.
+efw_lab_family_support	Поддержка семей
+efw_lab_family_support_desc	Пособия и премии за детей: больше населения, больше расходов.
+efw_lab_social_insurance	Социальное страхование
+efw_lab_social_insurance_desc	Пенсии и страховки: граждане преданнее, гражданские заводы заняты.
+efw_lab_extended_welfare	Широкое соцобеспечение
+efw_lab_extended_welfare_desc	Медицина, школы и помощь для всех. Дорого, но держит страну вместе.
+efw_lab_labour_mobilization	Трудовая мобилизация
+efw_lab_labour_mobilization_desc	Каждый рабочий направлен туда, где он нужен общему делу.
+efw_lab_corporatism	Корпоративизм
+efw_lab_corporatism_desc	Хозяева и рабочие в одной корпорации под арбитражем государства.
+efw_ec_press	Пресса и пропаганда
+efw_prs_free_press	Свободная пресса
+efw_prs_free_press_desc	Открытые дебаты и новые идеи, но меньше желания воевать.
+efw_prs_moderate_censorship	Умеренная цензура
+efw_prs_moderate_censorship_desc	Некоторые неудобные истории так и не доходят до киосков.
+efw_prs_patriotic_propaganda	Патриотическая пропаганда
+efw_prs_patriotic_propaganda_desc	Плакаты, песни и речи: нация готовится.
+efw_prs_state_radio	Государственное радио
+efw_prs_state_radio_desc	Голос правительства входит в каждый дом.
+efw_prs_newsreels	Кинохроника
+efw_prs_newsreels_desc	Перед фильмом — подвиги армии. Добровольцев становится больше.
+efw_prs_state_press	Государственная пресса
+efw_prs_state_press_desc	Одна редакционная линия на всю страну.
+efw_prs_total_propaganda	Тотальная пропаганда
+efw_prs_total_propaganda_desc	Все средства связи работают на национальное дело.
+efw_prs_national_culture	Национальная культура
+efw_prs_national_culture_desc	Музеи, школы и университеты — гордость страны.
+efw_ec_order	Общественный порядок
+efw_ord_civil_police	Гражданская полиция
+efw_ord_civil_police_desc	Участковые и отделения: порядок без перегибов.
+efw_ord_gendarmerie	Жандармерия
+efw_ord_gendarmerie_desc	Разветвлённая военная полиция для городов и деревень.
+efw_ord_amnesty	Амнистия
+efw_ord_amnesty_desc	Тюрьмы опустели: больше людей в строю, меньше строгости.
+efw_ord_penal_labour	Каторжный труд
+efw_ord_penal_labour_desc	Заключённые строят дороги и железные дороги.
+efw_ord_informants	Сеть осведомителей
+efw_ord_informants_desc	Дворники и бармены докладывают куда следует.
+efw_ord_secret_police	Тайная полиция
+efw_ord_secret_police_desc	Инакомыслие гасят ещё до его рождения.
+efw_ord_occupation_police	Военная полиция на территориях
+efw_ord_occupation_police_desc	Части для контроля оккупированных земель.
+efw_ord_martial_law	Военное положение
+efw_ord_martial_law_desc	Во время войны правят военные суды.
+efw_so_education	Образование и наука
+efw_edu_basic_schools	Обязательное образование
+efw_edu_basic_schools_desc	Все в школу: читающая нация учится быстрее.
+efw_edu_technical_schools	Технические училища
+efw_edu_technical_schools_desc	Техники и мастера вместо профессоров.
+efw_edu_military_schools	Военные училища
+efw_edu_military_schools_desc	Мальчики учат тактику рядом с латынью.
+efw_edu_patriotic_education	Патриотическое воспитание
+efw_edu_patriotic_education_desc	История и география с национальной гордостью.
+efw_edu_scholarships	Стипендии
+efw_edu_scholarships_desc	Лучшие студенты учатся за счёт государства.
+efw_edu_elite_universities	Элитные университеты
+efw_edu_elite_universities_desc	Немного университетов, но финансируются как никто.
+efw_edu_military_research	Военные исследования
+efw_edu_military_research_desc	Учёные работают над армейскими проектами.
+efw_edu_research_exchange	Научный обмен
+efw_edu_research_exchange_desc	Исследования делятся с союзниками: больше идей, меньше секретов.
+efw_so_population	Население и здравоохранение
+efw_pop_public_health	Общественное здравоохранение
+efw_pop_public_health_desc	Поликлиники и прививки: население здоровее, гражданских расходов больше.
+efw_pop_birth_campaign	Кампания за рождаемость
+efw_pop_birth_campaign_desc	Премии многодетным, меньше женщин на заводах.
+efw_pop_colonial_recruitment	Набор на территориях
+efw_pop_colonial_recruitment_desc	Призываем и в ненациональных регионах.
+efw_pop_internal_migration	Внутренняя миграция
+efw_pop_internal_migration_desc	Рабочих перевозят туда, где нужны стройкам.
+efw_pop_reservists	Призыв резервистов
+efw_pop_reservists_desc	Больше готовых людей, меньше растущих семей.
+efw_pop_national_health	Национальная служба здравоохранения
+efw_pop_national_health_desc	Лечение для всех за счёт всех.
+efw_pop_total_manpower	Демографическая мобилизация
+efw_pop_total_manpower_desc	Каждый регион обязан дать свою квоту людей.
+efw_pop_war_economy_families	Работающие семьи
+efw_pop_war_economy_families_desc	Ясли и заводские столовые: больше рабочих и больше новобранцев.
+efw_so_civil_defence	Гражданская оборона
+efw_cd_air_raid_wardens	Дружины ПВО
+efw_cd_air_raid_wardens_desc	Добровольцы, сирены и затемнение: зенитки стреляют точнее.
+efw_cd_shelters	Бомбоубежища
+efw_cd_shelters_desc	В каждом квартале своё убежище, вырытое вместо новых заводов.
+efw_cd_coastal_watch	Береговое наблюдение
+efw_cd_coastal_watch_desc	Наблюдательные посты вдоль каждого берега.
+efw_cd_home_guard	Народное ополчение
+efw_cd_home_guard_desc	Граждане, обученные защищать свой город.
+efw_cd_decoys	Ложные цели
+efw_cd_decoys_desc	Фальшивые заводы и обманные огни отвлекают бомбардировщики.
+efw_cd_anti_air_belt	Зенитный пояс
+efw_cd_anti_air_belt_desc	Зенитные батареи вокруг каждого промышленного центра.
+efw_cd_fortress_nation	Нация-крепость
+efw_cd_fortress_nation_desc	Родина превращается в сеть укреплений.
+efw_cd_people_in_arms	Народ под ружьём
+efw_cd_people_in_arms_desc	Каждый гражданин готов защищать родину.
+efw_military_policies	Армия и генеральный штаб
+efw_military_policies_desc	Командование, набор, логистика, полевое оружие, медицина и доктрина: как воюет армия.
+efw_mil_command	Командование и офицеры
+efw_cmd_junior_officers	Курсы младших офицеров
+efw_cmd_junior_officers_desc	Молодые офицеры подготовлены наспех: больше опыта, меньше сплочённости.
+efw_cmd_military_academies	Военные академии
+efw_cmd_military_academies_desc	Хорошо подготовленные офицеры, но учатся на месяцы дольше.
+efw_cmd_centralized	Централизованное командование
+efw_cmd_centralized_desc	Планы спускаются сверху; инициатива на местах сокращается.
+efw_cmd_decentralized	Децентрализованное командование
+efw_cmd_decentralized_desc	Полевые командиры решают сами: мотивированные части, медленнее планы.
+efw_cmd_foreign_missions	Миссии за рубежом
+efw_cmd_foreign_missions_desc	Наши офицеры наблюдают за чужими войнами.
+efw_cmd_war_college	Военная академия генштаба
+efw_cmd_war_college_desc	Штаб, обученный планировать сложные операции.
+efw_cmd_general_staff	Большой генеральный штаб
+efw_cmd_general_staff_desc	Единое авторитетное командование всеми сухопутными силами.
+efw_cmd_veteran_cadres	Кадры ветеранов
+efw_cmd_veteran_cadres_desc	Опытные сержанты в каждой части: больше обучения, медленнее набор.
+efw_mil_recruitment	Подготовка и набор
+efw_rec_quick_training	Ускоренная подготовка
+efw_rec_quick_training_desc	Новобранцы готовы раньше, но подготовлены хуже.
+efw_rec_extended_training	Расширенная подготовка
+efw_rec_extended_training_desc	Больше недель в казарме, крепче солдаты.
+efw_rec_territorial_reserves	Территориальные резервы
+efw_rec_territorial_reserves_desc	Каждый округ держит своих резервистов.
+efw_rec_volunteer_corps	Добровольческий корпус
+efw_rec_volunteer_corps_desc	Добровольцы за рубежом набираются опыта.
+efw_rec_auxiliaries	Вспомогательные службы
+efw_rec_auxiliaries_desc	Женщины во вспомогательных ролях: больше солдат на фронте, меньше рабочих.
+efw_rec_mass_conscription	Массовый призыв
+efw_rec_mass_conscription_desc	Каждый годный мужчина под ружьё.
+efw_rec_elite_units	Отборные части
+efw_rec_elite_units_desc	Строгий отбор и тяжёлая подготовка: меньше, но лучше.
+efw_rec_live_fire	Учения с боевой стрельбой
+efw_rec_live_fire_desc	Реалистичные манёвры с боевыми патронами.
+efw_mil_logistics	Логистика и снабжение
+efw_log_push_supply	Снабжение «толчком»
+efw_log_push_supply_desc	Всё отправляется вперёд: меньше расход, больше потерь в пути.
+efw_log_forward_depots	Передовые склады
+efw_log_forward_depots_desc	Склады у фронта за счёт гражданских.
+efw_log_rail_priority	Железнодорожный приоритет
+efw_log_rail_priority_desc	Военные поезда идут первыми.
+efw_log_mules	Мулы и телеги
+efw_log_mules_desc	Где не пройдёт грузовик, пройдёт мул — медленно.
+efw_log_motor_pool	Автопарк
+efw_log_motor_pool_desc	Больше грузовиков в частях: быстрее, но прожорливее.
+efw_log_integrated	Единая логистика
+efw_log_integrated_desc	Железные дороги, грузовики и склады под одним командованием.
+efw_log_war_requisitions	Военные реквизиции
+efw_log_war_requisitions_desc	Гражданский транспорт и запасы реквизированы для фронта.
+efw_log_fuel_economy	Экономия топлива
+efw_log_fuel_economy_desc	Каждый литр на счету: больше запасы, осторожнее техника.
+efw_mil_field_weapons	Полевое оружие и пехота
+efw_fw_mg_doctrine	Пулемётная доктрина
+efw_fw_mg_doctrine_desc	Пехота держит линию вокруг своих пулемётов.
+efw_fw_light_indirect_fire	Лёгкий навесной огонь
+efw_fw_light_indirect_fire_desc	Миномёты в каждом взводе: больше огня, больше боеприпасов таскать.
+efw_fw_antitank_teams	Противотанковые группы
+efw_fw_antitank_teams_desc	Охотники за танками в засаде на родной земле.
+efw_fw_local_workshops	Местные мастерские
+efw_fw_local_workshops_desc	Небольшие мастерские делают детали оружия для армии.
+efw_fw_entrenchment	Окапывание
+efw_fw_entrenchment_desc	Каждая позиция вкопана и укреплена.
+efw_fw_heavy_weapons	Тяжёлое оружие для всех
+efw_fw_heavy_weapons_desc	Пулемёты, миномёты и ПТ-оружие в каждой роте.
+efw_fw_assault_squads	Штурмовые группы
+efw_fw_assault_squads_desc	Ударные войска для прорыва вражеских линий.
+efw_fw_defence_in_depth	Глубокая оборона
+efw_fw_defence_in_depth_desc	Линия за линией: враг выдыхается в наступлении.
+efw_mil_conduct	Медицина и поведение
+efw_con_field_hospitals	Полевые госпитали
+efw_con_field_hospitals_desc	Раненых ветеранов лечат, и они возвращаются в часть.
+efw_con_iron_discipline	Железная дисциплина
+efw_con_iron_discipline_desc	Строгий устав и показательные наказания.
+efw_con_code_of_honour	Кодекс чести
+efw_con_code_of_honour_desc	Мы воюем с честью и уважаем врага.
+efw_con_spoils_of_war	Военные трофеи
+efw_con_spoils_of_war_desc	Захваченное оружие сразу идёт нашим частям.
+efw_con_chaplains	Военные капелланы
+efw_con_chaplains_desc	Духовная поддержка на фронте и в тылу.
+efw_con_modern_medicine	Современная военная медицина
+efw_con_modern_medicine_desc	Хирурги, санитарные машины и госпитали для армии.
+efw_con_no_retreat	Ни шагу назад
+efw_con_no_retreat_desc	Каждую позицию удерживать любой ценой.
+efw_con_total_war	Война без правил
+efw_con_total_war_desc	Конвенции остаются на бумаге.
+efw_mil_operations	Оперативная доктрина
+efw_ops_mobile_warfare	Манёвренная война
+efw_ops_mobile_warfare_desc	Части быстрее, баки пустеют раньше.
+efw_ops_methodical	Методичный бой
+efw_ops_methodical_desc	Каждая атака подготовлена до мелочей ценой скорости.
+efw_ops_night_operations	Ночные операции
+efw_ops_night_operations_desc	Двигаемся ночью, чтобы избежать вражеской авиации.
+efw_ops_mountain_troops	Горные войска
+efw_ops_mountain_troops_desc	Части, привычные к холоду и высоте.
+efw_ops_desert_troops	Колониальные войска
+efw_ops_desert_troops_desc	Части, обученные для жары и песка.
+efw_ops_blitz	Молниеносная война
+efw_ops_blitz_desc	Прорваться и наступать без остановки.
+efw_ops_war_of_attrition	Война на истощение
+efw_ops_war_of_attrition_desc	Враг изматывается о наши линии.
+efw_ops_river_assault	Штурмовые сапёры
+efw_ops_river_assault_desc	Сапёры и штурмовые лодки, чтобы форсировать любую реку.
+efw_navy_air_policies	Флот, авиация и службы
+efw_navy_air_policies_desc	Флот, конвои, истребители, поддержка с воздуха, разведка и операции за рубежом.
+efw_na_fleet	Флот
+efw_fleet_coastal_navy	Береговой флот
+efw_fleet_coastal_navy_desc	Корабли для защиты своих вод.
+efw_fleet_gunnery	Артиллерийская подготовка
+efw_fleet_gunnery_desc	Постоянные стрельбы: больше попаданий, больше сожжённого топлива.
+efw_fleet_damage_control	Борьба за живучесть
+efw_fleet_damage_control_desc	Ремонтные команды на борту и в порту.
+efw_fleet_naval_training	Морская подготовка
+efw_fleet_naval_training_desc	Интенсивные учения в море: больше опыта, больше аварий.
+efw_fleet_preservation	Флот как угроза
+efw_fleet_preservation_desc	Корабли не рискуют: отступают раньше и бьют слабее.
+efw_fleet_blue_water	Океанский флот
+efw_fleet_blue_water_desc	Флот для боя в открытом море.
+efw_fleet_torpedo_doctrine	Торпедная доктрина
+efw_fleet_torpedo_doctrine_desc	Агрессивные эсминцы и ночные торпедные атаки.
+efw_fleet_rapid_refit	Ремонтные арсеналы
+efw_fleet_rapid_refit_desc	Верфи сначала ремонтируют и модернизируют имеющиеся корабли.
+efw_na_convoys	Конвои и подлодки
+efw_cv_escort	Охранение конвоев
+efw_cv_escort_desc	Флот защищает торговые пути в ущерб рейдерству.
+efw_cv_wolfpacks	Волчьи стаи
+efw_cv_wolfpacks_desc	Подлодки охотятся стаями; наши конвои защищены хуже.
+efw_cv_dispersed_routes	Рассредоточенные маршруты
+efw_cv_dispersed_routes_desc	Конвои идут порознь и рассеиваются при первой опасности.
+efw_cv_minefields	Минные поля
+efw_cv_minefields_desc	Наши воды полны мин, некоторые — не там, где надо.
+efw_cv_sonar	Подводное прослушивание
+efw_cv_sonar_desc	Гидрофоны и сонары на каждом эскортном корабле.
+efw_cv_total_sub_war	Неограниченная подводная война
+efw_cv_total_sub_war_desc	Каждый вражеский корабль — цель, без предупреждения.
+efw_cv_convoy_system	Система конвоев
+efw_cv_convoy_system_desc	Каждое торговое судно идёт под охраной.
+efw_cv_stealth_boats	Тихие подлодки
+efw_cv_stealth_boats_desc	Корпуса меньше, моторы тише: невидимые, но хрупкие.
+efw_na_air_force	Истребительная авиация
+efw_af_flight_schools	Лётные школы
+efw_af_flight_schools_desc	Лучше подготовленные пилоты и меньше потерь на учениях.
+efw_af_aces	Культ асов
+efw_af_aces_desc	Лучшие пилоты становятся героями, и терять их больнее.
+efw_af_interceptors	Оборонительные перехватчики
+efw_af_interceptors_desc	Быстрые истребители малой дальности для защиты страны.
+efw_af_long_range	Истребители сопровождения
+efw_af_long_range_desc	Больше топлива на борту, меньше манёвренности в бою.
+efw_af_radar_network	Сеть оповещения
+efw_af_radar_network_desc	Наблюдатели и радары наводят истребители на цели.
+efw_af_air_superiority	Доктрина господства в воздухе
+efw_af_air_superiority_desc	Контроль неба превыше всего, даже ценой износа пилотов.
+efw_af_veteran_squadrons	Полки ветеранов
+efw_af_veteran_squadrons_desc	Опытные пилоты остаются на фронте, а не учат новичков.
+efw_af_all_weather	Всепогодные полёты
+efw_af_all_weather_desc	Летаем ночью и в любую погоду. Возвращаются не все.
+efw_na_air_support	Поддержка с воздуха
+efw_as_close_support	Непосредственная поддержка
+efw_as_close_support_desc	Авиация работает на пехоту, меньше — на контроль неба.
+efw_as_dive_bombing	Пикирующее бомбометание
+efw_as_dive_bombing_desc	Очень высокая точность, пилоты под нагрузкой.
+efw_as_naval_strike	Торпедоносцы
+efw_as_naval_strike_desc	Эскадрильи, специализированные против вражеских кораблей.
+efw_as_air_reconnaissance	Воздушная разведка
+efw_as_air_reconnaissance_desc	Самолёты-разведчики над каждым фронтом.
+efw_as_forward_airfields	Передовые аэродромы
+efw_as_forward_airfields_desc	Взлётные полосы важнее портов.
+efw_as_strategic_bombing	Стратегические бомбардировки
+efw_as_strategic_bombing_desc	Вражеские заводы и города под бомбами.
+efw_as_army_cooperation	Взаимодействие с армией
+efw_as_army_cooperation_desc	Офицеры связи с рациями на передовой.
+efw_as_maritime_patrol	Морское патрулирование
+efw_as_maritime_patrol_desc	Летающие лодки и дальние бомбардировщики над морскими путями.
+efw_na_intelligence	Разведка
+efw_int_codebreakers	Дешифровщики
+efw_int_codebreakers_desc	Математики работают над вражескими шифрами.
+efw_int_secure_codes	Надёжные шифры
+efw_int_secure_codes_desc	Новые шифровальные машины для каждой связи.
+efw_int_foreign_networks	Зарубежные сети
+efw_int_foreign_networks_desc	Агенты и осведомители в иностранных столицах.
+efw_int_counter_espionage	Контрразведка
+efw_int_counter_espionage_desc	Каждый иностранец — потенциальный подозреваемый.
+efw_int_military_intelligence	Служба военной разведки
+efw_int_military_intelligence_desc	Разведка работает на фронт, меньше — на дипломатию.
+efw_int_central_agency	Центральное агентство
+efw_int_central_agency_desc	Единая секретная служба со своими людьми и средствами.
+efw_int_cipher_bureau	Шифровальное бюро
+efw_int_cipher_bureau_desc	Лучшие умы страны взаперти взламывают и создают шифры.
+efw_int_deception	Стратегическая дезинформация
+efw_int_deception_desc	Фальшивые планы, армии-призраки и двойные агенты.
+efw_na_foreign_ops	Операции за рубежом
+efw_fo_volunteer_corps	Добровольческий корпус
+efw_fo_volunteer_corps_desc	Добровольцы за рубежом набираются опыта.
+efw_fo_air_volunteers	Воздушный легион
+efw_fo_air_volunteers_desc	Эскадрильи добровольцев в чужих войнах.
+efw_fo_military_aid	Военная помощь
+efw_fo_military_aid_desc	Оружие и советники для дружественных стран.
+efw_fo_neutrality	Вооружённый нейтралитет
+efw_fo_neutrality_desc	Чужие войны остаются чужими.
+efw_fo_guarantees	Гарантии соседям
+efw_fo_guarantees_desc	Обещаем защиту малым соседним странам.
+efw_fo_foreign_legion	Иностранный легион
+efw_fo_foreign_legion_desc	Авантюристы, изгнанники и романтики: всех берём, вопросов не задаём.
+efw_fo_war_plans	Военные планы
+efw_fo_war_plans_desc	Генштаб готовит поводы и планы против каждого соседа.
+efw_fo_great_power	Политика великой державы
+efw_fo_great_power_desc	Посольства, парады и займы: мир должен знать, кто мы.

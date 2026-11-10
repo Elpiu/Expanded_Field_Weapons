@@ -1,0 +1,9 @@
+﻿l_german:
+ efw_military_options_category:0 "EFW-Militäroptionen"
+ efw_military_options_category_desc:0 "Optionale Militärregeln, die jederzeit ein- und ausgeschaltet werden können."
+ efw_enable_rapid_invasions:0 "Schnelle Invasionen aktivieren"
+ efw_enable_rapid_invasions_desc:0 "See- und Luftlandeinvasionen brauchen keine Vorbereitungszeit, und geplante Seeinvasionen sowie die zugewiesenen Divisionen sind praktisch unbegrenzt."
+ efw_disable_rapid_invasions:0 "Schnelle Invasionen deaktivieren"
+ efw_disable_rapid_invasions_desc:0 "Zurück zu den normalen Invasionsregeln: Vorbereitungszeit und Grenzen für Pläne und Divisionen gelten wieder."
+ efw_rapid_invasions_idea:0 "Schnelle Invasionen"
+ efw_rapid_invasions_idea_desc:0 "Landungsoperationen werden ohne Vorbereitungszeit und ohne praktische Grenze für Pläne oder Divisionen geplant und gestartet. Kann in den Entscheidungen der EFW-Militäroptionen deaktiviert werden."

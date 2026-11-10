@@ -1,0 +1,204 @@
+efw_national_mobilization_category	Mobilizacja i inwestycje narodowe
+efw_national_mobilization_category_desc	Sieć propagandy, organizacji pracy, nauki i logistyki może stopniowo zmienić kraj w w pełni zmobilizowaną machinę gospodarczą i wojskową.
+efw_propaganda_center	Ośrodek Propagandy i Mobilizacji
+efw_propaganda_center_desc	Ośrodek administracyjny i propagandowy koordynujący kampanie polityczne, werbunek cywilów i mobilizację społeczną.
+efw_labor_directorate	Narodowa Dyrekcja Pracy
+efw_labor_directorate_desc	Organizacja koordynująca pracę, budownictwo, produkcję i wykorzystanie lokalnych zasobów.
+efw_research_center	Narodowy Ośrodek Badawczy
+efw_research_center_desc	Kompleks badań stosowanych koordynujący instytuty, uczelnie i laboratoria narodowe.
+efw_logistics_center	Ośrodek Logistyki i Obrony Cywilnej
+efw_logistics_center_desc	Regionalny węzeł magazynów, transportu, napraw, infrastruktury i obrony cywilnej.
+efw_national_investments_idea	Program inwestycji narodowych
+efw_national_investments_idea_desc	Państwo skupia zasoby polityczne i administracyjne na rozbudowie propagandy i narodowej organizacji pracy.
+efw_coordinated_economy_idea	Skoordynowana gospodarka narodowa
+efw_coordinated_economy_idea_desc	Przemysł, stocznie i administracja są koordynowane według narodowego planu gospodarczego – za cenę kosztów społecznych.
+efw_research_funding_idea	Narodowe finansowanie nauki
+efw_research_funding_idea_desc	Fundusze i przyspieszone procedury wspierają rozwój narodowej sieci badawczej.
+efw_logistics_plan_idea	Narodowy plan infrastruktury
+efw_logistics_plan_idea_desc	Rząd wspiera rozwój regionalnych ośrodków logistycznych i towarzyszącej im infrastruktury.
+efw_national_mobilization_idea	Mobilizacja narodowa
+efw_national_mobilization_idea_desc	Aparat gospodarczy i administracyjny kraju jest całkowicie nastawiony na wysiłek narodowy.
+efw_commission_propaganda_center	Zbuduj ośrodek propagandy
+efw_commission_propaganda_center_desc	Skieruj §Y10 000 pracowników publicznych§! do budowy Ośrodka Propagandy i Mobilizacji w wybranym regionie.
+efw_commission_labor_directorate	Utwórz dyrekcję pracy
+efw_commission_labor_directorate_desc	Skieruj §Y20 000 robotników§! do utworzenia Narodowej Dyrekcji Pracy w wybranym regionie.
+efw_commission_research_center	Zbuduj Narodowy Ośrodek Badawczy
+efw_commission_research_center_desc	Skieruj §Y15 000 techników, naukowców i pracowników§! do utworzenia Narodowego Ośrodka Badawczego.
+efw_commission_logistics_center	Zbuduj ośrodek logistyki
+efw_commission_logistics_center_desc	Skieruj §Y12 000 robotników i logistyków§! do utworzenia Ośrodka Logistyki i Obrony Cywilnej.
+efw_launch_national_investments	Uruchom inwestycje narodowe
+efw_launch_national_investments_desc	Gdy pierwsza sieć propagandy działa, inwestycje publiczne można scentralizować i przyspieszyć.
+efw_coordinate_national_economy	Skoordynuj gospodarkę narodową
+efw_coordinate_national_economy_desc	Sieć administracyjna i pracy jest wystarczająco szeroka, by koordynować przemysł i budownictwo w całym kraju.
+efw_fund_national_research	Finansuj naukę narodową
+efw_fund_national_research_desc	Przeznacz zasoby polityczne i administracyjne na skoordynowaną narodową sieć badawczą.
+efw_launch_national_infrastructure_plan	Narodowy plan infrastruktury
+efw_launch_national_infrastructure_plan_desc	Stwórz narodowy program logistyki, transportu, magazynów i obrony cywilnej.
+efw_mobilize_the_nation	Zmobilizuj naród
+efw_mobilize_the_nation_desc	Propaganda, praca, nauka i logistyka są dostatecznie rozwinięte, by w pełni zmobilizować gospodarkę kraju.
+efw_issue_national_bonds	Wyemituj obligacje państwowe
+efw_issue_national_bonds_desc	Natychmiast otrzymaj §G+100 siły politycznej§!, ale po §Y365 dniach§! oddaj §R150 siły politycznej§!.
+efw_issue_long_term_national_loan	Wielka pożyczka narodowa
+efw_issue_long_term_national_loan_desc	Natychmiast otrzymaj §G+120 siły politycznej§!, ale po §Y730 dniach§! oddaj §R200 siły politycznej§!.
+efw_national_mobilization.1.t	Termin wykupu obligacji
+efw_national_mobilization.1.d	Obligacje wyemitowane rok temu osiągnęły termin wykupu. Trzeba teraz spłacić kapitał wraz z odsetkami.
+efw_national_mobilization.1.a	Dotrzymamy zobowiązań.
+efw_national_mobilization.2.t	Termin spłaty wielkiej pożyczki
+efw_national_mobilization.2.d	Pożyczka narodowa zaciągnięta dwa lata temu jest wymagalna. Trzeba teraz spłacić kapitał wraz z odsetkami.
+efw_national_mobilization.2.a	Dług zostanie spłacony.
+EFW_MOD_NAME	Expanded Field Weapons
+efw_machinegun_equipment	Karabiny maszynowe wsparcia
+efw_machinegun_equipment_desc	Ręczne, średnie i ciężkie karabiny maszynowe połączone w jedną kategorię produkcji. Sprzęt się nie zmienia, a badania nad bronią wsparcia ulepszają korzystające z niego jednostki.
+efw_machinegun_equipment_standard	Karabiny maszynowe
+efw_machinegun_equipment_standard_short	KM
+efw_mortar_equipment	Moździerze piechoty
+efw_mortar_equipment_desc	Lekkie i średnie moździerze do organicznego wsparcia ogniem stromotorowym na krótkim dystansie.
+efw_mortar_equipment_standard	Moździerze
+efw_mortar_equipment_standard_short	Moździerze
+efw_antitank_equipment	Przenośna broń przeciwpancerna
+efw_antitank_equipment_desc	Organiczna broń przeciwpancerna piechoty. Lepsze doktryny, amunicja i taktyka są odwzorowane premiami technologii, a nie nowymi modelami.
+efw_antitank_equipment_standard	Broń przeciwpancerna
+efw_antitank_equipment_standard_short	Broń ppanc.
+efw_machinegun_company	Kompania karabinów maszynowych
+efw_machinegun_company_desc	Kompania wsparcia prowadząca ciągły ogień automatyczny. Używa karabinów maszynowych EFW.
+efw_mortar_company	Kompania moździerzy
+efw_mortar_company_desc	Kompania wsparcia ognia stromotorowego na krótkim dystansie. Używa moździerzy EFW.
+efw_antitank_company	Kompania przeciwpancerna
+efw_antitank_company_desc	Przenośne zespoły przeciwpancerne w składzie formacji. Używa broni przeciwpancernej EFW.
+efw_elite_heavy_weapons_battalion	Elitarny batalion broni ciężkiej
+efw_elite_heavy_weapons_battalion_desc	Drogi i wymagający zaopatrzenia batalion frontowy łączący karabiny maszynowe, moździerze i broń przeciwpancerną z doborową piechotą.
+efw_legionari_dellimpero	Legionari dell'Impero
+efw_legionari_dellimpero_desc	Duży batalion milicji z karabinami i organicznymi karabinami maszynowymi. Silne tłumienie i ogień obronny, nieco mniejsze zużycie zaopatrzenia niż zwykła piechota, ale długie szkolenie: niewyszkolone oddziały są kruche, a w pełni wyszkoleni legioniści przewyższają regularną piechotę.
+efw_unlock_core_weapons	EFW: zintegrowana broń wsparcia
+efw_legionari_unlock	EFW: Legionari dell'Impero
+efw_support_upgrade_2	EFW: broń wsparcia II
+efw_support_upgrade_3	EFW: broń wsparcia III
+efw_support_upgrade_4	EFW: broń wsparcia IV
+efw_at_upgrade_1	EFW: ulepszenia przeciwpancerne I
+efw_at_upgrade_2	EFW: ulepszenia przeciwpancerne II
+efw_improvised_naval_modules_unlock	Program improwizowanej floty
+efw_motorboat_engine	Improwizowany silnik motorówki
+efw_motorboat_engine_desc	Prosty silnik dla maleńkich jednostek przybrzeżnych. Drastycznie obniża koszt, zasięg i wytrzymałość okrętu.
+efw_motorboat_machinegun	Okrętowe stanowisko KM
+efw_motorboat_machinegun_desc	Ciężki karabin maszynowy przystosowany do użytku na morzu.
+efw_midget_sub_engine	Silnik miniaturowego okrętu podwodnego
+efw_midget_sub_engine_desc	Maleńki napęd dla bardzo małych okrętów podwodnych.
+efw_midget_sub_torpedo	Lekka torpeda miniaturowego okrętu podwodnego
+efw_midget_sub_torpedo_desc	Kompaktowa wyrzutnia torped dla miniaturowych okrętów podwodnych.
+efw_scrap_multirole_mount	Improwizowane stanowisko wielozadaniowe
+efw_scrap_multirole_mount_desc	Spawane stanowisko dwuzadaniowe z zapasowych lekkich dział i improwizowanych celowników plot. Daje nieco lekkiej i przeciwlotniczej siły ognia, mieści się w kilku slotach, ale lekko obniża prędkość i niezawodność.
+efw_improvised_torpedo_rack	Improwizowany stojak na torpedy
+efw_improvised_torpedo_rack_desc	Prosty pokładowy stojak na zapasowe torpedy z ręcznie robionym zwalniaczem. Trochę siły torpedowej i celności, kumuluje się, ale kosztuje prędkość i niezawodność.
+efw_improvised_depth_charge_rack	Improwizowany zrzutnik bomb głębinowych
+efw_improvised_depth_charge_rack_desc	Lekki zrzutnik bomb głębinowych z prostym okablowaniem hydrofonu. Nieco lepszy atak ZOP i wykrywanie, kumuluje się, ale lekko spowalnia okręt i obniża niezawodność.
+efw_improvised_fuel_tank	Improwizowany zbiornik dodatkowy
+efw_improvised_fuel_tank_desc	Tani zbiornik spawany ze złomu. Większy zasięg za niewielką cenę, ale lekko niższa prędkość i niezawodność, a po trafieniu może przeciekać.
+efw_wooden_sub_coating	Drewniane poszycie okrętu podwodnego
+efw_wooden_sub_coating_desc	Warstwy impregnowanego drewna, płótna i smoły zamiast deficytowego metalu. Obniża koszt, ale osłabia kadłub i ułatwia wykrycie okrętu.
+efw_wooden_surface_refit	Drewniana przebudowa
+efw_wooden_surface_refit_desc	Prowizoryczna przebudowa z drewnianymi nadbudówkami i materiałami niestrategicznymi. Obniża koszt, ale osłabia kadłub, spowalnia okręt i szkodzi niezawodności.
+efw_improvised_mine_rack	Improwizowany stojak na miny (10 min)
+efw_improvised_mine_rack_desc	Prosty pokładowy stojak na około dziesięć min kontaktowych. Znacznie zwiększa zdolność stawiania min kosztem prędkości i niezawodności.
+efw_improvised_sub_mine_rack	Improwizowany stojak minowy okrętu podwodnego (10 min)
+efw_improvised_sub_mine_rack_desc	Kompaktowy zewnętrzny stojak na około dziesięć min. Znacznie zwiększa zdolność stawiania min przez okręt podwodny przy niewielkiej utracie prędkości i niezawodności.
+efw_small_sail	Mały improwizowany żagiel
+efw_small_sail_desc	Mały płócienny żagiel na pokładzie. Daje +15% prędkości, ale okręt jest lepiej widoczny i nieco mniej niezawodny. Pasuje do slotu zbiornika paliwa.
+efw_large_sail	Duży improwizowany żagiel
+efw_large_sail_desc	Ogromny prowizoryczny żagiel zmienia okręt w improwizowany windjammer. Daje +25% prędkości, ale mocno zwiększa widoczność i obniża niezawodność oraz wytrzymałość kadłuba. Pasuje do slotu zbiornika paliwa.
+efw_careened_hull	Oczyszczony i wypolerowany kadłub
+efw_careened_hull_desc	Kadłub oczyszczony, osmołowany i wypolerowany, gdzie się da – z improwizowanym okuciem miedzianym. Poprawia niezawodność, prędkość, zasięg i wykrywanie, lekko zmniejsza widoczność i dodaje nieco wytrzymałości. Solidny moduł uniwersalny do slotu zbiornika paliwa.
+efw_fishing_net_armor	Pancerz z sieci rybackich
+efw_fishing_net_armor_desc	Siatki maskujące i splątane sieci rybackie zamiast prawdziwego pancerza. Lekko zmniejsza widoczność i obrażenia od torped, a nawet trochę oszczędza, ale nie daje pancerza.
+efw_wooden_plank_armor	Pancerz z desek
+efw_wooden_plank_armor_desc	Warstwy desek przykręconych do kadłuba. Tania dodatkowa ochrona i trochę wytrzymałości kosztem prędkości i niezawodności.
+efw_scrap_plate_armor	Pancerz ze złomu
+efw_scrap_plate_armor_desc	Zespawane płyty ze złomu stalowego. Lepsza ochrona niż drewno, ale cięższy, wolniejszy i mniej niezawodny.
+efw_fishing_net_armor_heavy	Pancerz z sieci rybackich (ciężki)
+efw_fishing_net_armor_heavy_desc	Ciężkie siatki maskujące i sieci rybackie na dużym okręcie. Lekko zmniejszają widoczność i obrażenia od torped, ale nie dają prawdziwego pancerza.
+efw_wooden_plank_armor_heavy	Pancerz z desek (ciężki)
+efw_wooden_plank_armor_heavy_desc	Masywne deski przykręcone do kadłuba dużego okrętu. Tania ochrona i dodatkowa wytrzymałość kosztem prędkości i niezawodności.
+efw_scrap_plate_armor_heavy	Pancerz ze złomu (ciężki)
+efw_scrap_plate_armor_heavy_desc	Grube płyty ze złomu stalowego na kadłubie dużego okrętu. Solidna improwizowana ochrona, ale ciężka, wolna i zawodna.
+efw_wooden_fighter_equipment	Improwizowany drewniany myśliwiec
+efw_wooden_fighter_equipment_desc	Niezwykle tani samolot z materiałów niestrategicznych i prostych części. Łatwy w produkcji, ale wolny, kruchy i słabo uzbrojony.
+efw_tin_tank_equipment	Blaszany czołg
+efw_tin_tank_equipment_desc	Prymitywny lekki czołg z cienkich nitowanych płyt, uzbrojony głównie w karabin maszynowy. Tani w produkcji, ale podatny niemal na każdą broń przeciwpancerną.
+efw_wooden_air_bba_unlock	Program improwizowanego lotnictwa
+efw_wooden_air_legacy_unlock	Program improwizowanego lotnictwa
+efw_tin_tank_nsb_unlock	Program improwizowanej broni pancernej
+efw_tin_tank_legacy_unlock	Program improwizowanej broni pancernej
+efw_propaganda_center_unlock	Sieć propagandy EFW
+efw_labor_directorate_unlock	Organizacja pracy EFW
+efw_research_center_unlock	Sieć badawcza EFW
+efw_logistics_center_unlock	Sieć logistyczna EFW
+efw_industrialization_campaign_idea	Narodowa kampania industrializacji
+efw_state_industry_subsidies_idea	Państwowe subsydia przemysłowe
+efw_national_infrastructure_program_idea	Narodowy program infrastruktury
+efw_early_industrialization_campaign	Rozpocznij kampanię industrializacji
+efw_army_public_works	Zatrudnij armię przy robotach publicznych
+efw_state_industry_subsidies	Państwowe subsydia przemysłowe
+efw_national_infrastructure_program	Narodowy program infrastruktury
+efw_pipe_gun_rifle	Karabin z rury
+efw_pipe_gun_rifle_short	Karabin z rury
+efw_pipe_gun_rifle_desc	Prymitywna improwizowana broń, naprędce złożona z rury hydraulicznej i odzyskanych części. Toporna, zawodna i bez żadnego standardu przemysłowego, ale można ją produkować niemal bez zasobów.
+efw_army_munitions_works	Budowa arsenałów wojskowych
+efw_army_munitions_works_desc	Skieruj 100 000 rekrutów na rok do produkcji zbrojeniowej, aby na stałe zbudować 4 zewnętrzne fabryki wojskowe.
+efw_naval_yard_expansion	Akcja budowy stoczni wojennych
+efw_naval_yard_expansion_desc	Skieruj 100 000 rekrutów na rok do budownictwa nadbrzeżnego i utwórz 4 stałe zewnętrzne stocznie.
+efw_industrial_plan_phase_1	Wielki plan przemysłowy: faza I – fundamenty
+efw_industrial_plan_phase_1_desc	Inwestuje kapitał polityczny, pociągi i ludzi w fundamenty wielkiego odrodzenia przemysłu. Natychmiast daje §G+8 fabryk cywilnych§! i §G+2 fabryki wojskowe§! poza regionami oraz przyspiesza budowę. Po 180 dniach odblokowuje fazę II.
+efw_industrial_phase_1_idea	Plan przemysłowy: mobilizacja fazy I
+efw_industrial_plan_phase_2	Wielki plan przemysłowy: faza II – rozbudowa ciężka
+efw_industrial_plan_phase_2_desc	Końcowa faza rozbudowy przemysłu. Dodaje kolejne §G+7 fabryk cywilnych§! i §G+4 fabryki wojskowe§! poza regionami. Po zakończeniu cały sprzęt i połowa zmobilizowanych pracowników wracają.
+efw_industrial_phase_2_idea	Plan przemysłowy: mobilizacja fazy II
+efw_national_mobilization.30.t	Plan przemysłowy: faza I ukończona
+efw_national_mobilization.30.d	Pierwsze ciężkie fabryki i kombinaty hutnicze działają pełną parą. Fundamenty położone, kraj jest gotów rozpocząć fazę II.
+efw_national_mobilization.30.a	Przechodzimy do fazy II!
+efw_national_mobilization.31.t	Plan przemysłowy: triumf przemysłu
+efw_national_mobilization.31.d	Dokładnie rok po rozpoczęciu programu rozbudowa jest ukończona: 15 kompleksów cywilnych i 6 fabryk zbrojeniowych pracuje z najwyższą wydajnością. Pociągi i ciężarówki wróciły do zasobów.
+efw_national_mobilization.31.a	Narodził się gigant produkcji!
+efw_grand_public_works	Mobilizacja do wielkich robót publicznych
+efw_grand_public_works_desc	Brygady robót publicznych, inżynierowie i ciężarówki zwiększają możliwości ojczyzny. Daje §G+1 infrastruktury§! (jeśli poniżej 5) i §G+2 sloty budowlane§! we wszystkich rdzennych regionach metropolii oraz §G+30%§! szybkości budowy na 540 dni.
+efw_grand_works_idea	Fala wielkich robót publicznych
+efw_social_welfare_and_workshops	Pakt społeczny i sieć warsztatów
+efw_social_welfare_and_workshops_desc	Łączy wsparcie rodzin z logistyczną integracją małych warsztatów rzemieślniczych. Stabilizuje przyrost rezerw ludzkich, wspiera naukę i zwiększa produkcję oraz maksymalną wydajność fabryk na 3 lata.
+efw_social_welfare_workshops_idea	Pakt społeczny i sieć warsztatów
+efw_emergency_naval_program	Nadzwyczajny program rozbudowy floty
+efw_emergency_naval_program_desc	Skupia wyspecjalizowanych stoczniowców i sprzęt, by utworzyć §G+6 stałych zewnętrznych stoczni§!. Zmobilizowani ludzie i ciężarówki wracają po roku.
+efw_national_mobilization.34.t	Wykup obligacji państwowych
+efw_national_mobilization.34.d	Obligacje skarbowe wyemitowane w zeszłym roku osiągnęły termin wykupu. Rząd musi spłacić posiadaczy wraz z odsetkami, by zachować wiarygodność finansową.
+efw_national_mobilization.34.a	Dotrzymać zobowiązań finansowych.
+efw_wooden_construction	Lekka konstrukcja drewniana
+efw_wooden_construction_desc	Kadłub i dźwigary ze sklejki z impregnowanym płótnem. Drastycznie obniża koszt przemysłowy samolotu.
+efw_wooden_frame_component	Drewniane panele konstrukcyjne
+efw_wooden_frame_component_desc	Zastępuje metalowe części drewnem i płótnem. Obniża masę i koszt kosztem wytrzymałości. Można montować wielokrotnie.
+efw_extended_fuel_tank	Zewnętrzny zbiornik dodatkowy
+efw_extended_fuel_tank_desc	Zrzucany zbiornik podskrzydłowy, który znacznie zwiększa zasięg.
+efw_airdrop_supply_pod	Zasobnik zrzutowy zaopatrzenia
+efw_airdrop_supply_pod_desc	Awaryjne zasobniki spadochronowe do zaopatrywania okrążonych wojsk i taktycznego wsparcia naziemnego.
+efw_boost_power_system	System doładowania „Zryw”
+efw_boost_power_system_desc	Pomocnicza sprężarka zwiększająca prędkość maksymalną i ciąg przy dużych obciążeniach.
+efw_universal_hardpoint	Uniwersalny węzeł uzbrojenia specjalnego
+efw_universal_hardpoint_desc	Wielozadaniowy węzeł podskrzydłowy: bomby do wsparcia bezpośredniego, dodatkowy ogień do walki o przewagę albo torpedy i ładunki do misji morskich.
+efw_plywood_frame_module	Płatowiec ze sklejki i tkaniny
+efw_plywood_frame_module_desc	Zastępuje deficytowe aluminium klejoną sklejką i impregnowaną tkaniną. Drastycznie obniża koszt i masę, daje znakomitą zwrotność kosztem kruchości.
+efw_overboost_compressor_module	Ręcznie robiona sprężarka „Overboost”
+efw_overboost_compressor_module_desc	Podkręca silnik wtryskiem alkoholu pod wysokim ciśnieniem. Daje ogromny ciąg (+8 ciągu) i prędkość kosztem silnego zużycia.
+efw_improvised_bomb_rack_module	Improwizowany wyrzutnik bomb i odłamków
+efw_improvised_bomb_rack_module_desc	Podskrzydłowe wyrzutniki na pociski moździerzowe i amunicję kasetową. Pozwala lekkim samolotom zapewniać niszczycielskie wsparcie bezpośrednie (+6 ataku naziemnego).
+efw_infantry_mg_pod_module	Zasobnik z ciężkim KM piechoty
+efw_infantry_mg_pod_module_desc	Ciężkie karabiny maszynowe piechoty w zasobnikach skrzydłowych. Zmienia tanie samoloty w groźne myśliwce przechwytujące w walce kołowej (+8 ataku powietrznego).
+efw_paper_drop_tank_module	Zrzucane zbiorniki z prasowanego papieru
+efw_paper_drop_tank_module_desc	Jednorazowe zbiorniki z lakierowanej masy papierowej i taniej żywicy. Ogromny zasięg prawie za darmo, ale po trafieniu duże ryzyko pożaru.
+efw_stripped_cockpit_module	Odchudzona kabina i celownik pierścieniowy
+efw_stripped_cockpit_module_desc	Usunięto pancerz kabiny, ogrzewanie i ciężkie przyrządy – zostaje otwarta osłona i prosty celownik pierścieniowy. Oszczędza masę i poprawia strzelanie, ale pilot jest zupełnie odsłonięty.
+efw_wooden_boost_airframe	Drewniany płatowiec i sprężarka „Overboost”
+efw_wooden_boost_airframe_desc	Lekka jak piórko sklejka zamiast stopów metali i doładowany silnik. Obniża koszt i masę, z umiarkowanym zyskiem prędkości i ciągu (+5 ciągu). Każda kopia kosztuje 6% niezawodności i 8% obrony powietrznej, ale kary rosną łagodnie: dwie lub trzy kopie nadal się sprawdzają i mocno obniżają koszt samolotu.
+efw_improvised_drop_tank	Dodatkowy zbiornik zrzucany z prasowanego papieru
+efw_improvised_drop_tank_desc	Jednorazowy zbiornik z lakierowanej masy papierowej i taniej żywicy. Znacznie zwiększa zasięg (+300 km) za grosze, ale jest bardzo łatwopalny.
+efw_multirole_combat_rack	Polowy wielozadaniowy stojak uzbrojenia
+efw_multirole_combat_rack_desc	Kompaktowy stojak polowy zmienia każdy płatowiec w skromny samolot wielozadaniowy: +2 ataku powietrznego, +2 ataku naziemnego, +2 bombardowania strategicznego, +2 ataku na okręty i +2 namierzania okrętów. Odblokowuje też misje przewagi powietrznej, przechwytywania, wsparcia bezpośredniego, ataku na logistykę, ataków na okręty, patroli morskich, ataku na port i bombardowania strategicznego. Dodatkowy opór kosztuje 15 prędkości maksymalnej i 1,5 zwrotności, ale moduł się kumuluje: premie i kary się sumują.
+efw_cast_iron_stove_armor	Improwizowany pancerz „Kuchnia polowa”
+efw_cast_iron_stove_armor_desc	Ciężka żeliwna płyta albo pokrywa włazu pod fotelem pilota. Solidna ochrona balistyczna (+7 obrony), ale wyraźnie obciąża płatowiec (+4 masy) i lekko zmniejsza prędkość i zasięg.
+efw_bazooka_charlie_tubes	Wyrzutnie rakiet „Bazooka Charlie”
+efw_bazooka_charlie_tubes_desc	Bateria ręcznie spawanych piechotnych wyrzutni rakiet pod zastrzałami skrzydeł. Niszczycielskie salwy przeciw dywizjom pancernym i celom morskim (+8 ataku naziemnego), ale wysoki koszt i masa wyraźnie pogarszają zwrotność i obronę.
