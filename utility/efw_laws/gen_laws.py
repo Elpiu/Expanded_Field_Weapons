@@ -1,6 +1,6 @@
 """Generate EFW politics-panel law categories from laws_data.py.
 
-usage: gen_laws.py <mod_dir> <blp_dir> <vanilla_dir>
+usage: gen_laws.py <mod_dir> <icon_src_dir> <vanilla_dir>
 """
 import re
 import shutil
@@ -13,7 +13,7 @@ from laws_data import CATEGORIES, PICS
 from dds_tool import read_dds, write_dds
 from blobs import find_blobs
 
-mod, blp, van = (Path(a) for a in sys.argv[1:4])
+mod, src, van = (Path(a) for a in sys.argv[1:4])
 errors = []
 SLOT_COSTS = [50] * 5 + [100] * 3
 
@@ -44,8 +44,8 @@ for cat in CATEGORIES:
                 if m not in known and not re.fullmatch(r'production_speed_[a-z_]+_factor', m):
                     errors.append(f'{lid}: unknown modifier {m}')
 for pic in used_pics:
-    if not (blp / 'gfx/interface/ideas' / PICS[pic]).exists():
-        errors.append('missing BLP texture ' + PICS[pic])
+    if not (src / 'gfx/interface/ideas' / PICS[pic]).exists():
+        errors.append('missing source texture ' + PICS[pic])
 if errors:
     print('\n'.join(errors))
     sys.exit(1)
@@ -62,7 +62,7 @@ def write_text(path, text, bom=False):
 
 
 HEADER = ('# Generated from laws_data.py - EFW politics-panel laws.\n'
-          '# Concepts and icons adapted from Better Laws and Policies (Workshop 3097661966).\n')
+          '# Icons from the Ultimate HOI4 GFX pack (github.com/Globvs/Ultimate-HOI4-GFX), free to use.\n')
 
 # ---------------------------------------------------------------- idea_tags
 out = [HEADER, 'idea_categories = {\n']
@@ -107,11 +107,11 @@ pic_dir.mkdir(parents=True)
 slot_dir.mkdir(parents=True, exist_ok=True)
 out = [HEADER, 'spriteTypes = {\n']
 for pic in sorted(used_pics):
-    shutil.copyfile(blp / 'gfx/interface/ideas' / PICS[pic], pic_dir / f'efw_law_{pic}.dds')
+    shutil.copyfile(src / 'gfx/interface/ideas' / PICS[pic], pic_dir / f'efw_law_{pic}.dds')
     out.append(f'\n    spriteType = {{\n        name = "GFX_idea_efw_law_{pic}"\n'
                f'        texturefile = "gfx/interface/ideas/efw_laws/efw_law_{pic}.dds"\n    }}\n')
 for cat in CATEGORIES:
-    shutil.copyfile(blp / 'gfx/interface' / cat['slot_icon'], slot_dir / cat['slot_icon'].lower())
+    shutil.copyfile(src / 'gfx/interface' / cat['slot_icon'], slot_dir / cat['slot_icon'].lower())
     for slot in cat['slots']:
         out.append(f'\n    spriteType = {{\n        name = "GFX_idea_slot_{slot["id"]}"\n'
                    f'        texturefile = "gfx/interface/efw_idea_slots/{cat["slot_icon"].lower()}"\n    }}\n')
@@ -124,7 +124,7 @@ write_text(mod / 'interface/efw_policy_laws.gfx', ''.join(out))
 FW, NFRAMES = 48, 20
 vw, vh, vpx = read_dds(str(van / 'gfx/interface/idea_categories.dds'))
 assert (vw, vh) == (6 * FW, 33), (vw, vh)
-bw, bh, bpx = read_dds(str(blp / 'gfx/interface/idea_categories.dds'))
+bw, bh, bpx = read_dds(str(src / 'gfx/interface/idea_categories.dds'))
 blobs = find_blobs(bpx, bw, bh)
 strip = [[(0, 0, 0, 0)] * (FW * NFRAMES) for _ in range(vh)]
 
@@ -144,7 +144,7 @@ for f in range(6, 14):
     for y in range(vh):
         strip[y][f * FW:(f + 1) * FW] = vpx[y][4 * FW:5 * FW]
 for i, cat in enumerate(CATEGORIES):
-    a, b = blobs[cat['blp_blob']]
+    a, b = blobs[cat['src_blob']]
     assert b - a + 1 <= FW
     put_frame(14 + i, bpx, a, b)
 (mod / 'gfx/interface').mkdir(parents=True, exist_ok=True)

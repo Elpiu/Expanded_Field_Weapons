@@ -28,3 +28,17 @@
  efw_gun_truck_battalion:0 "Batteria Autocannoni"
  efw_gun_truck_battalion_desc:0 "Cannoni anticarro montati su furgoni. Artiglieria di linea veloce come la fanteria motorizzata, con buona perforazione e nessuna protezione. Usa gli Autocannoni Improvvisati EFW."
  efw_gun_truck_unlock:0 "EFW: Autocannoni Improvvisati"
+
+ # === TRASPORTI AEREI IMPROVVISATI ===
+ efw_wooden_transport_equipment:0 "Trasporti in Legno"
+ efw_wooden_transport_equipment_desc:0 "Compensato, tela e un motore che ha visto giorni migliori. Porta paracadutisti e casse di rifornimenti a meno della metà del prezzo di un trasporto vero, senza alluminio. Meno affidabile e, se lo colpiscono, si sbriciola: serve la superiorità aerea."
+ efw_wooden_transport_equipment_1:0 "Trasporto in Legno EFW"
+ efw_wooden_transport_equipment_1_short:0 "Trasporto in Legno"
+ efw_wooden_transport_equipment_1_desc:0 "Compensato, tela e un motore che ha visto giorni migliori. Porta paracadutisti e casse di rifornimenti a meno della metà del prezzo di un trasporto vero, senza alluminio. Meno affidabile e, se lo colpiscono, si sbriciola: serve la superiorità aerea."
+ efw_wooden_transport:0 "Trasporti in Legno"
+ efw_wooden_transport_desc:0 "Stormo di Trasporti in Legno EFW: lancio di paracadutisti e rifornimento aereo."
+ efw_air_transport_unlock:0 "EFW: Trasporti Aerei Improvvisati"
+
+ # === PARACADUTISTI DI MILIZIA ===
+ efw_militia_paratrooper:0 "Paracadutisti di Milizia"
+ efw_militia_paratrooper_desc:0 "Volontari con due settimane di corso e un paracadute piegato da qualcun altro. Non sono forze speciali, quindi se ne possono addestrare quanti se ne vuole. Più deboli dei paracadutisti veri, ma molto più leggeri: servono circa un terzo di aerei in meno per lanciarli."

@@ -170,5 +170,6 @@ country_event = {
             }
             set_country_flag = efw_improvised_naval_v04_created
         }
+
     }
 }

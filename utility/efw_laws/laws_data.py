@@ -7,7 +7,7 @@ Every law mixes bonuses and maluses. There is no default law: slots start empty.
 The politics panel shows at most 6 slots per row.
 """
 
-# picture -> BLP texture path (relative to gfx/interface/ideas/)
+# picture -> source texture path (relative to gfx/interface/ideas/)
 L = 'laws/'
 PICS = {
     'mixed_market': L + 'economic_policies/ep_economic_model/_mixed_market.dds',
@@ -142,7 +142,7 @@ ST40 = 'has_stability > 0.39'
 CATEGORIES = [
     {
         'id': 'efw_economy_policies',
-        'blp_blob': 18,
+        'src_blob': 18,
         'slot_icon': 'Idea_slot_economy.dds',
         'it': ('Economia e Finanza',
                'Tasse, commercio, industria, capitali, sussidi e risorse: come il paese produce e paga.'),
@@ -327,7 +327,7 @@ CATEGORIES = [
     },
     {
         'id': 'efw_society_policies',
-        'blp_blob': 22,
+        'src_blob': 22,
         'slot_icon': 'idea_slot_internal_policies.dds',
         'it': ('Società e Ordine Interno',
                'Lavoro, stampa, ordine pubblico, scuola, popolazione e difesa civile: il fronte interno.'),
@@ -512,7 +512,7 @@ CATEGORIES = [
     },
     {
         'id': 'efw_military_policies',
-        'blp_blob': 21,
+        'src_blob': 21,
         'slot_icon': 'idea_slot_high_command.dds',
         'it': ('Esercito e Stato Maggiore',
                "Comando, reclutamento, logistica, armi da campo, sanità e dottrina: come combatte l'esercito."),
@@ -697,7 +697,7 @@ CATEGORIES = [
     },
     {
         'id': 'efw_navy_air_policies',
-        'blp_blob': 20,
+        'src_blob': 20,
         'slot_icon': 'idea_slot_army.dds',
         'it': ('Marina, Aviazione e Servizi',
                "Flotta, convogli, caccia, aviazione d'appoggio, servizi segreti e operazioni all'estero."),

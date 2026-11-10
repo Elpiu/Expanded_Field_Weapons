@@ -15,6 +15,9 @@ sub_units = {
         priority = 0
         ai_priority = 3
 
+        # Paracadutabile: le divisioni aviotrasportate possono avere le MG EFW.
+        can_be_parachuted = yes
+
         active = no
 
         type = {

@@ -15,7 +15,13 @@ Tutte le modifiche rilevanti di Expanded Field Weapons. Le versioni seguono `MAG
   - **Carro Veloce EFW** e Battaglione Carri Veloci: mini carro economico, corazza 12, buono contro la fanteria senza anticarro.
   - **Moto Mitragliera EFW** e Compagnia Motociclisti Mitraglieri: ricognizione economica che dà +5% attacco a tutta la fanteria della divisione.
   - **Autocannone Improvvisato EFW** e Batteria Autocannoni: artiglieria e anticarro su camion, veloce e senza corazza.
-- **Traduzioni**: russo, tedesco, polacco e cinese semplificato (888 testi per lingua, tutta la mod).
+- **Aviotrasporto improvvisato** (l'IA non lo usa):
+  - **Trasporto in Legno EFW**: versione rudimentale del trasporto vanilla, dal primo giorno per tutti. 16 IC invece di 38, niente alluminio, affidabilità 55%. Lancio di paracadutisti e rifornimento aereo.
+  - **Trasporto vanilla** disponibile dal primo giorno per il giocatore, anche con le nazioni minori.
+  - **Paracadutisti di Milizia**: battaglione paracadutabile non d'élite, fuori dal limite delle forze speciali.
+  - La compagnia MG EFW ora è paracadutabile.
+  - Minimo di trasporti per un lancio abbassato da 50 a **25** (`common/defines/zzz_efw_gameplay_defines.lua`, vale per tutti i paesi).
+- **Traduzioni**: russo, tedesco, polacco e cinese semplificato (898 testi per lingua, tutta la mod).
 - **Nuove icone** per i 4 edifici strategici: megafono, ingranaggio con martello, scudo con cassa, beuta.
 
 ### ⚖️ Bilanciamento
@@ -33,21 +39,26 @@ Tutte le modifiche rilevanti di Expanded Field Weapons. Le versioni seguono `MAG
 - Centro Logistico: il "−12% attrito" non aveva effetto (modificatore non valido negli edifici). Sostituito.
 - Le icone dei 4 edifici strategici erano scambiate (la Propaganda mostrava le rotaie).
 - Lettore DDS degli script di sviluppo: corretta l'interpolazione dell'alpha DXT5.
+- Rastrelliera Polivalente da Campo: tolto il tipo "bombardiere strategico", che l'airframe piccolo non accetta e quindi non aveva effetto.
 
 ### 🧹 Pulizia
 - Aggiunto `.gitignore`. Rimossi `__pycache__`, `OLD_thumbnail.png`, le icone `OLD_divisions_large`, l'evento di test e un file segnaposto.
 - Il README è stato riscritto con immagini, indice e tabelle.
+- Nuova copertina in inglese con versione, funzionalità principali e lingue supportate.
 
 ### 🧩 Compatibilità
 - La strip delle icone degli edifici passa da 40 a **44 frame** (`interface/countrystateview.gfx`). Le mod che modificano la stessa strip restano incompatibili.
-- Nuovi file: `common/scripted_effects/efw_scripted_effects.txt`, `common/units/efw_light_vehicle_units.txt`, `common/units/equipment/efw_light_vehicles.txt`, `common/technologies/efw_hidden_vehicle_unlocks.txt`, le Vocazioni (`common/ideas`, `common/decisions`) e le cartelle di localizzazione `russian`, `german`, `polish`, `simp_chinese`.
+- Nuovi file: `common/scripted_effects/efw_scripted_effects.txt`, `common/units/efw_light_vehicle_units.txt`, `common/units/equipment/efw_light_vehicles.txt`, `common/technologies/efw_hidden_vehicle_unlocks.txt`, `common/units/equipment/efw_air_transport.txt`, `common/units/efw_airborne_units.txt`, `common/defines/zzz_efw_gameplay_defines.lua`, le Vocazioni (`common/ideas`, `common/decisions`) e le cartelle di localizzazione `russian`, `german`, `polish`, `simp_chinese`.
+- `common/defines/zzz_efw_gameplay_defines.lua` cambia un define globale (`MIN_PLANE_COUNT_PARADROP`): le mod che modificano lo stesso valore possono sovrascriverlo, o essere sovrascritte, a seconda dell'ordine di caricamento.
 - Rimossi: `common/on_actions/efw_improvised_air_tank_on_actions.txt`, `common/on_actions/efw_improvised_naval_on_actions.txt`, `events/efw_test_events.txt`.
 
 ### 🛠️ Strumenti di sviluppo
 - `utility/efw_translations/build_translations.py`: costruisce le traduzioni dai file TSV e controlla che codici colore, variabili e a capo siano intatti.
 - `utility/efw_building_icons/make_building_icons.py`: disegna le icone degli edifici strategici.
 - `utility/efw_vehicle_icons/make_gun_truck_icon.py`: genera l'icona dell'Autocannone.
+- `utility/efw_vehicle_icons/make_transport_icons.py`: genera l'icona del Trasporto in Legno.
 - `utility/make_readme_images.py`: converte le icone DDS nelle immagini del README.
+- `utility/efw_thumbnail/make_thumbnail.py`: compone la copertina (titolo, versione, funzionalità, lingue) sopra l'illustrazione `thumbnail_new.jpg`. Richiede Pillow.
 
 ---
 
@@ -64,7 +75,7 @@ Tutte le modifiche rilevanti di Expanded Field Weapons. Le versioni seguono `MAG
 
 ## English summary — v1.3.0
 
-- **New:** National Vocations (5 paths × 3 tiers, huge bonuses with drawbacks), welcome event with a starting gift, three improvised light vehicles available from day one (Tankette, MG Motorcycle, Gun Truck), translations into Russian, German, Polish and Simplified Chinese, new icons for the four strategic buildings.
+- **New:** National Vocations (5 paths × 3 tiers, huge bonuses with drawbacks), welcome event with a starting gift, three improvised light vehicles available from day one (Tankette, MG Motorcycle, Gun Truck), early airborne warfare (16 IC Wooden Transport, vanilla transport for the player from day one, non-elite Militia Paratroopers), translations into Russian, German, Polish and Simplified Chinese, new icons for the four strategic buildings.
 - **Balance:** stronger Wheat Fields (−1% consumer goods per state, plus stability, population growth, supply and manpower); Propaganda Center and Logistics Center reworked.
 - **Performance:** no more daily scripts; weekly technology sync that switches itself off; one-time hidden initialization events.
 - **Fixes:** two building modifiers that had no effect, swapped strategic building icons, DDS alpha decoding in the dev tools.

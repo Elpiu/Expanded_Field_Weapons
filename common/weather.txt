@@ -1,6 +1,6 @@
 # EFW: copia del weather.txt vanilla 1.19 senza particelle meteo 3D (pioggia, temporali,
-# neve, bufere) ne effetto fango visivo. Ottimizzazione FPS adattata da FPS BOOSTER
-# (Workshop 3765424442). La neve al suolo NON e stata toccata: resta gameplay vanilla.
+# neve, bufere) ne effetto fango visivo, per l'ottimizzazione FPS.
+# La neve al suolo NON e stata toccata: resta gameplay vanilla.
 
 # How the terrain affects the probability of elements.
 # In all elements "value" is treated as chance increase.

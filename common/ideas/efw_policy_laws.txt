@@ -1,5 +1,5 @@
 # Generated from laws_data.py - EFW politics-panel laws.
-# Concepts and icons adapted from Better Laws and Policies (Workshop 3097661966).
+# Icons from the Ultimate HOI4 GFX pack (github.com/Globvs/Ultimate-HOI4-GFX), free to use.
 # No default law: slots start empty and only the player fills them (ai_will_do = 0).
 # Each slot: 5 laws at 50 PP, then 3 slightly stronger laws at 100 PP.
 

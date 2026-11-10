@@ -29,6 +29,7 @@ Early-game economic decisions allow countries to accelerate industrialization th
 - Integration with vanilla Support Weapons technologies
 - Improvised naval designs and modules
 - Improvised light vehicles: Tankette, Machine-Gun Motorcycle and Gun Truck (no tank designer needed)
+- Early airborne warfare from day one: 16 IC Wooden Transport (paradrops and air supply), vanilla transport plane for the player even as a minor nation, non-elite Militia Paratroopers; paradrops need only 25 transport planes instead of 50
 - EFW Wooden Fighter and improvised aircraft modules
 - Custom icons for every EFW unit and designer module
 - Four strategic national buildings
@@ -64,19 +65,13 @@ Some improvised vehicles and designer-based equipment may also require the relev
 
 ### Compatibility
 
-EFW replaces the vanilla state view (`countrystateview.gui`), the building icon strip and its sprite definition. Mods that change the state view or the building icons (for example Resource Plants) are not compatible with this part of EFW.
+EFW replaces the vanilla state view (`countrystateview.gui`), the building icon strip and its sprite definition. Mods that change the state view or the building icons are not compatible with this part of EFW.
 
-EFW also replaces the politics-panel section icons (`GFX_idea_categories`), the weather file (`common/weather.txt`) and adds its own graphics/AI defines. Mods that add their own law sections (for example Better Laws and Policies) or change these files may conflict.
+EFW also replaces the politics-panel section icons (`GFX_idea_categories`), the weather file (`common/weather.txt`) and adds its own graphics/AI defines. Mods that add their own law sections or change these files may conflict.
 
-The resource buildings are based on the **Resource Plants** mod (Workshop 3513657215).
+The Rapid Invasions option uses country modifiers instead of defines, so it only applies to the player who enables it.
 
-The Rapid Invasions option is based on the **Invasions** mod (Workshop 3709777606). It uses country modifiers instead of defines, so it only applies to the player who enables it.
-
-The politics-panel laws are inspired by **Better Laws and Policies** (Workshop 3097661966) and reuse its law icons.
-
-The generic designers are based on **Designers Extend** (Workshop 2742251002), updated to the 1.19 airframes. Disable the original mod when using EFW.
-
-The FPS optimisation is based on **FPS BOOSTER** (Workshop 3765424442), corrected for the 1.19 define tables.
+The politics-panel law icons come from the free **Ultimate HOI4 GFX** pack (github.com/Globvs/Ultimate-HOI4-GFX).
 
 ---
 
@@ -86,7 +81,7 @@ The mod is still under active development and balance values may change based on
 
 ### Changelog — v1.3.0
 
-- **New:** National Vocations, welcome event, Tankette / MG Motorcycle / Gun Truck available from day one, Russian, German, Polish and Simplified Chinese translations, new strategic building icons.
+- **New:** National Vocations, welcome event, Tankette / MG Motorcycle / Gun Truck available from day one, early paradrops with wooden transports and Militia Paratroopers, Russian, German, Polish and Simplified Chinese translations, new strategic building icons.
 - **Balance:** stronger Wheat Fields; Propaganda Center and Logistics Center reworked.
 - **Performance:** no daily scripts anymore; weekly technology sync that switches itself off.
 - **Fixes:** two building modifiers that had no effect, swapped strategic building icons.

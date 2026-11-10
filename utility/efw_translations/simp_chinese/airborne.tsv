@@ -1,0 +1,11 @@
+# 空运与民兵伞兵
+efw_wooden_transport_equipment	木质运输机
+efw_wooden_transport_equipment_desc	胶合板、帆布，再加一台早已过了巅峰期的发动机。以不到真正运输机一半的价格运送伞兵和补给箱，而且不用铝。可靠性较低，一旦中弹就会散架：必须掌握制空权。
+efw_wooden_transport_equipment_1	EFW木质运输机
+efw_wooden_transport_equipment_1_short	木质运输机
+efw_wooden_transport_equipment_1_desc	胶合板、帆布，再加一台早已过了巅峰期的发动机。以不到真正运输机一半的价格运送伞兵和补给箱，而且不用铝。可靠性较低，一旦中弹就会散架：必须掌握制空权。
+efw_wooden_transport	木质运输机
+efw_wooden_transport_desc	EFW木质运输机联队：空降和空中补给。
+efw_air_transport_unlock	EFW：简易空运
+efw_militia_paratrooper	民兵伞兵
+efw_militia_paratrooper_desc	上过两周课程、背着别人叠好的降落伞的志愿者。他们不是特种部队，想训练多少就训练多少。比正规伞兵弱，但轻得多：空降所需的飞机大约少三分之一。

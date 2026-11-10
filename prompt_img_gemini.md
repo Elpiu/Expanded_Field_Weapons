@@ -30,3 +30,40 @@ A weathered military utility belt/bandolier, acting as a backdrop layout element
 3. A crude "Jam Tin Grenade" (a recycled food tin can filled with explosives, sealed with a visible fuse sticking out of the top).
 
 Rendered with a soft drop shadow effect under the main rifle to separate the layers clearly. Illustrative, slightly gritty, hand-painted technical archive style typical of Hearts of Iron IV equipment icons. Asset only, centered, no environment. Clean, completely solid uniform neutral light sepia-parchment background, no gradients, no ground line. Sharp outline, no text, no nation markings, no people.
+
+==
+COPERTINA DELLA MOD (thumbnail.png, v1.3.0)
+==
+
+Formato finale: 16:9 (512x279 nel file della mod), sotto 1 MB. Generare grande e poi ridimensionare.
+Se Gemini rifiuta ancora: usare la variante C (niente paracadute né cannone) o togliere una riga alla volta.
+
+--
+Variante A - solo illustrazione (consigliata)
+
+Widescreen 16:9 painted illustration in a vintage 1930s style, warm sepia and olive colours, soft golden light, cloudy sky.
+A wooden propeller cargo plane made of plywood and canvas flies across the sky, dropping supply crates with round parachutes.
+On a country dirt road below: a tiny riveted tin tankette, an old open truck carrying a small cannon tied down with ropes, and a motorcycle with a sidecar.
+Rolling hills and a small town with a factory chimney in the background.
+Charming, slightly rough hand-made look, like everything was built in a village workshop.
+Keep the upper-left area as empty sky. No people, no text, no logos, no flags.
+
+--
+Variante B - con titolo
+
+Same picture as Variant A. In the empty upper-left sky, a large title in old stencil letters, off-white:
+"EXPANDED FIELD WEAPONS"
+No other text.
+
+--
+Variante C - più leggera (se A viene rifiutata)
+
+Widescreen 16:9 vintage painted illustration, sepia and olive colours.
+A small wooden propeller plane in the sky and, on a dirt road below, a tiny tin tank, an old truck and a motorcycle with a sidecar, all looking hand-made from scrap wood and metal.
+Countryside with hills, warm light, empty sky in the upper left. No people, no text.
+
+--
+Dopo la generazione
+- Variante A o C: aggiungere a mano il titolo "EXPANDED FIELD WEAPONS" in alto a sinistra.
+- Opzionale: bandierine delle lingue (EN RU DE PL CN) piccole in basso a destra.
+- Ridimensionare a 512x279, salvare come thumbnail.png (sotto 1 MB) nella root della mod.

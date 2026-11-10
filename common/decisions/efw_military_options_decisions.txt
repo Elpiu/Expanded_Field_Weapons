@@ -1,8 +1,8 @@
 # ============================================================================
 # EFW - INVASIONI RAPIDE (interruttore)
-# Basato sui define di "Invasions" (Workshop 3709777606). I define sono statici
-# e non si possono attivare in partita, quindi l'effetto e riprodotto con i
-# modificatori nazionali dell'idea efw_rapid_invasions_idea.
+# I define delle invasioni sono statici e non si possono attivare in partita,
+# quindi l'effetto e ottenuto con i modificatori nazionali dell'idea
+# efw_rapid_invasions_idea.
 # Le due decisioni si alternano: gratuite e ripetibili.
 # ============================================================================
 

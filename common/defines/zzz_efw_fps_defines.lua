@@ -1,6 +1,6 @@
 -- ============================================================================
 -- EFW - OTTIMIZZAZIONE FPS
--- Valori adattati da "FPS BOOSTER" (Workshop 3765424442), corretti per 1.19:
+-- Define per la 1.19. Note sulle tabelle:
 --  * i define grafici stanno in NDefines_Graphics (NDefines.NGraphics non esiste
 --    e manderebbe in errore tutto il file Lua);
 --  * EVENT_PROCESS_OFFSET sta in NCountry, i *_DIVISION_FACTOR in NAirGfx,

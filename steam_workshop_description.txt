@@ -1,0 +1,84 @@
+[h1]Expanded Field Weapons[/h1]
+[i]When you can't afford the best, build the rest.[/i]
+
+Expanded Field Weapons (EFW) adds new field equipment, improvised vehicles, early airborne warfare, new buildings, laws and national strategies to Hearts of Iron IV, while keeping the vanilla systems at the center of the experience. Most content is designed for the player: [b]the AI keeps playing like vanilla[/b].
+
+[h2]What's new in 1.3.0[/h2]
+[list]
+[*][b]National Vocations[/b]: pick one national path and push it to tier three for huge bonuses, up to +40% research
+[*][b]Improvised vehicles[/b] from day one: Tankette, MG Motorcycle and Gun Truck
+[*][b]Early paradrops[/b]: cheap Wooden Transports, non-elite Militia Paratroopers, only 25 planes needed
+[*][b]Welcome event[/b] with a starting gift
+[*][b]Translations[/b]: Russian, German, Polish and Simplified Chinese
+[*]New strategic building icons, stronger Wheat Fields, lighter scripts (no more daily checks)
+[/list]
+
+[h2]Field weapons and units[/h2]
+[list]
+[*]Machine Guns, Mortars and Infantry Anti-Tank Weapons as separate production lines, unlocked by [b]Support Weapons I[/b]
+[*]Machine Gun, Mortar and Anti-Tank support companies, plus a Heavy Weapons line battalion
+[*]Later Support Weapons and Infantry AT research improves all of them
+[/list]
+
+[h2]Improvised gear[/h2]
+[list]
+[*][b]Pipe-Gun Rifle[/b]: ultra-cheap, zero-resource rifle for garrisons, last stands and minor nations
+[*][b]Tankette[/b]: a quarter of the cost of a light tank battalion, armour 12, great against infantry without AT
+[*][b]MG Motorcycle[/b]: cheap recon that gives +5% attack to the whole division's infantry
+[*][b]Gun Truck[/b]: an anti-tank gun tied to a truck. Fast artillery and AT, no armour
+[*][b]Wooden Fighter[/b] and improvised air modules: plywood frame, pressed-paper drop tanks, "field stove" armour, "Bazooka Charlie" rockets
+[*][b]Improvised ships[/b]: motorboat, one-man midget submarine, sails and careened hulls
+[/list]
+No tank designer needed: the vehicles work with or without DLC.
+
+[h2]Early airborne warfare[/h2]
+[list]
+[*][b]Wooden Transport[/b]: a rudimentary transport plane, 16 IC instead of 38, no aluminium. Paradrops and air supply
+[*][b]Vanilla transport plane[/b] available to the player from day one, even as a minor nation
+[*][b]Militia Paratroopers[/b]: not special forces, so you can train as many as you want
+[*]Paradrops need only [b]25 transport planes[/b] instead of 50
+[/list]
+
+[h2]National strategy[/h2]
+[list]
+[*][b]National Vocations[/b]: Republic of Scientists, Workshop of the Nation, Nation in Arms, Lords of the Sea, Art of Making Do. Each tier needs EFW buildings and matching laws
+[*][b]192 new laws[/b] in 4 new politics-panel sections: every law mixes bonuses and drawbacks
+[*][b]21 generic designers[/b] and [b]8 political advisors[/b] for every country
+[*][b]Economic decisions[/b]: two-phase industrial plan, grand public works, emergency naval programme, fuel autarky, social pact, national bonds, economic coordination and full National Mobilization
+[/list]
+
+[h2]New buildings[/h2]
+[list]
+[*]4 strategic buildings: Propaganda Center, Labour Directorate, Research Center, Logistics Center
+[*]7 resource buildings (steel, oil, rubber, aluminium, tungsten, chromium, coal) without building slots
+[*]Public Housing and Wheat Fields (food autarky: -1% consumer goods per state)
+[*]Enlarged state view so every building stays visible
+[/list]
+
+[h2]Performance[/h2]
+[list]
+[*]Built-in FPS optimisation: no shadows, trees, water refraction or 3D weather particles, shorter logs, less frequent AI recalculation. Ground snow and weather effects on combat are unchanged
+[*]EFW's own scripts run weekly and switch themselves off once everything is unlocked
+[*]Optional [b]Rapid Invasions[/b]: switch naval and airborne invasion limits off with a decision, player only
+[/list]
+
+[h2]Languages[/h2]
+English, Russian, German, Polish, Simplified Chinese. Italian text is included for players using an Italian translation mod.
+Found a translation mistake? Tell us in the comments.
+
+[h2]Good to know[/h2]
+[list]
+[*][b]Start a new game[/b] after this update
+[*]Pipe-Gun, Tankette, MG Motorcycle, Gun Truck, Wooden Transport and Militia Paratroopers are available from day one
+[*]The Wooden Fighter and improvised ships appear 1-2 in-game days after the start
+[*]Machine Guns, Mortars and AT weapons unlock within one in-game week after researching Support Weapons I
+[/list]
+
+[h2]Compatibility[/h2]
+Designed for [b]HOI4 1.19.x[/b]. EFW replaces the state view, the building icon strip, the politics-panel section icons and the weather file. Mods that change the same files (for example other law-section or building-icon mods) are not compatible with those parts of EFW. Other generic-designer mods may show duplicate designers.
+
+Law icons from the free [url=https://github.com/Globvs/Ultimate-HOI4-GFX]Ultimate HOI4 GFX[/url] pack.
+
+Full changelog and documentation: [url=https://github.com/Elpiu/Expanded_Field_Weapons]GitHub[/url]
+
+[i]EFW is in active development: balance values may change based on testing and feedback.[/i]

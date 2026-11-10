@@ -1,4 +1,4 @@
-# Generic designers adapted from "Designers Extend" (Steam Workshop 2742251002).
+# EFW generic designers: tanks, ships, aircraft, materiel and industrial concerns.
 # EFW changes: efw_ prefix, 1.19 airframe types instead of the old plane equipment,
 # duplicated stats removed. Disable the original mod when using EFW.
 
@@ -169,7 +169,7 @@ ideas = {
 	}
 
 	# =====================================================================
-	# EFW: DESIGNER DI MATERIALE (non presenti in Designers Extend)
+	# EFW: DESIGNER DI MATERIALE
 	# =====================================================================
 	materiel_manufacturer = {
 
@@ -248,7 +248,7 @@ ideas = {
 	}
 
 	# =====================================================================
-	# EFW: CONCESSIONI INDUSTRIALI (non presenti in Designers Extend)
+	# EFW: CONCESSIONI INDUSTRIALI
 	# =====================================================================
 	industrial_concern = {
 

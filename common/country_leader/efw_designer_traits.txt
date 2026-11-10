@@ -1,4 +1,4 @@
-# Generic designers adapted from "Designers Extend" (Steam Workshop 2742251002).
+# EFW generic designers: traits.
 # EFW changes: efw_ prefix, 1.19 airframe types instead of the old plane equipment,
 # duplicated stats removed. Disable the original mod when using EFW.
 

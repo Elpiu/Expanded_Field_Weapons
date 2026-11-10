@@ -31,7 +31,8 @@ Gran parte dei contenuti è pensata per il giocatore umano: l'IA non li usa, cos
 | 📜 [Decisioni](#-mobilitazione-e-investimenti-nazionali) | 📖 [Leggi](#-leggi-nel-pannello-politico) | 👔 [Designer e consiglieri](#-designer-e-consiglieri) |
 | 🎯 [Vocazioni Nazionali](#-vocazioni-nazionali) | 🚢 [Invasioni Rapide](#-opzioni-militari-invasioni-rapide) | ⚡ [FPS e prestazioni](#-ottimizzazione-fps-e-prestazioni) |
 | 👋 [Benvenuto](#-evento-di-benvenuto) | 📦 [Installazione](#-installazione) | 🧩 [Compatibilità](#-compatibilità) |
-| 🛵 [Mezzi leggeri](#-mezzi-leggeri-improvvisati) | 🌍 [Lingue](#-lingue) | 📝 [Changelog](CHANGELOG.md) |
+| 🛵 [Mezzi leggeri](#-mezzi-leggeri-improvvisati) | 🪂 [Aviotrasporto](#-aviotrasporto-improvvisato) | 🌍 [Lingue](#-lingue) |
+| 📝 [Changelog](CHANGELOG.md) | | |
 
 ---
 
@@ -82,6 +83,7 @@ Dettagli in [`BALANCE_V1.2_IT.txt`](BALANCE_V1.2_IT.txt).
 | **Compagnia Supporto Anticarro di Fanteria** | supporto | 20 Armi AT · 180 uomini | Anticarro per la fanteria senza i battaglioni AT vanilla |
 | **Battaglione Armi Pesanti** | linea, width 2 | 60 Fucili + 45 MG + 20 Mortai + 16 AT · 900 uomini | Reparto d'élite costoso ma versatile, per combattimenti prolungati |
 | **Legionari dell'Impero** | linea, width 2, solo giocatore | 150 Fucili + 8 MG · 1500 uomini | Grande battaglione di milizia: ottimo in difesa e repressione, fragile da verde e fortissimo quando è pienamente addestrato (120 giorni) |
+| **Paracadutisti di Milizia** | linea, width 2, paracadutabile | 100 Fucili · 900 uomini | Paracadutisti di massa, non d'élite: fuori dal limite delle forze speciali, peso 0,35. Vedi [Aviotrasporto](#-aviotrasporto-improvvisato) |
 
 Le unità usano i modelli 3D vanilla (`infantry`, `artillery`, `anti_tank`), quindi sulla mappa e in battaglia non compaiono mai "buchi".
 Le compagnie di supporto hanno `priority = 0`, come quelle vanilla, e non decidono il modello della divisione.
@@ -147,6 +149,33 @@ Sono **disponibili dal primo giorno per tutte le nazioni**, come il Pipe-Gun Rif
 
 ---
 
+## 🪂 Aviotrasporto improvvisato
+
+<p align="center"><img src="docs/images/eq_efw_wooden_transport.png" alt="Trasporto in Legno EFW" width="220"></p>
+
+Nel gioco base i lanci di paracadutisti arrivano tardi: le nazioni minori non hanno il trasporto aereo e i paracadutisti d'élite sono limitati dal tetto delle forze speciali. EFW rende possibile un'invasione aerea già nel 1936-37. L'IA non usa questi contenuti.
+
+| Contenuto | Cosa fa |
+|---|---|
+| **Trasporto vanilla per il giocatore** | Il trasporto aereo vanilla è disponibile **dal primo giorno** anche per le nazioni minori, che normalmente non lo hanno a inizio partita |
+| **Trasporto in Legno EFW** | Versione rudimentale del trasporto vanilla, disponibile dal primo giorno per tutti. Lancio di paracadutisti e **rifornimento aereo** |
+| **Paracadutisti di Milizia** | Battaglione paracadutabile **non d'élite**: non conta nel limite delle forze speciali e si può produrre in massa. Più debole (organizzazione 45 invece di 70), addestramento 90 giorni, peso 0,35 |
+| **Compagnia MG EFW** | Ora è paracadutabile, come mortai e anticarro EFW |
+
+| | Trasporto vanilla | Trasporto in Legno EFW |
+|---|---|---|
+| Costo | 38 IC | **16 IC** |
+| Risorse | 3 alluminio, 2 gomma | 1 acciaio, 1 gomma |
+| Affidabilità | 80% | **55%** |
+| Raggio / velocità | 1000 km / 400 | 1000 km / 340 |
+| Agilità / difesa | 10 / 20 | 9 / 16 |
+
+### Quanti aerei servono?
+
+Una divisione si può lanciare solo se **tutti** i suoi battaglioni e compagnie sono paracadutabili. Il gioco chiede un minimo di trasporti nella base di partenza: EFW lo abbassa da 50 a **25** (`MIN_PLANE_COUNT_PARADROP` in `common/defines/zzz_efw_gameplay_defines.lua`, vale per tutti i paesi). Con i Trasporti in Legno fanno circa **400 IC**, contro circa 950 IC di trasporti vanilla. Serve anche il **70% di superiorità aerea** sulla zona di lancio.
+
+---
+
 ## 🪵 Caccia in legno
 
 <img src="docs/images/eq_wooden_plane.png" alt="EFW Wooden Fighter" align="right" width="220">
@@ -195,7 +224,7 @@ Massimo **1 per stato**. I bonus nazionali si sommano, ma Propaganda, Lavoro e R
 
 ### Edifici delle risorse
 
-Basati su **Resource Plants** (Workshop 3513657215): ogni coppia miniera + impianto dell'originale è diventata **un solo edificio per risorsa**.
+**Un solo edificio per risorsa**, con valori a metà tra una piccola miniera e un grande impianto.
 Niente slot di costruzione, massimo 5 livelli per stato (carbone: 10).
 
 | Edificio | Produzione per livello |
@@ -288,7 +317,7 @@ In ogni slot: **5 leggi da 50 PP** con bonus moderati e **3 da 100 PP** più for
 Nessuna legge è gratis, ma la combinazione giusta (per esempio *Industria Pesante + Mobilitazione del Lavoro + Finanza di Guerra*) dà un vantaggio vero.
 
 Gli slot partono vuoti: la prima scelta è tua. Alcune leggi richiedono la guerra o un supporto alla guerra minimo. L'IA non le adotta (`ai_will_do = 0`).
-Ispirate a **Better Laws and Policies** (Workshop 3097661966), di cui riusano le icone.
+Le icone vengono dal pacchetto grafico libero [Ultimate HOI4 GFX](https://github.com/Globvs/Ultimate-HOI4-GFX).
 
 ---
 
@@ -296,7 +325,7 @@ Ispirate a **Better Laws and Policies** (Workshop 3097661966), di cui riusano le
 
 ### 21 designer generici
 
-Nella sezione vanilla **Ricerca e Produzione**, disponibili a tutti i paesi. Adattati da **Designers Extend** (Workshop 2742251002) e aggiornati agli airframe della 1.19, dove i bonus aerei dell'originale non funzionavano più.
+Nella sezione vanilla **Ricerca e Produzione**, disponibili a tutti i paesi. I bonus dei designer aerei usano gli airframe della 1.19.
 
 | Tipo | 500 PP | 1000 PP | 2000 PP |
 |---|---|---|---|
@@ -304,7 +333,7 @@ Nella sezione vanilla **Ricerca e Produzione**, disponibili a tutti i paesi. Ada
 | Navi (ricerca navale +15/20/30%) | Compagnia Siren | Consorzio Leviathan | Poseidon Corporation |
 | Aerei (ricerca aerea +10/20/30%) | Compagnia Insomnia | Consorzio Wardon | Shadow Corporation |
 
-> ⚠️ **Disattiva Designers Extend** se usi EFW, altrimenti i designer compaiono due volte.
+> ⚠️ Altre mod di designer generici possono far comparire designer doppi.
 
 <details>
 <summary><b>6 designer di materiale e 6 concessioni industriali</b></summary>
@@ -364,7 +393,7 @@ L'evento compare una sola volta per paese, anche se cambi nazione a partita in c
 
 ## 🚢 Opzioni Militari: Invasioni Rapide
 
-Basata su **Invasions** (Workshop 3709777606). Una decisione gratuita accende e spegne l'idea **Invasioni Rapide**, che vale **solo per il giocatore**:
+Una decisione gratuita accende e spegne l'idea **Invasioni Rapide**, che vale **solo per il giocatore**:
 
 ```text
 -60 giorni   preparazione invasioni navali          (base 60: nessuna attesa)
@@ -373,14 +402,14 @@ Basata su **Invasions** (Workshop 3709777606). Una decisione gratuita accende e 
 -7 giorni    preparazione invasioni aviotrasportate (base 7)
 ```
 
-L'originale usa i define, fissi e validi per tutti; EFW usa modificatori nazionali, quindi si può spegnere quando si vuole.
-Non inclusi: `PARADROP_HOURS` e `INVASION_REPORT_EXPERATION_DAYS`, che non hanno un modificatore equivalente.
+I define delle invasioni sono fissi e validi per tutti: EFW usa invece modificatori nazionali, quindi l'opzione si può spegnere quando si vuole.
+Restano come in vanilla `PARADROP_HOURS` e `INVASION_REPORT_EXPERATION_DAYS`, che non hanno un modificatore equivalente.
 
 ---
 
 ## ⚡ Ottimizzazione FPS e prestazioni
 
-Adattata da **FPS BOOSTER** (Workshop 3765424442) e corretta per la 1.19:
+Define e meteo alleggeriti, scritti per la 1.19:
 
 ```text
 log e storico   combat log, convogli, guarnigioni e incidenti navali conservati meno a lungo
@@ -416,7 +445,7 @@ Le Vocazioni e le leggi sono decisioni e idee: non costano nulla finché il gioc
 
 Per i pacchetti `MERGE`: copia il contenuto nella root di EFW e scegli **Sovrascrivi**.
 
-> **Nota:** il caccia in legno e le navi improvvisate compaiono dopo **1-2 giorni di gioco**. Pipe-Gun Rifle, Carro Veloce, Moto Mitragliera e Autocannone sono disponibili da subito. Mitragliatrici, mortai e anticarro si sbloccano entro **una settimana** dalla ricerca di **Support Weapons I**.
+> **Nota:** il caccia in legno e le navi improvvisate compaiono dopo **1-2 giorni di gioco**. Pipe-Gun Rifle, Carro Veloce, Moto Mitragliera, Autocannone, Trasporto in Legno e Paracadutisti di Milizia sono disponibili da subito. Mitragliatrici, mortai e anticarro si sbloccano entro **una settimana** dalla ricerca di **Support Weapons I**.
 
 ---
 
@@ -448,8 +477,9 @@ EFW usa ID con prefisso `efw_`, file separati e varianti invece di sostituire co
 | `gfx/interface/buildings/building_icon_strip.dds` | 31 icone vanilla + 13 EFW (9 risorse e civili, 4 strategici disegnati da script) |
 | `interface/zzz_efw_idea_categories.gfx` | icone delle sezioni del pannello politico (frame 15-18) |
 | `common/weather.txt` · `common/defines/zzz_efw_fps_defines.lua` | ottimizzazione FPS |
+| `common/defines/zzz_efw_gameplay_defines.lua` | minimo di trasporti per un lancio di paracadutisti: 25 invece di 50 |
 
-**Incompatibili con queste parti di EFW:** mod che cambiano la vista stato o la strip degli edifici (per esempio *Resource Plants*) e mod che aggiungono categorie di leggi (per esempio *Better Laws and Policies*). Dopo una patch di HOI4 che tocca questi file vanno rigenerati.
+**Incompatibili con queste parti di EFW:** mod che cambiano la vista stato o la strip degli edifici e mod che aggiungono categorie di leggi. Dopo una patch di HOI4 che tocca questi file vanno rigenerati.
 
 ---
 
@@ -474,7 +504,9 @@ La cartella `utility/` contiene script Python non caricati dal gioco:
 utility/efw_laws/gen_laws.py                   genera le leggi da laws_data.py (idea_tags, leggi, icone, localizzazione)
 utility/efw_module_icons/make_module_icons.py  genera le icone dei moduli di aerei e navi
 utility/make_readme_images.py                  converte le icone DDS nei PNG di docs/images/ per questo README
+utility/efw_thumbnail/make_thumbnail.py        compone la copertina sopra l'illustrazione (richiede Pillow)
 utility/efw_vehicle_icons/make_gun_truck_icon.py  genera l'icona del Furgone con Cannone da due icone vanilla
+utility/efw_vehicle_icons/make_transport_icons.py  genera l'icona del Trasporto in Legno ricolorando il trasporto vanilla
 utility/efw_building_icons/make_building_icons.py  disegna le 4 icone degli edifici strategici (frame 41-44 della strip)
 utility/efw_translations/build_translations.py     costruisce le traduzioni dai TSV e controlla codici colore e variabili
 utility/generic_sprite_cropper_v3.py           ritaglio sprite generico
@@ -521,13 +553,7 @@ Segnalazioni e idee: [Issues su GitHub](https://github.com/Elpiu/Expanded_Field_
 
 Sviluppata da **Elpiu** con test iterativi in gioco. Riferimenti: documentazione di modding HOI4, hoi4doc.dev, CWTools.
 
-| Parte di EFW | Mod originale |
-|---|---|
-| Edifici delle risorse | [Resource Plants](https://steamcommunity.com/sharedfiles/filedetails/?id=3513657215) |
-| Invasioni Rapide | [Invasions](https://steamcommunity.com/sharedfiles/filedetails/?id=3709777606) |
-| Leggi del pannello politico e icone | [Better Laws and Policies](https://steamcommunity.com/sharedfiles/filedetails/?id=3097661966) |
-| Designer generici | [Designers Extend](https://steamcommunity.com/sharedfiles/filedetails/?id=2742251002) |
-| Ottimizzazione FPS | [FPS BOOSTER](https://steamcommunity.com/sharedfiles/filedetails/?id=3765424442) |
+Le icone delle leggi, degli slot e delle sezioni del pannello politico vengono dal pacchetto grafico libero [Ultimate HOI4 GFX](https://github.com/Globvs/Ultimate-HOI4-GFX) e dai suoi contributori.
 
 <div align="center">
 <br>

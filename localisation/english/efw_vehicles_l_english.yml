@@ -28,3 +28,17 @@
  efw_gun_truck_battalion:0 "Gun Truck Battery"
  efw_gun_truck_battalion_desc:0 "Anti-tank guns mounted on trucks. Line artillery as fast as motorised infantry, with good piercing and no protection. Uses EFW Improvised Gun Trucks."
  efw_gun_truck_unlock:0 "EFW: Improvised Gun Trucks"
+
+ # === IMPROVISED AIR TRANSPORTS ===
+ efw_wooden_transport_equipment:0 "Wooden Transports"
+ efw_wooden_transport_equipment_desc:0 "Plywood, canvas and an engine that has seen better days. Carries paratroopers and supply crates for less than half the price of a real transport, with no aluminium. Less reliable, and if it gets hit, it falls apart: air superiority is a must."
+ efw_wooden_transport_equipment_1:0 "EFW Wooden Transport"
+ efw_wooden_transport_equipment_1_short:0 "Wooden Transport"
+ efw_wooden_transport_equipment_1_desc:0 "Plywood, canvas and an engine that has seen better days. Carries paratroopers and supply crates for less than half the price of a real transport, with no aluminium. Less reliable, and if it gets hit, it falls apart: air superiority is a must."
+ efw_wooden_transport:0 "Wooden Transports"
+ efw_wooden_transport_desc:0 "A wing of EFW Wooden Transports: paradrops and air supply."
+ efw_air_transport_unlock:0 "EFW: Improvised Air Transports"
+
+ # === MILITIA PARATROOPERS ===
+ efw_militia_paratrooper:0 "Militia Paratroopers"
+ efw_militia_paratrooper_desc:0 "Volunteers with a two-week course and a parachute folded by someone else. They are not special forces, so you can train as many as you like. Weaker than real paratroopers but much lighter: dropping them takes about a third fewer planes."

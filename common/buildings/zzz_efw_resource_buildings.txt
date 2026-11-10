@@ -1,7 +1,7 @@
 # ============================================================================
 # EFW RESOURCE & CIVIL BUILDINGS
-# Based on the "Resource Plants" workshop mod (3513657215): each small/large
-# pair (mine + mill) is merged into a single building with averaged values:
+# One building per resource, with values averaged between a small mine
+# and a large mill:
 #   cost      (1000 + 10000) / 2 = 5500,  per level (2000 + 5000) / 2 = 3500
 #   output    (10 + 50) / 2 = 30
 #   tungsten/chromium: small 10, large 25 (rare earth refinery split) -> 18

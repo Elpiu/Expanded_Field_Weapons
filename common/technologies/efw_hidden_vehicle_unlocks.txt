@@ -33,4 +33,26 @@ technologies = {
         enable_subunits = { efw_gun_truck_battalion }
         ai_will_do = { factor = 0 }
     }
+
+    # Trasporti aerei improvvisati e Paracadutisti di Milizia
+    efw_air_transport_unlock = {
+        research_cost = 1
+        start_year = 1918
+        allow = { always = no }
+        categories = { air_equipment }
+        enable_equipments = { efw_wooden_transport_equipment_1 }
+        enable_subunits = { efw_militia_paratrooper }
+        ai_will_do = { factor = 0 }
+    }
+
+    # Trasporto vanilla per il giocatore (le nazioni minori non lo hanno a inizio partita).
+    # Solo giocatore: l'IA resta come in vanilla.
+    efw_player_transport_unlock = {
+        research_cost = 1
+        start_year = 1918
+        allow = { always = no }
+        categories = { air_equipment }
+        enable_equipments = { transport_plane_equipment_1 }
+        ai_will_do = { factor = 0 }
+    }
 }

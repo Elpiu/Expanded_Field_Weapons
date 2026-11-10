@@ -245,7 +245,7 @@ I `country_modifiers` degli edifici si sommano **per ogni edificio** (uno per st
 - Ogni edificio con bonus nazionali ha un malus a tema: Propaganda -0.5% ricerca, Lavoro -3% crescita popolazione e -0.4% stabilità, Ricerca +0.5% consumer goods.
 - Il Centro Logistico ha solo effetti locali: niente costo crescente né malus.
 
-## Edifici risorse e civili (da "Resource Plants" 3513657215)
+## Edifici risorse e civili
 
 File: `common/buildings/zzz_efw_resource_buildings.txt`.
 

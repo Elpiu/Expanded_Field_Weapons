@@ -3,7 +3,8 @@
 
 # ------------------------------------------------------------------
 # Equipaggiamento improvvisato disponibile dal primo giorno:
-# Pipe-Gun Rifle, Carro Veloce, Moto Mitragliera, Autocannone.
+# Pipe-Gun Rifle, Carro Veloce, Moto Mitragliera, Autocannone,
+# trasporti aerei improvvisati e Paracadutisti di Milizia.
 # ------------------------------------------------------------------
 efw_unlock_improvised_gear = {
     if = {
@@ -22,6 +23,10 @@ efw_unlock_improvised_gear = {
         limit = { NOT = { has_tech = efw_gun_truck_unlock } }
         set_technology = { efw_gun_truck_unlock = 1 popup = no }
     }
+    if = {
+        limit = { NOT = { has_tech = efw_air_transport_unlock } }
+        set_technology = { efw_air_transport_unlock = 1 popup = no }
+    }
 }
 
 # ------------------------------------------------------------------
@@ -39,6 +44,12 @@ efw_player_init = {
 
         # Nazioni nate a partita in corso non ricevono gli sblocchi di on_startup
         efw_unlock_improvised_gear = yes
+
+        # Trasporto vanilla disponibile da subito anche alle nazioni minori
+        if = {
+            limit = { NOT = { has_tech = efw_player_transport_unlock } }
+            set_technology = { efw_player_transport_unlock = 1 popup = no }
+        }
 
         # Il controllo dei Legionari (solo giocatore) va rifatto
         # anche se il paese era IA e aveva già finito la sincronizzazione.

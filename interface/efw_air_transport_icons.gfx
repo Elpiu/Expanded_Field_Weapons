@@ -1,0 +1,42 @@
+# EFW - icone dei trasporti aerei e dei Paracadutisti di Milizia
+# Trasporti: utility/efw_vehicle_icons/make_transport_icons.py (ricolorazione del trasporto vanilla).
+spriteTypes = {
+
+    # Trasporto in Legno (fisso)
+    spriteType = {
+        name = "GFX_efw_wooden_transport_equipment"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_wooden_transport.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_wooden_transport_equipment_medium"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_wooden_transport.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_wooden_transport_equipment_1"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_wooden_transport.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_wooden_transport_equipment_1_medium"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_wooden_transport.dds"
+    }
+
+
+    # Stormo di Trasporti in Legno: icona piccola vanilla del trasporto
+    spriteType = {
+        name = "GFX_unit_efw_wooden_transport_icon_small"
+        texturefile = "gfx/texticons/unit_air_transport_plane_icon_small.dds"
+        legacy_lazy_load = no
+    }
+
+    # Paracadutisti di Milizia: icone vanilla dei paracadutisti
+    spriteType = {
+        name = "GFX_unit_efw_militia_paratrooper_icon_medium"
+        texturefile = "gfx/interface/counters/divisions_large/unit_paratroop_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = "GFX_unit_efw_militia_paratrooper_icon_small"
+        texturefile = "gfx/texticons/unit_paratrooper_icon_small.dds"
+        legacy_lazy_load = no
+    }
+}

@@ -244,7 +244,7 @@ efw_national_mobilization_category = {
 
 
     # ------------------------------------------------------------------------
-    # 5. AUTARCHIA DEL CARBURANTE (idea adattata da Better Laws and Policies)
+    # 5. AUTARCHIA DEL CARBURANTE
     # Costo: 45 PP / 30k manp. Durata 365 giorni, ripetibile a idea scaduta.
     # ------------------------------------------------------------------------
     efw_autarky_fuel_plan = {

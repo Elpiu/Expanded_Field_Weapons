@@ -87,10 +87,11 @@ equipment_modules = {
             strategic_bomber
         }
 
+        # strategic_bomber rimosso: l'airframe piccolo non accetta quel tipo
+        # (allowed_types di small_plane_airframe), quindi non aveva effetto.
         add_equipment_type = {
             cas
             naval_bomber
-            strategic_bomber
         }
 
         xp_cost = 0
