@@ -61,6 +61,7 @@ Tutte le modifiche rilevanti di Expanded Field Weapons. Le versioni seguono `MAG
 - `utility/make_readme_images.py`: converte le icone DDS nelle immagini del README.
 - `utility/efw_thumbnail/make_thumbnail.py`: compone la copertina (titolo, versione, funzionalità, lingue) sopra l'illustrazione `thumbnail_new.jpg`.
 - `pyproject.toml` e `uv.lock`: dipendenze degli script di sviluppo, si installano con `uv sync`.
+- `utility/build_release.py`: crea una copia pulita della mod (solo file del gioco, circa 7 MB) da caricare sul Workshop.
 
 ---
 

@@ -532,6 +532,7 @@ utility/efw_laws/gen_laws.py                   genera le leggi da laws_data.py (
 utility/efw_module_icons/make_module_icons.py  genera le icone dei moduli di aerei e navi
 utility/make_readme_images.py                  converte le icone DDS nei PNG di docs/images/ per questo README
 utility/efw_thumbnail/make_thumbnail.py        compone la copertina sopra l'illustrazione
+utility/build_release.py                       crea la copia pulita della mod da pubblicare sul Workshop
 utility/efw_vehicle_icons/make_gun_truck_icon.py  genera l'icona del Furgone con Cannone da due icone vanilla
 utility/efw_vehicle_icons/make_transport_icons.py  genera l'icona del Trasporto in Legno ricolorando il trasporto vanilla
 utility/efw_building_icons/make_building_icons.py  disegna le 4 icone degli edifici strategici (frame 41-44 della strip)
@@ -552,6 +553,24 @@ localisation/  inglese, italiano, russo, tedesco, polacco, cinese semplificato
 docs/images/   immagini del README (ignorate dal gioco)
 utility/       script di sviluppo
 ```
+</details>
+
+<details>
+<summary><b>🚀 Pubblicare sul Workshop</b></summary>
+
+Il launcher carica **tutto** il contenuto della cartella della mod, compresi `.git`, `.venv`, `utility/` e le immagini sorgente. Per caricare solo i file del gioco:
+
+```bash
+uv run python utility/build_release.py --point-launcher
+```
+
+1. Lo script crea `mod/Expanded_Field_Weapons_release/` con solo `common`, `events`, `gfx`, `history`, `interface`, `localisation`, `descriptor.mod` e `thumbnail.png` (circa 7 MB invece di oltre 90).
+2. Con `--point-launcher` il file `mod/Expanded_Field_Weapons.mod` punta alla cartella release, con un backup `.mod.bak`. Serve una volta sola.
+3. Si carica dal launcher come sempre.
+
+Da quel momento il gioco usa la copia release: **dopo ogni modifica rilancia lo script** prima di provare in gioco o di caricare. Per tornare a giocare direttamente dalla cartella di sviluppo, ripristina `Expanded_Field_Weapons.mod.bak`.
+
+Nel playset non attivare insieme questa mod e la sua copia scaricata dal Workshop (`ugc_3801242021.mod`): si sovrascrivono a vicenda.
 </details>
 
 <details>
