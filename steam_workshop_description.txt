@@ -74,6 +74,13 @@ Found a translation mistake? Tell us in the comments.
 [*]Machine Guns, Mortars and AT weapons unlock within one in-game week after researching Support Weapons I
 [/list]
 
+[h2]Recommended mods[/h2]
+More designer slots leave room for the EFW improvised modules (plywood frames, paper drop tanks, sails, scrap armour...):
+[list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3575118519]Unlock plane slots[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3574521037]Unlock ship slots[/url]
+[/list]
+
 [h2]Compatibility[/h2]
 Designed for [b]HOI4 1.19.x[/b]. EFW replaces the state view, the building icon strip, the politics-panel section icons and the weather file. Mods that change the same files (for example other law-section or building-icon mods) are not compatible with those parts of EFW. Other generic-designer mods may show duplicate designers.
 

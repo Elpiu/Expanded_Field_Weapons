@@ -467,6 +467,15 @@ Le chiavi mancanti restano in inglese, quindi una traduzione incompleta non romp
 
 ---
 
+## ➕ Mod consigliate
+
+Più slot nei designer lasciano spazio ai moduli improvvisati di EFW (telaio in legno, serbatoi di carta, vele, corazze di rottami...):
+
+- [Unlock plane slots](https://steamcommunity.com/sharedfiles/filedetails/?id=3575118519)
+- [Unlock ship slots](https://steamcommunity.com/sharedfiles/filedetails/?id=3574521037)
+
+---
+
 ## 🧩 Compatibilità
 
 EFW usa ID con prefisso `efw_`, file separati e varianti invece di sostituire contenuti vanilla. Fanno eccezione questi file:

@@ -63,6 +63,15 @@ Some improvised vehicles and designer-based equipment may also require the relev
 
 ---
 
+### Recommended mods
+
+More designer slots leave room for the EFW improvised modules:
+
+- [Unlock plane slots](https://steamcommunity.com/sharedfiles/filedetails/?id=3575118519)
+- [Unlock ship slots](https://steamcommunity.com/sharedfiles/filedetails/?id=3574521037)
+
+---
+
 ### Compatibility
 
 EFW replaces the vanilla state view (`countrystateview.gui`), the building icon strip and its sprite definition. Mods that change the state view or the building icons are not compatible with this part of EFW.
