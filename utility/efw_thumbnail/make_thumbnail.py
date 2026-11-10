@@ -1,8 +1,8 @@
 """Compone la copertina della mod (thumbnail.png) sopra un'illustrazione.
 
-    python utility/efw_thumbnail/make_thumbnail.py [illustrazione] [uscita]
+    uv run python utility/efw_thumbnail/make_thumbnail.py [illustrazione] [uscita]
 
-Default: thumbnail_new.jpg -> thumbnail.png. Richiede Pillow (pip install pillow).
+Default: thumbnail_new.jpg -> thumbnail.png. Dipendenze: uv sync (Pillow).
 Usa font di Windows (Impact, Bahnschrift, Microsoft YaHei per il cinese).
 Per una nuova versione basta cambiare VERSION, FEATURES e LANGS qui sotto.
 """
@@ -18,7 +18,7 @@ VERSION = 'v1.3.0'
 SUBTITLE = 'HEARTS OF IRON IV  ·  1.19'
 # (etichetta in oro, dettaglio in bianco)
 FEATURES = [
-    ('NEW PRODUCTION', 'machine guns, mortars, AT weapons, Pipe-Gun'),
+    ('NEW PRODUCTION', 'machine guns, mortars, AT weapons, Pipe-Gun, STEN'),
     ('NEW VEHICLES', 'tankettes, gun trucks, MG motorcycles'),
     ('NEW IDEAS', '192 laws, 21 designers, National Vocations'),
     ('NEW CONSTRUCTIONS', 'resource plants, research & propaganda centers'),

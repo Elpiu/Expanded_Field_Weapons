@@ -67,3 +67,10 @@ Dopo la generazione
 - Variante A o C: aggiungere a mano il titolo "EXPANDED FIELD WEAPONS" in alto a sinistra.
 - Opzionale: bandierine delle lingue (EN RU DE PL CN) piccole in basso a destra.
 - Ridimensionare a 512x279, salvare come thumbnail.png (sotto 1 MB) nella root della mod.
+
+==
+ICONA STEN (gfx/interface/equipment/efw/efw_sten_smg.dds, 150x150)
+==
+Ora c'è un segnaposto (copia dell'icona del Pipe-Gun). Generare l'immagine, poi convertirla in DDS 150x150.
+
+HoI4 style illustration. Single British "Sten" submachine gun in precise side profile: simple tubular steel receiver, horizontal box magazine sticking out on the left side, skeletal wire-frame stock, short perforated barrel shroud. Plain stamped metal with light wear and a few scratches, rendered in an illustrative, slightly gritty, hand-painted technical archive style. Asset only, centered, no environment. Clean, completely solid uniform neutral light sepia-parchment background, no gradients, no shadows, no ground line. Sharp outline, no text, no nation markings, no people.

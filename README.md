@@ -105,6 +105,17 @@ Costo 0.12 IC | Acciaio 0 | Soft 4 | Hard 0.8 | Difesa 18 | Sfondamento 2 | Affi
 
 Ideale per guarnigioni, porti, unità di seconda linea, ultime resistenze disperate e nazioni minori senza acciaio.
 
+### Mitra STEN
+
+Il gradino successivo: un tubo d'acciaio, un caricatore infilato di lato e un calcio di fil di ferro. Costa poco più del Pipe-Gun e spara molto meglio, ma rende meno in difesa dei fucili veri. Anche lui è disponibile **dal primo giorno**.
+
+| | Pipe-Gun Rifle | **STEN** | Fucile base vanilla |
+|---|---|---|---|
+| Costo | 0,12 IC, 0 acciaio | **0,25 IC, 1 acciaio** | 0,43 IC, 2 acciaio |
+| Attacco soft / hard | 4 / 0,8 | **5,5 / 0,8** | 3 / 0,5 |
+| Difesa / sfondamento | 18 / 2 | **17 / 4** | 20 / 2 |
+| Affidabilità | 70% | **78%** | 90% |
+
 <p align="center"><img src="other%20img/pipe_gun.png" alt="Pipe-Gun Rifle in gioco" width="460"><br><sub>"Capace di essere prodotto con quasi nessuna risorsa." (tooltip in gioco, versione precedente delle statistiche)</sub></p>
 
 ---
@@ -445,7 +456,7 @@ Le Vocazioni e le leggi sono decisioni e idee: non costano nulla finché il gioc
 
 Per i pacchetti `MERGE`: copia il contenuto nella root di EFW e scegli **Sovrascrivi**.
 
-> **Nota:** il caccia in legno e le navi improvvisate compaiono dopo **1-2 giorni di gioco**. Pipe-Gun Rifle, Carro Veloce, Moto Mitragliera, Autocannone, Trasporto in Legno e Paracadutisti di Milizia sono disponibili da subito. Mitragliatrici, mortai e anticarro si sbloccano entro **una settimana** dalla ricerca di **Support Weapons I**.
+> **Nota:** il caccia in legno e le navi improvvisate compaiono dopo **1-2 giorni di gioco**. Pipe-Gun Rifle, STEN, Carro Veloce, Moto Mitragliera, Autocannone, Trasporto in Legno e Paracadutisti di Milizia sono disponibili da subito. Mitragliatrici, mortai e anticarro si sbloccano entro **una settimana** dalla ricerca di **Support Weapons I**.
 
 ---
 
@@ -507,13 +518,20 @@ Dopo modifiche a equipment, technologies, buildings, decisions, variants o on_ac
 <details>
 <summary><b>🧪 Strumenti di sviluppo</b></summary>
 
-La cartella `utility/` contiene script Python non caricati dal gioco:
+La cartella `utility/` contiene script Python non caricati dal gioco. Le dipendenze (Pillow, numpy) sono in `pyproject.toml`:
+
+```bash
+uv sync
+```
+
+Poi ogni script si lancia con `uv run python utility/...`.
+
 
 ```text
 utility/efw_laws/gen_laws.py                   genera le leggi da laws_data.py (idea_tags, leggi, icone, localizzazione)
 utility/efw_module_icons/make_module_icons.py  genera le icone dei moduli di aerei e navi
 utility/make_readme_images.py                  converte le icone DDS nei PNG di docs/images/ per questo README
-utility/efw_thumbnail/make_thumbnail.py        compone la copertina sopra l'illustrazione (richiede Pillow)
+utility/efw_thumbnail/make_thumbnail.py        compone la copertina sopra l'illustrazione
 utility/efw_vehicle_icons/make_gun_truck_icon.py  genera l'icona del Furgone con Cannone da due icone vanilla
 utility/efw_vehicle_icons/make_transport_icons.py  genera l'icona del Trasporto in Legno ricolorando il trasporto vanilla
 utility/efw_building_icons/make_building_icons.py  disegna le 4 icone degli edifici strategici (frame 41-44 della strip)

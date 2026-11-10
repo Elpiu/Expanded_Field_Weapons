@@ -33,3 +33,7 @@
  efw_air_transport_unlock:0 "EFW: improwizowany transport lotniczy"
  efw_militia_paratrooper:0 "Spadochroniarze milicji"
  efw_militia_paratrooper_desc:0 "Ochotnicy po dwutygodniowym kursie, ze spadochronem złożonym przez kogoś innego. To nie siły specjalne, więc można ich szkolić ilu się chce. Słabsi od prawdziwych spadochroniarzy, ale znacznie lżejsi: do zrzutu potrzeba mniej więcej o jedną trzecią mniej samolotów."
+ efw_sten_smg:0 "Pistolet maszynowy STEN"
+ efw_sten_smg_short:0 "STEN"
+ efw_sten_smg_desc:0 "Stalowa rura, magazynek wystający z boku i druciana kolba. Kosztuje niewiele więcej niż karabin z rury, ale strzela dużo lepiej: świetny do szturmu z bliska, na dalekim dystansie mniej celny niż karabiny. Wymaga 1 stali."
+ efw_sten_unlock:0 "EFW: pistolet maszynowy STEN"

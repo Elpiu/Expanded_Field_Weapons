@@ -55,4 +55,14 @@ technologies = {
         enable_equipments = { transport_plane_equipment_1 }
         ai_will_do = { factor = 0 }
     }
+
+    # STEN: mitra economico, disponibile dal primo giorno per tutti
+    efw_sten_unlock = {
+        research_cost = 1
+        start_year = 1918
+        allow = { always = no }
+        categories = { infantry_weapons }
+        enable_equipments = { efw_sten_smg }
+        ai_will_do = { factor = 0 }
+    }
 }

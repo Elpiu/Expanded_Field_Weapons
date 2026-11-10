@@ -28,6 +28,7 @@ Early-game economic decisions allow countries to accelerate industrialization th
 - Heavy Weapons line battalion
 - Integration with vanilla Support Weapons technologies
 - Improvised naval designs and modules
+- STEN submachine gun: cheap infantry weapon between the Pipe-Gun and standard rifles
 - Improvised light vehicles: Tankette, Machine-Gun Motorcycle and Gun Truck (no tank designer needed)
 - Early airborne warfare from day one: 16 IC Wooden Transport (paradrops and air supply), vanilla transport plane for the player even as a minor nation, non-elite Militia Paratroopers; paradrops need only 25 transport planes instead of 50
 - EFW Wooden Fighter and improvised aircraft modules

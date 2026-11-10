@@ -33,3 +33,7 @@
  efw_air_transport_unlock:0 "EFW: Improvisierte Lufttransporte"
  efw_militia_paratrooper:0 "Miliz-Fallschirmjäger"
  efw_militia_paratrooper_desc:0 "Freiwillige mit einem zweiwöchigen Kurs und einem Fallschirm, den jemand anderes gefaltet hat. Keine Spezialkräfte, also beliebig viele ausbildbar. Schwächer als echte Fallschirmjäger, aber viel leichter: Für den Absprung braucht es etwa ein Drittel weniger Flugzeuge."
+ efw_sten_smg:0 "STEN-Maschinenpistole"
+ efw_sten_smg_short:0 "STEN"
+ efw_sten_smg_desc:0 "Ein Stahlrohr, ein seitlich eingestecktes Magazin und ein Drahtschaft. Kostet kaum mehr als ein Rohrgewehr, schießt aber viel besser: ideal für den Nahkampf, auf große Entfernung ungenauer als Gewehre. Benötigt 1 Stahl."
+ efw_sten_unlock:0 "EFW: STEN-Maschinenpistole"

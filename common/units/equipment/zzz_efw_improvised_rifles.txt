@@ -28,4 +28,29 @@ equipments = {
         reliability = 0.70    # Molto grezza/inaffidabile (50% reliability)
     }
 
+
+    # =========================================================
+    # STEN: mitra da 9 mm, semplice e economico.
+    # Tra il Pipe-Gun e il fucile base vanilla (0.43 IC, 2 acciaio,
+    # attacco 3, difesa 20): più attacco e sfondamento, meno difesa.
+    # =========================================================
+    efw_sten_smg = {
+        year = 1918
+        archetype = infantry_equipment
+        priority = 3
+        visual_level = 0
+        picture = efw_sten_smg
+
+        build_cost_ic = 0.25
+        resources = {
+            steel = 1
+        }
+
+        soft_attack = 5.5
+        hard_attack = 0.8
+        ap_attack = 2
+        defense = 17
+        breakthrough = 4
+        reliability = 0.78
+    }
 }

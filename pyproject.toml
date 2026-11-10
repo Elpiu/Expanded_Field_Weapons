@@ -1,0 +1,16 @@
+[project]
+name = "expanded-field-weapons"
+version = "1.3.0"
+description = "Development tools for the Expanded Field Weapons HOI4 mod (icons, laws, translations, thumbnail)."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    # utility/efw_thumbnail/make_thumbnail.py, utility/generic_sprite_cropper_v3.py
+    "pillow>=10.0",
+    # utility/generic_sprite_cropper_v3.py
+    "numpy>=1.26",
+]
+
+# Solo script di sviluppo: niente pacchetto da installare.
+[tool.uv]
+package = false

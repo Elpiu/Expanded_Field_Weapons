@@ -9,3 +9,6 @@ Thumbs.db
 desktop.ini
 *.bak
 *.tmp
+
+# uv
+.venv/

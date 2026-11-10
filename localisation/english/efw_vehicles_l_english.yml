@@ -42,3 +42,9 @@
  # === MILITIA PARATROOPERS ===
  efw_militia_paratrooper:0 "Militia Paratroopers"
  efw_militia_paratrooper_desc:0 "Volunteers with a two-week course and a parachute folded by someone else. They are not special forces, so you can train as many as you like. Weaker than real paratroopers but much lighter: dropping them takes about a third fewer planes."
+
+ # === STEN ===
+ efw_sten_smg:0 "STEN Submachine Gun"
+ efw_sten_smg_short:0 "STEN"
+ efw_sten_smg_desc:0 "A steel tube, a magazine sticking out of the side and a wire stock. It costs little more than a Pipe-Gun but shoots far better: great for close assaults, less accurate than rifles at long range. Needs 1 steel."
+ efw_sten_unlock:0 "EFW: STEN Submachine Gun"

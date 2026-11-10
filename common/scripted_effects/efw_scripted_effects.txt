@@ -3,13 +3,17 @@
 
 # ------------------------------------------------------------------
 # Equipaggiamento improvvisato disponibile dal primo giorno:
-# Pipe-Gun Rifle, Carro Veloce, Moto Mitragliera, Autocannone,
+# Pipe-Gun Rifle, STEN, Carro Veloce, Moto Mitragliera, Autocannone,
 # trasporti aerei improvvisati e Paracadutisti di Milizia.
 # ------------------------------------------------------------------
 efw_unlock_improvised_gear = {
     if = {
         limit = { NOT = { has_tech = efw_pipe_gun_unlock } }
         set_technology = { efw_pipe_gun_unlock = 1 popup = no }
+    }
+    if = {
+        limit = { NOT = { has_tech = efw_sten_unlock } }
+        set_technology = { efw_sten_unlock = 1 popup = no }
     }
     if = {
         limit = { NOT = { has_tech = efw_tankette_unlock } }

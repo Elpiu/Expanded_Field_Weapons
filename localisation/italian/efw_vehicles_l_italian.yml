@@ -42,3 +42,9 @@
  # === PARACADUTISTI DI MILIZIA ===
  efw_militia_paratrooper:0 "Paracadutisti di Milizia"
  efw_militia_paratrooper_desc:0 "Volontari con due settimane di corso e un paracadute piegato da qualcun altro. Non sono forze speciali, quindi se ne possono addestrare quanti se ne vuole. Più deboli dei paracadutisti veri, ma molto più leggeri: servono circa un terzo di aerei in meno per lanciarli."
+
+ # === STEN ===
+ efw_sten_smg:0 "Mitra STEN"
+ efw_sten_smg_short:0 "STEN"
+ efw_sten_smg_desc:0 "Un tubo d'acciaio, un caricatore infilato di lato e un calcio di fil di ferro. Costa poco più di un Pipe-Gun ma spara molto meglio: ottimo per l'assalto ravvicinato, meno preciso dei fucili sulla lunga distanza. Serve 1 acciaio."
+ efw_sten_unlock:0 "EFW: Mitra STEN"

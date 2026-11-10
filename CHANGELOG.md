@@ -15,13 +15,14 @@ Tutte le modifiche rilevanti di Expanded Field Weapons. Le versioni seguono `MAG
   - **Carro Veloce EFW** e Battaglione Carri Veloci: mini carro economico, corazza 12, buono contro la fanteria senza anticarro.
   - **Moto Mitragliera EFW** e Compagnia Motociclisti Mitraglieri: ricognizione economica che dà +5% attacco a tutta la fanteria della divisione.
   - **Autocannone Improvvisato EFW** e Batteria Autocannoni: artiglieria e anticarro su camion, veloce e senza corazza.
+- **Mitra STEN**: arma di fanteria economica (0,25 IC, 1 acciaio) tra il Pipe-Gun e il fucile base, con più attacco e sfondamento e meno difesa. Disponibile dal primo giorno.
 - **Aviotrasporto improvvisato** (l'IA non lo usa):
   - **Trasporto in Legno EFW**: versione rudimentale del trasporto vanilla, dal primo giorno per tutti. 16 IC invece di 38, niente alluminio, affidabilità 55%. Lancio di paracadutisti e rifornimento aereo.
   - **Trasporto vanilla** disponibile dal primo giorno per il giocatore, anche con le nazioni minori.
   - **Paracadutisti di Milizia**: battaglione paracadutabile non d'élite, fuori dal limite delle forze speciali.
   - La compagnia MG EFW ora è paracadutabile.
   - Minimo di trasporti per un lancio abbassato da 50 a **25** (`common/defines/zzz_efw_gameplay_defines.lua`, vale per tutti i paesi).
-- **Traduzioni**: russo, tedesco, polacco e cinese semplificato (898 testi per lingua, tutta la mod).
+- **Traduzioni**: russo, tedesco, polacco e cinese semplificato (902 testi per lingua, tutta la mod).
 - **Nuove icone** per i 4 edifici strategici: megafono, ingranaggio con martello, scudo con cassa, beuta.
 
 ### ⚖️ Bilanciamento
@@ -58,7 +59,8 @@ Tutte le modifiche rilevanti di Expanded Field Weapons. Le versioni seguono `MAG
 - `utility/efw_vehicle_icons/make_gun_truck_icon.py`: genera l'icona dell'Autocannone.
 - `utility/efw_vehicle_icons/make_transport_icons.py`: genera l'icona del Trasporto in Legno.
 - `utility/make_readme_images.py`: converte le icone DDS nelle immagini del README.
-- `utility/efw_thumbnail/make_thumbnail.py`: compone la copertina (titolo, versione, funzionalità, lingue) sopra l'illustrazione `thumbnail_new.jpg`. Richiede Pillow.
+- `utility/efw_thumbnail/make_thumbnail.py`: compone la copertina (titolo, versione, funzionalità, lingue) sopra l'illustrazione `thumbnail_new.jpg`.
+- `pyproject.toml` e `uv.lock`: dipendenze degli script di sviluppo, si installano con `uv sync`.
 
 ---
 
@@ -75,7 +77,7 @@ Tutte le modifiche rilevanti di Expanded Field Weapons. Le versioni seguono `MAG
 
 ## English summary — v1.3.0
 
-- **New:** National Vocations (5 paths × 3 tiers, huge bonuses with drawbacks), welcome event with a starting gift, three improvised light vehicles available from day one (Tankette, MG Motorcycle, Gun Truck), early airborne warfare (16 IC Wooden Transport, vanilla transport for the player from day one, non-elite Militia Paratroopers), translations into Russian, German, Polish and Simplified Chinese, new icons for the four strategic buildings.
+- **New:** National Vocations (5 paths × 3 tiers, huge bonuses with drawbacks), welcome event with a starting gift, three improvised light vehicles available from day one (Tankette, MG Motorcycle, Gun Truck), the cheap STEN submachine gun, early airborne warfare (16 IC Wooden Transport, vanilla transport for the player from day one, non-elite Militia Paratroopers), translations into Russian, German, Polish and Simplified Chinese, new icons for the four strategic buildings.
 - **Balance:** stronger Wheat Fields (−1% consumer goods per state, plus stability, population growth, supply and manpower); Propaganda Center and Logistics Center reworked.
 - **Performance:** no more daily scripts; weekly technology sync that switches itself off; one-time hidden initialization events.
 - **Fixes:** two building modifiers that had no effect, swapped strategic building icons, DDS alpha decoding in the dev tools.

@@ -6,7 +6,7 @@ Expanded Field Weapons (EFW) adds new field equipment, improvised vehicles, earl
 [h2]What's new in 1.3.0[/h2]
 [list]
 [*][b]National Vocations[/b]: pick one national path and push it to tier three for huge bonuses, up to +40% research
-[*][b]Improvised vehicles[/b] from day one: Tankette, MG Motorcycle and Gun Truck
+[*][b]Improvised vehicles[/b] from day one: Tankette, MG Motorcycle and Gun Truck, plus the cheap [b]STEN[/b] submachine gun
 [*][b]Early paradrops[/b]: cheap Wooden Transports, non-elite Militia Paratroopers, only 25 planes needed
 [*][b]Welcome event[/b] with a starting gift
 [*][b]Translations[/b]: Russian, German, Polish and Simplified Chinese
@@ -23,6 +23,7 @@ Expanded Field Weapons (EFW) adds new field equipment, improvised vehicles, earl
 [h2]Improvised gear[/h2]
 [list]
 [*][b]Pipe-Gun Rifle[/b]: ultra-cheap, zero-resource rifle for garrisons, last stands and minor nations
+[*][b]STEN submachine gun[/b]: 0.25 IC and 1 steel, more attack and breakthrough than rifles, less defence
 [*][b]Tankette[/b]: a quarter of the cost of a light tank battalion, armour 12, great against infantry without AT
 [*][b]MG Motorcycle[/b]: cheap recon that gives +5% attack to the whole division's infantry
 [*][b]Gun Truck[/b]: an anti-tank gun tied to a truck. Fast artillery and AT, no armour
@@ -69,7 +70,7 @@ Found a translation mistake? Tell us in the comments.
 [h2]Good to know[/h2]
 [list]
 [*][b]Start a new game[/b] after this update
-[*]Pipe-Gun, Tankette, MG Motorcycle, Gun Truck, Wooden Transport and Militia Paratroopers are available from day one
+[*]Pipe-Gun, STEN, Tankette, MG Motorcycle, Gun Truck, Wooden Transport and Militia Paratroopers are available from day one
 [*]The Wooden Fighter and improvised ships appear 1-2 in-game days after the start
 [*]Machine Guns, Mortars and AT weapons unlock within one in-game week after researching Support Weapons I
 [/list]
