@@ -1,0 +1,174 @@
+# Expanded Field Weapons - benvenuto e inizializzazione del giocatore
+#
+# efw_welcome.1   benvenuto (visibile, una volta per paese)
+# efw_welcome.10  nascosto: sblocca scafi, airframe e moduli improvvisati
+# efw_welcome.11  nascosto: crea i progetti iniziali (il giorno dopo)
+#
+# Lanciati da efw_player_init (common/scripted_effects/efw_scripted_effects.txt).
+# Sostituiscono i vecchi on_daily: nessun costo giornaliero.
+
+add_namespace = efw_welcome
+
+# =====================================================================
+# BENVENUTO
+# =====================================================================
+country_event = {
+    id = efw_welcome.1
+    title = efw_welcome.1.t
+    desc = efw_welcome.1.d
+    picture = GFX_report_event_generic_factory
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = efw_welcomed
+    }
+
+    # Scienza
+    option = {
+        name = efw_welcome.1.a
+        add_timed_idea = { idea = efw_welcome_research_idea days = 180 }
+        custom_effect_tooltip = efw_welcome_vocation_tt
+    }
+
+    # Industria
+    option = {
+        name = efw_welcome.1.b
+        add_timed_idea = { idea = efw_welcome_industry_idea days = 180 }
+        custom_effect_tooltip = efw_welcome_vocation_tt
+    }
+
+    # Esercito
+    option = {
+        name = efw_welcome.1.c
+        add_timed_idea = { idea = efw_welcome_army_idea days = 180 }
+        custom_effect_tooltip = efw_welcome_vocation_tt
+    }
+
+    # Arrangiarsi
+    option = {
+        name = efw_welcome.1.e
+        add_equipment_to_stockpile = {
+            type = efw_pipe_gun_rifle
+            amount = 2000
+        }
+        custom_effect_tooltip = efw_welcome_vocation_tt
+    }
+
+    # Niente regali
+    option = {
+        name = efw_welcome.1.f
+        add_political_power = 25
+    }
+}
+
+
+# =====================================================================
+# INIZIALIZZAZIONE - GIORNO 1: sblocchi
+# =====================================================================
+country_event = {
+    id = efw_welcome.10
+    hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        # Caccia in legno
+        if = {
+            limit = { NOT = { has_country_flag = efw_wooden_plane_final_chassis_ready } }
+            set_technology = {
+                iw_small_airframe = 1
+                aa_lmg = 1
+                engines_1 = 1
+                efw_wooden_construction_unlock = 1
+                popup = no
+            }
+            set_country_flag = efw_wooden_plane_final_chassis_ready
+        }
+
+        # Navi improvvisate
+        if = {
+            limit = { NOT = { has_country_flag = efw_improvised_naval_chassis_ready } }
+            set_technology = {
+                early_ship_hull_light = 1
+                early_ship_hull_submarine = 1
+                efw_improvised_naval_modules_unlock = 1
+                popup = no
+            }
+            set_country_flag = efw_improvised_naval_chassis_ready
+        }
+
+        country_event = { id = efw_welcome.11 days = 1 }
+    }
+}
+
+
+# =====================================================================
+# INIZIALIZZAZIONE - GIORNO 2: progetti iniziali
+# I flag sono gli stessi delle versioni precedenti: nei salvataggi
+# vecchi i progetti non vengono creati due volte.
+# =====================================================================
+country_event = {
+    id = efw_welcome.11
+    hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = { NOT = { has_country_flag = efw_wooden_plane_final_created } }
+            create_equipment_variant = {
+                name = "EFW Wooden Fighter"
+                type = small_plane_airframe_0
+                parent_version = 0
+                obsolete = no
+                allow_without_tech = yes
+                icon = "GFX_efw_wooden_plane_medium"
+                modules = {
+                    fixed_main_weapon_slot = light_mg_2x
+                    engine_type_slot = engine_1_1x
+                    special_type_slot_1 = efw_wooden_boost_airframe
+                }
+            }
+            set_country_flag = efw_wooden_plane_final_created
+        }
+
+        if = {
+            limit = { NOT = { has_country_flag = efw_improvised_naval_v04_created } }
+            create_equipment_variant = {
+                name = "EFW Improvised Motorboat"
+                type = ship_hull_light_1
+                parent_version = 0
+                show_position = no
+                obsolete = no
+                allow_without_tech = yes
+                role_icon_index = auto
+                icon = "GFX_efw_motorboat_medium"
+                modules = {
+                    fixed_ship_battery_slot = efw_motorboat_machinegun
+                    fixed_ship_anti_air_slot = empty
+                    fixed_ship_fire_control_system_slot = empty
+                    fixed_ship_radar_slot = empty
+                    fixed_ship_engine_slot = efw_motorboat_engine
+                    fixed_ship_torpedo_slot = empty
+                    mid_1_custom_slot = empty
+                    rear_1_custom_slot = empty
+                }
+            }
+            create_equipment_variant = {
+                name = "EFW One-Man Midget Submarine"
+                type = ship_hull_submarine_1
+                parent_version = 0
+                show_position = no
+                obsolete = no
+                allow_without_tech = yes
+                role_icon_index = auto
+                icon = "GFX_efw_midget_sub_medium"
+                modules = {
+                    fixed_ship_torpedo_slot = efw_midget_sub_torpedo
+                    fixed_ship_engine_slot = efw_midget_sub_engine
+                    rear_1_custom_slot = efw_midget_sub_torpedo
+                }
+            }
+            set_country_flag = efw_improvised_naval_v04_created
+        }
+    }
+}

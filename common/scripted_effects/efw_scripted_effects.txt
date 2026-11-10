@@ -1,0 +1,138 @@
+# Expanded Field Weapons - scripted effects
+# Usati da common/on_actions/efw_on_actions.txt. Scope: COUNTRY.
+
+# ------------------------------------------------------------------
+# Equipaggiamento improvvisato disponibile dal primo giorno:
+# Pipe-Gun Rifle, Carro Veloce, Moto Mitragliera, Autocannone.
+# ------------------------------------------------------------------
+efw_unlock_improvised_gear = {
+    if = {
+        limit = { NOT = { has_tech = efw_pipe_gun_unlock } }
+        set_technology = { efw_pipe_gun_unlock = 1 popup = no }
+    }
+    if = {
+        limit = { NOT = { has_tech = efw_tankette_unlock } }
+        set_technology = { efw_tankette_unlock = 1 popup = no }
+    }
+    if = {
+        limit = { NOT = { has_tech = efw_motorcycle_unlock } }
+        set_technology = { efw_motorcycle_unlock = 1 popup = no }
+    }
+    if = {
+        limit = { NOT = { has_tech = efw_gun_truck_unlock } }
+        set_technology = { efw_gun_truck_unlock = 1 popup = no }
+    }
+}
+
+# ------------------------------------------------------------------
+# Inizializzazione del giocatore umano (una volta per paese).
+# Giorno 1: sblocca scafi, airframe e moduli improvvisati + benvenuto.
+# Giorno 2: crea i progetti (in un tick separato, altrimenti
+#           create_equipment_variant prova a sbloccare il telaio da solo).
+# ------------------------------------------------------------------
+efw_player_init = {
+    if = {
+        limit = {
+            NOT = { has_country_flag = efw_player_init_started }
+        }
+        set_country_flag = efw_player_init_started
+
+        # Nazioni nate a partita in corso non ricevono gli sblocchi di on_startup
+        efw_unlock_improvised_gear = yes
+
+        # Il controllo dei Legionari (solo giocatore) va rifatto
+        # anche se il paese era IA e aveva già finito la sincronizzazione.
+        clr_country_flag = efw_sync_complete_v2
+
+        country_event = { id = efw_welcome.10 days = 1 }
+
+        if = {
+            limit = {
+                NOT = { has_country_flag = efw_welcomed }
+            }
+            country_event = { id = efw_welcome.1 days = 1 }
+        }
+    }
+}
+
+# ------------------------------------------------------------------
+# Sincronizza le tecnologie nascoste EFW con quelle vanilla.
+# Quando tutto è sbloccato imposta efw_sync_complete_v2 e smette di girare.
+# ------------------------------------------------------------------
+efw_sync_support_techs = {
+
+    # Support Weapons I: le tre linee di produzione e le unità EFW
+    if = {
+        limit = {
+            has_tech = support_weapons
+            NOT = { has_tech = efw_unlock_core_weapons }
+        }
+        set_technology = { efw_unlock_core_weapons = 1 popup = no }
+    }
+
+    # Legionari dell'Impero: solo giocatore, l'IA non li sblocca mai
+    if = {
+        limit = {
+            is_ai = no
+            has_tech = support_weapons
+            NOT = { has_tech = efw_legionari_unlock }
+        }
+        set_technology = { efw_legionari_unlock = 1 popup = no }
+    }
+
+    # Support Weapons II / III / IV
+    if = {
+        limit = {
+            has_tech = support_weapons2
+            NOT = { has_tech = efw_support_upgrade_2 }
+        }
+        set_technology = { efw_support_upgrade_2 = 1 popup = no }
+    }
+    if = {
+        limit = {
+            has_tech = support_weapons3
+            NOT = { has_tech = efw_support_upgrade_3 }
+        }
+        set_technology = { efw_support_upgrade_3 = 1 popup = no }
+    }
+    if = {
+        limit = {
+            has_tech = support_weapons4
+            NOT = { has_tech = efw_support_upgrade_4 }
+        }
+        set_technology = { efw_support_upgrade_4 = 1 popup = no }
+    }
+
+    # Infantry AT I / II
+    if = {
+        limit = {
+            has_tech = infantry_at
+            NOT = { has_tech = efw_at_upgrade_1 }
+        }
+        set_technology = { efw_at_upgrade_1 = 1 popup = no }
+    }
+    if = {
+        limit = {
+            has_tech = infantry_at2
+            NOT = { has_tech = efw_at_upgrade_2 }
+        }
+        set_technology = { efw_at_upgrade_2 = 1 popup = no }
+    }
+
+    # Tutto sbloccato: da ora in poi questo paese costa un solo controllo
+    if = {
+        limit = {
+            has_tech = efw_unlock_core_weapons
+            has_tech = efw_support_upgrade_2
+            has_tech = efw_support_upgrade_3
+            has_tech = efw_support_upgrade_4
+            has_tech = efw_at_upgrade_1
+            has_tech = efw_at_upgrade_2
+            OR = {
+                is_ai = yes
+                has_tech = efw_legionari_unlock
+            }
+        }
+        set_country_flag = efw_sync_complete_v2
+    }
+}

@@ -1,0 +1,30 @@
+﻿l_english:
+ # === TANKETTE ===
+ efw_tankette_equipment:0 "Tankettes"
+ efw_tankette_equipment_desc:0 "Two men, a machine gun and a truck engine inside a tin box. Faster than its own courage: cheap and agile, but any anti-tank gun opens it like a can of sardines."
+ efw_tankette_equipment_1:0 "EFW Tankette"
+ efw_tankette_equipment_1_short:0 "Tankette"
+ efw_tankette_equipment_1_desc:0 "Two men, a machine gun and a truck engine inside a tin box. Faster than its own courage: cheap and agile, but any anti-tank gun opens it like a can of sardines."
+ efw_tankette_battalion:0 "Tankette Battalion"
+ efw_tankette_battalion_desc:0 "Two-man mini tanks. A battalion costs about a quarter of a light tank battalion and overruns infantry without anti-tank weapons, but the armour is thin. Uses EFW Tankettes."
+ efw_tankette_unlock:0 "EFW: Tankettes"
+
+ # === MACHINE-GUN MOTORCYCLE ===
+ efw_motorcycle_mg_equipment:0 "Machine-Gun Motorcycles"
+ efw_motorcycle_mg_equipment_desc:0 "A motorcycle, a sidecar and a machine gun mounted where the mother-in-law should be sitting. Fast, loud and surprisingly deadly on dirt roads."
+ efw_motorcycle_mg_equipment_1:0 "EFW MG Motorcycle"
+ efw_motorcycle_mg_equipment_1_short:0 "MG Motorcycle"
+ efw_motorcycle_mg_equipment_1_desc:0 "A motorcycle, a sidecar and a machine gun mounted where the mother-in-law should be sitting. Fast, loud and surprisingly deadly on dirt roads."
+ efw_motorcycle_mg_company:0 "Motorcycle Machine-Gun Company"
+ efw_motorcycle_mg_company_desc:0 "Motorised reconnaissance on motorcycles with armed sidecars. Sees as far as motorised recon, costs less and gives §G+5% attack§! to all infantry in the division. Takes the recon slot."
+ efw_motorcycle_unlock:0 "EFW: Motorcycle Machine-Gunners"
+
+ # === GUN TRUCK ===
+ efw_gun_truck_equipment:0 "Gun Trucks"
+ efw_gun_truck_equipment_desc:0 "Take a truck. Take an anti-tank gun. Tie them together with plenty of rope and a little faith. It shoots infantry and light vehicles and drives off before anyone answers: there is no armour."
+ efw_gun_truck_equipment_1:0 "EFW Improvised Gun Truck"
+ efw_gun_truck_equipment_1_short:0 "Gun Truck"
+ efw_gun_truck_equipment_1_desc:0 "Take a truck. Take an anti-tank gun. Tie them together with plenty of rope and a little faith. It shoots infantry and light vehicles and drives off before anyone answers: there is no armour."
+ efw_gun_truck_battalion:0 "Gun Truck Battery"
+ efw_gun_truck_battalion_desc:0 "Anti-tank guns mounted on trucks. Line artillery as fast as motorised infantry, with good piercing and no protection. Uses EFW Improvised Gun Trucks."
+ efw_gun_truck_unlock:0 "EFW: Improvised Gun Trucks"

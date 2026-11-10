@@ -27,9 +27,9 @@ def read_dds(path):
                     abits = int.from_bytes(blk[2:8], 'little')
                     al = [a0, a1]
                     if a0 > a1:
-                        al += [((6 - k) * a0 + (k - 1) * a1) // 7 for k in range(2, 8)]
+                        al += [((8 - k) * a0 + (k - 1) * a1) // 7 for k in range(2, 8)]
                     else:
-                        al += [((4 - k) * a0 + (k - 1) * a1) // 5 for k in range(2, 6)] + [0, 255]
+                        al += [((6 - k) * a0 + (k - 1) * a1) // 5 for k in range(2, 6)] + [0, 255]
                     cb = blk[8:16]
                 else:
                     cb = blk

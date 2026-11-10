@@ -72,7 +72,7 @@
  modifier_state_production_efw_public_housing_factor_desc:0 "Modifies local Public Housing construction speed."
  efw_wheat_fields:0 "Wheat Fields"
  efw_wheat_fields_plural:0 "Wheat Fields"
- efw_wheat_fields_desc:0 "Organized state farms secure bread for the cities and the front, freeing industry from part of the consumer demand. Land reclamation also opens new space for construction."
+ efw_wheat_fields_desc:0 "State farms that make the nation self-sufficient in food: bread for the cities and the front without importing anything. Every state with Wheat Fields lowers §Yconsumer goods by 1%§! and raises stability and population growth. Land reclamation opens new space for construction and the granaries supply passing troops."
  modifier_production_speed_efw_wheat_fields_factor:0 "Wheat Fields construction speed"
  modifier_production_speed_efw_wheat_fields_factor_desc:0 "Modifies Wheat Fields construction speed."
  modifier_state_production_efw_wheat_fields_factor:0 "Local Wheat Fields construction speed"

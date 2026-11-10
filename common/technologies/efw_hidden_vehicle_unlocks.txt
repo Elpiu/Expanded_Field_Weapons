@@ -1,0 +1,36 @@
+# Expanded Field Weapons - sblocchi nascosti dei mezzi leggeri
+# Assegnati a tutti i paesi dal primo giorno da efw_unlock_improvised_gear
+# (common/scripted_effects/efw_scripted_effects.txt), come il Pipe-Gun Rifle.
+
+technologies = {
+
+    efw_tankette_unlock = {
+        research_cost = 1
+        start_year = 1918
+        allow = { always = no }
+        categories = { armor }
+        enable_equipments = { efw_tankette_equipment_1 }
+        enable_subunits = { efw_tankette_battalion }
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_motorcycle_unlock = {
+        research_cost = 1
+        start_year = 1918
+        allow = { always = no }
+        categories = { motorized_equipment }
+        enable_equipments = { efw_motorcycle_mg_equipment_1 }
+        enable_subunits = { efw_motorcycle_mg_company }
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_gun_truck_unlock = {
+        research_cost = 1
+        start_year = 1918
+        allow = { always = no }
+        categories = { artillery }
+        enable_equipments = { efw_gun_truck_equipment_1 }
+        enable_subunits = { efw_gun_truck_battalion }
+        ai_will_do = { factor = 0 }
+    }
+}

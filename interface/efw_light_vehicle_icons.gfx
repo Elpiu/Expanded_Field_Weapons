@@ -1,0 +1,91 @@
+# EFW - icone dei mezzi leggeri improvvisati
+# Moto e unità usano texture vanilla; il Carro Veloce riusa l'icona del vecchio Tin Tank;
+# il Furgone con Cannone è generato da utility/efw_vehicle_icons/make_gun_truck_icon.py.
+spriteTypes = {
+
+    # efw_tankette_equipment
+    spriteType = {
+        name = "GFX_efw_tankette_equipment"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_tin_tank.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_tankette_equipment_medium"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_tin_tank.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_tankette_equipment_1"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_tin_tank.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_tankette_equipment_1_medium"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_tin_tank.dds"
+    }
+
+    # efw_motorcycle_mg_equipment
+    spriteType = {
+        name = "GFX_efw_motorcycle_mg_equipment"
+        texturefile = "gfx/interface/technologies/GER_motorbike_equipment_1.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_motorcycle_mg_equipment_medium"
+        texturefile = "gfx/interface/technologies/GER_motorbike_equipment_1.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_motorcycle_mg_equipment_1"
+        texturefile = "gfx/interface/technologies/GER_motorbike_equipment_1.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_motorcycle_mg_equipment_1_medium"
+        texturefile = "gfx/interface/technologies/GER_motorbike_equipment_1.dds"
+    }
+
+    # efw_gun_truck_equipment
+    spriteType = {
+        name = "GFX_efw_gun_truck_equipment"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_gun_truck.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_gun_truck_equipment_medium"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_gun_truck.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_gun_truck_equipment_1"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_gun_truck.dds"
+    }
+    spriteType = {
+        name = "GFX_efw_gun_truck_equipment_1_medium"
+        texturefile = "gfx/interface/equipment/efw_improvised/efw_gun_truck.dds"
+    }
+
+    # Icone del designer divisioni (2 frame) e icone piccole
+    spriteType = {
+        name = "GFX_unit_efw_tankette_battalion_icon_medium"
+        texturefile = "gfx/interface/counters/divisions_large/unit_light_tank_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = "GFX_unit_efw_tankette_battalion_icon_small"
+        texturefile = "gfx/texticons/unit_light_armor_icon_small.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_unit_efw_motorcycle_mg_company_icon_medium"
+        texturefile = "gfx/interface/counters/divisions_large/support_unit_motorized_recon_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = "GFX_unit_efw_motorcycle_mg_company_icon_small"
+        texturefile = "gfx/texticons/support_motorized_recon.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_unit_efw_gun_truck_battalion_icon_medium"
+        texturefile = "gfx/interface/counters/divisions_large/unit_motorized_rocket_brigade_icon.dds"
+        noOfFrames = 2
+    }
+    spriteType = {
+        name = "GFX_unit_efw_gun_truck_battalion_icon_small"
+        texturefile = "gfx/texticons/unit_motorized_artillery_icon_small.dds"
+        legacy_lazy_load = no
+    }
+}

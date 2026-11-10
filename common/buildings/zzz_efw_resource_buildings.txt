@@ -143,9 +143,9 @@ buildings = {
         }
     }
 
-    # Wheat fields: country_modifiers stack per building, so each state with
-    # fields lowers consumer goods a little (10 states = -5%).
-    # Uses 1 slot and adds 3 (net +2).
+    # Wheat fields: autonomia alimentare. I country_modifiers si sommano per
+    # ogni stato con i campi (10 stati = -10% beni di consumo, +2% stabilità,
+    # +20% crescita demografica). Usa 1 slot e ne aggiunge 3 (+2 netti).
     efw_wheat_fields = {
         base_cost = 3000
         infrastructure_construction_effect = yes
@@ -156,13 +156,16 @@ buildings = {
 
         country_modifiers = {
             modifiers = {
-                consumer_goods_factor = -0.005
+                consumer_goods_factor = -0.01
+                stability_factor = 0.002
+                monthly_population = 0.02
             }
         }
 
         state_modifiers = {
             local_building_slots = 3
-            local_supplies = 0.10
+            local_supplies = 0.25
+            local_manpower = 0.05
         }
 
         level_cap = {

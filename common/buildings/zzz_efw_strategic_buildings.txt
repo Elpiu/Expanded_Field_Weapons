@@ -16,16 +16,15 @@ buildings = {
         per_controlled_building_extra_cost = 1500
         infrastructure_construction_effect = yes
         value = 3
-        icon_frame = 16
+        icon_frame = 41
         damage_factor = 0.25
         show_modifier = yes
 
         country_modifiers = {
             modifiers = {
                 political_power_factor = 0.036
-                stability_factor = 0.0036
-                war_support_factor = 0.0036
-                drift_defence_factor = 0.036
+                stability_factor = 0.005
+                war_support_factor = 0.005
                 conscription_factor = 0.012
                 research_speed_factor = -0.005
             }
@@ -47,7 +46,7 @@ buildings = {
         per_controlled_building_extra_cost = 2000
         infrastructure_construction_effect = yes
         value = 4
-        icon_frame = 13
+        icon_frame = 42
         damage_factor = 0.35
         show_modifier = yes
 
@@ -78,7 +77,7 @@ buildings = {
         per_controlled_building_extra_cost = 1000
         infrastructure_construction_effect = yes
         value = 6
-        icon_frame = 15
+        icon_frame = 44
         damage_factor = 0.50
         show_modifier = yes
 
@@ -102,13 +101,12 @@ buildings = {
         base_cost = 2200
         infrastructure_construction_effect = yes
         value = 5
-        icon_frame = 14
+        icon_frame = 43
         damage_factor = 0.35
         show_modifier = yes
 
         state_modifiers = {
-            local_supplies = 0.30
-            attrition_for_controller = -0.12
+            local_supplies = 0.40
             state_production_speed_infrastructure_factor = 0.12
             state_production_speed_rail_way_factor = 0.12
             state_production_speed_supply_node_factor = 0.12

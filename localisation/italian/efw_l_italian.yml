@@ -35,9 +35,6 @@
  efw_at_upgrade_1:0 "EFW: Miglioramenti anticarro I"
  efw_at_upgrade_2:0 "EFW: Miglioramenti anticarro II"
 
- efw_test.1.t:0 "EXPANDED FIELD WEAPONS v1.2 ATTIVA!"
- efw_test.1.d:0 "Support Weapons I sblocca tre linee produttive permanenti: Mitragliatrici, Mortai e Armi anticarro. Le ricerche Support Weapons successive migliorano direttamente le statistiche delle nuove unita."
- efw_test.1.a:0 "Perfetto."
 
  efw_improvised_naval_modules_unlock:0 "Programma Navale Improvvisato"
 

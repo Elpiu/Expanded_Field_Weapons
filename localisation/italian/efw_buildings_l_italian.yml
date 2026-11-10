@@ -72,7 +72,7 @@
  modifier_state_production_efw_public_housing_factor_desc:0 "Modifica la velocità di costruzione locale di Case Popolari."
  efw_wheat_fields:0 "Campi di Grano"
  efw_wheat_fields_plural:0 "Campi di Grano"
- efw_wheat_fields_desc:0 "Aziende agricole statali garantiscono il pane per le città e per il fronte, liberando l'industria da parte della domanda di beni di consumo. Le bonifiche aprono inoltre nuovo spazio per costruire."
+ efw_wheat_fields_desc:0 "Aziende agricole statali che rendono la nazione autonoma nel cibo: pane per le città e per il fronte senza importare nulla. Ogni stato con i Campi di Grano riduce i §Ybeni di consumo dell'1%§!, aumenta la stabilità e la crescita della popolazione. Le bonifiche aprono nuovo spazio per costruire e i granai riforniscono le truppe di passaggio."
  modifier_production_speed_efw_wheat_fields_factor:0 "Velocità di costruzione Campi di Grano"
  modifier_production_speed_efw_wheat_fields_factor_desc:0 "Modifica la velocità di costruzione di Campi di Grano."
  modifier_state_production_efw_wheat_fields_factor:0 "Velocità di costruzione locale Campi di Grano"

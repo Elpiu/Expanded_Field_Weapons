@@ -1,0 +1,467 @@
+# Expanded Field Weapons - Vocazioni Nazionali
+#
+# Struttura per ogni percorso <p> (research, industry, army, navy, scrap):
+#   efw_vocation_<p>_1   scelta della vocazione (una sola per paese)
+#   efw_vocation_<p>_2   richiede edifici EFW + una legge a tema
+#   efw_vocation_<p>_3   richiede piu' edifici + due leggi a tema
+# Tra un livello e l'altro servono 120 giorni (flag efw_vocation_settling).
+# Solo giocatore: is_ai = no e ai_will_do = 0.
+
+efw_vocation_category = {
+
+    # =====================================================================
+    # RESEARCH
+    # =====================================================================
+    efw_vocation_research_1 = {
+        icon = generic_research
+        visible = {
+            is_ai = no
+            NOT = { has_country_flag = efw_vocation_chosen }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_crisis_tt
+                NOT = { has_idea = efw_vocation_crisis_idea }
+            }
+        }
+        cost = 50
+        fire_only_once = no
+        complete_effect = {
+            set_country_flag = efw_vocation_chosen
+            set_country_flag = { flag = efw_vocation_settling days = 120 }
+            add_ideas = efw_voc_research_1
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_vocation_research_2 = {
+        icon = generic_research
+        visible = {
+            is_ai = no
+            has_idea = efw_voc_research_1
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_settling_tt
+                NOT = { has_country_flag = efw_vocation_settling }
+            }
+            efw_research_center > 1
+            amount_research_slots > 3
+            OR = {
+                has_idea = efw_edu_scholarships
+                has_idea = efw_edu_elite_universities
+                has_idea = efw_edu_research_exchange
+                has_idea = efw_edu_military_research
+            }
+        }
+        cost = 100
+        fire_only_once = no
+        complete_effect = {
+            set_country_flag = { flag = efw_vocation_settling days = 120 }
+            remove_ideas = efw_voc_research_1
+            add_ideas = efw_voc_research_2
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_vocation_research_3 = {
+        icon = generic_research
+        visible = {
+            is_ai = no
+            has_idea = efw_voc_research_2
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_settling_tt
+                NOT = { has_country_flag = efw_vocation_settling }
+            }
+            efw_research_center > 3
+            amount_research_slots > 4
+            OR = {
+                has_idea = efw_edu_elite_universities
+                has_idea = efw_edu_research_exchange
+            }
+            OR = {
+                has_idea = efw_sub_research_grants
+                has_idea = efw_sub_science_city
+            }
+        }
+        cost = 150
+        fire_only_once = no
+        complete_effect = {
+            remove_ideas = efw_voc_research_2
+            add_ideas = efw_voc_research_3
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    # =====================================================================
+    # INDUSTRY
+    # =====================================================================
+    efw_vocation_industry_1 = {
+        icon = generic_industry
+        visible = {
+            is_ai = no
+            NOT = { has_country_flag = efw_vocation_chosen }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_crisis_tt
+                NOT = { has_idea = efw_vocation_crisis_idea }
+            }
+        }
+        cost = 50
+        fire_only_once = no
+        complete_effect = {
+            set_country_flag = efw_vocation_chosen
+            set_country_flag = { flag = efw_vocation_settling days = 120 }
+            add_ideas = efw_voc_industry_1
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_vocation_industry_2 = {
+        icon = generic_industry
+        visible = {
+            is_ai = no
+            has_idea = efw_voc_industry_1
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_settling_tt
+                NOT = { has_country_flag = efw_vocation_settling }
+            }
+            efw_labor_directorate > 1
+            OR = {
+                has_idea = efw_ind_heavy_industry
+                has_idea = efw_ind_five_year_plan
+                has_idea = efw_ind_scientific_management
+            }
+        }
+        cost = 100
+        fire_only_once = no
+        complete_effect = {
+            set_country_flag = { flag = efw_vocation_settling days = 120 }
+            remove_ideas = efw_voc_industry_1
+            add_ideas = efw_voc_industry_2
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_vocation_industry_3 = {
+        icon = generic_industry
+        visible = {
+            is_ai = no
+            has_idea = efw_voc_industry_2
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_settling_tt
+                NOT = { has_country_flag = efw_vocation_settling }
+            }
+            efw_labor_directorate > 3
+            efw_propaganda_center > 1
+            OR = {
+                has_idea = efw_ind_heavy_industry
+                has_idea = efw_ind_five_year_plan
+            }
+            OR = {
+                has_idea = efw_lab_long_shifts
+                has_idea = efw_lab_labour_mobilization
+                has_idea = efw_lab_corporatism
+            }
+        }
+        cost = 150
+        fire_only_once = no
+        complete_effect = {
+            remove_ideas = efw_voc_industry_2
+            add_ideas = efw_voc_industry_3
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    # =====================================================================
+    # ARMY
+    # =====================================================================
+    efw_vocation_army_1 = {
+        icon = generic_army_support
+        visible = {
+            is_ai = no
+            NOT = { has_country_flag = efw_vocation_chosen }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_crisis_tt
+                NOT = { has_idea = efw_vocation_crisis_idea }
+            }
+        }
+        cost = 50
+        fire_only_once = no
+        complete_effect = {
+            set_country_flag = efw_vocation_chosen
+            set_country_flag = { flag = efw_vocation_settling days = 120 }
+            add_ideas = efw_voc_army_1
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_vocation_army_2 = {
+        icon = generic_army_support
+        visible = {
+            is_ai = no
+            has_idea = efw_voc_army_1
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_settling_tt
+                NOT = { has_country_flag = efw_vocation_settling }
+            }
+            efw_propaganda_center > 1
+            OR = {
+                has_idea = efw_fw_heavy_weapons
+                has_idea = efw_fw_assault_squads
+                has_idea = efw_fw_defence_in_depth
+            }
+        }
+        cost = 100
+        fire_only_once = no
+        complete_effect = {
+            set_country_flag = { flag = efw_vocation_settling days = 120 }
+            remove_ideas = efw_voc_army_1
+            add_ideas = efw_voc_army_2
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_vocation_army_3 = {
+        icon = generic_army_support
+        visible = {
+            is_ai = no
+            has_idea = efw_voc_army_2
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_settling_tt
+                NOT = { has_country_flag = efw_vocation_settling }
+            }
+            efw_propaganda_center > 3
+            efw_logistics_center > 1
+            OR = {
+                has_idea = efw_fw_heavy_weapons
+                has_idea = efw_fw_assault_squads
+                has_idea = efw_fw_defence_in_depth
+            }
+            OR = {
+                has_idea = efw_cmd_war_college
+                has_idea = efw_cmd_general_staff
+                has_idea = efw_cmd_veteran_cadres
+            }
+        }
+        cost = 150
+        fire_only_once = no
+        complete_effect = {
+            remove_ideas = efw_voc_army_2
+            add_ideas = efw_voc_army_3
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    # =====================================================================
+    # NAVY
+    # =====================================================================
+    efw_vocation_navy_1 = {
+        icon = generic_naval
+        visible = {
+            is_ai = no
+            NOT = { has_country_flag = efw_vocation_chosen }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_crisis_tt
+                NOT = { has_idea = efw_vocation_crisis_idea }
+            }
+        }
+        cost = 50
+        fire_only_once = no
+        complete_effect = {
+            set_country_flag = efw_vocation_chosen
+            set_country_flag = { flag = efw_vocation_settling days = 120 }
+            add_ideas = efw_voc_navy_1
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_vocation_navy_2 = {
+        icon = generic_naval
+        visible = {
+            is_ai = no
+            has_idea = efw_voc_navy_1
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_settling_tt
+                NOT = { has_country_flag = efw_vocation_settling }
+            }
+            num_of_naval_factories > 9
+            OR = {
+                has_idea = efw_ind_great_shipyards
+                has_idea = efw_fleet_blue_water
+                has_idea = efw_fleet_torpedo_doctrine
+                has_idea = efw_fleet_rapid_refit
+            }
+        }
+        cost = 100
+        fire_only_once = no
+        complete_effect = {
+            set_country_flag = { flag = efw_vocation_settling days = 120 }
+            remove_ideas = efw_voc_navy_1
+            add_ideas = efw_voc_navy_2
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_vocation_navy_3 = {
+        icon = generic_naval
+        visible = {
+            is_ai = no
+            has_idea = efw_voc_navy_2
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_settling_tt
+                NOT = { has_country_flag = efw_vocation_settling }
+            }
+            num_of_naval_factories > 24
+            has_idea = efw_ind_great_shipyards
+            OR = {
+                has_idea = efw_fleet_blue_water
+                has_idea = efw_fleet_torpedo_doctrine
+                has_idea = efw_fleet_rapid_refit
+                has_idea = efw_cv_convoy_system
+            }
+        }
+        cost = 150
+        fire_only_once = no
+        complete_effect = {
+            remove_ideas = efw_voc_navy_2
+            add_ideas = efw_voc_navy_3
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    # =====================================================================
+    # SCRAP
+    # =====================================================================
+    efw_vocation_scrap_1 = {
+        icon = generic_scorched_earth
+        visible = {
+            is_ai = no
+            NOT = { has_country_flag = efw_vocation_chosen }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_crisis_tt
+                NOT = { has_idea = efw_vocation_crisis_idea }
+            }
+        }
+        cost = 50
+        fire_only_once = no
+        complete_effect = {
+            set_country_flag = efw_vocation_chosen
+            set_country_flag = { flag = efw_vocation_settling days = 120 }
+            add_ideas = efw_voc_scrap_1
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_vocation_scrap_2 = {
+        icon = generic_scorched_earth
+        visible = {
+            is_ai = no
+            has_idea = efw_voc_scrap_1
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_settling_tt
+                NOT = { has_country_flag = efw_vocation_settling }
+            }
+            has_equipment = { efw_pipe_gun_rifle > 4999 }
+            OR = {
+                has_idea = efw_res_scrap_drive
+                has_idea = efw_res_substitutes
+            }
+        }
+        cost = 100
+        fire_only_once = no
+        complete_effect = {
+            set_country_flag = { flag = efw_vocation_settling days = 120 }
+            remove_ideas = efw_voc_scrap_1
+            add_ideas = efw_voc_scrap_2
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    efw_vocation_scrap_3 = {
+        icon = generic_scorched_earth
+        visible = {
+            is_ai = no
+            has_idea = efw_voc_scrap_2
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = efw_vocation_settling_tt
+                NOT = { has_country_flag = efw_vocation_settling }
+            }
+            has_equipment = { efw_pipe_gun_rifle > 19999 }
+            OR = {
+                has_idea = efw_res_scrap_drive
+                has_idea = efw_res_substitutes
+            }
+            OR = {
+                has_idea = efw_trade_autarky
+                has_idea = efw_trade_import_quotas
+            }
+        }
+        cost = 150
+        fire_only_once = no
+        complete_effect = {
+            remove_ideas = efw_voc_scrap_2
+            add_ideas = efw_voc_scrap_3
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    # =====================================================================
+    # RINNEGARE LA VOCAZIONE
+    # =====================================================================
+    efw_vocation_abandon = {
+        icon = generic_prepare_civil_war
+        visible = {
+            is_ai = no
+            has_country_flag = efw_vocation_chosen
+        }
+        cost = 25
+        fire_only_once = no
+        complete_effect = {
+            remove_ideas = efw_voc_research_1
+            remove_ideas = efw_voc_research_2
+            remove_ideas = efw_voc_research_3
+            remove_ideas = efw_voc_industry_1
+            remove_ideas = efw_voc_industry_2
+            remove_ideas = efw_voc_industry_3
+            remove_ideas = efw_voc_army_1
+            remove_ideas = efw_voc_army_2
+            remove_ideas = efw_voc_army_3
+            remove_ideas = efw_voc_navy_1
+            remove_ideas = efw_voc_navy_2
+            remove_ideas = efw_voc_navy_3
+            remove_ideas = efw_voc_scrap_1
+            remove_ideas = efw_voc_scrap_2
+            remove_ideas = efw_voc_scrap_3
+            clr_country_flag = efw_vocation_chosen
+            clr_country_flag = efw_vocation_settling
+            add_timed_idea = { idea = efw_vocation_crisis_idea days = 180 }
+        }
+        ai_will_do = { factor = 0 }
+    }
+}

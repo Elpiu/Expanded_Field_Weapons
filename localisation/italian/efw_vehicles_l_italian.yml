@@ -1,0 +1,30 @@
+﻿l_italian:
+ # === CARRO VELOCE (mini carro) ===
+ efw_tankette_equipment:0 "Carri Veloci"
+ efw_tankette_equipment_desc:0 "Due uomini, una mitragliatrice e un motore da camion dentro una scatola di lamiera. Più veloce del suo stesso coraggio: economico e agile, ma qualsiasi cannone anticarro lo apre come una scatoletta di sardine."
+ efw_tankette_equipment_1:0 "Carro Veloce EFW"
+ efw_tankette_equipment_1_short:0 "Carro Veloce"
+ efw_tankette_equipment_1_desc:0 "Due uomini, una mitragliatrice e un motore da camion dentro una scatola di lamiera. Più veloce del suo stesso coraggio: economico e agile, ma qualsiasi cannone anticarro lo apre come una scatoletta di sardine."
+ efw_tankette_battalion:0 "Battaglione Carri Veloci"
+ efw_tankette_battalion_desc:0 "Mini carri armati da due uomini. Un battaglione costa circa un quarto di uno di carri leggeri e travolge la fanteria senza anticarro, ma la corazza è sottile. Usano i Carri Veloci EFW."
+ efw_tankette_unlock:0 "EFW: Carri Veloci"
+
+ # === MOTO CON MITRAGLIATRICE ===
+ efw_motorcycle_mg_equipment:0 "Moto con Mitragliatrice"
+ efw_motorcycle_mg_equipment_desc:0 "Una moto, un side-car e una mitragliatrice montata dove dovrebbe sedere la suocera. Rapida, rumorosa e sorprendentemente letale sulle strade bianche."
+ efw_motorcycle_mg_equipment_1:0 "Moto Mitragliera EFW"
+ efw_motorcycle_mg_equipment_1_short:0 "Moto MG"
+ efw_motorcycle_mg_equipment_1_desc:0 "Una moto, un side-car e una mitragliatrice montata dove dovrebbe sedere la suocera. Rapida, rumorosa e sorprendentemente letale sulle strade bianche."
+ efw_motorcycle_mg_company:0 "Compagnia Motociclisti Mitraglieri"
+ efw_motorcycle_mg_company_desc:0 "Ricognizione motorizzata su moto con side-car armato. Vede lontano come la ricognizione motorizzata, costa meno e dà §G+5% attacco§! a tutta la fanteria della divisione. Occupa lo slot della ricognizione."
+ efw_motorcycle_unlock:0 "EFW: Motociclisti Mitraglieri"
+
+ # === FURGONE CON CANNONE ===
+ efw_gun_truck_equipment:0 "Furgoni con Cannone"
+ efw_gun_truck_equipment_desc:0 "Prendi un camion. Prendi un cannone anticarro. Legali insieme con molta corda e un po' di fede. Spara a fanteria e mezzi leggeri e scappa prima che qualcuno risponda: di corazza non ce n'è."
+ efw_gun_truck_equipment_1:0 "Autocannone Improvvisato EFW"
+ efw_gun_truck_equipment_1_short:0 "Autocannone"
+ efw_gun_truck_equipment_1_desc:0 "Prendi un camion. Prendi un cannone anticarro. Legali insieme con molta corda e un po' di fede. Spara a fanteria e mezzi leggeri e scappa prima che qualcuno risponda: di corazza non ce n'è."
+ efw_gun_truck_battalion:0 "Batteria Autocannoni"
+ efw_gun_truck_battalion_desc:0 "Cannoni anticarro montati su furgoni. Artiglieria di linea veloce come la fanteria motorizzata, con buona perforazione e nessuna protezione. Usa gli Autocannoni Improvvisati EFW."
+ efw_gun_truck_unlock:0 "EFW: Autocannoni Improvvisati"

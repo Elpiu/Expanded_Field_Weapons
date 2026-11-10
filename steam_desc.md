@@ -12,7 +12,11 @@ Early-game economic decisions allow countries to accelerate industrialization th
 
 **New laws in the politics panel:** four new sections—Economy and Finance, Society and Internal Order, Army and General Staff, Navy, Air Force and Services—with 6 law slots each and 8 laws per slot (192 laws). In every slot five laws cost 50 PP and three slightly stronger ones cost 100 PP. Every law mixes bonuses and drawbacks: none is free, but the right combination gives a real edge. Slots start empty and the AI does not use these laws.
 
-**Built-in FPS optimisation:** lighter map graphics (no shadows, trees, water refraction, civilian 3D buildings or 3D weather particles), shorter logs and less frequent AI recalculation. Ground snow and every other weather effect on combat are unchanged.
+**National Vocations:** pick ONE path (Republic of Scientists, Workshop of the Nation, Nation in Arms, Lords of the Sea or the Art of Making Do) and push it to tier three. Every tier needs EFW buildings and matching laws: line them up and you get huge bonuses (up to +40% research from the vocation alone), paid for with drawbacks in the other fields.
+
+**Welcome event:** a ministry inspector with a hydraulic pipe introduces the mod and offers a starting gift.
+
+**Built-in FPS optimisation:** lighter map graphics (no shadows, trees, water refraction, civilian 3D buildings or 3D weather particles), shorter logs and less frequent AI recalculation. EFW's own scripts have no daily checks: technology sync runs weekly and switches itself off once a country has unlocked everything. Ground snow and every other weather effect on combat are unchanged.
 
 ### Main features:
 
@@ -22,6 +26,7 @@ Early-game economic decisions allow countries to accelerate industrialization th
 - Heavy Weapons line battalion
 - Integration with vanilla Support Weapons technologies
 - Improvised naval designs and modules
+- Improvised light vehicles: Tankette, Machine-Gun Motorcycle and Gun Truck (no tank designer needed)
 - EFW Wooden Fighter and improvised aircraft modules
 - Custom icons for every EFW unit and designer module
 - Four strategic national buildings
@@ -33,6 +38,8 @@ Early-game economic decisions allow countries to accelerate industrialization th
 - 8 generic political advisors: one government advisor per ideology (democratic, communist, fascist, non-aligned) and four technical advisors
 - Optional Rapid Invasions, switchable on and off with a decision
 - Economic coordination and National Mobilization progression
+- 5 National Vocations with 3 tiers each
+- Welcome event with a starting gift
 - Early-game industrial plans, public works, naval programme and national bonds
 - Built-in FPS optimisation
 - Designed primarily for HOI4 1.19.x
@@ -41,12 +48,12 @@ Early-game economic decisions allow countries to accelerate industrialization th
 
 ### NOTE !!!
 
-Some EFW content is initialized through scripted effects and may take 1–2 in-game days to appear after starting a new game.
+The wooden fighter and the improvised ships appear 1–2 in-game days after starting a game.
 
 - **Pipe-Gun Rifle:** Available immediately from day one to quickly equip second-line units, ports, and frontline placeholders without consuming strategic resources.
 - **Heavy Field Weapons:** For Machine Guns, Mortars, and Infantry Anti-Tank production, make sure **Support Weapons I** has been researched.
 
-After the required technology is available, allow the game to run for approximately 1–2 in-game days so the mod can initialize the related equipment and variants.
+After the required technology is researched, the new equipment unlocks within one in-game week.
 
 Some improvised vehicles and designer-based equipment may also require the relevant vanilla designer/system to be available.
 

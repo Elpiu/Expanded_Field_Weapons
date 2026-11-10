@@ -1,0 +1,252 @@
+# Expanded Field Weapons - Vocazioni Nazionali + regali del benvenuto
+#
+# Cinque percorsi, tre livelli ciascuno. Se ne sceglie UNO solo.
+# Il livello 3 dà un bonus enorme nel suo campo e un malus serio altrove:
+# conviene solo se edifici EFW, leggi e vocazione puntano tutti nella stessa direzione.
+# Decisioni in common/decisions/efw_vocation_decisions.txt.
+
+ideas = {
+    country = {
+
+        # =============================================================
+        # REPUBBLICA DEGLI SCIENZIATI (ricerca)
+        # =============================================================
+        efw_voc_research_1 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_research_bonus
+            modifier = {
+                research_speed_factor = 0.10
+                consumer_goods_factor = 0.02
+            }
+        }
+        efw_voc_research_2 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_research_bonus
+            modifier = {
+                research_speed_factor = 0.22
+                consumer_goods_factor = 0.04
+                industrial_capacity_factory = -0.03
+            }
+        }
+        efw_voc_research_3 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_research_bonus
+            modifier = {
+                research_speed_factor = 0.40
+                consumer_goods_factor = 0.06
+                industrial_capacity_factory = -0.08
+                war_support_factor = -0.05
+            }
+        }
+
+        # =============================================================
+        # OFFICINA DELLA NAZIONE (industria)
+        # =============================================================
+        efw_voc_industry_1 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_production_bonus
+            modifier = {
+                industrial_capacity_factory = 0.06
+                production_speed_buildings_factor = 0.08
+                research_speed_factor = -0.03
+            }
+        }
+        efw_voc_industry_2 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_production_bonus
+            modifier = {
+                industrial_capacity_factory = 0.14
+                production_speed_buildings_factor = 0.15
+                production_factory_efficiency_gain_factor = 0.10
+                research_speed_factor = -0.06
+                stability_factor = -0.02
+            }
+        }
+        efw_voc_industry_3 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_production_bonus
+            modifier = {
+                industrial_capacity_factory = 0.28
+                production_speed_buildings_factor = 0.25
+                production_factory_efficiency_gain_factor = 0.20
+                production_factory_max_efficiency_factor = 0.05
+                research_speed_factor = -0.10
+                stability_factor = -0.05
+                monthly_population = -0.10
+            }
+        }
+
+        # =============================================================
+        # NAZIONE IN ARMI (esercito)
+        # =============================================================
+        efw_voc_army_1 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_army_war_college
+            modifier = {
+                army_attack_factor = 0.03
+                army_defence_factor = 0.03
+                training_time_army_factor = -0.05
+                consumer_goods_factor = 0.02
+            }
+        }
+        efw_voc_army_2 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_army_war_college
+            modifier = {
+                army_attack_factor = 0.08
+                army_defence_factor = 0.08
+                conscription_factor = 0.03
+                training_time_army_factor = -0.10
+                research_speed_factor = -0.05
+                consumer_goods_factor = 0.03
+            }
+        }
+        efw_voc_army_3 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_army_war_college
+            modifier = {
+                army_attack_factor = 0.16
+                army_defence_factor = 0.16
+                army_org_factor = 0.05
+                conscription_factor = 0.06
+                training_time_army_factor = -0.20
+                experience_gain_army_factor = 0.15
+                research_speed_factor = -0.10
+                consumer_goods_factor = 0.05
+                stability_factor = -0.03
+            }
+        }
+
+        # =============================================================
+        # SIGNORI DEL MARE (marina)
+        # =============================================================
+        efw_voc_navy_1 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_sea_focused_navy
+            modifier = {
+                industrial_capacity_dockyard = 0.06
+                naval_damage_factor = 0.03
+                industrial_capacity_factory = -0.02
+            }
+        }
+        efw_voc_navy_2 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_sea_focused_navy
+            modifier = {
+                industrial_capacity_dockyard = 0.15
+                naval_damage_factor = 0.06
+                naval_defense_factor = 0.06
+                repair_speed_factor = 0.10
+                industrial_capacity_factory = -0.05
+            }
+        }
+        efw_voc_navy_3 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_sea_focused_navy
+            modifier = {
+                industrial_capacity_dockyard = 0.30
+                naval_damage_factor = 0.12
+                naval_defense_factor = 0.12
+                repair_speed_factor = 0.25
+                refit_speed = 0.25
+                industrial_capacity_factory = -0.10
+                training_time_army_factor = 0.10
+            }
+        }
+
+        # =============================================================
+        # L'ARTE DELL'ARRANGIARSI (improvvisazione)
+        # =============================================================
+        efw_voc_scrap_1 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_exploit_mines
+            modifier = {
+                production_lack_of_resource_penalty_factor = -0.15
+                production_factory_start_efficiency_factor = 0.05
+                research_speed_factor = -0.02
+            }
+        }
+        efw_voc_scrap_2 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_exploit_mines
+            modifier = {
+                production_lack_of_resource_penalty_factor = -0.35
+                production_factory_start_efficiency_factor = 0.10
+                local_resources_factor = 0.05
+                industrial_capacity_factory = 0.05
+                research_speed_factor = -0.04
+                stability_factor = -0.02
+            }
+        }
+        efw_voc_scrap_3 = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_exploit_mines
+            modifier = {
+                production_lack_of_resource_penalty_factor = -0.60
+                production_factory_start_efficiency_factor = 0.20
+                production_factory_max_efficiency_factor = 0.05
+                local_resources_factor = 0.10
+                industrial_capacity_factory = 0.12
+                research_speed_factor = -0.08
+                stability_factor = -0.04
+            }
+        }
+
+        # =============================================================
+        # CRISI D'IDENTITÀ NAZIONALE (dopo aver rinnegato una vocazione)
+        # =============================================================
+        efw_vocation_crisis_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_disjointed_gov
+            modifier = {
+                stability_factor = -0.05
+                political_power_factor = -0.20
+            }
+        }
+
+        # =============================================================
+        # REGALI DEL BENVENUTO (180 giorni)
+        # =============================================================
+        efw_welcome_research_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_research_bonus
+            modifier = {
+                research_speed_factor = 0.05
+            }
+        }
+        efw_welcome_industry_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_production_bonus
+            modifier = {
+                production_speed_buildings_factor = 0.10
+            }
+        }
+        efw_welcome_army_idea = {
+            allowed = { always = no }
+            removal_cost = -1
+            picture = generic_army_war_college
+            modifier = {
+                training_time_army_factor = -0.10
+                experience_gain_army_factor = 0.05
+            }
+        }
+    }
+}

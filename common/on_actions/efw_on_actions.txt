@@ -1,193 +1,68 @@
-# Expanded Field Weapons v1.2.0
-# Daily synchronization for the core EFW infantry/support equipment.
+# Expanded Field Weapons - on_actions
 #
-# This file intentionally applies the hidden progression technologies
-# to both human and AI countries.
-#
-# Aircraft and naval improvised variants are handled separately
-# in their dedicated on_action files.
+# OTTIMIZZAZIONE CPU
+# Prima la mod aveva tre blocchi on_daily: ogni giorno, per ogni paese,
+# circa 10 controlli di tecnologie e flag, per tutta la partita.
+# Ora:
+#   - l'inizializzazione del giocatore (aereo in legno e navi improvvisate)
+#     è una catena di eventi nascosti lanciata una volta sola
+#     (events/efw_welcome_events.txt);
+#   - la sincronizzazione delle tecnologie gira una volta a settimana e,
+#     quando un paese ha sbloccato tutto, si riduce a un solo controllo
+#     di flag (efw_sync_complete_v2; il suffisso si incrementa quando si aggiungono sblocchi).
+# Risultato: circa 7 volte meno valutazioni all'inizio e quasi zero a fine
+# progressione. Costo: uno sblocco può arrivare fino a 7 giorni dopo la ricerca.
 
 on_actions = {
 
     # =========================================================
-    # STARTUP
+    # STARTUP (non gira su un paese specifico)
     # =========================================================
 
     on_startup = {
         effect = {
 
-            # Sblocca la Pipe Gun per tutte le nazioni del gioco.
-            # enable_equipments esiste solo dentro le tecnologie, quindi
-            # si assegna la tech nascosta efw_pipe_gun_unlock.
+            # Pipe Gun e mezzi leggeri improvvisati disponibili a tutti dal primo giorno.
+            # enable_equipments/enable_subunits esistono solo nelle tecnologie,
+            # quindi si assegnano tecnologie nascoste.
             every_country = {
-                set_technology = {
-                    efw_pipe_gun_unlock = 1
-                    popup = no
-                }
+                efw_unlock_improvised_gear = yes
             }
 
-            # Show the EFW startup confirmation only to human players.
+            # Giocatori umani: inizializzazione + evento di benvenuto.
             every_country = {
                 limit = {
                     is_ai = no
                 }
-
-                country_event = {
-                    id = efw_test.1
-                    days = 1
-                }
+                efw_player_init = yes
             }
         }
     }
 
 
     # =========================================================
-    # DAILY TECHNOLOGY SYNCHRONIZATION
+    # SINCRONIZZAZIONE SETTIMANALE (gira su ogni paese)
     # =========================================================
 
-    on_daily = {
+    on_weekly = {
         effect = {
 
-            # -------------------------------------------------
-            # SUPPORT WEAPONS I
-            # Unlock the permanent EFW equipment and formations.
-            # -------------------------------------------------
-
-            if = {
-                limit = {
-                    has_tech = support_weapons
-
-                    NOT = {
-                        has_tech = efw_unlock_core_weapons
-                    }
-                }
-
-                set_technology = {
-                    efw_unlock_core_weapons = 1
-                    popup = no
-                }
-            }
-
-
-            # -------------------------------------------------
-            # LEGIONARI DELL'IMPERO
-            # Player-only: the AI never unlocks or recruits them.
-            # -------------------------------------------------
-
+            # Cambio di nazione o nuovo giocatore in multiplayer:
+            # inizializza anche un paese preso a partita in corso.
             if = {
                 limit = {
                     is_ai = no
-                    has_tech = support_weapons
-
-                    NOT = {
-                        has_tech = efw_legionari_unlock
-                    }
+                    NOT = { has_country_flag = efw_player_init_started }
                 }
-
-                set_technology = {
-                    efw_legionari_unlock = 1
-                    popup = no
-                }
+                efw_player_init = yes
             }
 
-
-            # -------------------------------------------------
-            # SUPPORT WEAPONS II
-            # -------------------------------------------------
-
+            # Paesi che hanno già sbloccato tutto: un solo controllo e basta.
             if = {
                 limit = {
-                    has_tech = support_weapons2
-
-                    NOT = {
-                        has_tech = efw_support_upgrade_2
-                    }
+                    NOT = { has_country_flag = efw_sync_complete_v2 }
                 }
-
-                set_technology = {
-                    efw_support_upgrade_2 = 1
-                    popup = no
-                }
-            }
-
-
-            # -------------------------------------------------
-            # SUPPORT WEAPONS III
-            # -------------------------------------------------
-
-            if = {
-                limit = {
-                    has_tech = support_weapons3
-
-                    NOT = {
-                        has_tech = efw_support_upgrade_3
-                    }
-                }
-
-                set_technology = {
-                    efw_support_upgrade_3 = 1
-                    popup = no
-                }
-            }
-
-
-            # -------------------------------------------------
-            # SUPPORT WEAPONS IV
-            # -------------------------------------------------
-
-            if = {
-                limit = {
-                    has_tech = support_weapons4
-
-                    NOT = {
-                        has_tech = efw_support_upgrade_4
-                    }
-                }
-
-                set_technology = {
-                    efw_support_upgrade_4 = 1
-                    popup = no
-                }
-            }
-
-
-            # -------------------------------------------------
-            # VANILLA INFANTRY AT I
-            # -------------------------------------------------
-
-            if = {
-                limit = {
-                    has_tech = infantry_at
-
-                    NOT = {
-                        has_tech = efw_at_upgrade_1
-                    }
-                }
-
-                set_technology = {
-                    efw_at_upgrade_1 = 1
-                    popup = no
-                }
-            }
-
-
-            # -------------------------------------------------
-            # VANILLA INFANTRY AT II
-            # -------------------------------------------------
-
-            if = {
-                limit = {
-                    has_tech = infantry_at2
-
-                    NOT = {
-                        has_tech = efw_at_upgrade_2
-                    }
-                }
-
-                set_technology = {
-                    efw_at_upgrade_2 = 1
-                    popup = no
-                }
+                efw_sync_support_techs = yes
             }
         }
     }

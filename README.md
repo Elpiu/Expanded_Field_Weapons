@@ -1,381 +1,280 @@
+<div align="center">
+
+<img src="thumbnail.png" alt="Expanded Field Weapons" width="720">
+
 # Expanded Field Weapons (EFW)
 
-**Expanded Field Weapons** amplia Hearts of Iron IV con equipaggiamenti da campo, mezzi improvvisati, un sistema di mobilitazione economica nazionale e 192 nuove leggi nel pannello politico.  
-La mod nasce per dare maggiore importanza a mitragliatrici, mortai, armi anticarro, mezzi navali e aerei improvvisati, oltre alla preparazione industriale del paese.  
-L'obiettivo è aggiungere nuove scelte strategiche senza sostituire i sistemi vanilla, mantenendo tutto leggibile, modulare e facile da bilanciare.  
-Molti contenuti sono pensati soprattutto per il giocatore e sfruttano equipaggiamenti, designer e meccaniche già presenti in HOI4.  
-La mod è sviluppata e testata principalmente su **Hearts of Iron IV 1.19.x**.
+**Rendere utile anche ciò che una nazione può produrre quando non può permettersi il meglio.**
 
-Link Steam Workshop
+[![Steam Workshop](https://img.shields.io/badge/Steam%20Workshop-3801242021-1b2838?logo=steam&logoColor=white)](https://steamcommunity.com/sharedfiles/filedetails/?id=3801242021)
+![HOI4](https://img.shields.io/badge/Hearts%20of%20Iron%20IV-1.19.x-8b5a2b)
+![Lingue](https://img.shields.io/badge/lingue-italiano%20%7C%20english-4a7a3a)
+![Stato](https://img.shields.io/badge/stato-in%20sviluppo-orange)
 
-https://steamcommunity.com/sharedfiles/filedetails/?id=3801242021
-
----
-
-# Contenuti della mod
-
-## 1. Nuovi equipaggiamenti da campo
-
-EFW separa parte dell'equipaggiamento pesante della fanteria dalle normali Infantry Equipment, introducendo tre nuove categorie produttive dedicate.
-
-### Mitragliatrici
-
-Le **Mitragliatrici** rappresentano mitragliatrici leggere, medie e pesanti destinate alle unità di supporto e ai reparti di armi pesanti.
-
-Sono prodotte come equipaggiamento separato e vengono utilizzate da:
-
-- Compagnia Supporto Mitragliatrici
-- Battaglione Armi Pesanti
-
-### Mortai
-
-I **Mortai** rappresentano mortai leggeri e medi utilizzati come supporto diretto alla fanteria.
-
-Sono prodotti separatamente e vengono utilizzati da:
-
-- Compagnia Supporto Mortai
-- Battaglione Armi Pesanti
-
-### Armi anticarro di fanteria
-
-Le **Armi anticarro** rappresentano fucili anticarro, lanciatori, cariche e altri sistemi portatili destinati alla fanteria.
-
-Sono prodotti separatamente e vengono utilizzati da:
-
-- Compagnia Supporto Anticarro di Fanteria
-- Battaglione Armi Pesanti
-
-Questi equipaggiamenti sono pensati per rendere più interessante la produzione terrestre e per distinguere meglio la fanteria standard dai reparti specializzati.
+</div>
 
 ---
 
-# 2. Nuove compagnie di supporto
+Mitragliatrici, mortai e anticarro prodotti a parte. Un fucile fatto con un tubo idraulico. Un caccia di compensato con la blindatura di una stufa. Navi a vela nel 1939.
+E intorno, un intero sistema economico: edifici strategici, decisioni di mobilitazione e **192 nuove leggi** nel pannello politico.
 
-La mod aggiunge tre compagnie di supporto dedicate.
+EFW aggiunge scelte strategiche a Hearts of Iron IV **senza sostituire i sistemi vanilla**: usa i designer, gli scafi, gli airframe e le leggi del gioco e ci costruisce sopra.
+Gran parte dei contenuti è pensata per il giocatore umano: l'IA non li usa, così il resto del mondo si comporta come in vanilla.
 
-## Compagnia Supporto Mitragliatrici
+## Indice
 
-Una compagnia specializzata nel fuoco automatico e nella soppressione.
-
-Utilizza principalmente:
-
-```text
-Mitragliatrici
-```
-
-Il suo scopo è aumentare la capacità della fanteria di mantenere un volume di fuoco elevato senza richiedere un intero battaglione di linea.
-
-## Compagnia Supporto Mortai
-
-Una compagnia specializzata nel supporto indiretto a corto raggio.
-
-Utilizza:
-
-```text
-Mortai
-```
-
-È pensata per aumentare soprattutto la capacità offensiva contro bersagli morbidi e fortificazioni leggere.
-
-## Compagnia Supporto Anticarro di Fanteria
-
-Una compagnia dedicata alla difesa contro mezzi corazzati leggeri e medi.
-
-Utilizza:
-
-```text
-Armi anticarro
-```
-
-Permette di dare capacità anticarro alla fanteria senza dipendere esclusivamente dai normali battaglioni AT vanilla.
+| | | |
+|---|---|---|
+| 🔫 [Armi da campo](#-armi-da-campo) | 🪖 [Unità](#-unità) | 🔧 [Pipe-Gun Rifle](#-pipe-gun-rifle) |
+| ⚓ [Navi improvvisate](#-navi-improvvisate) | 🪵 [Caccia in legno](#-caccia-in-legno) | 🏭 [Edifici](#-edifici) |
+| 📜 [Decisioni](#-mobilitazione-e-investimenti-nazionali) | 📖 [Leggi](#-leggi-nel-pannello-politico) | 👔 [Designer e consiglieri](#-designer-e-consiglieri) |
+| 🎯 [Vocazioni Nazionali](#-vocazioni-nazionali) | 🚢 [Invasioni Rapide](#-opzioni-militari-invasioni-rapide) | ⚡ [FPS e prestazioni](#-ottimizzazione-fps-e-prestazioni) |
+| 👋 [Benvenuto](#-evento-di-benvenuto) | 📦 [Installazione](#-installazione) | 🧩 [Compatibilità](#-compatibilità) |
+| 🛵 [Mezzi leggeri](#-mezzi-leggeri-improvvisati) | | |
 
 ---
 
-# 3. Battaglione Armi Pesanti
+## 🔫 Armi da campo
 
-EFW introduce anche un battaglione di linea dedicato:
+<p align="center"><img src="docs/images/sheet_field_weapons.png" alt="Pipe-Gun Rifle, mitragliatrice, anticarro, mortaio" width="590"></p>
 
-## Battaglione Armi Pesanti
+EFW separa le armi pesanti della fanteria dalle normali Infantry Equipment e le trasforma in **tre linee di produzione dedicate**:
 
-Questo reparto combina:
+| Equipaggiamento | Costo | Risorse | Ruolo |
+|---|---|---|---|
+| **Mitragliatrici** | 1.00 IC | 1 acciaio | Fuoco automatico e soppressione: soft attack e difesa |
+| **Mortai** | 1.20 IC | 1 acciaio | Fuoco indiretto contro bersagli morbidi e fortificazioni leggere |
+| **Armi anticarro** | 1.40 IC | 1 acciaio, 1 tungsteno | Fucili anticarro, lanciatori e cariche: hard attack e perforazione |
+
+<p align="center"><img src="other%20img/army.png" alt="Le nuove armi nella schermata produzione" width="480"><br><sub>Le tre nuove linee nella schermata produzione</sub></p>
+
+Si sbloccano con **Support Weapons I**; Support Weapons II, III e IV danno bonus cumulativi alle nuove unità.
+Il sistema cresce insieme alla normale ricerca della fanteria invece di aggiungere un albero tecnologico separato.
+
+<details>
+<summary><b>Statistiche base e progressione (V1.2)</b></summary>
 
 ```text
-Mitragliatrici
-Mortai
-Armi anticarro
+Mitragliatrici   Soft 9  | Hard 1  | Difesa 5 | Sfondamento 2 | Perforazione 4
+Mortai           Soft 12 | Hard 2  | Difesa 2 | Sfondamento 4 | Perforazione 6
+Armi anticarro   Soft 2  | Hard 11 | Difesa 2 | Sfondamento 1 | Perforazione 50
+
+Support Weapons II   MG +10% soft/difesa, +5% sfondamento · Mortai +10% soft/sfondamento · AT +10% hard/perforazione
+Support Weapons III  bonus analoghi
+Support Weapons IV   MG +12% soft · Mortai +12% soft/sfondamento · AT +12% hard/perforazione
+Infantry AT I e II   Compagnia AT +10% hard, +15% perforazione · Battaglione +4% hard, +8% perforazione
 ```
 
-in un'unica formazione.
-
-È pensato come reparto costoso ma versatile, utile per divisioni d'élite, fanteria pesante o unità destinate a sostenere combattimenti prolungati.
-
-Il battaglione non sostituisce artiglieria, anticarro o support companies vanilla, ma rappresenta una concentrazione di armi pesanti direttamente all'interno della fanteria.
+Dettagli in [`BALANCE_V1.2_IT.txt`](BALANCE_V1.2_IT.txt).
+</details>
 
 ---
 
-# 4. Integrazione con Support Weapons
+## 🪖 Unità
 
-Le tecnologie vanilla della famiglia **Support Weapons** sono integrate con i nuovi equipaggiamenti EFW.
+<p align="center"><img src="docs/images/sheet_unit_counters.png" alt="Icone delle unità EFW nel designer divisioni" width="760"></p>
 
-## Support Weapons I
+| Unità | Tipo | Equipaggiamento | A cosa serve |
+|---|---|---|---|
+| **Compagnia Supporto Mitragliatrici** | supporto | 30 Mitragliatrici · 220 uomini | Volume di fuoco senza sprecare un battaglione di linea |
+| **Compagnia Supporto Mortai** | supporto | 18 Mortai · 190 uomini | Attacco contro fanteria e fortificazioni leggere |
+| **Compagnia Supporto Anticarro di Fanteria** | supporto | 20 Armi AT · 180 uomini | Anticarro per la fanteria senza i battaglioni AT vanilla |
+| **Battaglione Armi Pesanti** | linea, width 2 | 60 Fucili + 45 MG + 20 Mortai + 16 AT · 900 uomini | Reparto d'élite costoso ma versatile, per combattimenti prolungati |
+| **Legionari dell'Impero** | linea, width 2, solo giocatore | 150 Fucili + 8 MG · 1500 uomini | Grande battaglione di milizia: ottimo in difesa e repressione, fragile da verde e fortissimo quando è pienamente addestrato (120 giorni) |
 
-Sblocca l'accesso iniziale ai nuovi equipaggiamenti:
-
-```text
-Mitragliatrici
-Mortai
-Armi anticarro
-```
-
-e permette l'utilizzo delle relative unità EFW.
-
-## Support Weapons II / III / IV
-
-Le tecnologie successive forniscono bonus cumulativi ai nuovi reparti e alle armi pesanti.
-
-In questo modo il sistema EFW cresce insieme alla normale progressione tecnologica della fanteria invece di creare un albero tecnologico completamente separato.
+Le unità usano i modelli 3D vanilla (`infantry`, `artillery`, `anti_tank`), quindi sulla mappa e in battaglia non compaiono mai "buchi".
+Le compagnie di supporto hanno `priority = 0`, come quelle vanilla, e non decidono il modello della divisione.
 
 ---
 
-# 5. Navi improvvisate
+## 🔧 Pipe-Gun Rifle
 
-EFW aggiunge una linea di mezzi navali improvvisati progettati per nazioni con capacità industriale limitata o per situazioni di emergenza.
+<img src="docs/images/eq_pipe_gun_rifle.png" alt="Pipe-Gun Rifle" align="right" width="150">
 
-La soluzione utilizza scafi vanilla compatibili con il Naval Designer, insieme a moduli e varianti EFW.
+Un tubo idraulico, un otturatore manuale, un calcio di tubo piegato e parecchio nastro isolante.
+Il **Pipe-Gun Rifle** è un fucile improvvisato che si produce **senza risorse strategiche** ed è disponibile **dal primo giorno**.
 
-Questo permette ai mezzi improvvisati di funzionare come normali navi HOI4:
-
-```text
-design personalizzabile
-nomi delle navi
-missioni navali
-flotte
-esperienza navale
-supremazia navale
-produzione nei cantieri
-```
-
-La mod evita, quando possibile, di creare nuovi hull completamente separati e preferisce creare varianti sopra scafi vanilla già supportati dal gioco.
-
-Sono presenti configurazioni improvvisate basate su:
+Non vincerà la guerra, ma tiene una trincea: difesa alta, attacco basso e un'affidabilità che è meglio non controllare.
 
 ```text
-ship_hull_light_1
-ship_hull_submarine_1
+Costo 0.12 IC | Acciaio 0 | Soft 4 | Hard 0.8 | Difesa 18 | Sfondamento 2 | Affidabilità 70%
 ```
 
-con moduli dedicati EFW.
+Ideale per guarnigioni, porti, unità di seconda linea, ultime resistenze disperate e nazioni minori senza acciaio.
 
-Questa architettura è stata scelta per mantenere la piena compatibilità con il designer navale e con le normali meccaniche di flotta.
+<p align="center"><img src="other%20img/pipe_gun.png" alt="Pipe-Gun Rifle in gioco" width="460"><br><sub>"Capace di essere prodotto con quasi nessuna risorsa." (tooltip in gioco, versione precedente delle statistiche)</sub></p>
 
 ---
 
-# 6. Aereo da caccia in legno
+## ⚓ Navi improvvisate
 
-EFW aggiunge un aereo improvvisato:
+<p align="center">
+  <img src="docs/images/eq_motorboat.png" alt="EFW Improvised Motorboat" width="220">
+  &nbsp;&nbsp;
+  <img src="docs/images/eq_midget_sub.png" alt="EFW One-Man Midget Submarine" width="220">
+</p>
 
-## EFW Wooden Fighter
+Per le nazioni senza grandi cantieri: la **Motovedetta Improvvisata** (scafo `ship_hull_light_1`) e il **Sommergibile Tascabile Monoposto** (scafo `ship_hull_submarine_1`).
 
-Il caccia in legno è costruito utilizzando un airframe vanilla:
+Sono varianti di scafi vanilla, quindi funzionano come navi normali in tutto e per tutto: Naval Designer, nomi, missioni, flotte, esperienza e supremazia navale.
 
-```text
-small_plane_airframe_0
-```
+<p align="center"><img src="docs/images/sheet_naval_modules.png" alt="Moduli navali improvvisati" width="500"><br><sub>Serbatoio ausiliario improvvisato · scafo carenato · vela piccola · vela grande</sub></p>
 
-e viene creato come variante compatibile con l'Air Designer.
+Sì, le vele. Nel 1939. Il carburante costa, il vento no.
 
-Il design di partenza monta il modulo speciale:
-
-```text
-efw_wooden_boost_airframe     Telaio in Legno e Compressore Overboost
-```
-
-che rappresenta una struttura costruita con materiali economici e facilmente reperibili.
-Nel designer sono disponibili anche altri moduli improvvisati per lo slot speciale piccolo:
-
-```text
-efw_improvised_drop_tank      Serbatoio Ausiliario in Carta Pressata
-efw_multirole_combat_rack     Rastrelliera d'Armamento Polivalente da Campo
-efw_cast_iron_stove_armor     Blindatura Improvvisata "Stufa da Campo"
-efw_bazooka_charlie_tubes     Tubi Lanciarazzi "Bazooka Charlie"
-```
-
-La filosofia del mezzo è semplice:
-
-```text
-costo inferiore
-peso ridotto
-buona agilità
-autonomia migliorata
-affidabilità inferiore
-protezione ridotta
-```
-
-Il Wooden Fighter utilizza componenti vanilla per motore e armamento, mantenendo la piena compatibilità con il sistema aeronautico del gioco.
+<p align="center"><img src="other%20img/navy.png" alt="Navi improvvisate nella produzione navale" width="470"></p>
 
 ---
 
-# 7. Edifici strategici
+## 🛵 Mezzi leggeri improvvisati
 
-EFW introduce quattro nuovi edifici strategici, sette edifici delle risorse e due edifici civili.
+<p align="center">
+  <img src="docs/images/eq_tankette.png" alt="Carro Veloce EFW" width="220">
+  &nbsp;&nbsp;
+  <img src="docs/images/eq_gun_truck.png" alt="Autocannone Improvvisato EFW" width="220">
+</p>
 
-Tutti gli edifici sono costruibili normalmente dalla schermata costruzioni e sono pensati per creare una progressione economica alternativa.
+Tre mezzi economici per chi non ha l'industria per i carri veri. Sono archetipi autonomi come le autoblindo vanilla: **non serve il designer dei carri** e funzionano con o senza DLC.
 
-Gli edifici strategici sono massimo 1 per stato. I bonus nazionali si sommano per ogni edificio costruito, quindi:
+| Mezzo | Unità | Costo a battaglione | Ruolo |
+|---|---|---|---|
+| **Carro Veloce EFW** (mini carro) | Battaglione Carri Veloci · 40 mezzi · width 2 | 128 IC (un battaglione di carri leggeri ne costa 400-500) | Sfondamento 20, attacco 12, corazza 12: più della perforazione della fanteria del 1936, quindi prende il bonus corazza contro chi non ha anticarro. Ma *qualsiasi cannone anticarro lo apre come una scatoletta di sardine* |
+| **Moto Mitragliera EFW** (side-car con MG) | Compagnia Motociclisti Mitraglieri · supporto | 15 moto (18 IC) + 20 fucili | Ricognizione (recon 1,5) che costa meno di quella motorizzata e dà **+5% attacco a tutta la fanteria** della divisione. Occupa lo slot della ricognizione |
+| **Autocannone Improvvisato EFW** (furgone con cannone) | Batteria Autocannoni · 12 mezzi · width 2 | 48 IC, niente camion a parte | Artiglieria e anticarro nello stesso mezzo: attacco 22, perforazione 45, veloce come i motorizzati, nessuna corazza. *Legati insieme con molta corda e un po' di fede* |
 
-- Propaganda, Lavoro e Ricerca hanno un **costo crescente**: ogni edificio già posseduto aumenta il costo del successivo;
-- ogni edificio con bonus nazionali ha anche un **malus a tema**.
-
-I primi edifici restano economici; costruirne uno in ogni stato di una grande nazione diventa molto costoso.
-
-Valori indicati per singolo edificio.
-
-## Centro di Propaganda e Mobilitazione
-
-Edificio politico-amministrativo dedicato alla propaganda e alla mobilitazione nazionale.
-
-Costo: 1000 + 1500 per ogni Centro di Propaganda già posseduto. Non usa slot.
-
-```text
-+3.6% Political Power Gain
-+0.36% Stability
-+0.36% War Support
-+3.6% difesa dalla deriva ideologica
-+1.2% popolazione reclutabile
--0.5% Research Speed            (malus: censura)
--2.4% resistenza locale
-```
-
-Il Centro di Propaganda è la porta d'ingresso principale al sistema di investimenti nazionali.
-
-## Direzione del Lavoro Nazionale
-
-Organismo destinato al coordinamento della forza lavoro e della produzione.
-
-Costo: 1600 + 2000 per ogni Direzione già posseduta. Usa uno slot di costruzione.
-
-```text
-+4.8% Factory Output
-+3.6% Construction Speed
-+3.6% crescita dell'efficienza produttiva
--3%   crescita mensile della popolazione   (malus: condizioni di lavoro dure)
--0.4% Stability                            (malus)
-+6%   risorse locali dello stato
-```
-
-Il calo di stabilità è pensato per essere compensato dai Centri di Propaganda.
-
-È pensato per sostenere la crescita industriale del paese.
-
-## Centro Nazionale di Ricerca
-
-Complesso dedicato al coordinamento di università, laboratori e ricerca applicata.
-
-Costo: 3000 + 1000 per ogni Centro di Ricerca già posseduto. Usa uno slot di costruzione.
-
-```text
-+3%   Research Speed
-+1.2% efficienza iniziale delle nuove linee di produzione
-+0.5% Consumer Goods                (malus: laboratori e personale specializzato)
-```
-
-## Centro Logistico e Difesa Civile
-
-Centro regionale per logistica, trasporti, infrastrutture e difesa civile.
-
-Costo: 2200. Non usa slot. Tutti gli effetti sono locali allo stato, per questo non ha costo crescente né malus.
-
-```text
-+0.30 rifornimenti locali
--12%  attrito per il controllore dello stato
-+12%  velocità costruzione infrastrutture
-+12%  velocità costruzione ferrovie
-+12%  velocità costruzione snodi di rifornimento
-+6%   velocità costruzione edifici nello stato
-```
-
-È particolarmente utile negli stati industriali, nelle aree strategiche e vicino ai fronti.
-
-## Edifici delle risorse
-
-Basati sulla mod **Resource Plants** (Steam Workshop 3513657215).  
-Ogni coppia di edifici piccolo/grande dell'originale (miniera + impianto) è stata fusa in **un solo edificio per risorsa**, con valori medi tra i due.
-
-Non usano slot di costruzione e hanno un massimo di 5 livelli per stato (carbone: 10).
-
-```text
-Acciaieria Integrata     +30 acciaio      per livello
-Complesso Petrolifero    +30 petrolio     per livello
-Piantagione di Gomma     +30 gomma        per livello
-Impianto di Alluminio    +30 alluminio    per livello
-Miniera di Tungsteno     +18 tungsteno    per livello
-Miniera di Cromo         +18 cromo        per livello
-Miniera di Carbone       +25 carbone      per livello
-```
-
-Costo: 5500 + 3500 per livello aggiuntivo (carbone: 1000 + 2000).  
-Tungsteno e cromo rendono meno perché nell'originale il "grande" (raffineria di terre rare) divideva la produzione tra i due metalli.
-
-Le tecnologie della mod originale non sono incluse: la produzione non cresce con la ricerca.
-
-## Case Popolari
-
-Quartieri di edilizia popolare che attirano lavoratori e famiglie nello stato.
-
-```text
-+10% manpower locale
-+10% popolazione reclutabile
-```
-
-Usa uno slot di costruzione, massimo 1 per stato.
-
-## Campi di Grano
-
-Aziende agricole statali che riducono la domanda di beni di consumo.
-
-```text
--0.5% Consumer Goods per ogni stato con Campi di Grano
-+3 slot di costruzione nello stato (usa 1 slot: +2 netti)
-+0.1 rifornimenti locali
-```
-
-Massimo 1 per stato. Il bonus ai Consumer Goods si somma tra gli stati (10 stati = -5%).
-
-## Interfaccia della vista stato
-
-La riga degli edifici senza slot nella vista stato vanilla ha solo 5 posti.  
-EFW la porta a **3 righe da 5** e allunga la finestra verso l'alto, così tutti gli edifici (vanilla + EFW) restano visibili.  
-Le nuove icone degli edifici sono aggiunte in coda alla strip vanilla delle icone.
+Sono **disponibili dal primo giorno per tutte le nazioni**, come il Pipe-Gun Rifle: niente ricerca da aspettare. L'IA non li usa nei suoi template. L'icona del furgone è generata da [`make_gun_truck_icon.py`](utility/efw_vehicle_icons/make_gun_truck_icon.py), che compone un cannone anticarro e un camion vanilla; la moto usa l'icona vanilla della moto con side-car.
 
 ---
 
-# 8. Decisioni: Mobilitazione e Investimenti Nazionali
+## 🪵 Caccia in legno
 
-Tutte le decisioni economiche stanno in un'unica categoria, **Mobilitazione e Investimenti Nazionali**, visibile solo al giocatore.  
-Quasi tutte seguono la stessa logica: un beneficio subito, pagato con Political Power, manpower e mezzi (treni e camion) che in molti casi vengono restituiti a fine programma.
+<img src="docs/images/eq_wooden_plane.png" alt="EFW Wooden Fighter" align="right" width="220">
+
+L'**EFW Wooden Fighter** è una variante dell'airframe vanilla `small_plane_airframe_0` con il modulo speciale **Telaio in Legno e Compressore Overboost**.
+
+```text
+✔ costo inferiore      ✔ peso ridotto       ✔ buona agilità       ✔ autonomia migliorata
+✘ affidabilità bassa   ✘ protezione ridotta
+```
+
+Nello slot speciale piccolo dell'Air Designer trovi anche altri moduli "da officina":
+
+<p align="center"><img src="docs/images/sheet_air_modules.png" alt="Moduli aerei improvvisati" width="560"></p>
+
+| Modulo | Nome |
+|---|---|
+| `efw_wooden_boost_airframe` | Telaio in Legno e Compressore Overboost |
+| `efw_improvised_drop_tank` | Serbatoio Ausiliario in Carta Pressata |
+| `efw_multirole_combat_rack` | Rastrelliera d'Armamento Polivalente da Campo |
+| `efw_cast_iron_stove_armor` | Blindatura Improvvisata "Stufa da Campo" |
+| `efw_bazooka_charlie_tubes` | Tubi Lanciarazzi "Bazooka Charlie" |
+
+<p align="center"><img src="other%20img/cheep_wooden_plane.png" alt="Statistiche del Wooden Fighter" width="460"><br><sub>8.25 IC di caccia. Il cuoco rivuole la sua stufa.</sub></p>
+
+---
+
+## 🏭 Edifici
+
+<p align="center"><img src="docs/images/sheet_buildings.png" alt="Icone degli edifici EFW" width="760"><br><sub>Acciaio · petrolio · gomma · alluminio · tungsteno · cromo · carbone · Case Popolari · Campi di Grano</sub></p>
+
+### Edifici strategici
+
+<p align="center"><img src="docs/images/sheet_strategic_buildings.png" alt="Icone degli edifici strategici" width="368"><br><sub>Propaganda · Lavoro · Logistica e Difesa Civile · Ricerca</sub></p>
+
+Massimo **1 per stato**. I bonus nazionali si sommano, ma Propaganda, Lavoro e Ricerca hanno un **costo crescente** e ognuno ha un **malus a tema**: i primi sono economici, coprire una grande nazione diventa molto caro.
+
+| Edificio | Costo | Bonus (per edificio) | Malus |
+|---|---|---|---|
+| **Centro di Propaganda e Mobilitazione** | 1000 + 1500 per ogni Centro già posseduto, senza slot | +3.6% PP, +0.5% stabilità e supporto alla guerra, +1.2% popolazione reclutabile | −0.5% ricerca (censura), −2.4% resistenza locale |
+| **Direzione del Lavoro Nazionale** | 1600 + 2000 per ogni Direzione già posseduta, usa uno slot | +4.8% produzione, +3.6% costruzione, +3.6% crescita efficienza, +6% risorse locali | −3% crescita popolazione, −0.4% stabilità |
+| **Centro Nazionale di Ricerca** | 3000 + 1000 per ogni Centro già posseduto, usa uno slot | +3% ricerca, +1.2% efficienza iniziale delle nuove linee | +0.5% beni di consumo |
+| **Centro Logistico e Difesa Civile** | 2200, senza slot | +0.40 rifornimenti, +12% infrastrutture/ferrovie/snodi, +6% costruzione nello stato | nessuno (effetti solo locali) |
+
+> Il calo di stabilità della Direzione del Lavoro si compensa con i Centri di Propaganda. Le combinazioni sono il punto.
+
+### Edifici delle risorse
+
+Basati su **Resource Plants** (Workshop 3513657215): ogni coppia miniera + impianto dell'originale è diventata **un solo edificio per risorsa**.
+Niente slot di costruzione, massimo 5 livelli per stato (carbone: 10).
+
+| Edificio | Produzione per livello |
+|---|---|
+| Acciaieria Integrata · Complesso Petrolifero · Piantagione di Gomma · Impianto di Alluminio | +30 |
+| Miniera di Tungsteno · Miniera di Cromo | +18 |
+| Miniera di Carbone | +25 |
+
+Costo 5500 + 3500 per livello aggiuntivo (carbone: 1000 + 2000). La produzione non cresce con la ricerca.
+
+### Edifici civili
+
+| Edificio | Effetto | Limiti |
+|---|---|---|
+| **Case Popolari** | +10% manpower locale, +10% popolazione reclutabile | usa uno slot, 1 per stato |
+| **Campi di Grano** | Autonomia alimentare. Per ogni stato: **−1% beni di consumo**, +0.2% stabilità, +2% crescita della popolazione (10 stati = −10% beni di consumo, +2% stabilità, +20% popolazione). Nello stato: +3 slot (+2 netti), +0.25 rifornimenti, +5% manpower | 1 per stato |
+
+La vista stato vanilla ha posto per soli 5 edifici senza slot: EFW la porta a **3 righe da 5**, così si vedono tutti.
+
+---
+
+## 📜 Mobilitazione e Investimenti Nazionali
+
+<p align="center"><img src="docs/images/sheet_policies.png" alt="Idee nazionali delle decisioni" width="480"></p>
+
+Una categoria di decisioni, visibile solo al giocatore. La regola è sempre la stessa: **un beneficio subito**, pagato con Political Power, manpower, treni e camion, che spesso vengono restituiti a fine programma.
 
 | Decisione | Costo | Effetto |
 |---|---|---|
-| **Piano Industriale – Fase I** | 35 PP, 50k manpower, 5 treni, 200 camion | +8 civili e +2 militari offsite, +15% velocità di costruzione per 180 giorni. Al termine sblocca la Fase II |
-| **Piano Industriale – Fase II** | 35 PP, 50k manpower, 5 treni, 200 camion | +7 civili e +4 militari offsite, +15% costruzione per 180 giorni. Alla fine restituisce 10 treni, 400 camion e 50k manpower |
-| **Grandi Opere e Piani Regolatori** | 50 PP, 60k manpower, 15 treni, 500 camion | +1 infrastruttura negli stati core sotto il livello 5, +2 slot edificio negli stati core, +30% costruzione per 540 giorni. Risorse restituite alla fine |
-| **Programma Navale Straordinario** | 40 PP, 50k manpower, 200 camion | +6 cantieri navali offsite permanenti. Manpower e camion restituiti dopo 1 anno |
-| **Autarchia del Carburante** | 45 PP, 30k manpower | Per 365 giorni: +30% velocità raffinerie sintetiche, +10% carburante, +2% beni di consumo. 30% di probabilità di -2% stabilità. Ripetibile |
-| **Obbligazioni Nazionali** | 0 PP | +120 PP subito, -180 PP dopo 365 giorni, poi 90 giorni di cooldown. Ripetibile |
+| **Piano Industriale – Fase I** | 35 PP, 50k manpower, 5 treni, 200 camion | +8 civili e +2 militari offsite, +15% costruzione per 180 giorni. Sblocca la Fase II |
+| **Piano Industriale – Fase II** | 35 PP, 50k manpower, 5 treni, 200 camion | +7 civili e +4 militari offsite, +15% costruzione per 180 giorni. Restituisce 10 treni, 400 camion e 50k manpower |
+| **Grandi Opere e Piani Regolatori** | 50 PP, 60k manpower, 15 treni, 500 camion | +1 infrastruttura negli stati core sotto il livello 5, +2 slot negli stati core, +30% costruzione per 540 giorni. Risorse restituite |
+| **Programma Navale Straordinario** | 40 PP, 50k manpower, 200 camion | +6 cantieri offsite permanenti. Manpower e camion restituiti dopo 1 anno |
+| **Autarchia del Carburante** | 45 PP, 30k manpower | Per 365 giorni: +30% raffinerie sintetiche, +10% carburante, +2% beni di consumo. 30% di rischio di −2% stabilità. Ripetibile |
+| **Obbligazioni Nazionali** | 0 PP | +120 PP subito, −180 PP dopo un anno, poi 90 giorni di cooldown. Ripetibile. *Paga dopo, piangi dopo.* |
 | **Patto Sociale e Produzione Diffusa** | 40 PP, 5 treni, 300 camion | Per 3 anni: +500 manpower a settimana, +25% crescita demografica, +6% ricerca, +8% efficienza massima, +10% produzione militare, +4% beni di consumo |
-| **Coordinare l'Economia Nazionale** | 75 PP | Richiede 2 Centri di Propaganda e 1 Direzione del Lavoro. Idea permanente: +10% produzione militare e navale, +10% costruzione, +5% crescita efficienza, +5% supporto alla guerra, -2% stabilità |
-| **Mobilitare la Nazione** | 100 PP | Richiede 4 Propaganda, 2 Lavoro, 1 Ricerca, 1 Logistica. Sostituisce l'Economia Coordinata: +18% produzione militare, +15% navale, +20% costruzione, +12% crescita efficienza, +7,5% coscrizione, +7,5% supporto alla guerra, -5% stabilità |
+| **Coordinare l'Economia Nazionale** | 75 PP | Richiede 2 Propaganda e 1 Lavoro. Idea permanente: +10% produzione militare e navale, +10% costruzione, +5% crescita efficienza, +5% supporto alla guerra, −2% stabilità |
+| **Mobilitare la Nazione** | 100 PP | Richiede 4 Propaganda, 2 Lavoro, 1 Ricerca, 1 Logistica. +18% produzione militare, +15% navale, +20% costruzione, +12% crescita efficienza, +7.5% coscrizione e supporto alla guerra, −5% stabilità |
 
-Le due decisioni di coordinamento accelerano anche la costruzione di Centri di Ricerca e Centri Logistici (+35%).
+Le due decisioni di coordinamento accelerano anche la costruzione di Centri di Ricerca e Logistici (+35%).
 
 ---
 
-# 9. Leggi nel pannello politico
+## 🎯 Vocazioni Nazionali
 
-Ispirate alla mod **Better Laws and Policies** (Workshop 3097661966), di cui riusano le icone.  
-EFW aggiunge **4 nuove sezioni** nel pannello politico, sotto quelle vanilla (Leggi e Governo, Ricerca e Produzione, Stato Maggiore).
+Ogni nazione è brava in qualcosa. Nella categoria di decisioni **Vocazioni Nazionali** scegli **una sola** strada e la porti fino al terzo livello.
+Ogni livello chiede **edifici EFW** e **leggi a tema**: chi fa combaciare edifici, leggi e vocazione ottiene un bonus enorme. Chi si specializza paga però un malus negli altri campi.
 
-Ogni sezione ha **6 slot**, il massimo che il pannello mostra su una riga. Ogni slot contiene **8 leggi**: in tutto 24 slot e 192 leggi.
+| Vocazione | Livello I (50 PP) | Livello II (100 PP) | Livello III (150 PP) | Malus |
+|---|---|---|---|---|
+| 🔬 **Repubblica degli Scienziati** | +10% ricerca | +22% ricerca | **+40% ricerca** | beni di consumo, produzione militare, supporto alla guerra |
+| 🏭 **Officina della Nazione** | +6% produzione, +8% costruzione | +14% produzione, +15% costruzione, +10% crescita efficienza | **+28% produzione, +25% costruzione**, +20% crescita efficienza, +5% efficienza massima | ricerca, stabilità, popolazione |
+| 🪖 **Nazione in Armi** | +3% attacco e difesa, −5% addestramento | +8% attacco e difesa, +3% coscrizione | **+16% attacco e difesa**, +5% organizzazione, +6% coscrizione, −20% addestramento, +15% esperienza | ricerca, beni di consumo, stabilità |
+| ⚓ **Signori del Mare** | +6% produzione navale | +15% produzione navale, +6% danno e difesa navale | **+30% produzione navale**, +12% danno e difesa navale, +25% riparazioni e rimodernamenti | produzione militare, addestramento |
+| 🔧 **L'Arte dell'Arrangiarsi** | −15% penalità per risorse mancanti | −35% penalità, +5% produzione | **−60% penalità**, +12% produzione, +20% efficienza iniziale, +10% risorse locali | ricerca, stabilità |
+
+<details>
+<summary><b>Requisiti di ogni livello</b></summary>
+
+| Vocazione | Livello II | Livello III |
+|---|---|---|
+| Scienziati | 2 Centri di Ricerca, 4 slot di ricerca, una legge tra Borse di Studio / Università d'Eccellenza / Scambi Scientifici / Ricerca Militare | 4 Centri di Ricerca, 5 slot, Università d'Eccellenza o Scambi Scientifici, Borse di Ricerca o Città della Scienza |
+| Officina | 2 Direzioni del Lavoro, Industria Pesante / Piano Quinquennale / Organizzazione Scientifica del Lavoro | 4 Direzioni del Lavoro, 2 Centri di Propaganda, Industria Pesante o Piano Quinquennale, Turni Lunghi / Mobilitazione del Lavoro / Corporativismo |
+| Armi | 2 Centri di Propaganda, Armi Pesanti per Tutti / Squadre d'Assalto / Difesa in Profondità | 4 Centri di Propaganda, 2 Centri Logistici, una di quelle leggi, Scuola di Guerra / Stato Maggiore Generale / Quadri Veterani |
+| Mare | 10 cantieri, Grandi Cantieri Navali / Marina d'Altura / Dottrina del Siluro / Arsenali di Rimodernamento | 25 cantieri, Grandi Cantieri Navali, Marina d'Altura / Dottrina del Siluro / Arsenali di Rimodernamento / Sistema dei Convogli |
+| Arrangiarsi | **5.000 Pipe-Gun Rifle** in magazzino, Raccolta di Rottami o Materiali Surrogati | **20.000 Pipe-Gun Rifle** in magazzino, Raccolta di Rottami o Materiali Surrogati, Autarchia o Quote d'Importazione |
+
+</details>
+
+Tra un livello e l'altro passano **120 giorni**. Si può **rinnegare la vocazione** (25 PP), ma per 180 giorni arriva una *Crisi d'Identità Nazionale* (−5% stabilità, −20% PP) e non si può sceglierne un'altra.
+
+> **Esempio:** 4 Centri di Ricerca (+12%), Università d'Eccellenza (+6%), Città della Scienza (+7%) e Repubblica degli Scienziati III (+40%) fanno **+65% di ricerca**. In cambio le fabbriche rendono meno e la popolazione vuole più beni di consumo.
+
+---
+
+## 📖 Leggi nel pannello politico
+
+<p align="center"><img src="docs/images/sheet_laws.png" alt="Alcune icone delle leggi EFW" width="760"></p>
+
+**4 nuove sezioni**, sotto quelle vanilla. Ogni sezione ha 6 slot (il massimo che il pannello mostra su una riga) e ogni slot ha 8 leggi: **24 slot, 192 leggi**.
 
 | Sezione | Slot |
 |---|---|
@@ -384,23 +283,19 @@ Ogni sezione ha **6 slot**, il massimo che il pannello mostra su una riga. Ogni 
 | **Esercito e Stato Maggiore** | Comando e Ufficiali · Addestramento e Reclutamento · Logistica e Rifornimenti · Armi da Campo e Fanteria · Sanità e Condotta · Dottrina Operativa |
 | **Marina, Aviazione e Servizi** | Flotta · Convogli e Sottomarini · Aviazione da Caccia · Aviazione d'Appoggio · Servizi Segreti · Operazioni all'Estero |
 
-Regole comuni a tutti gli slot:
+In ogni slot: **5 leggi da 50 PP** con bonus moderati e **3 da 100 PP** più forti con malus più pesanti.
+Nessuna legge è gratis, ma la combinazione giusta (per esempio *Industria Pesante + Mobilitazione del Lavoro + Finanza di Guerra*) dà un vantaggio vero.
 
-```text
-5 leggi da  50 PP   bonus moderati con un malus
-3 leggi da 100 PP   un po' più forti, con malus più pesanti
-```
+Gli slot partono vuoti: la prima scelta è tua. Alcune leggi richiedono la guerra o un supporto alla guerra minimo. L'IA non le adotta (`ai_will_do = 0`).
+Ispirate a **Better Laws and Policies** (Workshop 3097661966), di cui riusano le icone.
 
-Ogni legge mescola almeno un bonus e un malus: nessuna è gratis, ma combinando bene gli slot (per esempio Industria Pesante + Mobilitazione del Lavoro + Finanza di Guerra) si ottiene un vantaggio importante.
+---
 
-Gli slot partono **vuoti**: non c'è una legge di default, la prima scelta la fa il giocatore. Alcune leggi richiedono la guerra in corso o un supporto alla guerra minimo.  
-L'IA non adotta queste leggi (`ai_will_do = 0`), quindi le nuove sezioni non cambiano il comportamento dei paesi IA.
+## 👔 Designer e consiglieri
 
-Le leggi sono generate da uno script (vedi **Strumenti di sviluppo**): per ribilanciarle si modifica una sola tabella invece dei file generati.
+### 21 designer generici
 
-## Designer generici
-
-Nella sezione vanilla **Ricerca e Produzione** EFW aggiunge 21 designer disponibili a tutti i paesi. I 9 per carri, navi e aerei sono in tre livelli di costo:
+Nella sezione vanilla **Ricerca e Produzione**, disponibili a tutti i paesi. Adattati da **Designers Extend** (Workshop 2742251002) e aggiornati agli airframe della 1.19, dove i bonus aerei dell'originale non funzionavano più.
 
 | Tipo | 500 PP | 1000 PP | 2000 PP |
 |---|---|---|---|
@@ -408,9 +303,10 @@ Nella sezione vanilla **Ricerca e Produzione** EFW aggiunge 21 designer disponib
 | Navi (ricerca navale +15/20/30%) | Compagnia Siren | Consorzio Leviathan | Poseidon Corporation |
 | Aerei (ricerca aerea +10/20/30%) | Compagnia Insomnia | Consorzio Wardon | Shadow Corporation |
 
-Ogni designer ha un tratto (Progettista Base / Avanzato / Moderno) con bonus alle statistiche di tutti i carri, le navi o gli aerei.
+> ⚠️ **Disattiva Designers Extend** se usi EFW, altrimenti i designer compaiono due volte.
 
-EFW aggiunge anche 6 **designer di materiale** e 6 **concessioni industriali**, specializzati invece che a livelli. Ogni tratto ha un bonus e un piccolo malus:
+<details>
+<summary><b>6 designer di materiale e 6 concessioni industriali</b></summary>
 
 | Designer di materiale | Costo | Ricerca | Tratto |
 |---|---|---|---|
@@ -424,402 +320,195 @@ EFW aggiunge anche 6 **designer di materiale** e 6 **concessioni industriali**, 
 | Concessione industriale | Costo | Ricerca | Tratto |
 |---|---|---|---|
 | Acciaierie Riunite | 500 | industria +10% | +8 acciaio, +1% beni di consumo |
-| Compagnia Elettrica Nazionale | 500 | elettronica +10% | -10% consumo energetico delle fabbriche, -2% velocità di costruzione |
+| Compagnia Elettrica Nazionale | 500 | elettronica +10% | −10% consumo energetico delle fabbriche, −2% costruzione |
 | Raffinerie Sintetiche | 500 | risorse sintetiche +15% | raffinerie sintetiche +15%, carburante +5%, +1% beni di consumo |
 | Imprese di Costruzioni | 1000 | costruzioni +15% | costruzione +5%, infrastrutture +10%, +1% beni di consumo |
-| Consorzio Minerario | 1000 | estrazione +15% | +4 tungsteno, +4 cromo, risorse locali +5%, -1% stabilità |
-| Conglomerato Industriale | 2000 | industria +15%, elettronica +10% | produzione militare +3%, crescita efficienza +5%, -5% PP |
+| Consorzio Minerario | 1000 | estrazione +15% | +4 tungsteno, +4 cromo, risorse locali +5%, −1% stabilità |
+| Conglomerato Industriale | 2000 | industria +15%, elettronica +10% | produzione militare +3%, crescita efficienza +5%, −5% PP |
 
-Sono adattati dalla mod **Designers Extend** (Workshop 2742251002), scritta per la 1.11, con tre correzioni:
+</details>
 
-```text
-tipi aerei pre-1.12 (fighter_equipment, CAS_equipment, ...)  ->  airframe 1.19 (small_plane_airframe, ...)
-reliability scritto due volte nei tratti dei carri            ->  una sola volta
-nomi senza prefisso                                           ->  prefisso efw_
-```
+### 8 consiglieri politici generici
 
-Nella mod originale i bonus degli aerei non funzionavano più: i vecchi tipi non esistono in 1.19.  
-**Disattivare Designers Extend** quando si usa EFW, altrimenti i designer compaiono due volte.
+Nome casuale, ritratto generico vanilla, 150 PP. Ognuno ha bonus e un malus. Servono una **partita nuova** (sono creati in `history/general/`) e anche l'IA può assumerli.
 
-## Consiglieri politici generici
-
-EFW aggiunge 8 consiglieri politici a ogni paese (nome casuale, ritratto generico vanilla, 150 PP come i consiglieri vanilla). Ognuno ha bonus e un malus.
-
-Quattro sono **consiglieri di governo**, uno per ideologia, e si possono assumere solo quando quel partito è al potere:
-
-| Consigliere | Partito al governo | Effetto |
+| Consigliere | Disponibile | Effetto |
 |---|---|---|
-| Statista Parlamentare | Democratici | +6% stabilità, +6% PP, +15% opinione commerciale, -3% supporto alla guerra |
-| Commissario del Piano | Comunisti | +5% efficienza massima, +4% produzione militare, -3% stabilità |
-| Gerarca del Partito | Fascisti | +7% supporto alla guerra, +3% coscrizione, -3% ricerca |
-| Uomo d'Ordine | Non allineati | +8% stabilità, +20% difesa dall'influenza ideologica, -3% supporto alla guerra |
-
-Gli altri quattro sono **consiglieri tecnici**, disponibili per tutti:
-
-| Consigliere | Effetto |
-|---|---|
-| Ministro degli Armamenti | +10% costruzione fabbriche militari, +3% produzione militare, -5% costruzione fabbriche civili |
-| Capo della Propaganda | +5% supporto alla guerra, +5% PP, -2% ricerca |
-| Diplomatico di Carriera | +15% guadagno di opinione, +15% opinione commerciale, giustificazione dei wargoal +10% più lenta |
-| Economista di Guerra | -4% beni di consumo, -3% stabilità |
-
-Sono creati a inizio partita da `history/general/efw_generic_advisors.txt` (stesso meccanismo dei consiglieri generici vanilla): serve una **partita nuova**. Si sommano ai consiglieri vanilla e anche l'IA può assumerli.
+| Statista Parlamentare | Democratici al governo | +6% stabilità, +6% PP, +15% opinione commerciale, −3% supporto alla guerra |
+| Commissario del Piano | Comunisti al governo | +5% efficienza massima, +4% produzione militare, −3% stabilità |
+| Gerarca del Partito | Fascisti al governo | +7% supporto alla guerra, +3% coscrizione, −3% ricerca |
+| Uomo d'Ordine | Non allineati al governo | +8% stabilità, +20% difesa dall'influenza ideologica, −3% supporto alla guerra |
+| Ministro degli Armamenti | tutti | +10% costruzione fabbriche militari, +3% produzione militare, −5% costruzione fabbriche civili |
+| Capo della Propaganda | tutti | +5% supporto alla guerra, +5% PP, −2% ricerca |
+| Diplomatico di Carriera | tutti | +15% guadagno di opinione e opinione commerciale, wargoal +10% più lenti |
+| Economista di Guerra | tutti | −4% beni di consumo, −3% stabilità |
 
 ---
 
-# 10. Opzioni Militari: Invasioni Rapide
+## 👋 Evento di benvenuto
 
-Basata sulla mod **Invasions** (Steam Workshop 3709777606).
+Al primo giorno un ispettore del ministero bussa con un tubo idraulico sotto il braccio, ti presenta la mod e ti offre un regalo:
 
-Nella categoria di decisioni **Opzioni Militari EFW** il giocatore può attivare e disattivare in qualsiasi momento le **Invasioni Rapide**. Le decisioni sono gratuite e ripetibili.
+| Risposta | Regalo |
+|---|---|
+| «Ai laboratori!» | +5% ricerca per 180 giorni |
+| «Più fabbriche, meno chiacchiere.» | +10% velocità di costruzione per 180 giorni |
+| «Il soldato prima di tutto.» | −10% addestramento, +5% esperienza dell'esercito per 180 giorni |
+| «Abbiamo trovato dei tubi in cantina.» | 2.000 Pipe-Gun Rifle |
+| «Niente regali. Ho una guerra da preparare.» | 25 PP |
 
-Quando sono attive viene aggiunta l'idea nazionale **Invasioni Rapide**:
+L'evento compare una sola volta per paese, anche se cambi nazione a partita in corso.
+
+---
+
+## 🚢 Opzioni Militari: Invasioni Rapide
+
+Basata su **Invasions** (Workshop 3709777606). Una decisione gratuita accende e spegne l'idea **Invasioni Rapide**, che vale **solo per il giocatore**:
 
 ```text
--60 giorni   preparazione invasioni navali      (base 60: nessuna attesa)
-+999         invasioni navali pianificabili     (base 1)
-+996         divisioni per invasione navale     (base 4)
+-60 giorni   preparazione invasioni navali          (base 60: nessuna attesa)
++999         invasioni navali pianificabili         (base 1)
++996         divisioni per invasione navale         (base 4)
 -7 giorni    preparazione invasioni aviotrasportate (base 7)
 ```
 
-La mod originale usa i define, che sono fissi e si applicano a tutti i paesi. EFW li riproduce con modificatori nazionali, così l'opzione si può spegnere e vale **solo per il giocatore** che la attiva.
-
-Due define dell'originale non hanno un modificatore equivalente e non sono inclusi:
-
-```text
-PARADROP_HOURS                    durata della penalità dei paracadutisti dopo il lancio
-INVASION_REPORT_EXPERATION_DAYS   durata dei report di invasione (solo notifiche)
-```
+L'originale usa i define, fissi e validi per tutti; EFW usa modificatori nazionali, quindi si può spegnere quando si vuole.
+Non inclusi: `PARADROP_HOURS` e `INVASION_REPORT_EXPERATION_DAYS`, che non hanno un modificatore equivalente.
 
 ---
 
-# 11. Grafica e prestazioni
+## ⚡ Ottimizzazione FPS e prestazioni
 
-## Unità sulla mappa e in battaglia
-
-Le compagnie e i battaglioni EFW usano **modelli 3D vanilla** (`infantry`, `artillery`, `anti_tank`): un `sprite` personalizzato senza modello mostrerebbe un'unità mancante sulla mappa e in battaglia.  
-Le compagnie di supporto hanno `priority = 0`, come quelle vanilla, così non decidono mai il modello della divisione.
-
-Ogni unità EFW ha:
+Adattata da **FPS BOOSTER** (Workshop 3765424442) e corretta per la 1.19:
 
 ```text
-GFX_unit_<unità>_icon_medium   icona del designer divisioni (152x42, 2 frame: disegno + simbolo NATO)
-GFX_unit_<unità>_icon_small    icona piccola della finestra di battaglia e dei tooltip
+log e storico   combat log, convogli, guarnigioni e incidenti navali conservati meno a lungo
+IA              template, equipaggiamento, dottrine e diplomazia ricalcolati meno spesso
+grafica         niente ombre, alberi, rifrazioni, edifici 3D civili e nebbia; segnalini prima dei modelli 3D
+meteo           niente particelle 3D di pioggia, neve, temporali e sabbia
 ```
 
-## Icone dei moduli
+La **neve al suolo resta**: ha effetti di gameplay. Per disattivare l'ottimizzazione basta cancellare `common/defines/zzz_efw_fps_defines.lua` e `common/weather.txt`.
 
-Tutti i moduli EFW di aerei e navi hanno un'icona nel designer.  
-Quelle nuove sono ricavate dalle icone vanilla e ricolorate con materiali "improvvisati" (legno, cartone, ruggine, ghisa, rame), più qualche segno di usura. Le vele sono disegnate da zero:
+**Anche gli script di EFW sono leggeri.** La mod non ha nessun controllo giornaliero:
 
 ```text
-aerei   telaio in legno · serbatoi in carta pressata · gondola polivalente · blindatura "stufa" · tubi "Bazooka Charlie"
-navi    serbatoio ausiliario improvvisato · scafo carenato · vela piccola · vela grande
+prima   3 blocchi on_daily: ~10 controlli al giorno per ogni paese, per tutta la partita
+ora     inizializzazione del giocatore con eventi nascosti (una volta sola)
+        sincronizzazione delle tecnologie una volta a settimana; quando un paese
+        ha sbloccato tutto resta un solo controllo di flag (efw_sync_complete_v2)
 ```
 
-## Ottimizzazione FPS
-
-Adattata dalla mod **FPS BOOSTER** (Workshop 3765424442) e corretta per 1.19 (`common/defines/zzz_efw_fps_defines.lua`):
-
-```text
-log e storico      combat log, convogli, guarnigioni e incidenti navali conservati meno a lungo
-IA                 template, equipaggiamento, dottrine e diplomazia ricalcolati meno spesso
-grafica            niente ombre, alberi, rifrazioni dell'acqua, edifici 3D civili e nebbia visiva;
-                   modelli 3D sostituiti dai segnalini prima; meno aerei disegnati
-meteo              niente particelle 3D di pioggia, neve, temporali e sabbia (common/weather.txt)
-```
-
-La neve al suolo **non** è stata toccata: dà malus di gameplay (attacco, velocità, rifornimenti) e resta come in vanilla.  
-Le texture del terreno e il `posteffect_volumes.txt` dell'originale non sono inclusi: le prime non vengono mai caricate, il secondo dà errore.
-
-Per disattivare l'ottimizzazione basta cancellare `zzz_efw_fps_defines.lua` e `common/weather.txt`.
+Le Vocazioni e le leggi sono decisioni e idee: non costano nulla finché il giocatore non le usa.
 
 ---
 
-# 12. Filosofia di bilanciamento
+## 📦 Installazione
 
-EFW cerca di evitare bonus completamente gratuiti.
+**Steam Workshop (consigliato):** iscriviti alla [pagina della mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3801242021) e attivala dal launcher.
 
-Gran parte dei sistemi segue questa logica:
+**Manuale:**
 
-```text
-vantaggio immediato
-        ↓
-costo politico / industriale / logistico
-        ↓
-possibile penalità o rimborso futuro
-```
+1. Copia la cartella `Expanded_Field_Weapons` in `Documents/Paradox Interactive/Hearts of Iron IV/mod/`.
+2. Controlla che il file `.mod` punti alla cartella giusta.
+3. Attiva EFW dal launcher e avvia una **nuova partita** dopo gli aggiornamenti importanti.
 
-Gli edifici strategici sono relativamente economici, ma richiedono comunque tempo di costruzione.
+Per i pacchetti `MERGE`: copia il contenuto nella root di EFW e scegli **Sovrascrivi**.
 
-Le decisioni early-game aiutano a ridurre il periodo iniziale di attesa e permettono al giocatore di scegliere come accelerare lo sviluppo:
-
-```text
-Political Power
-manpower
-treni
-consumer goods
-debito futuro
-```
-
-diventano quindi risorse da scambiare tra loro.
+> **Nota:** il caccia in legno e le navi improvvisate compaiono dopo **1-2 giorni di gioco**. Pipe-Gun Rifle, Carro Veloce, Moto Mitragliera e Autocannone sono disponibili da subito. Mitragliatrici, mortai e anticarro si sbloccano entro **una settimana** dalla ricerca di **Support Weapons I**.
 
 ---
 
-# 13. Filosofia tecnica
+## 🧩 Compatibilità
 
-EFW cerca di utilizzare il più possibile i sistemi vanilla.
+EFW usa ID con prefisso `efw_`, file separati e varianti invece di sostituire contenuti vanilla. Fanno eccezione questi file:
 
-Per esempio:
+| File sostituito | Perché |
+|---|---|
+| `interface/countrystateview.gui` · `countrystateview.gfx` | vista stato più alta, strip icone a 44 frame |
+| `gfx/interface/buildings/building_icon_strip.dds` | 31 icone vanilla + 13 EFW (9 risorse e civili, 4 strategici disegnati da script) |
+| `interface/zzz_efw_idea_categories.gfx` | icone delle sezioni del pannello politico (frame 15-18) |
+| `common/weather.txt` · `common/defines/zzz_efw_fps_defines.lua` | ottimizzazione FPS |
 
-```text
-navi improvvisate
-→ scafi vanilla + varianti custom
-
-aerei improvvisati
-→ airframe vanilla + moduli custom
-
-leggi
-→ idea_categories + leggi vanilla (law = yes)
-
-edifici
-→ normale sistema di costruzione HOI4
-
-bonus temporanei
-→ timed ideas
-
-scadenze
-→ eventi ritardati
-```
-
-Questo riduce i problemi di compatibilità e rende più semplice il debug.
+**Incompatibili con queste parti di EFW:** mod che cambiano la vista stato o la strip degli edifici (per esempio *Resource Plants*) e mod che aggiungono categorie di leggi (per esempio *Better Laws and Policies*). Dopo una patch di HOI4 che tocca questi file vanno rigenerati.
 
 ---
 
-# 14. Contenuti pensati per il giocatore
+<details>
+<summary><b>🐞 Debug</b></summary>
 
-Diverse parti di EFW sono progettate soprattutto per il giocatore umano.
-
-Quando necessario vengono utilizzati controlli come:
-
-```txt
-is_ai = no
-```
-
-e:
-
-```txt
-ai_will_do = {
-    factor = 0
-}
-```
-
-in modo da evitare che l'AI utilizzi decisioni economiche o contenuti sperimentali non ancora bilanciati per il comportamento automatico.
-
----
-
-# 15. Installazione
-
-Per utilizzare la mod:
-
-1. Copiare la cartella **Expanded Field Weapons** nella directory delle mod di Hearts of Iron IV.
-2. Assicurarsi che il relativo `.mod` / descriptor punti alla cartella corretta.
-3. Attivare EFW dal launcher.
-4. Avviare preferibilmente una nuova partita dopo aggiornamenti importanti della mod.
-
-Quando si installano pacchetti `MERGE`, copiare il contenuto direttamente nella root di EFW e scegliere **Sovrascrivi** quando richiesto.
-
----
-
-# 16. Compatibilità
-
-EFW è sviluppata principalmente per:
+Controlla `Documents/Paradox Interactive/Hearts of Iron IV/logs/error.log` e cerca:
 
 ```text
-Hearts of Iron IV 1.19.x
+efw_   Unexpected token   Malformed token   Unknown modifier   Invalid scope   Invalid effect
 ```
 
-La compatibilità con altre mod dipende soprattutto da eventuali modifiche agli stessi file vanilla o agli stessi sistemi.
+Dopo modifiche a equipment, technologies, buildings, decisions, variants o on_actions testa con una **nuova partita**.
+</details>
 
-In generale EFW cerca di ridurre i conflitti utilizzando:
+<details>
+<summary><b>🧪 Strumenti di sviluppo</b></summary>
 
-```text
-ID con prefisso efw_
-file separati
-varianti invece di replacement vanilla
-custom buildings separati
-custom decisions separate
-```
-
-Fanno eccezione alcuni file di interfaccia che sostituiscono quelli vanilla per mostrare i nuovi edifici:
+La cartella `utility/` contiene script Python non caricati dal gioco:
 
 ```text
-interface/countrystateview.gui                     vista stato più alta (3 righe di edifici senza slot)
-interface/countrystateview.gfx                     strip icone edifici a 40 frame
-gfx/interface/buildings/building_icon_strip.dds    31 icone vanilla + 9 EFW
-interface/zzz_efw_idea_categories.gfx              strip icone delle sezioni del pannello politico (20 frame)
-common/weather.txt                                 meteo vanilla 1.19 senza particelle 3D
-common/defines/zzz_efw_fps_defines.lua             define dell'ottimizzazione FPS
-```
-
-Le icone delle sezioni del pannello politico dipendono dall'ordine delle categorie di idee: le 14 vanilla occupano i frame 1-14, le 4 di EFW i frame 15-18.
-Altre mod che aggiungono categorie di idee (per esempio Better Laws and Policies) spostano queste posizioni e sono **incompatibili** con questa parte di EFW.
-
-Altre mod che modificano la vista stato o la strip delle icone degli edifici (per esempio Resource Plants) sono **incompatibili** con questa parte di EFW.  
-Dopo una patch di HOI4 che cambia questi file vanilla, vanno rigenerati partendo dalla nuova versione.
-
----
-
-# 17. Debug
-
-In caso di problemi controllare:
-
-```text
-Documents/Paradox Interactive/Hearts of Iron IV/logs/error.log
-```
-
-Le stringhe più utili da cercare sono:
-
-```text
-efw_
-Unexpected token
-Malformed token
-Unknown modifier
-Invalid scope
-Invalid effect
-```
-
-Dopo modifiche a:
-
-```text
-equipment
-technologies
-buildings
-decisions
-variants
-on_actions
-```
-
-è consigliato testare con una **nuova partita**.
-
----
-
-# 18. Struttura generale della mod
-
-Le funzionalità di EFW sono distribuite principalmente nelle seguenti directory:
-
-```text
-common/
-├── units/
-├── technologies/
-├── ideas/
-├── idea_tags/
-├── decisions/
-├── buildings/
-├── defines/
-├── on_actions/
-└── equipment/modules/
-
-events/
-
-history/general/  consiglieri politici generici
-
-interface/
-
-gfx/
-
-localisation/
-├── italian/
-└── english/
-
-utility/          script di sviluppo (non caricati dal gioco)
-```
-
-Ogni nuovo contenuto utilizza, quando possibile, il prefisso:
-
-```text
-efw_
-```
-
-per ridurre conflitti con vanilla e altre mod.
-
----
-
-# 19. Strumenti di sviluppo
-
-La cartella `utility/` contiene script Python (non caricati dal gioco):
-
-```text
-utility/efw_laws/gen_laws.py                   genera le leggi del pannello politico da laws_data.py
+utility/efw_laws/gen_laws.py                   genera le leggi da laws_data.py (idea_tags, leggi, icone, localizzazione)
 utility/efw_module_icons/make_module_icons.py  genera le icone dei moduli di aerei e navi
+utility/make_readme_images.py                  converte le icone DDS nei PNG di docs/images/ per questo README
+utility/efw_vehicle_icons/make_gun_truck_icon.py  genera l'icona del Furgone con Cannone da due icone vanilla
+utility/efw_building_icons/make_building_icons.py  disegna le 4 icone degli edifici strategici (frame 41-44 della strip)
 utility/generic_sprite_cropper_v3.py           ritaglio sprite generico
 ```
 
-`gen_laws.py` rigenera idea_tags, leggi, icone, localizzazione e la strip delle icone di sezione. Si ferma con un errore se:
+`gen_laws.py` si ferma con un errore se un modificatore non esiste nella 1.19, se una sezione ha più di 6 slot, se uno slot non ha 5 leggi da 50 PP + 3 da 100 PP o se una legge non ha almeno un bonus e un malus.
+I file generati non vanno modificati a mano. Istruzioni in [`utility/efw_laws/README_IT.txt`](utility/efw_laws/README_IT.txt).
 
 ```text
-un modificatore non esiste nella documentazione 1.19
-una sezione ha più di 6 slot
-uno slot non ha esattamente 5 leggi da 50 PP seguite da 3 da 100 PP
-una legge non ha almeno 2 modificatori (un bonus e un malus)
+common/        units · equipment/modules · technologies · ideas · idea_tags · decisions · buildings · defines · on_actions · scripted_effects
+events/        benvenuto, inizializzazione ed eventi delle decisioni
+history/       consiglieri politici generici
+interface/     sprite e GUI
+gfx/           icone (DDS)
+localisation/  italiano e inglese
+docs/images/   immagini del README (ignorate dal gioco)
+utility/       script di sviluppo
 ```
+</details>
 
-I file generati non vanno modificati a mano: verrebbero sovrascritti. Istruzioni in `utility/efw_laws/README_IT.txt`.
+<details>
+<summary><b>🧭 Filosofia</b></summary>
+
+**Niente bonus gratis.** Quasi tutto segue lo schema *vantaggio immediato → costo politico, industriale o logistico → penalità o rimborso futuro*. PP, manpower, treni, beni di consumo e debito diventano risorse da scambiare.
+
+**Vanilla prima di tutto.** Navi = scafi vanilla + varianti. Aerei = airframe vanilla + moduli. Leggi = `idea_categories` con `law = yes`. Bonus temporanei = timed ideas. Scadenze = eventi ritardati. Meno sistemi nascosti significa meno conflitti e debug più semplice.
+
+**Pensata per il giocatore.** Decisioni e leggi usano `is_ai = no` o `ai_will_do = 0`, così l'IA non usa contenuti non bilanciati per lei.
+</details>
 
 ---
 
-# 20. Stato del progetto
+## 🗺️ Stato del progetto
 
-Expanded Field Weapons è un progetto in sviluppo continuo.
+EFW è in sviluppo continuo: bilanciamento, costi e requisiti possono cambiare.
 
-Le principali aree già sviluppate comprendono:
+Il vecchio **Tin Tank** usava `light_tank_equipment`, che nella 1.19 non esiste più: è tornato come **Carro Veloce EFW**, un archetipo autonomo che non dipende dal designer dei carri.
 
-```text
-armi pesanti per fanteria
-nuove support companies
-battaglione armi pesanti
-mezzi navali improvvisati
-caccia in legno
-edifici strategici
-edifici delle risorse e civili
-opzione Invasioni Rapide
-mobilitazione economica nazionale
-obbligazioni e prestiti
-programmi economici early-game
-leggi nel pannello politico (4 sezioni, 192 leggi)
-icone di unità e moduli
-ottimizzazione FPS
-```
+Segnalazioni e idee: [Issues su GitHub](https://github.com/Elpiu/Expanded_Field_Weapons/issues) o i commenti sulla pagina Workshop.
 
-Il carro leggero improvvisato (Tin Tank) è stato rimosso: usava l'archetipo `light_tank_equipment`, che in 1.19 non esiste più. Potrà tornare come variante di `light_tank_chassis_0` creata con `create_equipment_variant`.
+## 🙏 Crediti
 
-Bilanciamento, costi, statistiche e requisiti possono essere modificati durante i test.
+Sviluppata da **Elpiu** con test iterativi in gioco. Riferimenti: documentazione di modding HOI4, hoi4doc.dev, CWTools.
 
----
+| Parte di EFW | Mod originale |
+|---|---|
+| Edifici delle risorse | [Resource Plants](https://steamcommunity.com/sharedfiles/filedetails/?id=3513657215) |
+| Invasioni Rapide | [Invasions](https://steamcommunity.com/sharedfiles/filedetails/?id=3709777606) |
+| Leggi del pannello politico e icone | [Better Laws and Policies](https://steamcommunity.com/sharedfiles/filedetails/?id=3097661966) |
+| Designer generici | [Designers Extend](https://steamcommunity.com/sharedfiles/filedetails/?id=2742251002) |
+| Ottimizzazione FPS | [FPS BOOSTER](https://steamcommunity.com/sharedfiles/filedetails/?id=3765424442) |
 
-# Credits / Development Notes
-
-Expanded Field Weapons è stata sviluppata attraverso test iterativi direttamente in Hearts of Iron IV, con particolare attenzione a compatibilità, semplicità e facilità di merge.
-
-Per lo sviluppo e il controllo della sintassi sono stati utilizzati come riferimento:
-
-```text
-HOI4 Modding documentation
-hoi4doc.dev
-CWTools HOI4 configuration
-HOI4 modding references / community documentation
-```
-
-Gli edifici delle risorse si basano sulla mod **Resource Plants** (Steam Workshop 3513657215), rielaborata con un solo edificio per risorsa.
-
-L'opzione Invasioni Rapide si basa sulla mod **Invasions** (Steam Workshop 3709777606), convertita da define a modificatori attivabili.
-
-Le leggi del pannello politico sono ispirate alla mod **Better Laws and Policies** (Steam Workshop 3097661966), di cui riusano le icone delle leggi, degli slot e delle sezioni.
-
-I designer generici si basano sulla mod **Designers Extend** (Steam Workshop 2742251002), aggiornata agli airframe di 1.19.
-
-L'ottimizzazione FPS si basa sulla mod **FPS BOOSTER** (Steam Workshop 3765424442), corretta per le tabelle dei define di 1.19.
-
----
-
-**Expanded Field Weapons — rendere utile anche ciò che una nazione può produrre quando non può permettersi il meglio.**
+<div align="center">
+<br>
+<b>Expanded Field Weapons</b><br>
+<sub>Quando non puoi permetterti il meglio, costruisci il resto.</sub>
+</div>
